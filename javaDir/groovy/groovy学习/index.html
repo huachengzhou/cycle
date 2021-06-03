@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title> Groovy 概述  - 禅与摩托车维修艺术</title>
+<meta name="description" content="简单的事情重复做,重复的事情用心做,用心的事情坚持做">
+<meta name="generator" content="Hugo 0.80.0" />
+<link href="https://huachengzhou.github.io/motorcycle//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E5%AD%A6%E4%B9%A0/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script src="/js/bundle.js"></script><style>
+:root {--custom-font-color: white;--custom-background-color: black;}
+</style>
+<meta property="og:title" content=" Groovy 概述 " />
+<meta property="og:description" content="Groovy 概述 Groovy是一种基于Java平台的面向对象语言。 Groovy 1.0于2007年1月2日发布，其中Groovy 2.4是当前的主要版本。 Groov" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E5%AD%A6%E4%B9%A0/" />
+<meta property="og:image" content="https://huachengzhou.github.io/motorcycle/images/og-image.png"/>
+<meta property="article:published_time" content="2021-04-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-15T00:00:00+00:00" /><meta property="og:site_name" content="向卓越致敬" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://huachengzhou.github.io/motorcycle/images/og-image.png"/>
+
+<meta name="twitter:title" content=" Groovy 概述 "/>
+<meta name="twitter:description" content="Groovy 概述 Groovy是一种基于Java平台的面向对象语言。 Groovy 1.0于2007年1月2日发布，其中Groovy 2.4是当前的主要版本。 Groov"/>
+<meta itemprop="name" content=" Groovy 概述 ">
+<meta itemprop="description" content="Groovy 概述 Groovy是一种基于Java平台的面向对象语言。 Groovy 1.0于2007年1月2日发布，其中Groovy 2.4是当前的主要版本。 Groov">
+<meta itemprop="datePublished" content="2021-04-15T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-04-15T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1429">
+<meta itemprop="image" content="https://huachengzhou.github.io/motorcycle/images/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+</head>
+<body><div class="container"><header>
+<h1>禅与摩托车维修艺术</h1>
+<p class="description">简单的事情重复做,重复的事情用心做,用心的事情坚持做</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="https://huachengzhou.github.io/motorcycle/myResume/index.html">my tool</a></li>
+<li><a href="https://github.com/huachengzhou">github</a></li>
+<li><a href="https://huachengzhou.github.io/motorcycle/javadir/"> Java技术栈</a></li>
+<li><a href="https://huachengzhou.github.io/motorcycle/databases/"> 数据库</a></li>
+<li><a href="https://huachengzhou.github.io/motorcycle/about/">关于程序员</a></li>
+<li><a href="https://huachengzhou.github.io/motorcycle/post/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a></li>
+<li><a href="https://huachengzhou.github.io/motorcycle/post/website/">网站链接</a></li>
+<li><a href="https://huachengzhou.github.io/motorcycle/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1> Groovy 概述 </h1>
+<h1 id="groovy-概述">Groovy 概述</h1>
+<ul>
+<li>Groovy是一种基于Java平台的面向对象语言。 Groovy 1.0于2007年1月2日发布，其中Groovy 2.4是当前的主要版本。 Groovy通过Apache License v 2.0发布。</li>
+</ul>
+<h2 id="groovy的特点">Groovy的特点</h2>
+<ul>
+<li>同时支持静态和动态类型。</li>
+<li>支持运算符重载。</li>
+<li>本地语法列表和关联数组。</li>
+<li>对正则表达式的本地支持。</li>
+<li>各种标记语言，如XML和HTML原生支持。</li>
+<li>Groovy对于Java开发人员来说很简单，因为Java和Groovy的语法非常相似。</li>
+<li>您可以使用现有的Java库。</li>
+<li>Groovy扩展了java.lang.Object。</li>
+</ul>
+<h3 id="groovy-脚本和类">groovy-脚本和类</h3>
+<ul>
+<li>
+<p>在groovy中定义类和java中是一样的。类的方法可以是static，也可以是非static的</p>
+</li>
+<li>
+<p>groovy中的方法可以是public, protected, private，同时也支持java中的修饰符，比如synchronized</p>
+</li>
+<li>
+<p>groovy自动导入的包有以下这些</p>
+</li>
+</ul>
+<ul>
+<li>groovy.lang.*</li>
+<li>groovy.util.*</li>
+<li>java.lang.*</li>
+<li>java.util.*</li>
+<li>java.net.*</li>
+<li>java.io.*</li>
+<li>import java.math.BigInteger</li>
+<li>import java.math.BigDecimal</li>
+</ul>
+<ul>
+<li>
+<p>在groovy和java中不同的一点就是，groovy默认是public的</p>
+</li>
+<li>
+<p>每一个groovy类，在JVM层级，都是字节码形式的java code，所以在java代码中可以调用groovy中申明的方法，反之亦然</p>
+</li>
+<li>
+<p>你可以指定方法的参数和返回值，以便他们能够更好的和java代码相互调用。当然你也可以实现接口或者重载方法。但是需要你没有指定方法后者属性的类型的话，那么在JVM层级的字节码中，他们将会是 java.lang.Object 类型</p>
+</li>
+<li>
+<p>例如 Callee.groovy</p>
+</li>
+</ul>
+<pre><code>class Callee{
+     void hello(){
+        println &quot;hello, world&quot; ;
+    }
+}
+
+c = new Callee() ;
+c.hello();
+</code></pre><ul>
+<li>创建你的第一个 Hello World 程序</li>
+</ul>
+<pre><code>class Example1 {
+
+    public static void main(String[] args) {
+        println(&quot;你好,世界 !&quot;) ;
+    }
+
+}
+</code></pre><p><code>你好,世界 !</code></p>
+<ul>
+<li>当然你也可以不定义一个类 因为groovy中行得通
+<code> println(&quot;你好,世界 !&quot;) ;同样可以打印出字符串</code></li>
+</ul>
+<h3 id="在-groovy-中导入语句">在 Groovy 中导入语句</h3>
+<ul>
+<li>import 语句可以用来导入，可以让你的代码使用其他库的功能。这是通过使用在 Import 关键字完成。
+下面的示例演示了如何使用 MarkupBuilder 的类，它可能是最常用的创建 HTML 或 XML 标记的类之一。</li>
+</ul>
+<pre><code>import groovy.xml.MarkupBuilder 
+def xml = new MarkupBuilder() 
+</code></pre><h3 id="groovy-令牌">Groovy 令牌</h3>
+<ul>
+<li>
+<p>令牌可以是一个关键字，一个标识符，常量，字符串文字或符号。
+<code>println(“Hello World”);</code></p>
+</li>
+<li>
+<p>在上面的代码行中，有两个令牌，首先是关键词的 println 而接下来就是字符串的“Hello World”。</p>
+</li>
+</ul>
+<h3 id="groovy-注释">Groovy 注释</h3>
+<ul>
+<li>在您的代码中使用注释。Groovy 的注释可以是单行或多行。单行注释使用 // 在该行的任何位置来识别。一个例子如下所示 -</li>
+</ul>
+<pre><code>class Example {
+   static void main(String[] args) {
+      // Using a simple println statement to print output to the console
+      println('Hello World');
+   }
+}
+</code></pre><h3 id="分号">分号</h3>
+<ul>
+<li>就像 Java 编程语言，它需要具有分号在 Groovy 定义多个语句之间进行区分。</li>
+</ul>
+<pre><code>class Example {
+   static void main(String[] args) {
+      // One can see the use of a semi-colon after each statement
+      def x = 5;
+      println('Hello World');  
+   }
+}
+</code></pre><h3 id="身份标识">身份标识</h3>
+<ul>
+<li>标识符被用来定义变量，函数或其他用户定义的变量。标识符以字母开头，美元或下划线。他们不能以数字开头。以下是有效标识符的一些例子</li>
+</ul>
+<pre><code>def employeename  
+
+def student1  
+
+def student_name
+</code></pre><ul>
+<li>其中**，DEF** 是在 Groovy 用来定义标识符的关键字。下面是一个如何在我们的 Hello World 程序中使用标识符的代码示例</li>
+</ul>
+<pre><code>class Example {
+   static void main(String[] args) {
+      // One can see the use of a semi-colon after each statement
+      def x = 5;
+      println('Hello World'); 
+   }
+}
+// 在上述的例子中，变量 x 被用作标识符。
+</code></pre><h3 id="关键词">关键词</h3>
+<table><tbody><tr><td>as</td><td>assert</td><td>break</td><td>case</td></tr><tr><td>catch</td><td>class</td><td>const</td><td>continue</td></tr><tr><td>def</td><td>default</td><td>do</td><td>else</td></tr><tr><td>enum</td><td>extends</td><td>false</td><td>Finally</td></tr><tr><td>for</td><td>goto</td><td>if</td><td>implements</td></tr><tr><td>import</td><td>in</td><td>instanceof</td><td>interface</td></tr><tr><td>new</td><td>pull</td><td>package</td><td>return</td></tr><tr><td>super</td><td>switch</td><td>this</td><td>throw</td></tr><tr><td>throws</td><td>trait</td><td>true</td><td>try</td></tr><tr><td>while</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+<h3 id="空白">空白</h3>
+<ul>
+<li>
+<p>空白是在编程语言如 Java 和 Groovy 用来形容空格，制表符，换行符和注释术语。空格分隔从另一个声明的一部分，使编译器，其中一个元素标识的声明。</p>
+</li>
+<li>
+<p>例如，在下面的代码示例，存在关键字 <strong>def</strong> 和变量 x 之间的空白。这是为了让编译器知道 <strong>DEF</strong> 是需要被使用，并且是 x 应该是需要被定义的变量名的关键字。</p>
+</li>
+</ul>
+<pre><code>def x = 5;
+</code></pre><h3 id="文字">文字</h3>
+<ul>
+<li>文字是在 groovy 中表示固定值的符号。Groovy 语言有符号整数，浮点数，字符和字符串。下面是一些在 Groovy 编程语言文字的例子 -</li>
+</ul>
+<pre><code>12 
+1.45 
+‘a’ 
+“aa”
+</code></pre><h2 id="回到上一级"><a href="../">回到上一级</a></h2>
+<div class="edit-meta">
+Last updated on 15 Apr 2021
+
+
+<br>
+Published on 15 Apr 2021
+<br></div><nav class="pagination"><a class="nav nav-prev" href="https://huachengzhou.github.io/motorcycle/javadir/groovy/" title="groovy 学习与使用 "><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - groovy 学习与使用 </a>
+<a class="nav nav-next" href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="groovy 基本概念 ">Next - groovy 基本概念  <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">
+
+ <ul>
+  <li>当你的才华还撑不起你的野心时,</li>
+  <li>那你就应该静下心来学习;</li>
+  <li>当你的能力还驾驭不了你的目标时,</li>
+  <li>那就应该沉下心来历练.</li>
+</ul>
+</p>
+</footer>
+</main>
+<div class="sidebar">
+
+<nav class="open-menu">
+<ul>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/">Home</a></li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/">计算机网络 </a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_architecture/">网络体系结构</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_architecture/1.1.1%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A6%82%E5%BF%B5-%E7%BB%84%E6%88%90-%E5%8A%9F%E8%83%BD-%E5%88%86%E7%B1%BB/">计算机概念 组成 功能 分类 * </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_architecture/1.1.2%E6%A0%87%E5%87%86%E5%8C%96%E5%B7%A5%E4%BD%9C%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E7%BB%87/">标准的分类</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_architecture/1.1.3%E9%80%9F%E7%8E%87%E7%9B%B8%E5%85%B3%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/">速率</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_architecture/%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84/">分层结构</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_architecture/%E5%88%86%E5%B1%82%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/">分层参考模型</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_architecture/%E6%A8%A1%E5%9E%8B%E5%B1%82%E6%AC%A1%E8%AF%A6%E8%A7%A3/">模型层次详解</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/physical_layer/">物理层 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/physical_layer/%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">数据通信基础知识 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/physical_layer/%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">物理层基本概念 </a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/data_link_layer/">数据链路层 </a>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/network_layer/">网络层 </a>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/transport_layer/">传输层 </a>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/computer_network/application_layer/">应用层 </a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/hugo%E5%AD%A6%E4%B9%A0/">hugo教程</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/hugo%E5%AD%A6%E4%B9%A0/hugo_server_faile_-to_get_json/">hugo教程 hugo server Failed to get JSON</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/hugo%E5%AD%A6%E4%B9%A0/hugo_tutorials1/">hugo教程1</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/hugo%E5%AD%A6%E4%B9%A0/hugo_tutorials2/">hugo教程2</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%84%9A%E6%9C%AC/">脚本</a>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/">自我提升</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/2021-04%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/">学习计划</a></li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%8E%B7%E5%8F%96%E9%87%91%E9%92%B1/">获取金钱</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%8E%B7%E5%8F%96%E9%87%91%E9%92%B1/%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B2%B9%E7%AE%A1youtube%E5%BC%80%E9%80%9A%E6%94%B6%E7%9B%8A%E8%B5%9A%E9%92%B1/">如何在油管YouTube开通收益赚钱</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/">解决问题</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/">git出现的问题</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/git%E5%A4%84%E7%90%86/">git处理网络和权限问题</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/idea/">idea出现的问题</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/idea/idea/">idea 解决working directory 设置到 target</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/maven/">maven出现的问题</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/maven/idea%E8%A7%A3%E5%86%B3/">idea 问题解决</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/visual_studio_code/">visual_studio_code</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/visual_studio_code/visualstudiocode%E9%97%AE%E9%A2%98/">Visual Studio Code 问题解决方案</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/dnf%E6%B1%A1%E6%9F%93/">DNS 污染</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/">GitHubPages绑定来自阿里云的域名</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%AE%B0%E5%BF%86/">记忆方法</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">学习方法</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E5%86%A5%E6%83%B3/">冥想</a></li>
+</ul>
+  
+</li>
+
+<li class="parent"><a href="https://huachengzhou.github.io/motorcycle/javadir/"> Java技术栈</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/basedir/">Java基础知识 </a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/basedir/jsp_dir/">jsp 基础知识 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/basedir/jsp_dir/java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/">java_监听事件原理 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/basedir/jsp_dir/jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">EL基础教程 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/basedir/jsp_dir/jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/">jsp jstl core 标签库 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/basedir/jsp_dir/jsp_jstl_session/">jsp jstl session </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/basedir/jsp_dir/jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/">字符串el表达式 </a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class="parent"><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/">groovy 学习与使用 </a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E5%AD%A6%E4%B9%A0/"> Groovy 概述 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">groovy 基本概念 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">groovy 数据类型 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E5%8F%98%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8A%A0%E5%BC%BA/"> groovy变量和数据类型 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/%E5%A6%82%E4%BD%95%E5%9C%A8groovy%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E7%9A%84%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/"> groovy变量值获取 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E4%B8%AD%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%AF%94%E8%BE%83%E4%BB%A5%E5%8F%8A%E9%9D%9E%E7%A9%BA%E5%88%A4%E6%96%AD/"> groovy对象比较以及空判断 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/"> groovy使用场景 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/groovy/groovy%E5%8F%98%E9%87%8F/"></a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/">Java公共库文档总结 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/">Apache Commons 工具类介绍及简单使用</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/commons_io/">apache FilenameUtils 文件名称操作</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/dom4j/">dom4j</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/guava-common/">Guava 基于java1.6的类库集合的扩展项目</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/jsoup/">jsoup学习文档</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/spring%E5%B7%A5%E5%85%B7/">spring工具类</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/">spring常用的工具类</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/js_console%E7%94%A8%E6%B3%95/">常用 Console 调试命令</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/">linux 学习与使用 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/git_introduction/">git学习</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/gitub_config/">git配置</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/host%E6%98%A0%E5%B0%84/">host映射</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">Linux下设置和查看环境变量</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/linux%E5%91%BD%E4%BB%A4/">linux命令</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/nginx/">nginx学习</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/notepad&#43;&#43;%E5%AE%89%E8%A3%85/">Notepad&#43;&#43; 学习与使用</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/">Ubuntu 16.04修改hosts</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/">ubuntu安装chmsee</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/">Ubuntu清理系统垃圾</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/">ubuntu软件卸载</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/middleware/">中间件 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/javadir/middleware/redis/">Redis 学习与使用</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/databases/"> 数据库</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/databases/mysql_163%E8%AF%BE%E5%A0%82/">网易云课堂MySQL微专业学习笔记</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/">MySQL事务与存储引擎</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/">MySQL应用优化</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/">MySQL数据库基础</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/">MySQL数据库对象与应用</a></li>
+<li class=""><a href="https://huachengzhou.github.io/motorcycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter5/">MySQL运维实践</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

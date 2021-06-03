@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java公共库文档总结  on 禅与摩托车维修艺术</title>
+    <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/</link>
+    <description>Recent content in Java公共库文档总结  on 禅与摩托车维修艺术</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/motorcycle/javadir/tooldoc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Apache Commons 工具类介绍及简单使用</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/</guid>
+      <description>Apache Commons 工具类介绍及简单使用 组件 功能介绍 BeanUtils Commons-BeanUtils 提供对 Java 反射和自省API的包装, 提供了对于JavaBean进行各种操作，克隆对象,属性等等. Betwixt XML</description>
+    </item>
+    
+    <item>
+      <title>apache FilenameUtils 文件名称操作</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/commons_io/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/commons_io/</guid>
+      <description>org.apache.commons.io.FilenameUtils 文件名称操作 FilenameUtils.getExtension(fileName) 获取文件后缀 //text FilenameUtils.getName(fileName) 获取文件完整名称 //c.text FilenameUtils.getBaseName(fileName) 获取文件名称 //c FilenameUtils.getFullPath(fileName) 获取文件的完整路径 //D:\data\ String path = &amp;quot;D:\\data\\假设开发法土地</description>
+    </item>
+    
+    <item>
+      <title>dom4j</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/dom4j/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/dom4j/</guid>
+      <description>dom4j 选取节点 nodename 选取当前节点的所有子节点 / 从根节点选取 // 从匹配选择的当前节点选择文档中的节点，而不考虑它们的位置 . 选取当前节点 .. 选取当前节点的父</description>
+    </item>
+    
+    <item>
+      <title>Guava 基于java1.6的类库集合的扩展项目</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/guava-common/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/guava-common/</guid>
+      <description>Guava 基于java1.6的类库集合的扩展项目 com.google.common.annotations：普通注解类型。 com.google.co</description>
+    </item>
+    
+    <item>
+      <title>jsoup学习文档</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/jsoup/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/jsoup/</guid>
+      <description>jsoup学习文档 简介 Jsoup是用于解析HTML，就类似XML解析器用于解析XML。 Jsoup它解析HTML成为真实世界的HTML。 它与j</description>
+    </item>
+    
+    <item>
+      <title>spring工具类</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/spring%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/spring%E5%B7%A5%E5%85%B7/</guid>
+      <description>spring工具类 Spring-core中提供了大量的工具类，常用的有StringUtils、ObjectUtils、NumberUtils</description>
+    </item>
+    
+    <item>
+      <title>spring常用的工具类</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</guid>
+      <description>spring常用的工具类 内置的resouce类型 UrlResource ClassPathResource FileSystemResource ServletContextResource InputStreamResource ByteArrayResource EncodedResource 也就是Resource加上encoding, 可以认为是有编码的资源 VfsRes</description>
+    </item>
+    
+    <item>
+      <title>常用 Console 调试命令</title>
+      <link>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/js_console%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/motorcycle/javadir/tooldoc/js_console%E7%94%A8%E6%B3%95/</guid>
+      <description>Console 对象方法 常用 Console 调试命令 console.log(&#39;hello&#39;); console.info(&#39;信息&#39;); console.error(&#39;错误&#39;); console.warn(&#39;警告&#39;)</description>
+    </item>
+    
+  </channel>
+</rss>

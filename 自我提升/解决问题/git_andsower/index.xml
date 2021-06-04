@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git出现的问题 on 禅与摩托车维修艺术</title>
-    <link>https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/</link>
+    <link>https://huachengzhou.github.io/cycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/</link>
     <description>Recent content in git出现的问题 on 禅与摩托车维修艺术</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Jan 2021 15:26:15 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Jan 2021 15:26:15 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git处理网络和权限问题</title>
-      <link>https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/git%E5%A4%84%E7%90%86/</link>
+      <link>https://huachengzhou.github.io/cycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/git%E5%A4%84%E7%90%86/</link>
       <pubDate>Sun, 17 Jan 2021 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/motorcycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/git%E5%A4%84%E7%90%86/</guid>
+      <guid>https://huachengzhou.github.io/cycle/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/git%E5%A4%84%E7%90%86/</guid>
       <description>Push master to origin/master was rejected by remote 有三种原因 1:push的这个工程是其他人新建的，找她开通master权限后，再次push 2:git 工程错误 git pull git pull origin master git pull origin master --allow-unrelated-histories 3:github 设</description>
     </item>
     

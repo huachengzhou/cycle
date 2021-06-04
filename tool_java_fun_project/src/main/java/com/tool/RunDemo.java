@@ -40,7 +40,7 @@ public class RunDemo {
         stringBuilder.append(getDir()) ;
         stringBuilder.append(File.separator).append("tool_java_fun_project").append(File.separator).append("source_dir").append(File.separator).append("public") ;
         File file = new File(stringBuilder.toString());
-        String oldText = "https://huachengzhou.github.io/motorcycle/";
+        String oldText = "https://huachengzhou.github.io/cycle/";
         String newText = "/";
         FileUtils.replaceContent(file, oldText, newText);
     }

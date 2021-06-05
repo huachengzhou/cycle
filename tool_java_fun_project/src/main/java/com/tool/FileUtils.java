@@ -29,7 +29,7 @@ public class FileUtils {
     @Test
     public void firstCompress()throws Exception{
         String source_dir = "source_dir" ;
-        String dir = "D:\\IdeaProjects\\motorcycle\\tool_java_fun_project\\" ;
+        String dir = "D:\\IdeaProjects\\cycle\\tool_java_fun_project\\" ;
         String path = dir+source_dir+".zip" ;
         File file = new File(path);
         ZipUtil.unZip(file.getPath()) ;
@@ -44,8 +44,8 @@ public class FileUtils {
 
     @Test
     public void threeCompress(){
-        File file = new File("D:\\IdeaProjects\\motorcycle\\tool_java_fun_project\\source_dir\\public");
-        String oldText = "https://huachengzhou.github.io/motorcycle/";
+        File file = new File("D:\\IdeaProjects\\cycle\\tool_java_fun_project\\source_dir\\public");
+        String oldText = "https://huachengzhou.github.io/cycle/";
         String newText = "/";
         FileUtils.replaceContent(file, oldText, newText);
     }
@@ -53,15 +53,15 @@ public class FileUtils {
 
     @Test
     public void fourCompress()throws Exception{
-        File file = new File("D:\\IdeaProjects\\motorcycle\\tool_java_fun_project\\source_dir\\public");
-        File file2 = new File("D:\\IdeaProjects\\motorcycle");
+        File file = new File("D:\\IdeaProjects\\cycle\\tool_java_fun_project\\source_dir\\public");
+        File file2 = new File("D:\\IdeaProjects\\cycle");
         org.apache.commons.io.FileUtils.copyDirectory(file ,file2);
         org.apache.commons.io.FileUtils.deleteDirectory(file);
     }
 
     @Test
     public  void lastCompress() {
-        File file = new File("D:\\IdeaProjects\\motorcycle\\tool_java_fun_project\\source_dir");
+        File file = new File("D:\\IdeaProjects\\cycle\\tool_java_fun_project\\source_dir");
         try {
             ZipCompressUtils.zipCompress(file,true) ;
         } catch (Exception e) {
@@ -73,7 +73,7 @@ public class FileUtils {
         String script = "script";
         String stylesheet = "stylesheet";
         String href = "href=";
-        String motorcycle = "/motorcycle/";
+        String cycle = "/cycle/";
         if (file.isFile()) {
             try {
                 List<String> strings = org.apache.commons.io.FileUtils.readLines(file);
@@ -84,7 +84,7 @@ public class FileUtils {
                         String next = iterator.next();
                         if (StringUtils.contains(next, href)) {
                             if (!StringUtils.contains(next, oldText)) {
-                                String replaceAll = StringUtils.replaceAll(next, motorcycle, oldText);
+                                String replaceAll = StringUtils.replaceAll(next, cycle, oldText);
                                 stringList.add(replaceAll);
                                 continue;
                             }

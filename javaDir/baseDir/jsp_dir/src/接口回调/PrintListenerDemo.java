@@ -1,10 +1,10 @@
-package ½Ó¿Ú»Øµ÷;
+package ï¿½Ó¿Ú»Øµï¿½;
 
 public class PrintListenerDemo implements PrintListener {
 
 	@Override
 	public void print() {
-		System.out.println("¼àÌýµ½Êä³öÊÂ¼þ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½");
 	}
 
 }

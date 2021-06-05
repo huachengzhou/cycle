@@ -1,12 +1,12 @@
-package ½Ó¿Ú»Øµ÷;
+package ï¿½Ó¿Ú»Øµï¿½;
 
 public class Test {
 	public static void main(String[] args) {
-		//ÐÂ½¨Ò»¸öÄ¬ÈÏÊä³öÀà
+		//ï¿½Â½ï¿½Ò»ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Out b=new Out();
-		b.printlen("ÕâÀï²»»á±»¼àÌýµ½Êä³öÊÂ¼þ");		
-		//ÐÂ½¨Ò»¸öÊä³öÀà,ÎªÊä³öÀàÌí¼ÓÒ»¸öÊä³ö¼àÌýÊÂ¼þ
+		b.printlen("ï¿½ï¿½ï¿½ï²»ï¿½á±»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½");		
+		//ï¿½Â½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
 		Out b1=new Out(new PrintListenerDemo());
-		b1.printlen("ÕâÀïÊä³öºó»á±»¼àÌýµ½Êä³öÊÂ¼þ");
+		b1.printlen("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á±»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½");
 	}
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jsp 基础知识  on 禅与摩托车维修艺术</title>
+    <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/</link>
+    <description>Recent content in jsp 基础知识  on 禅与摩托车维修艺术</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java_监听事件原理 </title>
+      <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</guid>
+      <description>接口回调法 模拟输出监听事件 第一步先定义事件接口 public interface PrintListener { public void print(); } 第二步自定义输出类 public class Out { PrintListener listener=null; public Out() { } public Out(PrintListener listener) { this.listener=listener; } public void printlen(String s) { System.out.println(s); if(listener!=null) { listener.print(); } } } 第三</description>
+    </item>
+    
+    <item>
+      <title>EL基础教程 </title>
+      <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid>
+      <description>EL基础教程 El标签语法 ${参数名} EL标签的功能 可以访问JSP中不同的域的对象 可以访问JavaBean中的属性 可以访问集合元素 支持简单的运</description>
+    </item>
+    
+    <item>
+      <title>jsp jstl core 标签库 </title>
+      <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</guid>
+      <description>JSTL标签库 JSTL主要有五大类标签库 core标签库(核心标签库),包括通用标签(输出标签),流程控制和循环控制标签 fmt标签库,包括格式</description>
+    </item>
+    
+    <item>
+      <title>jsp jstl session </title>
+      <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_jstl_session/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_jstl_session/</guid>
+      <description>Session HTTP是无状态协议，这意味着每次客户端检索网页时，都要单独打开一个服务器连接，因此服务器不会记录下先前客户端请求的任何信息 会话,当用户打</description>
+    </item>
+    
+    <item>
+      <title>字符串el表达式 </title>
+      <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>字符串el表达式 fn:contains 判断字符串是否包含另外一个字符串 &amp;lt;c:if test=&amp;quot;${fn:contains(name, searchString)}&amp;quot;&amp;gt; fn:containsIgnoreCase 判断字符串是否包含另外一个字符串(大小写无关) &amp;lt;c:if test=&amp;quot;${fn:containsIgnoreCase(name, searchString)}&amp;quot;&amp;gt; fn:endsWith 判断字符串是否以另外字符串结</description>
+    </item>
+    
+  </channel>
+</rss>

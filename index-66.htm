@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="livereload.js-mindelay=10&v=2&port=1313&path=livereload" tppabs="http://localhost:1313/livereload.js?mindelay=10&v=2&port=1313&path=livereload" data-no-instant defer></script><meta charset=utf-8"utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>jsoup学习文档 - 禅与摩托车维修艺术</title>
+<meta name="description" content="简单的事情重复做,重复的事情用心做,用心的事情坚持做">
+<meta name="generator" content="Hugo 0.81.0" />
+<link href="http://localhost:1313//index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="http://localhost:1313/javadir/tooldoc/jsoup/">
+<link rel="stylesheet" href="theme.min.css" tppabs="http://localhost:1313/css/theme.min.css">
+<script src="all.js" tppabs="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="chroma.min.css" tppabs="http://localhost:1313/css/chroma.min.css">
+<script src="jquery.min.js" tppabs="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="jquery.easing.min.js" tppabs="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="clipboard.min.js" tppabs="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script src="bundle.js" tppabs="http://localhost:1313/js/bundle.js"></script><style>
+:root {--custom-font-color: white;--custom-background-color: black;}
+</style>
+<meta property="og:title" content="jsoup学习文档" />
+<meta property="og:description" content="jsoup学习文档 简介 Jsoup是用于解析HTML，就类似XML解析器用于解析XML。 Jsoup它解析HTML成为真实世界的HTML。 它与j" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/javadir/tooldoc/jsoup/" /><meta property="og:image" content="http://localhost:1313/images/og-image.png"/><meta property="article:section" content="javaDir" />
+<meta property="article:published_time" content="2020-01-17T15:26:15&#43;00:00" />
+<meta property="article:modified_time" content="2020-01-17T15:26:15&#43;00:00" /><meta property="og:site_name" content="向卓越致敬" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/images/og-image.png"/>
+
+<meta name="twitter:title" content="jsoup学习文档"/>
+<meta name="twitter:description" content="jsoup学习文档 简介 Jsoup是用于解析HTML，就类似XML解析器用于解析XML。 Jsoup它解析HTML成为真实世界的HTML。 它与j"/>
+<meta itemprop="name" content="jsoup学习文档">
+<meta itemprop="description" content="jsoup学习文档 简介 Jsoup是用于解析HTML，就类似XML解析器用于解析XML。 Jsoup它解析HTML成为真实世界的HTML。 它与j"><meta itemprop="datePublished" content="2020-01-17T15:26:15&#43;00:00" />
+<meta itemprop="dateModified" content="2020-01-17T15:26:15&#43;00:00" />
+<meta itemprop="wordCount" content="3674"><meta itemprop="image" content="http://localhost:1313/images/og-image.png"/>
+<meta itemprop="keywords" content="" /></head>
+<body>
+
+<div class="container"><header>
+<h1>禅与摩托车维修艺术</h1>
+<p class="description">简单的事情重复做,重复的事情用心做,用心的事情坚持做</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="index.htm" tppabs="http://localhost:1313/">home</a></li>
+<li><a href="index-1.htm" tppabs="http://localhost:1313/javadir/"> Java技术栈</a></li>
+<li><a href="index-2.htm" tppabs="http://localhost:1313/databases/"> 数据库</a></li>
+<li><a href="index-3.htm" tppabs="http://localhost:1313/about/">关于程序员</a></li>
+<li><a href="index-4.htm" tppabs="http://localhost:1313/post/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/">编译原理</a></li>
+<li><a href="index-5.htm" tppabs="http://localhost:1313/post/website/">网站链接</a></li>
+<li><a href="index-6.htm" tppabs="http://localhost:1313/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/">计算机组成原理</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>jsoup学习文档</h1>
+<h1 id="jsoup学习文档">jsoup学习文档</h1>
+<h2 id="简介">简介</h2>
+<blockquote>
+<p>Jsoup是用于解析HTML，就类似XML解析器用于解析XML。 Jsoup它解析HTML成为真实世界的HTML。 它与jquery选择器的语法非常相似，并且非常灵活容易使用以获得所需的结果</p>
+</blockquote>
+<p>+jsoup api 6个包提供用于开发jsoup应用程序的类和接口。</p>
+<pre><code>org.jsoup
+org.jsoup.examples
+org.jsoup.helper
+org.jsoup.nodes
+org.jsoup.parser
+org.jsoup.safety
+org.jsoup.salect
+</code></pre><h2 id="引入">引入</h2>
+<pre><code>//大多数情况使用jsoup
+org.jsoup.nodes.Document document = Jsoup.parse(html);
+Document doc = Jsoup.parse(new URL(&quot;http://www.funi.com/&quot;),7000);
+
+//少数情况使用httpUnit
+WebClient webClient = new WebClient() ;
+HtmlPage htmlPage = webClient.getPage(&quot;http://www.89ip.cn/&quot;);
+htmlPage.asXml()//html
+</code></pre><h2 id="使用maven">使用(maven)</h2>
+<pre><code>&lt;dependency&gt;
+    &lt;!-- jsoup HTML parser library @ http://jsoup.org/ --&gt;
+    &lt;groupId&gt;org.jsoup&lt;/groupId&gt;
+    &lt;artifactId&gt;jsoup&lt;/artifactId&gt;
+    &lt;version&gt;1.10.2&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- httpclient --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.httpcomponents&lt;/groupId&gt;
+    &lt;artifactId&gt;httpclient&lt;/artifactId&gt;
+    &lt;version&gt;4.5.6&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;net.sourceforge.htmlunit&lt;/groupId&gt;
+    &lt;artifactId&gt;htmlunit&lt;/artifactId&gt;
+    &lt;version&gt;2.26&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre><h3 id="解析一个body片断">解析一个body片断</h3>
+<blockquote>
+<p>假如你有一个HTML片断 (比如. 一个 div 包含一对 p 标签; 一个不完整的HTML文档) 想对它进行解析。这个HTML片断可以是用户提交的一条评论或在一个CMS页面中编辑body部分。</p>
+</blockquote>
+<p>办法:使用<a href="javascript:if(confirm('https://jsoup.org/apidocs/org/jsoup/Jsoup.html/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://jsoup.org/apidocs/org/jsoup/Jsoup.html/'" tppabs="https://jsoup.org/apidocs/org/jsoup/Jsoup.html/" title="方法">Jsoup.parseBodyFragment(String html)</a> ,<a href="#" title="方法">Document.body()</a> 方法能够取得文档body元素的所有子元素，与 doc.getElementsByTag(&ldquo;body&rdquo;)相同</p>
+<pre><code>String html = &quot;&lt;div&gt;&lt;p&gt;Lorem ipsum.&lt;/p&gt;&quot;;
+Document doc = Jsoup.parseBodyFragment(html);
+System.out.println(doc.html());//可以看到我们的html片段被包裹了一个body
+
+Element body = doc.body();
+System.out.println(body.html());
+/*
+&lt;html&gt;
+ &lt;head&gt;&lt;/head&gt;
+ &lt;body&gt;
+  &lt;div&gt;
+   &lt;p&gt;Lorem ipsum.&lt;/p&gt;
+  &lt;/div&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+*/
+
+/**
+&lt;div&gt;
+ &lt;p&gt;Lorem ipsum.&lt;/p&gt;
+&lt;/div&gt;
+*/
+</code></pre><h3 id="从一个url加载一个document">从一个URL加载一个Document</h3>
+<blockquote>
+<p>你需要从一个网站获取和解析一个HTML文档，并查找其中的相关数据。你可以使用下面解决方法</p>
+</blockquote>
+<p>办法:使用 <a href="#" title="method">Jsoup.connect(String url)</a>方法</p>
+<pre><code>Document doc = Jsoup.parse(new URL(&quot;http://www.funi.com/&quot;),6000) ;
+
+ Document doc2 = Jsoup.connect(&quot;http://www.funi.com/&quot;)
+//                .data(&quot;query&quot;, &quot;Java&quot;)
+                .userAgent(&quot;Mozilla&quot;)
+                .cookie(&quot;auth&quot;, &quot;token&quot;)
+                .timeout(3000)
+                .get();
+</code></pre><h3 id="从一个文件加载一个文档">从一个文件加载一个文档</h3>
+<blockquote>
+<p>在本机硬盘上有一个HTML文件，需要对它进行解析从中抽取数据或进行修改</p>
+</blockquote>
+<p>办法:可以使用静态 <a href="#" title="method"> Jsoup.parse(File in, String charsetName, String baseUri)</a>方法</p>
+<pre><code>File input = new File(&quot;/tmp/input.html&quot;);
+Document doc = Jsoup.parse(input, &quot;UTF-8&quot;, &quot;http://example.com/&quot;);
+</code></pre><p><strong>下面例子都使用成都市房产透明网的网站和国家统计局</strong></p>
+<h3 id="使用dom方法来遍历一个文档">使用DOM方法来遍历一个文档</h3>
+<blockquote>
+<p>你有一个HTML文档要从中提取数据，并了解这个HTML文档的结构。</p>
+</blockquote>
+<pre><code>Document doc = null;
+CloseableHttpClient httpClient = HttpClients.createDefault();
+HttpGet httpGet = new HttpGet(&quot;http://www.funi.com/&quot;);
+//使用chrome 头伪装
+httpGet.setHeader(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36&quot;);
+//设置基本的配置
+RequestConfig config = RequestConfig.custom()
+        .setConnectTimeout(5000) // 设置连接超时时间 5秒钟
+        .setSocketTimeout(4000) // 设置读取超时时间4秒钟
+        .build();
+httpGet.setConfig(config);
+
+CloseableHttpResponse httpResponse = null;
+try {
+    httpResponse = httpClient.execute(httpGet);
+    HttpEntity httpEntity = httpResponse.getEntity();
+    if (httpEntity == null){
+        return;
+    }
+    String html = EntityUtils.toString(httpEntity, &quot;utf-8&quot;);
+    if (StringUtils.isNotEmpty(html)) {
+        doc = Jsoup.parse(html);
+    }
+} catch (Exception e) {
+    logger.error(&quot;获取html失败!&quot;, e);
+} finally {
+    //关闭处理
+    httpResponse.close();
+    httpClient.close();
+}
+Element body = doc.body();
+Elements foot = body.getElementsByClass(&quot;foot&quot;).first().getElementsByClass(&quot;footer clearfix&quot;).first().getElementsByTag(&quot;dl&quot;);
+for (Element ele : foot) {
+    System.out.println(ele.html());
+    for (int i = 0; i &lt; 20; i++) {
+        System.out.print('.');
+    }
+}
+</code></pre><h3 id="使用选择器语法来查找元素">使用选择器语法来查找元素</h3>
+<blockquote>
+<p>你想使用类似于CSS或jQuery的语法来查找和操作元素</p>
+</blockquote>
+<h4 id="element">Element</h4>
+<p><strong>查看元素</strong></p>
+<ul>
+<li>getElementById(String id) return Element</li>
+<li>getElementsByTag(String tag) return Elements</li>
+<li>getElementsByClass(String className) return Elements</li>
+<li>getElementsByAttribute(String key) return Elements 查找具有命名属性集的元素。不区分大小写</li>
+<li>siblingElements() return Elements 获取同级元素。如果元素没有同级元素，则返回空列表。元素不是同级元素本身，所以不会包含在返回的列表中(列表)</li>
+<li>firstElementSibling() return Element 获取此元素的第一个同级元素</li>
+<li>lastElementSibling() return Element 获取此元素的最后一个同级元素</li>
+<li>previousElementSibling() return Element 获取此元素的上一个同级元素</li>
+<li>nextElementSibling() return Element 获取此元素的下一个同级元素</li>
+<li>parents() return Elements 获取此元素的父级和父级，直到文档根</li>
+<li>parent() return Element 获取此元素的父级</li>
+<li>children() return Elements 获取此元素的子元素</li>
+<li>child(int index) return Element 获取此元素的子元素，方法是使用其基于0的索引号</li>
+<li>attributes() 获取元素的所有属性 return Attributes</li>
+</ul>
+<p><strong>元素数据</strong></p>
+<ul>
+<li>attr(String key)获取属性attr(String key, String value)设置属性</li>
+<li>attributes()获取所有属性</li>
+<li>id(), className() and classNames()</li>
+<li>text()获取文本内容text(String value) 设置文本内容</li>
+<li>html()获取元素内HTMLhtml(String value)设置元素内的HTML内容</li>
+<li>outerHtml()获取元素外HTML内容</li>
+<li>data()获取数据内容（例如：script和style标签)</li>
+<li>tag() and tagName()</li>
+</ul>
+<p><strong>操作HTML和文本</strong></p>
+<ul>
+<li>append(String html), prepend(String html)</li>
+<li>appendText(String text), prependText(String text)</li>
+<li>appendElement(String tagName), prependElement(String tagName)</li>
+<li>html(String value)</li>
+</ul>
+<h3 id="选择器语法来查找元素">选择器语法来查找元素</h3>
+<ul>
+<li>tagname: 通过标签查找元素，比如：a</li>
+<li>#id: 通过ID查找元素，比如：#logo</li>
+<li>.class: 通过class名称查找元素，比如：.masthead</li>
+</ul>
+<pre><code class="language-抓取国家统计局" data-lang="抓取国家统计局">Document doc = null;
+CloseableHttpClient httpClient = HttpClients.createDefault();
+HttpGet httpGet = new HttpGet(&quot;http://www.stats.gov.cn/&quot;);
+//使用chrome 头伪装
+httpGet.setHeader(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36&quot;);
+//设置基本的配置
+RequestConfig config = RequestConfig.custom()
+        .setConnectTimeout(5000) // 设置连接超时时间 5秒钟
+        .setSocketTimeout(4000) // 设置读取超时时间4秒钟
+        .build();
+httpGet.setConfig(config);
+CloseableHttpResponse httpResponse = null;
+try {
+    httpResponse = httpClient.execute(httpGet);
+    HttpEntity httpEntity = httpResponse.getEntity();
+
+    String html = EntityUtils.toString(httpEntity, &quot;utf-8&quot;);
+    if (StringUtils.isNotEmpty(html)) {
+        doc = Jsoup.parse(html);
+    }
+} catch (Exception e) {
+    logger.error(&quot;获取html失败!&quot;, e);
+} finally {
+    // 关闭处理
+    httpResponse.close();
+    httpClient.close();
+}
+Element body = doc.body();
+//        Elements selects = body.select(&quot;.top .top03 #nav ul li&quot;);//和下面的一样
+Elements selects = body.getElementsByClass(&quot;top&quot;).first().getElementsByClass(&quot;top03&quot;).first().getElementById(&quot;nav&quot;).getElementsByTag(&quot;ul&quot;).first().getElementsByTag(&quot;li&quot;);
+for (Element ele : selects) {
+    System.out.println(ele);
+}
+主要运用了上面三种选择方式
+</code></pre><ul>
+<li>【attribute】: 利用属性查找元素，比如：【href】</li>
+<li>【^attr】: 利用属性名前缀来查找元素，比如：可以用【^data-】 来查找带有HTML5 Dataset属性的元素</li>
+<li>【attr=value】: 利用属性值来查找元素，比如：【width=500】</li>
+<li>【attr^=value】, 【attr$=value】, 【attr*=value】: 利用匹配属性值开头、结尾或包含属性值来查找元素，比如：【href*=/path/】</li>
+<li>【attr~=regex】: 利用属性值匹配正则表达式来查找元素，比如： img【src~=(?i).(png|jpe?g)】</li>
+<li>*: 这个符号将匹配所有元素</li>
+</ul>
+<pre><code>Element body = doc.body();
+
+Elements selects = body.select(&quot;.top a[href]&quot;);//获取拥有href属性的所有元素
+
+&lt;a href=&quot;/was5/web/search?channelid=288041&amp;amp;andsen=%E6%80%BB%E4%BA%BA%E5%8F%A3&quot; target=&quot;_blank&quot;&gt;总人口&lt;/a&gt;
+&lt;a href=&quot;/was5/web/search?channelid=288041&amp;amp;andsen=%E7%A4%BE%E4%BC%9A%E6%B6%88%E8%B4%B9%E5%93%81%E9%9B%B6%E5%94%AE%E6%80%BB%E9%A2%9D&quot; target=&quot;_blank&quot;&gt;社会消费品零售总额&lt;/a&gt;
+&lt;a href=&quot;./zjtj/&quot; target=&quot;_top&quot;&gt;&lt;img src=&quot;./images/top03_1.png&quot;&gt;&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;./zjtj/gjtjj/&quot; target=&quot;_top&quot;&gt;国家统计局&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;http://jcj.ndrc.gov.cn/&quot; target=&quot;_top&quot;&gt;派驻纪检组&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;./zjtj/jgzn/&quot; target=&quot;_top&quot;&gt;机构职能&lt;/a&gt;
+
+Elements selects = body.select(&quot;.top a[name=PL_MENU_NAME]&quot;);//获取name=PL_MENU_NAME的所有这类元素
+
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;./zjtj/gjtjj/&quot; target=&quot;_top&quot;&gt;国家统计局&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;http://jcj.ndrc.gov.cn/&quot; target=&quot;_top&quot;&gt;派驻纪检组&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;./zjtj/jgzn/&quot; target=&quot;_top&quot;&gt;机构职能&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;./tjsj/zxfb/&quot; target=&quot;_top&quot;&gt;最新发布&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;http://data.stats.gov.cn/&quot; target=&quot;_blank&quot;&gt;数据查询&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;./tjsj/sjjd/&quot; target=&quot;_top&quot;&gt;数据解读&lt;/a&gt;
+&lt;a name=&quot;PL_MENU_NAME&quot; href=&quot;./tjgz/tjdt/&quot; target=&quot;_top&quot;&gt;统计动态&lt;/a&gt;
+
+Elements selects = body.select(&quot;.top a[name^=PL]&quot;);//以PL开头
+
+Elements selects = body.select(&quot;.top div[^cl]&quot;); //获取div 为tag class等属性的元素
+</code></pre><ul>
+<li>伪选择器selectors</li>
+<li>:lt(n): 查找哪些元素的同级索引值（它的位置在DOM树中是相对于它的父节点）小于n，比如：td:lt(3) 表示小于三列的元素</li>
+<li>:gt(n):查找哪些元素的同级索引值大于n，比如： div p:gt(2)表示哪些div中有包含2个以上的p元素</li>
+<li>:eq(n): 查找哪些元素的同级索引值与n相等，比如：form input:eq(1)表示包含一个input标签的Form元素</li>
+<li>:has(seletor): 查找匹配选择器包含元素的元素，比如：div:has(p)表示哪些div包含了p元素</li>
+</ul>
+<pre><code>Elements selects = body.select(&quot;.center div:eq(0) ul li:lt(3)&quot;); //eq(0)选取第一个,lt(3)表示小于三列的元素
+</code></pre><ul>
+<li>
+<p>Selector选择器组合使用</p>
+</li>
+<li>
+<p>el#id: 元素+ID，比如： div#logo</p>
+</li>
+<li>
+<p>el.class: 元素+class，比如： div.masthead</p>
+</li>
+<li>
+<p>el[attr]: 元素+class，比如： a[href]</p>
+</li>
+<li>
+<p>任意组合，比如：a[href].highlight</p>
+</li>
+<li>
+<p>ancestor child: 查找某个元素下子元素，比如：可以用.body p 查找在&quot;body&quot;元素下的所有 p元素</p>
+</li>
+<li>
+<p>parent &gt; child: 查找某个父元素下的直接子元素，比如：可以用div.content &gt; p 查找 p 元素，也可以用body &gt; * 查找body标签下所有直接子元素</p>
+</li>
+<li>
+<p>siblingA + siblingB: 查找在A元素之前第一个同级元素B，比如：div.head + div</p>
+</li>
+<li>
+<p>siblingA ~ siblingX: 查找A元素之前的同级X元素，比如：h1 ~ p</p>
+</li>
+<li>
+<p>el, el, el:多个选择器组合，查找匹配任一选择器的唯一元素，例如：div.masthead, div.logo</p>
+</li>
+<li>
+<p>伪选择器selectors</p>
+</li>
+<li>
+<p>:lt(n): 查找哪些元素的同级索引值（它的位置在DOM树中是相对于它的父节点）小于n，比如：td:lt(3) 表示小于三列的元素</p>
+</li>
+<li>
+<p>:gt(n):查找哪些元素的同级索引值大于n，比如： div p:gt(2)表示哪些div中有包含2个以上的p元素</p>
+</li>
+<li>
+<p>:eq(n): 查找哪些元素的同级索引值与n相等，比如：form input:eq(1)表示包含一个input标签的Form元素</p>
+</li>
+<li>
+<p>:has(seletor): 查找匹配选择器包含元素的元素，比如：div:has(p)表示哪些div包含了p元素</p>
+</li>
+<li>
+<p>:not(selector): 查找与选择器不匹配的元素，比如： div:not(.logo) 表示不包含 class=&ldquo;logo&rdquo; 元素的所有 div 列表</p>
+</li>
+<li>
+<p>:contains(text): 查找包含给定文本的元素，搜索不区分大不写，比如： p:contains(jsoup)</p>
+</li>
+<li>
+<p>:containsOwn(text): 查找直接包含给定文本的元素</p>
+</li>
+<li>
+<p>:matches(regex): 查找哪些元素的文本匹配指定的正则表达式，比如：div:matches((?i)login)</p>
+</li>
+<li>
+<p>:matchesOwn(regex): 查找自身包含文本匹配指定正则表达式的元素</p>
+</li>
+<li>
+<p>注意：上述伪选择器索引是从0开始的，也就是说第一个元素索引值为0，第二个元素index为1等</p>
+</li>
+</ul>
+<h2 id="回到上一级"><a href="index-61.htm" tppabs="http://localhost:1313/javadir/tooldoc/">回到上一级</a></h2>
+<div class="edit-meta">
+Last updated on 17 Jan 2020
+
+
+<br>
+Published on 17 Jan 2020
+<br></div><nav class="pagination"><a class="nav nav-prev" href="index-65.htm" tppabs="http://localhost:1313/javadir/tooldoc/guava-common/" title="Guava 基于java1.6的类库集合的扩展项目"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Guava 基于java1.6的类库集合的扩展项目</a>
+<a class="nav nav-next" href="index-67.htm" tppabs="http://localhost:1313/javadir/tooldoc/spring%E5%B7%A5%E5%85%B7/" title="spring工具类">Next - spring工具类 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">
+
+ <ul>
+  <li>当你的才华还撑不起你的野心时,</li>
+  <li>那你就应该静下心来学习;</li>
+  <li>当你的能力还驾驭不了你的目标时,</li>
+  <li>那就应该沉下心来历练.</li>
+</ul>
+</p>
+</footer>
+</main>
+<div class="sidebar">
+
+<nav class="open-menu">
+<ul>
+<li class=""><a href="index.htm" tppabs="http://localhost:1313/">Home</a></li>
+
+<li class=""><a href="index-7.htm" tppabs="http://localhost:1313/computer_network/">计算机网络 </a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="index-8.htm" tppabs="http://localhost:1313/computer_network/network_architecture/">网络体系结构</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-9.htm" tppabs="http://localhost:1313/computer_network/network_architecture/1.1.1%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A6%82%E5%BF%B5-%E7%BB%84%E6%88%90-%E5%8A%9F%E8%83%BD-%E5%88%86%E7%B1%BB/">计算机概念 组成 功能 分类 * </a></li>
+<li class=""><a href="index-10.htm" tppabs="http://localhost:1313/computer_network/network_architecture/1.1.2%E6%A0%87%E5%87%86%E5%8C%96%E5%B7%A5%E4%BD%9C%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E7%BB%87/">标准的分类</a></li>
+<li class=""><a href="index-11.htm" tppabs="http://localhost:1313/computer_network/network_architecture/1.1.3%E9%80%9F%E7%8E%87%E7%9B%B8%E5%85%B3%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/">速率</a></li>
+<li class=""><a href="index-12.htm" tppabs="http://localhost:1313/computer_network/network_architecture/%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84/">分层结构</a></li>
+<li class=""><a href="index-13.htm" tppabs="http://localhost:1313/computer_network/network_architecture/%E5%88%86%E5%B1%82%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/">分层参考模型</a></li>
+<li class=""><a href="index-14.htm" tppabs="http://localhost:1313/computer_network/network_architecture/%E6%A8%A1%E5%9E%8B%E5%B1%82%E6%AC%A1%E8%AF%A6%E8%A7%A3/">模型层次详解</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-15.htm" tppabs="http://localhost:1313/computer_network/physical_layer/">物理层 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-16.htm" tppabs="http://localhost:1313/computer_network/physical_layer/%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">数据通信基础知识 </a></li>
+<li class=""><a href="index-17.htm" tppabs="http://localhost:1313/computer_network/physical_layer/%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">物理层基本概念 </a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-18.htm" tppabs="http://localhost:1313/computer_network/data_link_layer/">数据链路层 </a>
+  
+</li>
+
+<li class=""><a href="index-19.htm" tppabs="http://localhost:1313/computer_network/network_layer/">网络层 </a>
+  
+</li>
+
+<li class=""><a href="index-20.htm" tppabs="http://localhost:1313/computer_network/transport_layer/">传输层 </a>
+  
+</li>
+
+<li class=""><a href="index-21.htm" tppabs="http://localhost:1313/computer_network/application_layer/">应用层 </a>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-22.htm" tppabs="http://localhost:1313/hugo%E5%AD%A6%E4%B9%A0/">hugo教程</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-23.htm" tppabs="http://localhost:1313/hugo%E5%AD%A6%E4%B9%A0/hugo_server_faile_-to_get_json/">hugo教程 hugo server Failed to get JSON</a></li>
+<li class=""><a href="index-24.htm" tppabs="http://localhost:1313/hugo%E5%AD%A6%E4%B9%A0/hugo_tutorials1/">hugo教程1</a></li>
+<li class=""><a href="index-25.htm" tppabs="http://localhost:1313/hugo%E5%AD%A6%E4%B9%A0/hugo_tutorials2/">hugo教程2</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-26.htm" tppabs="http://localhost:1313/%E8%84%9A%E6%9C%AC/">脚本</a>
+  
+</li>
+
+<li class=""><a href="index-27.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/">自我提升</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-28.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/2021-04%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/">学习计划</a></li>
+
+<li class=""><a href="index-29.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%8E%B7%E5%8F%96%E9%87%91%E9%92%B1/">获取金钱</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-30.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%8E%B7%E5%8F%96%E9%87%91%E9%92%B1/%E5%A6%82%E4%BD%95%E5%9C%A8%E6%B2%B9%E7%AE%A1youtube%E5%BC%80%E9%80%9A%E6%94%B6%E7%9B%8A%E8%B5%9A%E9%92%B1/">如何在油管YouTube开通收益赚钱</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-31.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/">解决问题</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="index-32.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/">git出现的问题</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-33.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/git_andsower/git%E5%A4%84%E7%90%86/">git处理网络和权限问题</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-34.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/idea/">idea出现的问题</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-35.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/idea/idea/">idea 解决working directory 设置到 target</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-36.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/maven/">maven出现的问题</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-37.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/maven/idea%E8%A7%A3%E5%86%B3/">idea 问题解决</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-38.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/visual_studio_code/">visual_studio_code</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-39.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/visual_studio_code/visualstudiocode%E9%97%AE%E9%A2%98/">Visual Studio Code 问题解决方案</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="index-40.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/dnf%E6%B1%A1%E6%9F%93/">DNS 污染</a></li>
+<li class=""><a href="index-41.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98/githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/">GitHubPages绑定来自阿里云的域名</a></li>
+</ul>
+  
+</li>
+<li class=""><a href="index-42.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E8%AE%B0%E5%BF%86/">记忆方法</a></li>
+<li class=""><a href="index-43.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/">学习方法</a></li>
+<li class=""><a href="index-44.htm" tppabs="http://localhost:1313/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/%E5%86%A5%E6%83%B3/">冥想</a></li>
+</ul>
+  
+</li>
+
+<li class="parent"><a href="index-1.htm" tppabs="http://localhost:1313/javadir/"> Java技术栈</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="index-45.htm" tppabs="http://localhost:1313/javadir/basedir/">Java基础知识 </a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="index-46.htm" tppabs="http://localhost:1313/javadir/basedir/jsp_dir/">jsp 基础知识 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-47.htm" tppabs="http://localhost:1313/javadir/basedir/jsp_dir/java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/">java_监听事件原理 </a></li>
+<li class=""><a href="index-48.htm" tppabs="http://localhost:1313/javadir/basedir/jsp_dir/jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/">EL基础教程 </a></li>
+<li class=""><a href="index-49.htm" tppabs="http://localhost:1313/javadir/basedir/jsp_dir/jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/">jsp jstl core 标签库 </a></li>
+<li class=""><a href="index-50.htm" tppabs="http://localhost:1313/javadir/basedir/jsp_dir/jsp_jstl_session/">jsp jstl session </a></li>
+<li class=""><a href="index-51.htm" tppabs="http://localhost:1313/javadir/basedir/jsp_dir/jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/">字符串el表达式 </a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-52.htm" tppabs="http://localhost:1313/javadir/groovy/">groovy 学习与使用 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-53.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E5%AD%A6%E4%B9%A0/"> Groovy 概述 </a></li>
+<li class=""><a href="index-54.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">groovy 基本概念 </a></li>
+<li class=""><a href="index-55.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">groovy 数据类型 </a></li>
+<li class=""><a href="index-56.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E5%8F%98%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8A%A0%E5%BC%BA/"> groovy变量和数据类型 </a></li>
+<li class=""><a href="index-57.htm" tppabs="http://localhost:1313/javadir/groovy/%E5%A6%82%E4%BD%95%E5%9C%A8groovy%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E7%9A%84%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/"> groovy变量值获取 </a></li>
+<li class=""><a href="index-58.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E4%B8%AD%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%AF%94%E8%BE%83%E4%BB%A5%E5%8F%8A%E9%9D%9E%E7%A9%BA%E5%88%A4%E6%96%AD/"> groovy对象比较以及空判断 </a></li>
+<li class=""><a href="index-59.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/"> groovy使用场景 </a></li>
+<li class=""><a href="index-60.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E5%8F%98%E9%87%8F/"></a></li>
+</ul>
+  
+</li>
+
+<li class="parent"><a href="index-61.htm" tppabs="http://localhost:1313/javadir/tooldoc/">Java公共库文档总结 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-62.htm" tppabs="http://localhost:1313/javadir/tooldoc/apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/">Apache Commons 工具类介绍及简单使用</a></li>
+<li class=""><a href="index-63.htm" tppabs="http://localhost:1313/javadir/tooldoc/commons_io/">apache FilenameUtils 文件名称操作</a></li>
+<li class=""><a href="index-64.htm" tppabs="http://localhost:1313/javadir/tooldoc/dom4j/">dom4j</a></li>
+<li class=""><a href="index-65.htm" tppabs="http://localhost:1313/javadir/tooldoc/guava-common/">Guava 基于java1.6的类库集合的扩展项目</a></li>
+<li class="active"><a href="index-66.htm" tppabs="http://localhost:1313/javadir/tooldoc/jsoup/">jsoup学习文档</a></li>
+<li class=""><a href="index-67.htm" tppabs="http://localhost:1313/javadir/tooldoc/spring%E5%B7%A5%E5%85%B7/">spring工具类</a></li>
+<li class=""><a href="index-68.htm" tppabs="http://localhost:1313/javadir/tooldoc/spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/">spring常用的工具类</a></li>
+<li class=""><a href="index-69.htm" tppabs="http://localhost:1313/javadir/tooldoc/js_console%E7%94%A8%E6%B3%95/">常用 Console 调试命令</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-70.htm" tppabs="http://localhost:1313/javadir/linux/">linux 学习与使用 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-71.htm" tppabs="http://localhost:1313/javadir/linux/git_introduction/">git学习</a></li>
+<li class=""><a href="index-72.htm" tppabs="http://localhost:1313/javadir/linux/gitub_config/">git配置</a></li>
+<li class=""><a href="index-73.htm" tppabs="http://localhost:1313/javadir/linux/host%E6%98%A0%E5%B0%84/">host映射</a></li>
+<li class=""><a href="index-74.htm" tppabs="http://localhost:1313/javadir/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">Linux下设置和查看环境变量</a></li>
+<li class=""><a href="index-75.htm" tppabs="http://localhost:1313/javadir/linux/linux%E5%91%BD%E4%BB%A4/">linux命令</a></li>
+<li class=""><a href="index-76.htm" tppabs="http://localhost:1313/javadir/linux/nginx/">nginx学习</a></li>
+<li class=""><a href="index-77.htm" tppabs="http://localhost:1313/javadir/linux/notepad++%E5%AE%89%E8%A3%85/">Notepad&#43;&#43; 学习与使用</a></li>
+<li class=""><a href="index-78.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/">Ubuntu 16.04修改hosts</a></li>
+<li class=""><a href="index-79.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/">ubuntu安装chmsee</a></li>
+<li class=""><a href="index-80.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/">Ubuntu清理系统垃圾</a></li>
+<li class=""><a href="index-81.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/">ubuntu软件卸载</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-82.htm" tppabs="http://localhost:1313/javadir/middleware/">中间件 </a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-83.htm" tppabs="http://localhost:1313/javadir/middleware/redis/">Redis 学习与使用</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+<li class=""><a href="index-2.htm" tppabs="http://localhost:1313/databases/"> 数据库</a>
+  
+<ul class="sub-menu">
+
+<li class=""><a href="index-84.htm" tppabs="http://localhost:1313/databases/mysql_163%E8%AF%BE%E5%A0%82/">网易云课堂MySQL微专业学习笔记</a>
+  
+<ul class="sub-menu">
+<li class=""><a href="index-85.htm" tppabs="http://localhost:1313/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/">MySQL事务与存储引擎</a></li>
+<li class=""><a href="index-86.htm" tppabs="http://localhost:1313/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/">MySQL应用优化</a></li>
+<li class=""><a href="index-87.htm" tppabs="http://localhost:1313/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/">MySQL数据库基础</a></li>
+<li class=""><a href="index-88.htm" tppabs="http://localhost:1313/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/">MySQL数据库对象与应用</a></li>
+<li class=""><a href="index-89.htm" tppabs="http://localhost:1313/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter5/">MySQL运维实践</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

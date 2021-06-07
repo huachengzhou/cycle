@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on 禅与摩托车维修艺术</title>
+    <link>/categories/golang/</link>
+    <description>Recent content in golang on 禅与摩托车维修艺术</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>编译原理</title>
+      <link>/post/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
+      <description>一、 编译程序 1、 编译器是一种翻译程序，它用于将源语言（即用某种程序设计语言写成的）程序翻译为目标语言（即用二进制数表示的伪机器代码写成的）程</description>
+    </item>
+    
+    <item>
+      <title>计算机组成原理</title>
+      <link>/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/</guid>
+      <description>一、计算机的组成及学习大纲 1. 计算机的组成 计算机的三大件 ：CPU、内存、主板 （1）CPU，中央处理器，计算机最核心的配件，负责所有的计算。 （2</description>
+    </item>
+    
+  </channel>
+</rss>

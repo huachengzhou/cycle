@@ -3,11 +3,11 @@
 <head><script src="livereload.js-mindelay=10&v=2&port=1313&path=livereload" tppabs="http://localhost:1313/livereload.js?mindelay=10&v=2&port=1313&path=livereload" data-no-instant defer></script><meta charset=utf-8"utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Ubuntu清理系统垃圾 - 禅与摩托车维修艺术</title>
+<title>Java公共库文档总结  - 禅与摩托车维修艺术</title>
 <meta name="description" content="简单的事情重复做,重复的事情用心做,用心的事情坚持做">
 <meta name="generator" content="Hugo 0.81.0" />
 <link href="http://localhost:1313//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="http://localhost:1313/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/">
+<link rel="canonical" href="http://localhost:1313/javadir/tooldoc/">
 <link rel="stylesheet" href="theme.min.css" tppabs="http://localhost:1313/css/theme.min.css">
 <script src="all.js" tppabs="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="chroma.min.css" tppabs="http://localhost:1313/css/chroma.min.css">
@@ -17,23 +17,18 @@
 <script src="bundle.js" tppabs="http://localhost:1313/js/bundle.js"></script><style>
 :root {--custom-font-color: white;--custom-background-color: black;}
 </style>
-<meta property="og:title" content="Ubuntu清理系统垃圾" />
-<meta property="og:description" content="1，非常有用的清理命令： sudo apt-get autoclean &ndash;清理旧版本的软件缓存 www.2cto.com sudo apt-get clean&ndash;清理所有软件缓存 sudo apt-get autoremove&nd" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/" /><meta property="og:image" content="http://localhost:1313/images/og-image.png"/><meta property="article:section" content="javaDir" />
-<meta property="article:published_time" content="2020-01-17T15:26:15&#43;00:00" />
-<meta property="article:modified_time" content="2020-01-17T15:26:15&#43;00:00" /><meta property="og:site_name" content="向卓越致敬" />
+<meta property="og:title" content="Java公共库文档总结 " />
+<meta property="og:description" content="简单的事情重复做,重复的事情用心做,用心的事情坚持做" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/javadir/tooldoc/" /><meta property="og:image" content="http://localhost:1313/images/og-image.png"/><meta property="og:site_name" content="向卓越致敬" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="http://localhost:1313/images/og-image.png"/>
 
-<meta name="twitter:title" content="Ubuntu清理系统垃圾"/>
-<meta name="twitter:description" content="1，非常有用的清理命令： sudo apt-get autoclean &ndash;清理旧版本的软件缓存 www.2cto.com sudo apt-get clean&ndash;清理所有软件缓存 sudo apt-get autoremove&nd"/>
-<meta itemprop="name" content="Ubuntu清理系统垃圾">
-<meta itemprop="description" content="1，非常有用的清理命令： sudo apt-get autoclean &ndash;清理旧版本的软件缓存 www.2cto.com sudo apt-get clean&ndash;清理所有软件缓存 sudo apt-get autoremove&nd"><meta itemprop="datePublished" content="2020-01-17T15:26:15&#43;00:00" />
-<meta itemprop="dateModified" content="2020-01-17T15:26:15&#43;00:00" />
-<meta itemprop="wordCount" content="456"><meta itemprop="image" content="http://localhost:1313/images/og-image.png"/>
-<meta itemprop="keywords" content="" /></head>
+<meta name="twitter:title" content="Java公共库文档总结 "/>
+<meta name="twitter:description" content="简单的事情重复做,重复的事情用心做,用心的事情坚持做"/>
+<meta itemprop="name" content="Java公共库文档总结 ">
+<meta itemprop="description" content="简单的事情重复做,重复的事情用心做,用心的事情坚持做"></head>
 <body>
 
 <div class="container"><header>
@@ -54,45 +49,25 @@
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Ubuntu清理系统垃圾</h1>
-<p>1，非常有用的清理命令：
-sudo apt-get autoclean &ndash;清理旧版本的软件缓存
-<a href="javascript:if(confirm('http://www.2cto.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.2cto.com/'" tppabs="http://www.2cto.com/">www.2cto.com</a><br>
-sudo apt-get clean&ndash;清理所有软件缓存</p>
-<p>sudo apt-get autoremove&ndash;删除系统不再使用的孤立软件</p>
-<p>这三个命令主要清理升级缓存以及无用包的。</p>
-<p>2，清理opera firefox的缓存文件：
-ls ~/.opera/cache4
-ls ~/.mozilla/firefox/*.default/Cache</p>
-<p>3，清理Linux下孤立的包：
-图形界面下我们可以用：gtkorphan
-sudo apt-get install gtkorphan -y
-终端命令下我们可以用：deborphan
-sudo apt-get install deborphan -y</p>
-<p>4，卸载：tracker
-这个东西一般我只要安装Ubuntu就会第一删掉tracker 他不仅会产生大量的cache文件而且还会影响开机速度。所以在新得利里面删掉就行。  <a href="javascript:if(confirm('http://www.2cto.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.2cto.com/'" tppabs="http://www.2cto.com/">www.2cto.com</a></p>
-<p>5，删除多余的内核：一定不要删错哦，切记！！
-打开终端敲命令：dpkg &ndash;get-selections|grep linux
-有image的就是内核文件
-删除老的内核文件：
-sudo apt-get remove 内核文件名（例如：linux-image-2.6.27-2-generic）
-内核删除，释放空间了，应该能释放130－140M空间。</p>
-<p>最后不要忘了看看当前内核：uname -a
-附录：
-包管理的临时文件目录:
-包在
-/var/cache/apt/archives
-没有下载完的在
-/var/cache/apt/archives/partial</p>
-<h2 id="回到上一级"><a href="index-70.htm" tppabs="http://localhost:1313/javadir/linux/">回到上一级</a></h2>
+<main><h1>Java公共库文档总结 </h1><h2 id="目录">目录</h2>
+<ul>
+<li><a href="javascript:if(confirm('http://localhost:1313/javadir/tooldoc/apache-common  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='http://localhost:1313/javadir/tooldoc/apache-common'" tppabs="http://localhost:1313/javadir/tooldoc/apache-common%E5%B7%A5%E5%85%B7%E5%8C%85">Apache Commons 工具类介绍及简单使用</a></li>
+<li><a href="index-63.htm" tppabs="http://localhost:1313/javadir/tooldoc/commons_io">org.apache.commons.io.FilenameUtils 操作</a></li>
+<li><a href="index-64.htm" tppabs="http://localhost:1313/javadir/tooldoc/dom4j">dom4j 处理 xml</a></li>
+<li><a href="index-65.htm" tppabs="http://localhost:1313/javadir/tooldoc/guava-common">Guava 基于java1.6的类库集合的扩展项目</a></li>
+<li><a href="javascript:if(confirm('http://localhost:1313/javadir/tooldoc/js_console  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='http://localhost:1313/javadir/tooldoc/js_console'" tppabs="http://localhost:1313/javadir/tooldoc/js_console%E7%94%A8%E6%B3%95">常用 Console 调试命令</a></li>
+<li><a href="index-66.htm" tppabs="http://localhost:1313/javadir/tooldoc/jsoup">jsoup学习文档</a></li>
+<li><a href="javascript:if(confirm('http://localhost:1313/javadir/tooldoc/spring  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='http://localhost:1313/javadir/tooldoc/spring'" tppabs="http://localhost:1313/javadir/tooldoc/spring%E5%B7%A5%E5%85%B7">spring工具</a></li>
+<li><a href="javascript:if(confirm('http://localhost:1313/javadir/tooldoc/spring  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������������ļ�δ�ҵ���  \n\n�����ڷ������ϴ���?'))window.location='http://localhost:1313/javadir/tooldoc/spring'" tppabs="http://localhost:1313/javadir/tooldoc/spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB">spring常用的工具类</a></li>
+</ul>
 <div class="edit-meta">
-Last updated on 17 Jan 2020
+Last updated on 15 Apr 2021
 
 
 <br>
-Published on 17 Jan 2020
-<br></div><nav class="pagination"><a class="nav nav-prev" href="index-79.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/" title="ubuntu安装chmsee"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - ubuntu安装chmsee</a>
-<a class="nav nav-next" href="index-81.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/" title="ubuntu软件卸载">Next - ubuntu软件卸载 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+Published on 15 Apr 2021
+<br></div><nav class="pagination"><a class="nav nav-prev" href="index-60.htm" tppabs="http://localhost:1313/javadir/groovy/groovy%E5%8F%98%E9%87%8F/" title=""><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - </a>
+<a class="nav nav-next" href="index-62.htm" tppabs="http://localhost:1313/javadir/tooldoc/apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/" title="Apache Commons 工具类介绍及简单使用">Next - Apache Commons 工具类介绍及简单使用 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">
 
  <ul>
@@ -267,7 +242,7 @@ Published on 17 Jan 2020
   
 </li>
 
-<li class=""><a href="index-61.htm" tppabs="http://localhost:1313/javadir/tooldoc/">Java公共库文档总结 </a>
+<li class="parent active"><a href="index-61.htm" tppabs="http://localhost:1313/javadir/tooldoc/">Java公共库文档总结 </a>
   
 <ul class="sub-menu">
 <li class=""><a href="index-62.htm" tppabs="http://localhost:1313/javadir/tooldoc/apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/">Apache Commons 工具类介绍及简单使用</a></li>
@@ -282,7 +257,7 @@ Published on 17 Jan 2020
   
 </li>
 
-<li class="parent"><a href="index-70.htm" tppabs="http://localhost:1313/javadir/linux/">linux 学习与使用 </a>
+<li class=""><a href="index-70.htm" tppabs="http://localhost:1313/javadir/linux/">linux 学习与使用 </a>
   
 <ul class="sub-menu">
 <li class=""><a href="index-71.htm" tppabs="http://localhost:1313/javadir/linux/git_introduction/">git学习</a></li>
@@ -294,7 +269,7 @@ Published on 17 Jan 2020
 <li class=""><a href="index-77.htm" tppabs="http://localhost:1313/javadir/linux/notepad++%E5%AE%89%E8%A3%85/">Notepad&#43;&#43; 学习与使用</a></li>
 <li class=""><a href="index-78.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/">Ubuntu 16.04修改hosts</a></li>
 <li class=""><a href="index-79.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/">ubuntu安装chmsee</a></li>
-<li class="active"><a href="index-80.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/">Ubuntu清理系统垃圾</a></li>
+<li class=""><a href="index-80.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/">Ubuntu清理系统垃圾</a></li>
 <li class=""><a href="index-81.htm" tppabs="http://localhost:1313/javadir/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/">ubuntu软件卸载</a></li>
 </ul>
   

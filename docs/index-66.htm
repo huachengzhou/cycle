@@ -99,7 +99,7 @@ htmlPage.asXml()//html
 <blockquote>
 <p>假如你有一个HTML片断 (比如. 一个 div 包含一对 p 标签; 一个不完整的HTML文档) 想对它进行解析。这个HTML片断可以是用户提交的一条评论或在一个CMS页面中编辑body部分。</p>
 </blockquote>
-<p>办法:使用<a href="javascript:if(confirm('https://jsoup.org/apidocs/org/jsoup/Jsoup.html/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://jsoup.org/apidocs/org/jsoup/Jsoup.html/'" tppabs="https://jsoup.org/apidocs/org/jsoup/Jsoup.html/" title="方法">Jsoup.parseBodyFragment(String html)</a> ,<a href="#" title="方法">Document.body()</a> 方法能够取得文档body元素的所有子元素，与 doc.getElementsByTag(&ldquo;body&rdquo;)相同</p>
+<p>办法:使用<a href="javascript:if(confirm('https://jsoup.org/apidocs/org/jsoup/Jsoup.html/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://jsoup.org/apidocs/org/jsoup/Jsoup.html/'" tppabs="https://jsoup.org/apidocs/org/jsoup/Jsoup.html/" title="方法">Jsoup.parseBodyFragment(String html)</a> ,<a href="#" title="方法">Document.body()</a> 方法能够取得文档body元素的所有子元素，与 doc.getElementsByTag(&ldquo;body&rdquo;)相同</p>
 <pre><code>String html = &quot;&lt;div&gt;&lt;p&gt;Lorem ipsum.&lt;/p&gt;&quot;;
 Document doc = Jsoup.parseBodyFragment(html);
 System.out.println(doc.html());//可以看到我们的html片段被包裹了一个body

@@ -54,7 +54,7 @@ public class RunDemo {
         stringBuilder.append(File.separator).append("tool_java_fun_project").append(File.separator).append("source_dir").append(File.separator).append("public") ;
 
         File file = new File(stringBuilder.toString());
-        File file2 = new File(getDir());
+        File file2 = new File(getDir()+File.separator+"docs");
         org.apache.commons.io.FileUtils.copyDirectory(file, file2);
         org.apache.commons.io.FileUtils.deleteDirectory(file);
     }

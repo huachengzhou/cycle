@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 禅与摩托车维修艺术</title>
+    <link>https://huachengzhou.github.io/cycle/categories/</link>
+    <description>Recent content in Categories on 禅与摩托车维修艺术</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java</title>
+      <link>https://huachengzhou.github.io/cycle/categories/java/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://huachengzhou.github.io/cycle/categories/mysql/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/categories/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>https://huachengzhou.github.io/cycle/categories/sql/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/categories/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://huachengzhou.github.io/cycle/categories/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://huachengzhou.github.io/cycle/categories/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

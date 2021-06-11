@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/categories/linux/</link>
+    <description>Recent content in linux on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>gitIntroduction</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitintroduction/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitintroduction/</guid>
+      <description>git学习#git 区域概念# git分为工作区(我们自己的file)和版本库这其中版本库又包含暂存区(Stage)和分支区(master)    git add ********** 把文件添加到仓库
+  git reset README.md 取消提交到暂存区域
+  git commmit -m &amp;lsquo;xxxx&amp;rsquo; 提交到仓库
+  git diff 查看提交到仓库文件之后文件又被修改的变化
+  git status 查看状态
+  git rm -f gitS.md 强制删除
+  git log 显示从最近到最远的提交日志
+  git log &amp;ndash;pretty=oneline 只显示版本号
+  关于版本回退问题#  git reset &amp;ndash;hard HEAD^ 版本重置为上一个版本
+  git 关于版本处理进行了设置</description>
+    </item>
+    
+    <item>
+      <title>gitub配置</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitub%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitub%E9%85%8D%E7%BD%AE/</guid>
+      <description>zhou@zhou-Lenovo-Z480:~$ git versiongit version 2.7.4zhou@zhou-Lenovo-Z480:~$ ssh -T git@github.comWarning: Permanently added the RSA host key for IP address &#39;192.30.255.112&#39; to the list of known hosts.Permission denied (publickey).zhou@zhou-Lenovo-Z480:~$ git config --global user.name &amp;quot;zhouchenhua&amp;quot;zhou@zhou-Lenovo-Z480:~$ git config --global user.email &amp;quot;noatnu@163.com&amp;quot;zhou@zhou-Lenovo-Z480:~$ git config --listuser.name=zhouchenhuauser.email=noatnu@163.comzhou@zhou-Lenovo-Z480:~$ ssh-keygen -C ‘noatnu@163.com’ -t rsaGenerating public/private rsa key pair.Enter file in which to save the key (/home/zhou/.ssh/id_rsa): america347191Enter passphrase (empty for no passphrase): Enter same passphrase again: Your identification has been saved in america347191.</description>
+    </item>
+    
+  </channel>
+</rss>

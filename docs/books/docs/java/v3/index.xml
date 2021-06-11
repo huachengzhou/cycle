@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/</link>
+    <description>Recent content on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/docs/java/v3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jane 主题预览</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/jane%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/</link>
+      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/jane%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/</guid>
+      <description>Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于hugo-theme-even，在它的基础上进行了重新改造。简约、可定制性强。主要特色：响应式设计多国语言支持支持多个 Shortcode单独设计的 标签页 和 分类页社交网站链接更好的分页、目录、注脚样式使用更快的 Chroma 代码高亮自定义 css，自定义 js，自定义 head子目录支持搜索优化
+作者：贤民
+ gitee https://gitee.com/shaoxia1991/hugo-theme-jane.git github https://github.com/xianmin/hugo-theme-jane.git  </description>
+    </item>
+    
+    <item>
+      <title>idea导入项目出现Unable &gt; to &gt; import &gt; maven &gt; project &gt; See &gt; logs &gt; for &gt; details提示</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/</guid>
+      <description>idea导入项目出现Unable to import maven project: See logs for details提示
+ 第一种解决办法#  删除项目根目录下.idea文件夹
+  关闭idea工具，重新打开选择File-&amp;gt;New-&amp;gt;Project from the existing source ,选择刚才的项目根目，下一步：
+  一直点next，最后点击主工程的pom.xml 完成！
+  第二种#  打开idea 的日志文件如果发现【Error】com.google.inject.CreationException: Unable to create injector
+  那么自定义配置Maven3.6.2报错 或者更高版本maven
+  原因：Maven3.6.2的版本兼容问题。
+  解决方法：重新下载较低版本Maven3.6.1及以下版本可以顺利解决。
+  用maven无论是新建项目还是导入没有下载到本地仓库的jar。出现了Unable to import maven project
+  打开cmd，ping localhost，显示一般故障
+  在左边控制栏，关闭防火墙，再开启防火墙 再次ping localhost，成功
+  对了 假如出现文件权限问题 那么更改maven的本地仓库地址</description>
+    </item>
+    
+    <item>
+      <title>info</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_meditation_info/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_meditation_info/</guid>
+      <description>冥想#呼吸冥想法#  1:坐好，后背挺直，然后闭上眼睛
+  2:关注你自己呼吸时的感觉,吸气，吸气，选择一个感受突出的地方，通常是你的鼻子或者耳朵、腹部然后集中注意力，关注你自己呼吸时的感觉。吸气，吸气，用嘴呼吸（最好关注腹部，因为我们大部分人都是腹部呼吸法）
+  3:一旦你开始这样做了脑子会乱想,你需要关注你到什么时候走神的，那么走神后重新调整后重新开始集中注意力开始冥想。
+  </description>
+    </item>
+    
+    <item>
+      <title>memory</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_memorypath_memory/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_memorypath_memory/</guid>
+      <description>记忆方法# 提高记忆的关键，在于想象和创意 编故事有助于提高记忆力  通过编故事，再加上逻辑或地点（后者更多一些）;编故事是加强了记忆桩之间的联系记忆和创造力# 记忆本身与创造力密不可分 ， 训练记忆力在很大程度上取决于你的创造力  要想记住毫不相关的信息和扑克牌，首先就要把它们变成图像。通过这种方式，那些零散的信息才可能会建立某种联系联想#利用事物间的联系通过联想进行记忆的方法。联想是由当前感知或思考的事物想起有关的另一事物，或者由头脑中想起的一件事物，又引起想到另一件事物。由于客观事物是相互联系的，各种知识也是相互联系的，因而在思维中，联想是一种基本的思维形式，是记忆的一种方法。联想，就是当人脑接受某一剌激时，浮现出与该刺激有关的事物形象的心理过程。一般来说，互相接近的事物、相反的事物、相似的事物之间容易产生联想。用联想来增强记忆是一种很常用的方法。记忆的一种主要机能就是在有关经验中建立联系，思维中的联想越活跃，经验的联系就越牢固。如能经常形成联想和运用联想，就可增强记忆的效果。联想是有规律可循的，联想的规律有接近律、类似律、对比律、因果律等，有接近联想、类似联想、对比联想、因果联想。  联想不仅快速，而且它还不是一个简单、一维的东西。首先，你在联想中会加入一些情感因素，甚至还没回想起一段经历，就已经产生了某种情绪。
+  一旦学会动用感情和感官，还有逻辑和创造力，来与不同事物间建立联系，你的记忆能力就会大大提高。除此之外，你还会慢慢习惯放松大脑，以最快的速度在不同事物之间建立联系。瞬间联想之所以对提高记忆力如此重要，是因为一个人在瞬间建立的联系往往是最牢靠的
+  如何在两个并无联系的单词之间建立联系&amp;ndash;记忆的关键，就在于将二者结合到一起。
+  如果没有过去的某些参照物作为参考，你就不能在两个概念( 包括单词、物体、活动等)之间建立联系。你的过去为你提供了某种经验，而正是这种经验可以帮助你由一个概念想到另一件概念。你的生活中发生的一切都像是积木中的模块，正是这一个个模块帮助你搭建了自己的人生大厦。要想在两个模块之间尽快建立联系，你需要用尽可能少的连接物来实现过渡。也就是说，要想从一件事情想到另外一件事情，最快的方式就是直接找到二者之间的联系
+   比如说我想记住两个单词：墙壁和小鸡。每个单词都能激发我丰富的联想，我必须找到某种连接物将两个单词连接起来。比如说：墙壁会让我想到一个相册，想找到我小时候放学后经常爬的墙等。随着联想越来越细致、快速，我突然想到了一个最明显的连接：一首叫&amp;lt;&amp;lt;小胖鸡&amp;gt;&amp;gt;的儿歌。好极了！小胖鸡坐着墙壁上，它是一个鸡蛋----而鸡蛋又是小鸡下的。这时我就会展开联想，想象一只小鸡坐在墙下下蛋。为了让这个联想更加生动，我想起了小时候我在唱歌时的样子，然后自然而然地想到了自己看着小鸡下蛋时吃吃发笑的情形。虽然我并不记得发生过这件事，但它却足以激发我的联想。这个过程听起来可能有些复杂、繁琐，但事实上，这在大脑中只是一瞬间发生的事情。链条法# 如何使用链条法记住5个单词 小提琴、武士、箱子、项链、雪球  首先想想你突然听到小提琴发出的悠扬乐声。然后看到一个武士在演奏小提琴，你甚至可以清楚地看到他把小提琴放到下巴下面--这武士满副盔甲，很是搞笑。然后你看到他脚边放了一个箱子，可能颜色很鲜艳，也可能已经很破旧了。你打开箱子，发现里面有一挂价值连城的钻石项链，钻石反射阳光，分外耀眼。最后你转过头去，突然一个雪球砸中你的脸颊，你甚至感觉到右脸有些发疼。记住，你越练习动用五官来加强想象，你的大脑就会越熟悉这种练习，你也就越容易记住自己想象的场景。  要要记住五个单词以及单词之间的顺序，需要在单词之间建立联系</description>
+    </item>
+    
+    <item>
+      <title>studyInfo</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_method_studyinfo/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_method_studyinfo/</guid>
+      <description>学习方法#</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 16.04修改hosts</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/</guid>
+      <description>IntelliJ IDE运行Tomcat报错解决办法的相关资料,出现“Unable to ping server at localhost:1099”错误解决方法，需要的朋友可以参考下
+sudo gedit /etc/hosts</description>
+    </item>
+    
+    <item>
+      <title>ubuntu安装chmsee</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/</guid>
+      <description>垃圾的ubuntu 14.04 又一次去掉一些特别好用的软件, 官方给的解释是怕破坏他们系统. 只想说一句 我去年买了个本.
+14.04 之前的版本,如13.10, 12.04 继续能够使用 sudo apt-get install chmsee 来安装.
+14.04 需要下载安装包来安装:
+sudo apt-get install libc6 libchm1 libgcrypt11 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk2.0-0 libpango1.0-0 libwebkitgtk-1.0-0 libxml2 安装依赖包
+(64位) sudo dpkg -i chmsee_1.3.0-2ubuntu2_amd64.deb 安装软件包,下载地址: http://kr.archive.ubuntu.com/ubuntu/pool/universe/c/chmsee/chmsee_1.3.0-2ubuntu2_amd64.deb Ubuntu的官方软件库放心下载.
+(32位) sudo dpkg -i chmsee_1.3.0-2ubuntu2_i386.deb 安装软件包,下载地址: http://kr.archive.ubuntu.com/ubuntu/pool/universe/c/chmsee/chmsee_1.3.0-2ubuntu2_i386.deb Ubuntu的官方软件库放心下载.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu清理系统垃圾</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</guid>
+      <description>1，非常有用的清理命令： sudo apt-get autoclean &amp;ndash;清理旧版本的软件缓存 www.2cto.com
+sudo apt-get clean&amp;ndash;清理所有软件缓存
+sudo apt-get autoremove&amp;ndash;删除系统不再使用的孤立软件
+这三个命令主要清理升级缓存以及无用包的。
+2，清理opera firefox的缓存文件： ls ~/.opera/cache4 ls ~/.mozilla/firefox/*.default/Cache
+3，清理Linux下孤立的包： 图形界面下我们可以用：gtkorphan sudo apt-get install gtkorphan -y 终端命令下我们可以用：deborphan sudo apt-get install deborphan -y
+4，卸载：tracker 这个东西一般我只要安装Ubuntu就会第一删掉tracker 他不仅会产生大量的cache文件而且还会影响开机速度。所以在新得利里面删掉就行。 www.2cto.com
+5，删除多余的内核：一定不要删错哦，切记！！ 打开终端敲命令：dpkg &amp;ndash;get-selections|grep linux 有image的就是内核文件 删除老的内核文件： sudo apt-get remove 内核文件名（例如：linux-image-2.6.27-2-generic） 内核删除，释放空间了，应该能释放130－140M空间。
+最后不要忘了看看当前内核：uname -a 附录： 包管理的临时文件目录: 包在 /var/cache/apt/archives 没有下载完的在 /var/cache/apt/archives/partial</description>
+    </item>
+    
+    <item>
+      <title>ubuntu软件卸载</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</guid>
+      <description>ubuntu软件卸载
+安装Synaptic
+sudo apt-get install synaptic</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go 模板引用</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/hugo%E6%A8%A1%E6%9D%BF%E5%BC%95%E7%94%A8/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/hugo%E6%A8%A1%E6%9D%BF%E5%BC%95%E7%94%A8/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/migrate-from-jekyll/</guid>
+      <description>Move static content to static#Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
+▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+  </channel>
+</rss>

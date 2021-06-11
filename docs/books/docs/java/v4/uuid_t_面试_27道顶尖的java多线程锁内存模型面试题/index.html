@@ -1,0 +1,2707 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.81.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="测试博客">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="27道顶尖的Java多线程锁、内存模型面试题" />
+<meta property="og:description" content="测试博客" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_27%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%94%81%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E9%9D%A2%E8%AF%95%E9%A2%98/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2021-02-15T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-02-15T00:00:00&#43;00:00" />
+
+<title>27道顶尖的Java多线程锁、内存模型面试题 | Hugo Book</title>
+<link rel="manifest" href="/cycle/books/manifest.json">
+<link rel="icon" href="/cycle/books/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/cycle/books/book.min.2bc2364a4a4b31f0ec1debecf0a8f90a840821f143dfe1ac6a0f7cbcbdcf64ac.css" integrity="sha256-K8I2SkpLMfDsHevs8Kj5CoQIIfFD3&#43;Gsag98vL3PZKw=">
+<script defer src="/cycle/books/en.search.min.60f6451ea79769a36ceaa79a96bedadb1acd59c4f0aab450ffbb8a94027f29c1.js" integrity="sha256-YPZFHqeXaaNs6qealr7a2xrNWcTwqrRQ/7uKlAJ/KcE="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/cycle/books"><span>Hugo Book</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a  class="">Collapsed</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Java</span>
+  
+
+          
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V1</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_bootstrap-switch_contributing/" class="">CONTRIBUTING</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_git/" class="">git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitintroduction/" class="">gitIntroduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitub%E9%85%8D%E7%BD%AE/" class="">gitub配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/" class="">hugo &gt; tutorials1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/" class="">hugo &gt; tutorials2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_idea_idea/" class="">idea</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_java_java_bitoperation/" class="">java &gt; bitOperation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="">jsp &gt; EL基础教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_assembly_link/" class="">link</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V2</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_changelog/" class="">CHANGELOG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_contributing/" class="">CONTRIBUTING</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_host%E6%98%A0%E5%B0%84/" class="">host映射</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93%E5%A4%A7%E5%85%A8/" class="">java &gt; java基础总结大全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_programstructure/" class="">java &gt; programStructure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_java_thread_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="">java &gt; thread &gt; Java多线程编程核心技术 &gt; 第一章</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_javareadme/" class="">javaReadme</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/" class="">jsp &gt; JSTL &gt; core标签库</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jsp_jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="">jsp &gt; 字符串el表达式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="">Linux下设置和查看环境变量</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E5%91%BD%E4%BB%A4/" class="">linux命令</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_nginx/" class="">nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_notepad&#43;&#43;%E5%AE%89%E8%A3%85/" class="">Notepad&#43;&#43;安装</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_usemath/" class="">useMath</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_algorithm_%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/" class="">压缩算法</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V3</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/jane%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/" class="">Jane 主题预览</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/" class="">idea导入项目出现Unable &gt; to &gt; import &gt; maven &gt; project &gt; See &gt; logs &gt; for &gt; details提示</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_meditation_info/" class="">info</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_memorypath_memory/" class="">memory</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_method_studyinfo/" class="">studyInfo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/" class="">Ubuntu 16.04修改hosts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/" class="">ubuntu安装chmsee</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/" class="">Ubuntu清理系统垃圾</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/" class="">ubuntu软件卸载</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/hugo%E6%A8%A1%E6%9D%BF%E5%BC%95%E7%94%A8/" class="">(Hu)go 模板引用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/migrate-from-jekyll/" class="">Migrate to Hugo from Jekyll</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V4</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84list%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10个Java经典的List面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84main%E6%96%B9%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10个Java经典的Main方法面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84string%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10个Java经典的String面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10道Java面试必备的设计模式面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%AB%98%E7%BA%A7%E5%BF%85%E5%A4%87%E7%9A%84netty%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10道Java高级必备的Netty面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84tomcat%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">15道经典的Tomcat面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">15道面试常问的Java多线程面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_17%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97kafka%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">17道消息队列Kafka面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_18%E9%81%93%E9%9D%9E%E5%B8%B8%E7%89%9B%E9%80%BC%E7%9A%84nginx%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">18道非常牛逼的Nginx面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_1ch/" class="">1ch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%9D%A2%E8%AF%95%E5%AE%98%E5%B8%B8%E9%97%AE%E7%9A%84jvm%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">20道面试官常问的JVM面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84springoot%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">20道顶尖的Springoot面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_22%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84springmvc%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">22道面试常问的SpringMVC面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97rabbitmq%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">24道消息队列RabbitMQ面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84%E8%8B%B1%E8%AF%AD%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">24道经典的英语面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_27%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%94%81%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E9%9D%A2%E8%AF%95%E9%A2%98/" class=" active">27道顶尖的Java多线程锁、内存模型面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_29%E9%81%93%E5%B8%B8%E8%A7%81%E7%9A%84spring%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">29道常见的Spring面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_2ch/" class="">2ch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_30%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84%E9%9B%86%E5%90%88%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">30个Java经典的集合面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_36%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84mybatis%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">36道面试常问的MyBatis面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_40%E9%81%93%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">40道常问的Java多线程面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_55%E9%81%93bat%E7%B2%BE%E9%80%89%E7%9A%84mysql%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">55道BAT精选的Mysql面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_60%E9%81%93%E5%BF%85%E5%A4%87%E7%9A%84java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">60道必备的Java核心技术面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_7%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97activemq%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">7道消息队列ActiveMQ面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/" class="">apache-common工具包</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_select2_contributing/" class="">CONTRIBUTING</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_dom4j/" class="">dom4j</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_basic/" class="">DOS &gt; basic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_file/" class="">DOS &gt; file</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_network/" class="">DOS &gt; network</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_ftp/" class="">FTP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/" class="">GitHubPages绑定来自阿里云的域名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_guava-common/" class="">Guava-common</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_io/" class="">IO</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E7%9A%84%E5%B9%82%E7%AD%89%E5%A4%84%E7%90%86/" class="">java &gt; thread &gt; 高并发和分布式中的幂等处理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E9%AB%98%E5%8F%AF%E7%94%A8%E7%9A%84%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5/" class="">java &gt; thread &gt; 高并发高可用的架构实践</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/" class="">java &gt; 多线程 &gt; 线程中断问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81/" class="">java &gt; 多线程 &gt; 线程状态</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Binfo/" class="">java &gt; 多线程info</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized/" class="">java &gt; 多线程synchronized</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized.answer/" class="">java &gt; 多线程synchronized.answer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/" class="">java &gt; 监听事件原理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" class="">java内存模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_java%E8%AF%95%E9%A2%98%E7%BB%8F%E5%85%B87/" class="">Java试题经典7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_js_console.log%E7%94%A8%E6%B3%95/" class="">js &gt; console.log用法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_jsoup/" class="">jsoup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/" class="">jsp &gt; jstl &gt; Session</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_basis/" class="">mysql &gt; basis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_data/" class="">mysql &gt; data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_distinguish/" class="">mysql &gt; distinguish</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install/" class="">mysql &gt; install</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install_problem/" class="">mysql &gt; install &gt; problem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/" class="">mysql &gt; 开发规范</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%89%E8%8C%83%E5%BC%8F/" class="">mysql &gt; 数据库设计三范式</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%87%BD%E6%95%B0/" class="">mysql函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/" class="">mysql存储引擎</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E6%9F%A5%E8%AF%A2/" class="">mysql查询</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/" class="">mysql用户与权限</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%B4%A2%E5%BC%95/" class="">mysql索引</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_selfeducation_number/" class="">number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_postgresql_postgresql_create%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/" class="">postgresql &gt; create用户与权限</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_redis_redis/" class="">redis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/" class="">script</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_springboot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/" class="">SpringBoot学习笔记完整教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B7%A5%E5%85%B7/" class="">spring工具</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="">spring常用的工具类</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/" class="">study.web</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_swing_swing_introduction/" class="">swing &gt; Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_visual_studio_code_visualstudiocode%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6/" class="">VisualStudioCode过滤文件不显示某些文件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/" class="">vue &gt; index</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_windows_question/" class="">windows &gt; question</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98edismemcached%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">分布式缓存edisMemcached典面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A840%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">史上最全40道Dubbo面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A850%E9%81%93redis%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">史上最全50道Redis面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A870%E9%81%93spring%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">史上最全70道Spring面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" class="">微型计算机系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E6%90%9E%E5%AE%9Ar%E8%AF%95%E7%9A%840%E5%BF%85%E5%A4%87%E9%97%AE%E9%A2%98/" class="">搞定R试的0必备问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%8917%E9%81%93%E6%B5%B7%E9%87%8F%E6%95%B0%E9%87%8F%E5%A4%84%E7%90%86%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">精选17道海量数量处理面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%897%E9%81%93elasticearch%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">精选7道Elasticearch面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%898%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">精选8道Dubbo面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="">计算机中信息的表示</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="">计算机操作系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8/" class="">计算机的发展与应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BE%88%E9%95%BF%E7%9A%84%E6%A0%87%E9%A2%98/" class="">这是一个很长的标题</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/" class="">网易云课堂MySQL &gt; chapter1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/" class="">网易云课堂MySQL &gt; chapter2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/" class="">网易云课堂MySQL &gt; chapter3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/" class="">网易云课堂MySQL &gt; chapter4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter5/" class="">网易云课堂MySQL &gt; chapter5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql%E5%BE%AE%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="">网易云课堂MySQL微专业学习笔记</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/section/" class="">Section</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/section/page1/" class="">Page1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/section/page2/" class="">Page2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/cycle/books/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/cycle/books/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>27道顶尖的Java多线程锁、内存模型面试题</strong>
+
+  <label for="toc-control">
+    
+    <img src="/cycle/books/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-single-thread-executor-线程池">. Single Thread Executor 线程池</a></li>
+    <li><a href="#-fixed-thread-pool-线程池">. Fixed Thread Pool 线程池</a></li>
+    <li><a href="#-cached-thread-pool-线程池">. Cached Thread Pool 线程池</a></li>
+    <li><a href="#-scheduled-thread-pool-线程池">. Scheduled Thread Pool 线程池</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#java-的内存模型定义了-8-种内存间操作-lock-和-unlock">Java 的内存模型定义了 8 种内存间操作： lock 和 unlock</a></li>
+    <li><a href="#read-和-write">read 和 write</a></li>
+    <li><a href="#load-和-store">load 和 store</a></li>
+    <li><a href="#use-和-assgin">use 和 assgin</a></li>
+    <li><a href="#使用-thread-local-要注意-remove">使用 Thread Local 要注意 remove！</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="synchronized-相关问题">
+  Synchronized 相关问题
+  <a class="anchor" href="#synchronized-%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98">#</a>
+</h1>
+<p><strong>问题一：</strong> Synchronized 用过吗， 其原理是什么？</p>
+<p>这是一道 Java 面试中几乎百分百会问到的问题，因为没有任何写过并发程序的开发者会没听说或者没接触过 Synchronized。</p>
+<p>Synchronized 是由 JVM 实现的一种实现互斥同步的一种方式， 如果你查看被 Synchronized 修饰过的程序块编译后的字节码， 会发现， 被Synchronized 修 饰 过 的 程 序 块 ， 在 编 译 前 后 被 编 译 器 生 成了 monitorenter 和 monitorexit 两个字节码指令。</p>
+<p>这两个指令是什么意思呢？</p>
+<p>在虚拟机执行到 monitorenter 指令时， 首先要尝试获取对象的锁：</p>
+<p>如果这个对象没有锁定，或者当前线程已经拥有了这个对象的锁，把锁的计数器 +1 ；当执行 monitorexit 指令时将锁计数器 - 1 ；当计数器为 0 时， 锁就被释放了。</p>
+<p>如果获取对象失败了，那当前线程就要阻塞等待，直到对象锁被另外一个线程释放为止。</p>
+<p>Java 中 Synchronize 通过在对象头设置标记， 达到了获取锁和释放锁的目的。</p>
+<p>**问题二：**你刚才提到获取对象的锁，这个&quot; 锁&quot;到底是什么？ 如何确定对象的锁？</p>
+<p>&quot; 锁&quot; 的本质其实是 monitorenter 和 monitorexit 字节码指令的一个Reference 类型的参数， 即要锁定和解锁的对象。 我们知道， 使用</p>
+<p>Synchronized 可以修饰不同的对象 ，因 此 ，对 应的对象锁可以这么确定。</p>
+<ol>
+<li>
+<p>如果 Synchronized 明确指定了锁对象 ，比 如 Synchronize d（ 变量名 ）、Synchronized( this) 等， 说明加解锁对象为该对象。</p>
+</li>
+<li>
+<p>如果没有明确指定：</p>
+</li>
+</ol>
+<blockquote>
+<p>若 Synchronized 修饰的方法为非静态方法， 表示此方法对应的对象为锁对象；</p>
+<p>若 Synchronized 修饰的方法为静态方法， 则表示此方法对应的类对象为锁对象。</p>
+</blockquote>
+<p>注意， 当一个对象被锁住时， 对象里面所有用 Synchronized 修饰的方 法都将产生堵塞， 而对象里非 Synchronized 修饰的方法可正常被调用， 不受锁影响。</p>
+<p><strong>问题三：</strong> 什么是可重入性， 为什么说 Synchronized 是可重入锁？ 可重入性是锁的一个基本要求， 是为了解决自己锁死自己的情况。</p>
+<p>比 如 下 面 的 伪 代 码 ， 一 个 类 中 的 同 步 方 法 调 用 另 一 个 同 步 方 法 ， 假 如Synchronized 不支持重入， 进入 method 2 方法时当前线程获得锁， method 2 方法里面执行 method 1 时当前线程又要去尝试获取锁， 这时如果不支持重入， 它就要等释放， 把自己阻塞， 导致自己锁死自己。</p>
+<blockquote>
+<p>· 点 击 图 片 ， 放 大 查 看 ·</p>
+</blockquote>
+<p>对 Synchronized 来 说 ， 可 重 入 性 是 显 而 易 见 的 ， 刚 才 提 到 ， 在 执行 monitorenter 指令时，如果这个对象没有锁定，或者当前线程已经拥有了这个对象的锁（ 而不是已拥有了锁则不能继续获取），就把锁的计数器 +1 ， 其实本质上就通过这种方式实现了可重入性。</p>
+<p><strong>问题四：</strong> JVM 对 Java 的原生锁做了哪些优化？</p>
+<p>在 Java 6 之前， Monitor 的实现完全依赖底层操作系统的互斥锁来实现， 也就是我们刚才在问题二中所阐述的获取/ 释放锁的逻辑。</p>
+<p>由于 Java 层面的线程与操作系统的原生线程有映射关系，如果要将一个线程进行阻塞或唤起都需要操作系统的协助 ，这 就需要从用户态切换到内核态来执行，这种切换代价十分昂贵，很耗处理器时间，现代 JDK 中做了大量的优化。</p>
+<p>&mdash; 种优化是使用自旋锁 ，即 在把线程进行阻塞操作之前先让线程自旋等待一段时间，可能在等待期间其他线程已经解锁，这时就无需再让线程执行阻塞操作， 避免了用户态到内核态的切换。</p>
+<p>现代 JDK 中还提供了三种不同的 Monitor 实现 ，也 就是三种不同的锁：</p>
+<ul>
+<li>
+<p>偏向锁（ Biased Locking）</p>
+</li>
+<li>
+<p>轻量级锁</p>
+</li>
+<li>
+<p>重量级锁</p>
+</li>
+</ul>
+<p>这三种锁使得 JDK 得以优化 Synchronized 的运行， 当 JVM 检测到不同的竞争状况时 ，会 自动切换到适合的锁实现 ，这 就是锁的升级 、降 级。</p>
+<ul>
+<li>当没有竞争出现时， 默认会使用偏向锁。</li>
+</ul>
+<p>JVM 会利用 CAS 操作， 在对象头上的 Mark Word 部分设置线程 ID， 以表示这个对象偏向于当前线程，所以并不涉及真正的互斥锁，因为在很 多应用场景中，大部分对象生命周期中最多会被一个线程锁定，使用偏斜 锁可以降低无竞争开销。</p>
+<ul>
+<li>
+<p>如果有另一线程试图锁定某个被偏斜过的对象， JVM 就撤销偏斜锁， 切换到轻量级锁实现。</p>
+</li>
+<li>
+<p>轻量级锁依赖 CAS 操作 Mark Word 来试图获取锁， 如果重试成功， 就使用普通的轻量级锁； 否则， 进一步升级为重量级锁。</p>
+</li>
+</ul>
+<p><strong>问题五：</strong> 为什么说 Synchronized 是非公平锁？</p>
+<p>非公平主要表现在获取锁的行为上 ，并 非是按照申请锁的时间前后给等待线程分配锁的，每当锁被释放后，任何一个线程都有机会竞争到锁，这样做的目的是为了提高执行性能， 缺点是可能会产生线程饥饿现象。</p>
+<blockquote>
+<p><strong>问题六：</strong> 什么是锁消除和锁粗化？</p>
+</blockquote>
+<ul>
+<li>锁消除：指虚拟机即时编译器在运行时，对一些代码上要求同步，但被检测到不可能存在共享数据竞争的锁进行消除。 主要根据逃逸分析。</li>
+</ul>
+<p>程序员怎么会在明知道不存在数据竞争的情况下使用同步呢？ 很多不是程序员自己加入的。</p>
+<ul>
+<li>锁粗化：原则上，同步块的作用范围要尽量小。但是如果一系列的连续操作都对同一个对象反复加锁和解锁，甚至加锁操作在循环体内，频繁地进行互斥同步操作也会导致不必要的性能损耗。</li>
+</ul>
+<p>锁粗化就是增大锁的作用域。</p>
+<p><strong>问题七：</strong> 为什么说 Synchronized 是一个悲观锁？ 乐观锁的实现原理又是什么？ 什么是 CAS， 它有什么特性？</p>
+<p>Synchronized 显然是一个悲观锁， 因为它的并发策略是悲观的：</p>
+<p>不管是否会产生竞争 ，任 何的数据操作都必须要加锁 、用 户态核心态转换、维护锁计数器和检查是否有被阻塞的线程需要被唤醒等操作。</p>
+<p>随着硬件指令集的发展，我们可以使用基于冲突检测的乐观并发策略。先进行操作， 如果没有其他线程征用数据， 那操作就成功了；</p>
+<p>如果共享数据有征用，产生了冲突，那就再进行其他的补偿措施。这种乐观的并发策略的许多实现不需要线程挂起， 所以被称为非阻塞同步。</p>
+<p>乐观锁的核心算法是 CAS（ Compareand Swap ，比较并交换） ， 它涉及到三个操作数：内存值、预期值、新值。当且仅当预期值和内存值相等时才将内存值修改为新值。</p>
+<p>这样处理的逻辑是， 首先检查某块内存的值是否跟之前我读取时的一样， 如不一样则表示期间此内存值已经被别的线程更改过，舍弃本次操作，否则说明期间没有其他线程对此内存值操作， 可以把新值设置给此块内存。CAS 具有原子性， 它的原子性由 CPU 硬件指令实现保证， 即使用 JNI 调用 Native 方 法 调用 由 C++ 编 写 的 硬件 级 别 指令 ， JDK 中提 供 了Unsafe 类执行这些操作。</p>
+<blockquote>
+<p><strong>问题八：</strong> 乐观锁一定就是好的吗？</p>
+</blockquote>
+<p>乐观锁避免了悲观锁独占对象的现象，同时也提高了并发性能，但它也有缺点：</p>
+<ol>
+<li>乐观锁只能保证一个共享变量的原子操作。如果多一个或几个变量，乐观</li>
+</ol>
+<p>锁将变得力不从心，但互斥锁能轻易解决，不管对象数量多少及对象颗粒度大小。</p>
+<ol>
+<li>长时间自旋可能导致开销大。 假如 CAS 长时间不成功而一直自旋， 会</li>
+</ol>
+<p>给 CPU 带来很大的开销。</p>
+<ol>
+<li>ABA 问题 。C AS 的核心思想是通过比对内存值与预期值是否一样而判断内存值是否被改过， 但这个判断逻辑不严谨， 假如内存值原来是 A，后</li>
+</ol>
+<p>来被一条线程改为 B， 最后又被改成了 A，则 CAS 认为此内存值并没有发生改变，但实际上是有被其他线程改过的，这种情况对依赖过程值的</p>
+<p>情景的运算结果影响很大。解决的思路是引入版本号，每次变量更新都把版本号加一。</p>
+<h1 id="可重入锁-reentrant-lock-及其他显式锁相关问题">
+  可重入锁 Reentrant Lock 及其他显式锁相关问题
+  <a class="anchor" href="#%e5%8f%af%e9%87%8d%e5%85%a5%e9%94%81-reentrant-lock-%e5%8f%8a%e5%85%b6%e4%bb%96%e6%98%be%e5%bc%8f%e9%94%81%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98">#</a>
+</h1>
+<p><strong>问题一：</strong> 跟 Synchronized 相比， 可重入锁 Reentrant Lock 其实现原理有什么不同？</p>
+<p>其实， 锁的实现原理基本是为了达到一个目的： 让所有的线程都能看到某种标记。</p>
+<p>Synchronized 通过在对象头中设置标记实现了这一目的，是一种 JVM 原生的锁实现方式， 而 Reentrant Lock 以及所有的基于 Lock 接口的实现类，都是通过用一个 volitile 修饰的 int 型变量，并保证每个线程都能拥有对该 int 的可见性和原子修改，其本质是基于所谓的 AQS 框架。</p>
+<p><strong>问题二：</strong> 那么请谈谈 AQS 框架是怎么回事儿？</p>
+<p>AQS（ Abstract Queued Synchronizer 类） 是一个用来构建锁和同步器的 框 架 ， 各 种 Lock 包 中 的 锁 （ 常 用 的 有 Reentrant Lock 、Read Write Lock ） ， 以 及 其 他 如 Semaphore 、 Count Down Latch ，甚至是早期的 Future Task 等， 都是基于 AQS 来构建。</p>
+<ol>
+<li>AQS 在内部定义了一个 volatile int state 变量， 表示同步状态： 当线程调用 lock 方法时 ，如 果 state= 0 ，说 明没有任何线程占有共享资源的锁，</li>
+</ol>
+<blockquote>
+<p>可以获得锁并将 state= 1 ；如果 state= 1 ， 则说明有线程目前正在使用共享变量， 其他线程必须加入同步队列进行等待。</p>
+</blockquote>
+<ol>
+<li>AQS 通过 Node 内部类构成的一个双向链表结构的同步队列， 来完成线</li>
+</ol>
+<blockquote>
+<p>程获取锁的排队工作， 当有线程获取锁失败后， 就被添加到队列末尾。</p>
+</blockquote>
+<ul>
+<li>
+<p>Node 类是对要访问同步代码的线程的封装， 包含了线程本身及其状态叫wait Status（ 有五种不同 取值， 分别表示是否被阻塞， 是否等待唤醒， 是否已经被取消等） ， 每个 Node 结点关联其 prev 结点和 next 结点， 方便线程释放锁后快速唤醒下一个在等待的线程， 是一个 FIFO 的过程。</p>
+</li>
+<li>
+<p>Node 类有两个常量， SHARED 和 EXCLUSIVE， 分别代表共享模式和独占 模 式 。 所 谓 共 享 模 式 是 一 个 锁 允 许 多 条 线 程 同 时 操 作 （ 信 号 量Semaphore 就是基于 AQS 的共享模式实现的） ， 独占模式是同一个 时间段只能有一个线程对共享资源进行操作， 多余的请求线程需要排队等待</p>
+</li>
+</ul>
+<blockquote>
+<p>（如 Reentran Lock）。</p>
+</blockquote>
+<ol>
+<li>AQS 通 过 内 部 类 Condition Object 构 建 等 待 队 列 （ 可 有 多 个 ） ， 当Condition 调 用 wait() 方 法 后 ， 线 程 将 会 加 入 等 待 队 列 中 ， 而 当</li>
+</ol>
+<blockquote>
+<p>Condition 调用 s ignal() 方法后， 线程将从等待队列转移动同步队列中进行锁竞争。</p>
+</blockquote>
+<ol>
+<li>AQS 和 Condition 各 自 维 护 了 不 同 的 队 列 ， 在 使 用 Lock 和Condition 的时候， 其实就是两个队列的互相移动。</li>
+</ol>
+<p><strong>问题三：</strong> 请尽可能详尽地对比下 Synchronized 和 Reentrant Lock 的异同。</p>
+<p>Reentrant Lock 是 Lock 的实现类， 是一个互斥的同步锁。</p>
+<p>从功能角度，Reentrant Lock 比 Synchronized 的同步操作更精细（ 因为可以像普通对象一样使用） ， 甚至实现 Synchronized 没有的高级功能，如：</p>
+<ul>
+<li>
+<p>等待可中断：当持有锁的线程长期不释放锁的时候，正在等待的线程可以选择放弃等待， 对处理执行时间非常长的同步块很有用。</p>
+</li>
+<li>
+<p>带超时的获取锁尝试：在指定的时间范围内获取锁，如果时间到了仍然无法获取则返回。</p>
+</li>
+<li>
+<p>可以判断是否有线程在排队等待获取锁。</p>
+</li>
+<li>
+<p>可以响应中断请求： 与 Synchronized 不同， 当获取到锁的线程被中断时， 能够响应中断， 中断异常将会被抛出， 同时锁会被释放。</p>
+</li>
+<li>
+<p>可以实现公平锁。</p>
+</li>
+</ul>
+<p>从锁释放角度， Synchronized 在 JVM 层面上实现的， 不但可以通过 一些监控工具监控 Synchronized 的锁定， 而且在代码执行出现异常时，</p>
+<p>JVM 会自动释放锁定； 但是使用 Lock 则不行， Lock 是通过代码实现的 ，要 保证锁定一定会被释放 ，就 必须将 un Lock() 放到 f inally{} 中。从性能角度 ，S ynchronized 早期实现比较低效 ，对 比 Reentrant Lock， 大多数场景性能都相差较大。</p>
+<p>但 是 在 Java 6 中 对 其 进 行 了 非 常 多 的 改 进 ， 在 竞 争 不 激 烈 时 ， Synchronized 的 性 能 要 优 于 Reetrant Lock ； 在 高 竞 争 情 况 下 ， Synchronized 的性能会下降几十倍， 但是 Reetrant Lock 的性能能维持常态。</p>
+<p><strong>问题四：</strong> Reentrant Lock 是如何实现可重入性的？</p>
+<p>Reentrant Lock 内部自定义了同步器 Sync（ Sync 既实现了 AQS，又实现了 AOS，而 AOS 提供了一种互斥锁持有的方式）， 其实就是加锁的时候通过 CAS 算法， 将线程对象放到一个双向链表中， 每次获取锁的时候 ，看 下当前维护的那个线程 ID 和当前请求的线程 ID 是否一样， 一样就可重入了。</p>
+<p><strong>问题五：</strong> 除了 Reetrant Lock， 你还接触过 JUC 中的哪些并发工具？ 通常所说的并发包（ JUC ） 也就是 java. util. concurrent 及其子包， 集中了 Java 并发的各种基础工具类， 具体主要包括几个方面：</p>
+<ul>
+<li>
+<p>提 供 了 Count Down Latch 、 Cyclic Barrier 、 Semaphore 等 ， 比Synchronized 更加高级， 可以实现更加丰富多线程操作的同步结构。</p>
+</li>
+<li>
+<p>提供了 Concurrent Hash Map、有序的 Concunrrent Skip List Map，或者通过类似快照机制实现线程安全的动态数组 Copy On Write Array List 等， 各种线程安全的容器。</p>
+</li>
+<li>
+<p>提供了 Array Blocking Queue 、 Synchorous Queue 或针对特定场景的Priority Blocking Queue 等， 各种并发队列实现。</p>
+</li>
+<li>
+<p>强大的 Executor 框架， 可以创建各种不同类型的线程池， 调度任务运行等。</p>
+</li>
+</ul>
+<p><strong>问题六：</strong> 请谈谈 Read Write Lock 和 Stamped Lock。</p>
+<p>虽然 Reentrant Lock 和 Synchronized 简单实用， 但是行为上有一定局限性，要么不占，要么独占。实际应用场景中，有时候不需要大量竞争的写操作，而是以并发读取为主，为了进一步优化并发操作的粒度，Java 提供了读写锁。</p>
+<p>读写锁基于的原理是多个读操作不需要互斥，如果读锁试图锁定时，写锁是被某个线程持有，读锁将无法获得，而只好等待对方操作结束，这样就可以自动保证不会读取到有争议的数据。</p>
+<p>Read Write Lock 代表了一对锁，下面是一个基于读写锁实现的数据结构， 当数据量较大，并发读多、并发写少的时候，能够比纯同步版本凸显出优 势：</p>
+<blockquote>
+<p><img src="media/image2.jpeg" alt="QQ截图20190110135546.png" />{width=&ldquo;5.77499343832021in&rdquo; height=&ldquo;3.815in&rdquo;}</p>
+<p>·</p>
+</blockquote>
+<p>读写锁看起来比 Synchronized 的粒度似乎细一些， 但在实际应用中， 其表现也并不尽如人意， 主要还是因为相对比较大的开销。</p>
+<p>所以， JDK 在后期引入了 Stamped Lock ，在提供类似读写锁的同时， 还支持优化读模式。优化读基于假设，大多数情况下读操作并不会和写操作冲突，其逻辑是先试着修改，然后通过 validate 方法确认是否进入了写模式 ，如 果没有进入 ，就 成功避免了开销 ；如 果进入 ，则 尝试获取读锁。</p>
+<blockquote>
+<p><img src="media/image3.jpeg" alt="33.png" />{width=&ldquo;5.784022309711286in&rdquo; height=&ldquo;4.025in&rdquo;}</p>
+<p>·</p>
+</blockquote>
+<p><strong>问题七：</strong> 如何让 Java 的线程彼此同步？ 你了解过哪些同步器？ 请分别介绍下。</p>
+<p>JUC 中的同步器三个主要的成员：Count Down Latch、Cyclic Barrier 和Semaphore， 通过它们可以方便地实现很多线程之间协作的功能。</p>
+<p>Count Down Latch 叫倒计数， 允许一个或多个线程等待某些操作完成。看几个场景：</p>
+<ul>
+<li>
+<p>跑步比赛， 裁判需要等到所有的运动员（&quot; 其他线程&quot;） 都跑到终点（ 达到目标） ， 才能去算排名和颁奖。</p>
+</li>
+<li>
+<p>模拟并发，我需要启动 100 个线程去同时访问某一个地址，我希望它们能同时并发， 而不是一个一个的去执行。</p>
+</li>
+</ul>
+<p><img src="media/image4.jpeg" alt="" />{width=&ldquo;5.768054461942257in&rdquo; height=&ldquo;4.479166666666667in&rdquo;}用 法 ： Count Down Latch 构 造 方 法 指 明 计 数 数 量 ， 被 等 待 线 程 调 用count Down 将计数器减 1 ，等待线程使用 await 进行线程等待。一个简单的例子：</p>
+<p>Cyclic Barrier 叫循环栅栏， 它实现让一组线程等待至某个状态之后再全部同时执行， 而且当所有等待线程被释放后， Cyclic Barrier 可以被重复使用。 Cyclic Barrier 的典型应用场景是用来等待并发线程结束。</p>
+<p>Cyclic Barrier 的主要方法是 await()， await() 每被调用一次，计数便会减少 1 ， 并阻塞住当前线程。当计数减至 0 时， 阻塞解除，所有在此Cyclic Barrier 上面阻塞的线程开始运行。</p>
+<p>在这之后，如果再次调用 await()，计数就又会变成 N- 1 ， 新一轮重新开始 ，这 便是 Cyclic 的含义所在 。C yclic Barrier. await() 带有返回值， 用来表示当前线程是第几个到达这个 Barrier 的线程。</p>
+<p>举例说明如下：</p>
+<p><img src="media/image5.jpeg" alt="" />{width=&ldquo;5.74864501312336in&rdquo; height=&ldquo;3.9899989063867016in&rdquo;}</p>
+<blockquote>
+<p>·</p>
+</blockquote>
+<p>Semaphore， Java 版本的信号量实现， 用于控制同时访问的线程个数， 来达到限制通用资源访问的目的，其原理是通过 acquire() 获取一个许可， 如果没有就等待， 而 release() 释放一个许可。</p>
+<blockquote>
+<p><img src="media/image6.jpeg" alt="36.png" />{width=&ldquo;5.798959973753281in&rdquo; height=&ldquo;3.9899989063867016in&rdquo;}</p>
+</blockquote>
+<p>如 果 Semaphore 的 数 值 被 初 始 化 为 1 ， 那 么 一 个 线 程 就 可 以 通 过acquire 进入互斥状态， 本质上和互斥锁是非常相似的。 但是区别也非常明显， 比如互斥锁是有持有者的， 而对于 Semaphore 这种计数器结构，虽然有类似功能，但其实不存在真正意义的持有者，除非我们进行扩展包装。</p>
+<p>**问题八：**Cyclic Barrier 和 Count Down Latch 看起来很相似，请对比下呢？</p>
+<p>它们的行为有一定相似度， 区别主要在于：</p>
+<ul>
+<li>
+<p>Count Down Latch 是不可以重置的， 所以无法重用， Cyclic Barrier 没有这种限制， 可以重用。</p>
+</li>
+<li>
+<p>Count Down Latch 的基本操作组合是 count Down/ await，调用 await 的线程阻塞等待 count Down 足够的次数， 不管你是在一个线程还是多个线程里 count Down ， 只要次数足够即可。 Cyclic Barrier 的基本操作组合就是 await ，当 所有的伙伴都调用了 await ，才 会继续进行任务， 并自动进行重置。</p>
+</li>
+</ul>
+<p>Count Down Latch 目 的 是 让 一 个 线 程 等 待 其 他 N 个 线 程 达 到 某 个 条件后 ，自 己再去做某个 事（ 通过 Cyclic Barrier 的第二个构造方法 public Cyclic Barrier( int part ies, Runnable barrier Action) ， 在新线程里做事可以达到同样的效果） 。 而 Cyclic Barrier 的目的是让 N 多线程互相等待直到所有的都达到某个状态 ，然 后这 N 个线程再继续执行各自后续</p>
+<p>（通过 Count Down Latch 在某些场合也能完成类似的效果） 。</p>
+<h1 id="java-线程池相关问题">
+  Java 线程池相关问题
+  <a class="anchor" href="#java-%e7%ba%bf%e7%a8%8b%e6%b1%a0%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98">#</a>
+</h1>
+<blockquote>
+<p><strong>问题一：</strong> Java 中的线程池是如何实现的？</p>
+</blockquote>
+<ul>
+<li>
+<p>在 Java 中， 所谓的线程池中的&quot; 线程&quot; ， 其实是被抽象为了一个静态内部类 Worker ，它 基于 AQS 实现 ，存 放在线程池的 Hash Set&lt;Worker&gt; workers 成员变量中；</p>
+</li>
+<li>
+<p>而 需 要 执 行 的 任 务 则 存 放 在 成 员 变 量 work Queue</p>
+</li>
+</ul>
+<p>（ Blocking Queue&lt;Runnable&gt; work Queue ）中。</p>
+<p>这样， 整个线程池实现的基本思想就是： 从 work Queue 中不断取出需要执行的任务， 放在 Workers 中进行处理。</p>
+<blockquote>
+<p><strong>问题二：</strong> 创建线程池的几个核心构造参数？</p>
+</blockquote>
+<p>Java 中的线程池的创建其实非常灵活， 我们可以通过配置不同的参数， 创建出行为不同的线程池， 这几个参数包括：</p>
+<ul>
+<li>
+<p>core Pool Size： 线程池的核心线程数。</p>
+</li>
+<li>
+<p>maximum Pool Size： 线程池允许的最大线程数。</p>
+</li>
+<li>
+<p>keep Alive Time： 超过核心线程数时闲置线程的存活时间。</p>
+</li>
+<li>
+<p>work Queue： 任务执行前保存任务的队列， 保存由 execute 方法提交的 Runnable 任务。</p>
+</li>
+</ul>
+<p>**问题三 ：**线 程池中的线程是怎么创建的？ 是一开始就随着线程池的启动创建好的吗？</p>
+<p>显然不是的。 线程池默认初始化后不启动 Worker ， 等待有请求时才启动。</p>
+<p>每当我们调用 exe cute ( ) 方法添加一个任务时， 线程池会做如下判断：</p>
+<ul>
+<li>
+<p>如果正在运行的线程数量小于 core Pool Size，那么马上创建线程运行这个任务；</p>
+</li>
+<li>
+<p>如果正在运行的线程数量大于或等于 core Pool Size，那么将这个任务放入队列；</p>
+</li>
+<li>
+<p>如 果 这 时 候 队 列 满 了 ， 而 且 正 在 运 行 的 线 程 数 量 小 于maximum Pool Size， 那么还是要创建非核心线程立刻运行这个任务；</p>
+</li>
+<li>
+<p>如 果 队 列 满 了 ， 而 且 正 在 运 行 的 线 程 数 量 大 于 或 等 于maximum Pool Size ， 那 么 线 程 池 会 抛 出 异 常Reject Execution Exception。</p>
+</li>
+</ul>
+<p>当一个线程完成任务时， 它会从队列中取下一个任务来执行。 当一个线程无事可做， 超过一定的时间（ keep Alive Time） 时， 线程池会判断。 如果当前运行的线程数大于 core Pool Size， 那么这个线程就被停掉。所以线程池的所有任务完成后， 它最终会收缩到 core Pool Size 的大小。<strong>问 题 四 ：</strong> 既 然 提 到 可 以 通 过 配 置 不 同 参 数 创 建 出 不 同 的 线 程 池 ， 那 么Java 中默认实现好的线程池又有哪些呢？ 请比较它们的异同。</p>
+<h2 id="-single-thread-executor-线程池">
+  . Single Thread Executor 线程池
+  <a class="anchor" href="#-single-thread-executor-%e7%ba%bf%e7%a8%8b%e6%b1%a0">#</a>
+</h2>
+<p>这个线程池只有一个核心线程在工作 ，也 就是相当于单线程串行执行所有任务。如果这个唯一的线程因为异常结束，那么会有一个新的线程来替代它。 此线程池保证所有任务的执行顺序按照任务的提交顺序执行。</p>
+<ul>
+<li>
+<p>core Pool Size： 1 ， 只有一个核心线程在工作。</p>
+</li>
+<li>
+<p>maximum Pool Size： 1 。</p>
+</li>
+<li>
+<p>keep Alive Time： 0L。</p>
+</li>
+<li>
+<p>work Queue： new Linked Blocking Queue&lt;Runnable&gt;() ， 其缓冲队列是无界的。</p>
+</li>
+</ul>
+<h2 id="-fixed-thread-pool-线程池">
+  . Fixed Thread Pool 线程池
+  <a class="anchor" href="#-fixed-thread-pool-%e7%ba%bf%e7%a8%8b%e6%b1%a0">#</a>
+</h2>
+<p>Fixed Thread Pool 是固定大小的线程池， 只有核心线程。 每次提交一个任务就创建一个线程，直到线程达到线程池的最大大小。线程池的大小一旦达到最大值就会保持不变，如果某个线程因为执行异常而结束，那么线程池会补充一个新线程。</p>
+<p>Fixed Thread Pool 多数针对一些很稳定很固定的正规并发线程， 多用于服务器。</p>
+<ul>
+<li>
+<p>core Pool Size： n Threads</p>
+</li>
+<li>
+<p>maximum Pool Size： n Threads</p>
+</li>
+<li>
+<p>keep Alive Time： 0L</p>
+</li>
+<li>
+<p>work Queue： new Linked Blocking Queue&lt;Runnable&gt;() ， 其缓冲队列是无界的。</p>
+</li>
+</ul>
+<h2 id="-cached-thread-pool-线程池">
+  . Cached Thread Pool 线程池
+  <a class="anchor" href="#-cached-thread-pool-%e7%ba%bf%e7%a8%8b%e6%b1%a0">#</a>
+</h2>
+<p>Cached Thread Pool 是无界线程池， 如果线程池的大小超过了处理任务所需要的线程， 那么就会回收部分空闲（ 60 秒不执行任务） 线程， 当任务数增加时， 此线程池又可以智能的添加新线程来处理任务。</p>
+<p>线程池大小完全依赖于操作系统（ 或者说 JVM） 能够创建的最大线程大小。 Synchronous Queue 是一个是缓冲区为 1 的阻塞队列。</p>
+<p>缓存型池子通常用于执行一些生存期很短的异步型任务 ，因 此在一些面向连接的 daemon 型 SERVER 中用得不多。但对于生存期短的异步任务， 它是 Executor 的首选。</p>
+<ul>
+<li>
+<p>core Pool Size： 0</p>
+</li>
+<li>
+<p>maximum Pool Size： Integer. MAX_VALUE</p>
+</li>
+<li>
+<p>keep Alive Time： 60L</p>
+</li>
+<li>
+<p>work Queue： new Synchronous Queue&lt;Runnable&gt;() ， 一个是缓冲区为 1 的阻塞队列。</p>
+</li>
+</ul>
+<h2 id="-scheduled-thread-pool-线程池">
+  . Scheduled Thread Pool 线程池
+  <a class="anchor" href="#-scheduled-thread-pool-%e7%ba%bf%e7%a8%8b%e6%b1%a0">#</a>
+</h2>
+<p>Scheduled Thread Pool ： 核心线程池固定， 大小无限的线程池。 此线程池支持定时以及周期性执行任务的需求 。创 建一个周期性执行任务的线程</p>
+<p>池。如果闲置，非核心线程池会在 DEFAULT_KEEPALIVEMILLIS 时间内回收。</p>
+<ul>
+<li>
+<p>core Pool Size： core Pool Size</p>
+</li>
+<li>
+<p>maximum Pool Size： Integer. MAX_VALUE</p>
+</li>
+<li>
+<p>keep Alive Time： DEFAULT_KEEPALIVE_MILLIS</p>
+</li>
+<li>
+<p>work Queue： new Delayed Work Queue() <strong>问题六：</strong> 如何在 Java 线程池中提交线程？ 线程池最常用的提交任务的方法有两种：</p>
+</li>
+</ul>
+<ol>
+<li><img src="media/image7.jpeg" alt="" />{width=&ldquo;5.768054461942257in&rdquo; height=&ldquo;0.3319433508311461in&rdquo;}. execute()： Executor Service. execute 方法接收一个 Runable 实例， 它用来执行一个任务：</li>
+</ol>
+<blockquote>
+<p>·</p>
+</blockquote>
+<ol>
+<li><img src="media/image8.jpeg" alt="" />{width=&ldquo;5.768054461942257in&rdquo; height=&ldquo;0.5847211286089239in&rdquo;}. submit()： Executor Service. s ubmit ( ) 方法返回的是 F uture 对象。可以用 is Done() 来查询 Future 是否已经完成， 当任务完成时， 它具有一个结果， 可以调用 get() 来获取结果。也可以不用 is Done() 进行检查就直接调用 get()， 在这种情况下， get() 将阻塞， 直至结果准备就绪。</li>
+</ol>
+<h1 id="java-内存模型相关问题">
+  Java 内存模型相关问题
+  <a class="anchor" href="#java-%e5%86%85%e5%ad%98%e6%a8%a1%e5%9e%8b%e7%9b%b8%e5%85%b3%e9%97%ae%e9%a2%98">#</a>
+</h1>
+<p>**问题一：**什么是 Java 的内存模型，Java 中各个线程是怎么彼此看到对方的变量的？</p>
+<p>Java 的内存模型定义了程序中各个变量的访问规则， 即在虚拟机中将变量存储到内存和从内存中取出这样的底层细节。</p>
+<p>此处的变量包括实例字段、静态字段和构成数组对象的元素，但是不包括局部变量和方法参数，因为这些是线程私有的，不会被共享，所以不存在竞争问题。</p>
+<p>Java 中各个线程是怎么彼此看到对方的变量的呢？ Java 中定义了主内存与工作内存的概念：</p>
+<p>所有的变量都存储在主内存，每条线程还有自己的工作内存，保存了被该线程使用到的变量的主内存副本拷贝。</p>
+<p>线程对变量的所有操作（ 读取、赋值）都必须在工作内存中进行，不能直接读写主内存的变量 。不 同的线程之间也无法直接访问对方工作内存的变量， 线程间变量值的传递需要通过主内存。</p>
+<p>**问题二：**请谈谈 volatile 有什么特点，为什么它能保证变量对所有线程的可见性？</p>
+<p>关键字 volatile 是 Java 虚拟机提供的最轻量级的同步机制 。当 一个变量被定义成 volatile 之后， 具备两种特性：</p>
+<ol>
+<li>保证此变量对所有线程的可见性。当一条线程修改了这个变量的值，新值</li>
+</ol>
+<p>对于其他线程是可以立即得知的。 而普通变量做不到这一点。</p>
+<ol>
+<li>禁止指令重排序优化。普通变量仅仅能保证在该方法执行过程中，得到正确结果， 但是不保证程序代码的执行顺序。</li>
+</ol>
+<h2 id="java-的内存模型定义了-8-种内存间操作-lock-和-unlock">
+  Java 的内存模型定义了 8 种内存间操作： lock 和 unlock
+  <a class="anchor" href="#java-%e7%9a%84%e5%86%85%e5%ad%98%e6%a8%a1%e5%9e%8b%e5%ae%9a%e4%b9%89%e4%ba%86-8-%e7%a7%8d%e5%86%85%e5%ad%98%e9%97%b4%e6%93%8d%e4%bd%9c-lock-%e5%92%8c-unlock">#</a>
+</h2>
+<ul>
+<li>
+<p>把一个变量标识为一条线程独占的状态。</p>
+</li>
+<li>
+<p>把一个处于锁定状态的变量释放出来 ，释 放之后的变量才能被其他线程锁定。</p>
+</li>
+</ul>
+<h2 id="read-和-write">
+  read 和 write
+  <a class="anchor" href="#read-%e5%92%8c-write">#</a>
+</h2>
+<ul>
+<li>
+<p>把一个变量值从主内存传输到线程的工作内存， 以便 load。</p>
+</li>
+<li>
+<p>把 store 操作从工作内存得到的变量的值， 放入主内存的变量中。</p>
+</li>
+</ul>
+<h2 id="load-和-store">
+  load 和 store
+  <a class="anchor" href="#load-%e5%92%8c-store">#</a>
+</h2>
+<ul>
+<li>
+<p>把 read 操作从主内存得到的变量值放入工作内存的变量副本中。</p>
+</li>
+<li>
+<p>把工作内存的变量值传送到主内存， 以便 write。</p>
+</li>
+</ul>
+<h2 id="use-和-assgin">
+  use 和 assgin
+  <a class="anchor" href="#use-%e5%92%8c-assgin">#</a>
+</h2>
+<ul>
+<li>
+<p>把工作内存变量值传递给执行引擎。</p>
+</li>
+<li>
+<p>将执行引擎值传递给工作内存变量值。</p>
+</li>
+</ul>
+<p>volatile 的实现基于这 8 种内存间操作， 保证了一个线程对某个</p>
+<p>volatile 变量的修改， 一定会被另一个线程看见， 即保证了可见性。</p>
+<p>**问题三：**既然 volatile 能够保证线程间的变量可见性，是不是就意味着基于 volatile 变量的运算就是并发安全的？</p>
+<p>显然不是的。 基于 volatile 变量的运算在并发下不一定是安全的。</p>
+<p>volatile 变量在各个线程的工作内存， 不存在一致性问题（ 各个线程的工作内存中 volatile 变量， 每次使用前都要刷新到主内存） 。</p>
+<p>但是 Java 里面的运算并非原子操作 ，导 致 volatile 变量的运算在并发下一样是不安全的。</p>
+<p><strong>问题四：</strong> 请对比下 volatile 对比 Synchronized 的异同。</p>
+<p>Synchronized 既能保证可见性， 又能保证原子性， 而 volatile 只能保证可见性， 无法保证原子性。</p>
+<p>Thread Local 和 Synchonized 都用于解决多线程并发访问， 防止任务在共享资源上产生冲突。 但是 Thread Local 与 Synchronized 有本质的区别。</p>
+<p>Synchronized 用于实现同步机制 ，是 利用锁的机制使变量或代码块在某一时该只能被一个线程访问， 是一种 &quot; 以时间换空间&quot; 的方式。</p>
+<p>而 Thread Local 为每一个线程都提供了变量的副本 ，使 得每个线程在某一时间访问到的并不是同一个对象， 根除了对变量的共享， 是一种 &ldquo;以空间换时间&rdquo; 的方式。</p>
+<p><strong>问题五：</strong> 请谈谈 Thread Local 是怎么解决并发安全的？</p>
+<p>Thread Local 这是 Java 提供的一种保存线程私有信息的机制， 因为其在整个线程生命周期内有效 ，所 以可以方便地在一个线程关联的不同业务模块之间传递信息， 比如事务 ID、 Cookie 等上下文相关信息。</p>
+<p>Thread Local 为每一个线程维护变量的副本， 把共享数据的可见范围限制在同一个线程之内， 其实现原理是， 在 Thread Local 类中有一个</p>
+<p>Map， 用于存储每一个线程的变量的副本。</p>
+<p><strong>问题六：</strong> 很多人都说要慎用 Thread Local， 谈谈你的理解， 使用Thread Local 需要注意些什么？</p>
+<h2 id="使用-thread-local-要注意-remove">
+  使用 Thread Local 要注意 remove！
+  <a class="anchor" href="#%e4%bd%bf%e7%94%a8-thread-local-%e8%a6%81%e6%b3%a8%e6%84%8f-remove">#</a>
+</h2>
+<p>Thread Local 的实现是基于一个所谓的 Thread Local Map，在Thread Local Map 中，它的 key 是一个弱引用。</p>
+<p>通常弱引用都会和引用队列配合清理机制使用 ，但 是 Thread Local 是个例外， 它并没有这么做。</p>
+<p>这意味着， 废弃项目的回收依赖于显式地触发， 否则就要等待线程结束， 进而回收相应 Thread Local Map！这就是很多 OOM 的来源，所以通常</p>
+<p>都会建议， 应用一定要自己负责 remove， 并且不要和线程池配合， 因为 worker 线程往往是不会退出的。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#-single-thread-executor-线程池">. Single Thread Executor 线程池</a></li>
+    <li><a href="#-fixed-thread-pool-线程池">. Fixed Thread Pool 线程池</a></li>
+    <li><a href="#-cached-thread-pool-线程池">. Cached Thread Pool 线程池</a></li>
+    <li><a href="#-scheduled-thread-pool-线程池">. Scheduled Thread Pool 线程池</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#java-的内存模型定义了-8-种内存间操作-lock-和-unlock">Java 的内存模型定义了 8 种内存间操作： lock 和 unlock</a></li>
+    <li><a href="#read-和-write">read 和 write</a></li>
+    <li><a href="#load-和-store">load 和 store</a></li>
+    <li><a href="#use-和-assgin">use 和 assgin</a></li>
+    <li><a href="#使用-thread-local-要注意-remove">使用 Thread Local 要注意 remove！</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

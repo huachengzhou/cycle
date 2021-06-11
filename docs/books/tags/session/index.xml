@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Session on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/tags/session/</link>
+    <description>Recent content in Session on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/session/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jsp &gt; jstl &gt; Session</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/</guid>
+      <description>Session# HTTP是无状态协议，这意味着每次客户端检索网页时，都要单独打开一个服务器连接，因此服务器不会记录下先前客户端请求的任何信息#  会话,当用户打开一个浏览器连接到web应用或者打开某个页面,直到关闭浏览器这个过程叫做会话#  Session是保存在服务器上的数据结构，用于跟踪用户的状态。此数据可以保存在群集、数据库、文件中# Session常用方法#  public boolean isNew()
+返回是否为一个新的客户端，或者客户端是否拒绝加入session     public Enumeration getAttributeNames()
+返回session对象中所有的对象名称     public int getMaxInactiveInterval()
+返回最大时间间隔，以秒为单位，servlet 容器将会在这段时间内保持会话打开     public long getCreationTime()
+返回session对象被创建的时间， 以毫秒为单位，从1970年1月1号凌晨开始算起     public long getLastAccessedTime()
+返回客户端最后访问的时间，以毫秒为单位，从1970年1月1号凌晨开始算起     public Object getAttribute(String name)
+返回session对象中与指定名称绑定的对象，如果不存在则返回null     public Object getAttribute(String name)</description>
+    </item>
+    
+  </channel>
+</rss>

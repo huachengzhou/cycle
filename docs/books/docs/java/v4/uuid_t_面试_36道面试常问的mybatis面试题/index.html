@@ -1,0 +1,2417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="generator" content="Hugo 0.81.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="测试博客">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="36道面试常问的MyBatis面试题" />
+<meta property="og:description" content="测试博客" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_36%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84mybatis%E9%9D%A2%E8%AF%95%E9%A2%98/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2021-02-15T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-02-15T00:00:00&#43;00:00" />
+
+<title>36道面试常问的MyBatis面试题 | Hugo Book</title>
+<link rel="manifest" href="/cycle/books/manifest.json">
+<link rel="icon" href="/cycle/books/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/cycle/books/book.min.2bc2364a4a4b31f0ec1debecf0a8f90a840821f143dfe1ac6a0f7cbcbdcf64ac.css" integrity="sha256-K8I2SkpLMfDsHevs8Kj5CoQIIfFD3&#43;Gsag98vL3PZKw=">
+<script defer src="/cycle/books/en.search.min.60f6451ea79769a36ceaa79a96bedadb1acd59c4f0aab450ffbb8a94027f29c1.js" integrity="sha256-YPZFHqeXaaNs6qealr7a2xrNWcTwqrRQ/7uKlAJ/KcE="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/cycle/books"><span>Hugo Book</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/" class="">Example Site</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a  class="">Collapsed</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Java</span>
+  
+
+          
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V1</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_bootstrap-switch_contributing/" class="">CONTRIBUTING</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_git/" class="">git</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitintroduction/" class="">gitIntroduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitub%E9%85%8D%E7%BD%AE/" class="">gitub配置</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/" class="">hugo &gt; tutorials1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/" class="">hugo &gt; tutorials2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_idea_idea/" class="">idea</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_java_java_bitoperation/" class="">java &gt; bitOperation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/" class="">jsp &gt; EL基础教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_assembly_link/" class="">link</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V2</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_changelog/" class="">CHANGELOG</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_contributing/" class="">CONTRIBUTING</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_host%E6%98%A0%E5%B0%84/" class="">host映射</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93%E5%A4%A7%E5%85%A8/" class="">java &gt; java基础总结大全</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_programstructure/" class="">java &gt; programStructure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_java_thread_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="">java &gt; thread &gt; Java多线程编程核心技术 &gt; 第一章</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_javareadme/" class="">javaReadme</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/" class="">jsp &gt; JSTL &gt; core标签库</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jsp_jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/" class="">jsp &gt; 字符串el表达式</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="">Linux下设置和查看环境变量</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E5%91%BD%E4%BB%A4/" class="">linux命令</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_nginx/" class="">nginx</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_notepad&#43;&#43;%E5%AE%89%E8%A3%85/" class="">Notepad&#43;&#43;安装</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_usemath/" class="">useMath</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_algorithm_%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/" class="">压缩算法</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V3</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/jane%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/" class="">Jane 主题预览</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/" class="">idea导入项目出现Unable &gt; to &gt; import &gt; maven &gt; project &gt; See &gt; logs &gt; for &gt; details提示</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_meditation_info/" class="">info</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_memorypath_memory/" class="">memory</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_method_studyinfo/" class="">studyInfo</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/" class="">Ubuntu 16.04修改hosts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/" class="">ubuntu安装chmsee</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/" class="">Ubuntu清理系统垃圾</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/" class="">ubuntu软件卸载</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/hugo%E6%A8%A1%E6%9D%BF%E5%BC%95%E7%94%A8/" class="">(Hu)go 模板引用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v3/migrate-from-jekyll/" class="">Migrate to Hugo from Jekyll</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>V4</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84list%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10个Java经典的List面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84main%E6%96%B9%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10个Java经典的Main方法面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84string%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10个Java经典的String面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10道Java面试必备的设计模式面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%AB%98%E7%BA%A7%E5%BF%85%E5%A4%87%E7%9A%84netty%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">10道Java高级必备的Netty面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84tomcat%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">15道经典的Tomcat面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">15道面试常问的Java多线程面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_17%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97kafka%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">17道消息队列Kafka面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_18%E9%81%93%E9%9D%9E%E5%B8%B8%E7%89%9B%E9%80%BC%E7%9A%84nginx%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">18道非常牛逼的Nginx面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_1ch/" class="">1ch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%9D%A2%E8%AF%95%E5%AE%98%E5%B8%B8%E9%97%AE%E7%9A%84jvm%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">20道面试官常问的JVM面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84springoot%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">20道顶尖的Springoot面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_22%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84springmvc%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">22道面试常问的SpringMVC面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97rabbitmq%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">24道消息队列RabbitMQ面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84%E8%8B%B1%E8%AF%AD%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">24道经典的英语面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_27%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%94%81%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">27道顶尖的Java多线程锁、内存模型面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_29%E9%81%93%E5%B8%B8%E8%A7%81%E7%9A%84spring%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">29道常见的Spring面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_2ch/" class="">2ch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_30%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84%E9%9B%86%E5%90%88%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">30个Java经典的集合面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_36%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84mybatis%E9%9D%A2%E8%AF%95%E9%A2%98/" class=" active">36道面试常问的MyBatis面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_40%E9%81%93%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">40道常问的Java多线程面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_55%E9%81%93bat%E7%B2%BE%E9%80%89%E7%9A%84mysql%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">55道BAT精选的Mysql面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_60%E9%81%93%E5%BF%85%E5%A4%87%E7%9A%84java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">60道必备的Java核心技术面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_7%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97activemq%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">7道消息队列ActiveMQ面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/" class="">apache-common工具包</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_select2_contributing/" class="">CONTRIBUTING</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_dom4j/" class="">dom4j</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_basic/" class="">DOS &gt; basic</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_file/" class="">DOS &gt; file</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_network/" class="">DOS &gt; network</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_ftp/" class="">FTP</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/" class="">GitHubPages绑定来自阿里云的域名</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_guava-common/" class="">Guava-common</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_io/" class="">IO</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E7%9A%84%E5%B9%82%E7%AD%89%E5%A4%84%E7%90%86/" class="">java &gt; thread &gt; 高并发和分布式中的幂等处理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E9%AB%98%E5%8F%AF%E7%94%A8%E7%9A%84%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5/" class="">java &gt; thread &gt; 高并发高可用的架构实践</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/" class="">java &gt; 多线程 &gt; 线程中断问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81/" class="">java &gt; 多线程 &gt; 线程状态</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Binfo/" class="">java &gt; 多线程info</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized/" class="">java &gt; 多线程synchronized</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized.answer/" class="">java &gt; 多线程synchronized.answer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/" class="">java &gt; 监听事件原理</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/" class="">java内存模型</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_java%E8%AF%95%E9%A2%98%E7%BB%8F%E5%85%B87/" class="">Java试题经典7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_js_console.log%E7%94%A8%E6%B3%95/" class="">js &gt; console.log用法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_jsoup/" class="">jsoup</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/" class="">jsp &gt; jstl &gt; Session</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_basis/" class="">mysql &gt; basis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_data/" class="">mysql &gt; data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_distinguish/" class="">mysql &gt; distinguish</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install/" class="">mysql &gt; install</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install_problem/" class="">mysql &gt; install &gt; problem</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/" class="">mysql &gt; 开发规范</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%89%E8%8C%83%E5%BC%8F/" class="">mysql &gt; 数据库设计三范式</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%87%BD%E6%95%B0/" class="">mysql函数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/" class="">mysql存储引擎</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E6%9F%A5%E8%AF%A2/" class="">mysql查询</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/" class="">mysql用户与权限</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%B4%A2%E5%BC%95/" class="">mysql索引</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_selfeducation_number/" class="">number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_postgresql_postgresql_create%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/" class="">postgresql &gt; create用户与权限</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_redis_redis/" class="">redis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/" class="">script</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_springboot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/" class="">SpringBoot学习笔记完整教程</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B7%A5%E5%85%B7/" class="">spring工具</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/" class="">spring常用的工具类</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/" class="">study.web</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_swing_swing_introduction/" class="">swing &gt; Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_visual_studio_code_visualstudiocode%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6/" class="">VisualStudioCode过滤文件不显示某些文件</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/" class="">vue &gt; index</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_windows_question/" class="">windows &gt; question</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98edismemcached%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">分布式缓存edisMemcached典面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A840%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">史上最全40道Dubbo面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A850%E9%81%93redis%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">史上最全50道Redis面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A870%E9%81%93spring%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">史上最全70道Spring面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" class="">微型计算机系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E6%90%9E%E5%AE%9Ar%E8%AF%95%E7%9A%840%E5%BF%85%E5%A4%87%E9%97%AE%E9%A2%98/" class="">搞定R试的0必备问题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%8917%E9%81%93%E6%B5%B7%E9%87%8F%E6%95%B0%E9%87%8F%E5%A4%84%E7%90%86%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">精选17道海量数量处理面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%897%E9%81%93elasticearch%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">精选7道Elasticearch面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%898%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/" class="">精选8道Dubbo面试题</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/" class="">计算机中信息的表示</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" class="">计算机操作系统</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8/" class="">计算机的发展与应用</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/v4/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BE%88%E9%95%BF%E7%9A%84%E6%A0%87%E9%A2%98/" class="">这是一个很长的标题</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/" class="">网易云课堂MySQL &gt; chapter1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/" class="">网易云课堂MySQL &gt; chapter2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/" class="">网易云课堂MySQL &gt; chapter3</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/" class="">网易云课堂MySQL &gt; chapter4</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter5/" class="">网易云课堂MySQL &gt; chapter5</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql%E5%BE%AE%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="">网易云课堂MySQL微专业学习笔记</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/section/" class="">Section</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/section/page1/" class="">Page1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/section/page2/" class="">Page2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://huachengzhou.github.io/cycle/books/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="/cycle/books/posts/" >
+        Blog
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/cycle/books/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>36道面试常问的MyBatis面试题</strong>
+
+  <label for="toc-control">
+    
+    <img src="/cycle/books/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>1、什么是MyBatis？</p>
+<p>答：MyBatis 是一个可以自定义 SQL、存储过程和高级映射的持久层框架。2、讲下 MyBatis 的缓存</p>
+<p>答：MyBatis 的缓存分为一级缓存和二级缓存,一级缓存放在 session 里面,默认就有,二级缓存放在它的命名空间里,默认是不打开的,使用二级缓存属性类需要实现Serializable 序列化接口 (可用来保存对象的状态),可在它的映射文件中配置&lt;cache/&gt;</p>
+<p>3、Mybatis 是如何进行分页的？分页插件的原理是什么？ 答：</p>
+<ol>
+<li>Mybatis 使用 RowBounds 对象进行分页，也可以直接编写 sql 实现分页，也可以使用 Mybatis</li>
+</ol>
+<p>的分页插件。</p>
+<ol>
+<li>分页插件的原理：实现 Mybatis 提供的接口，实现自定义插件，在插件的拦截方法内拦截待执行的sql，然后重写 sql。</li>
+</ol>
+<p>举例：select * from student，拦截 sql 后重写为：select t.* from （select * from student）t limit 0，10</p>
+<p>4、简述 Mybatis 的插件运行原理，以及如何编写一个插件？ 答：</p>
+<ol>
+<li>
+<p>Mybatis 仅可以编写针对 ParameterHandler、ResultSetHandler、StatementHandler、Executor这 4 种接口的插件，Mybatis 通过动态代理，为需要拦截的接口生成代理对象以实现接口方法拦截功能，每当执行这 4 种接口对象的方法时， 就会进入拦截方法， 具体就是 InvocationHandler 的 invoke()方法，当然，只会拦截那些你指定需要拦截的方法。</p>
+</li>
+<li>
+<p>实现 Mybatis 的 Interceptor 接口并复写 intercept()方法，然后在给插件编写注解，指定要拦截哪一个接口的哪些方法即可，记住，别忘了在配置文件中配置你编写的插件。</p>
+</li>
+</ol>
+<p>5、Mybatis 动态 sql 是做什么的？都有哪些动态 sql？能简述一下动态 sql 的执行原理不？ 答：</p>
+<ol>
+<li>
+<p>Mybatis 动态 sql 可以让我们在 Xml 映射文件内，以标签的形式编写动态 sql，完成逻辑判断和动态拼接sql 的功能。</p>
+</li>
+<li>
+<p>Mybatis 提供了9 种动态sql 标签：trim|where|set|foreach|if|choose|when|otherwise|bind。</p>
+</li>
+<li>
+<p>其执行原理为，使用 OGNL 从 sql 参数对象中计算表达式的值，根据表达式的值动态拼接</p>
+</li>
+</ol>
+<p>sql，以此来完成动态 sql 的功能。</p>
+<p>6、#{}和${}的区别是什么？ 答：</p>
+<ol>
+<li>
+<p>#{}是预编译处理，${}是字符串替换。</p>
+</li>
+<li>
+<p>Mybatis 在处理#{}时，会将 sql 中的#{}替换为?号，调用 PreparedStatement 的 set 方法来赋值；</p>
+</li>
+<li>
+<p>Mybatis 在处理${}时，就是把${}替换成变量的值。</p>
+</li>
+<li>
+<p>使用#{}可以有效的防止 SQL 注入，提高系统安全性。</p>
+</li>
+</ol>
+<p>7、为什么说Mybatis 是半自动 ORM 映射工具？它与全自动的区别在哪里？</p>
+<p>答：Hibernate 属于全自动 ORM 映射工具，使用 Hibernate 查询关联对象或者关联集合对象时，可以根据对象关系模型直接获取，所以它是全自动的。而 Mybatis 在查询关联对象或关联集合对象时，需要手动编写 sql 来完成，所以，称之为半自动 ORM 映射工具。</p>
+<p>8、Mybatis 是否支持延迟加载？如果支持，它的实现原理是什么？ 答：</p>
+<ol>
+<li>
+<p>Mybatis 仅支持 association 关联对象和 collection 关联集合对象的延迟加载，association 指的就是一对一，collection 指的就是一对多查询。在 Mybatis 配置文件中，可以配置是否启用延迟加载lazyLoadingEnabled=true|false。</p>
+</li>
+<li>
+<p>它的原理是，使用 CGLIB 创建目标对象的代理对象，当调用目标方法时，进入拦截器方法，比如调用 a.getB().getName()，拦截器 invoke()方法发现 a.getB()是 null 值，那么就会单独发送事先保存好的查询关联 B 对象的 sql，把 B 查询上来，然后调用 a.setB(b)，于是 a 的对象 b 属性就有值了，接着完成 a.getB().getName()方法的调用。这就是延迟加载的基本原理。</p>
+</li>
+</ol>
+<p>9、MyBatis 与 Hibernate 有哪些不同？ 答：</p>
+<ol>
+<li>
+<p>Mybatis 和 hibernate 不同，它不完全是一个 ORM 框架，因为 MyBatis 需要程序员自己编写 Sql 语句，不过 mybatis 可以通过 XML 或注解方式灵活配置要运行的 sql 语句，并将 java 对象和 sql 语句映射生成最终执行的 sql，最后将 sql 执行的结果再映射生成java 对象。</p>
+</li>
+<li>
+<p>Mybatis 学习门槛低，简单易学，程序员直接编写原生态 sql，可严格控制 sql 执行性能，灵活度高，非常适合对关系数据模型要求不高的软件开发，例如互联网软件、企业运营类软件等，因为这类软件需求变化频繁，一但需求变化要求成果输出迅速。但是灵活的前提是 mybatis 无法做到数据库无关性，如果需要实现支持多种数据库的软件则需要自定义多套 sql映射文件，工作量大。</p>
+</li>
+<li>
+<p>Hibernate 对象/关系映射能力强，数据库无关性好，对于关系模型要求高的软件（例如需求固定的定制化软件）如果用 hibernate 开发可以节省很多代码，提高效率。但是 Hibernate 的缺点是学习门槛高，要精通门槛更高，而且怎么设计 O/R 映射，在性能和对象模型之间如何权衡，以及怎样用好 Hibernate 需要具有很强的经验和能力才行。</p>
+</li>
+</ol>
+<p>总之，按照用户的需求在有限的资源环境下只要能做出维护性、扩展性良好的软件架构都是好架构，所以框架只有适合才是最好。</p>
+<p>10、MyBatis 的好处是什么？ 答：</p>
+<ol>
+<li>
+<p>MyBatis 把 sql 语句从 Java 源程序中独立出来，放在单独的 XML 文件中编写，给程序的维护带来了很大便利。</p>
+</li>
+<li>
+<p>MyBatis 封装了底层 JDBC API 的调用细节，并能自动将结果集转换成 Java Bean 对象，大大简化了 Java 数据库编程的重复工作。</p>
+</li>
+<li>
+<p>因为 MyBatis 需要程序员自己去编写 sql 语句，程序员可以结合数据库自身的特点灵活控制 sql 语句，因此能够实现比 Hibernate 等全自动 orm 框架更高的查询效率，能够完成复杂查询。</p>
+</li>
+</ol>
+<p>11、简述 Mybatis 的 Xml 映射文件和 Mybatis 内部数据结构之间的映射关系？</p>
+<p>答：Mybatis 将所有 Xml 配置信息都封装到All-In-One 重量级对象 Configuration 内部。在 Xml 映射文件中，&lt;parameterMap&gt;标签会被解析为 ParameterMap 对象，其每个子元素会被解析为 ParameterMapping 对象。&lt;resultMap&gt;标签会被解析为 ResultMap 对象，其每个子元素会被解析为 ResultMapping 对象。每一个&lt;select&gt;、&lt;insert&gt;、&lt;update&gt;、&lt;delete&gt;标签均会被解析为 MappedStatement 对象，标签内的sql 会被解析为 BoundSql 对象。</p>
+<p>12、什么是MyBatis 的接口绑定,有什么好处？</p>
+<p>答：接口映射就是在 MyBatis 中任意定义接口,然后把接口里面的方法和 SQL 语句绑定,我们直接调用接口方法就可以,这样比起原来了 SqlSession 提供的方法我们可以有更加灵活的选择和设置.</p>
+<p>13、接口绑定有几种实现方式,分别是怎么实现的?</p>
+<p>答： 接口绑定有两种实现方式, 一种是通过注解绑定, 就是在接口的方法上面加上@Select@Update 等注解里面包含Sql 语句来绑定,另外一种就是通过xml 里面写SQL 来绑定, 在这种情况下,要指定 xml 映射文件里面的 namespace 必须为接口的全路径名.</p>
+<p>14、什么情况下用注解绑定,什么情况下用 xml 绑定？</p>
+<p>答：当 Sql 语句比较简单时候,用注解绑定；当 SQL 语句比较复杂时候,用 xml 绑定,一般用 xml</p>
+<p>绑定的比较多</p>
+<p>15、MyBatis 实现一对一有几种方式?具体怎么操作的？</p>
+<p>答：有联合查询和嵌套查询,联合查询是几个表联合查询,只查询一次,通过在 resultMap 里面配置 association 节点配置一对一的类就可以完成;嵌套查询是先查一个表,根据这个表里面的结果的外键id,去再另外一个表里面查询数据,也是通过association 配置,但另外一个表的查询通过 select 属性配置。</p>
+<p>16、Mybatis 能执行一对一、一对多的关联查询吗？都有哪些实现方式，以及它们之间的区别？</p>
+<p>答：能，Mybatis 不仅可以执行一对一、一对多的关联查询，还可以执行多对一，多对多的关联查询，多对一查询，其实就是一对一查询，只需要把 selectOne()修改为 selectList()即可； 多对多查询，其实就是一对多查询，只需要把 selectOne()修改为 selectList()即可。</p>
+<p>关联对象查询，有两种实现方式，一种是单独发送一个 sql 去查询关联对象，赋给主对象， 然后返回主对象。另一种是使用嵌套查询，嵌套查询的含义为使用 join 查询，一部分列是 A 对象的属性值，另外一部分列是关联对象 B 的属性值，好处是只发一个 sql 查询，就可以把主对象和其关联对象查出来。</p>
+<p>17、MyBatis 里面的动态 Sql 是怎么设定的?用什么语法?</p>
+<p>答：MyBatis 里面的动态 Sql 一般是通过 if 节点来实现,通过 OGNL 语法来实现,但是如果要写的完整,必须配合 where,trim 节点,where 节点是判断包含节点有内容就插入 where,否则不插入,trim 节点是用来判断如果动态语句是以 and 或 or 开始,那么会自动把这个 and 或者 or 取掉。</p>
+<p>18、Mybatis 是如何将 sql 执行结果封装为目标对象并返回的？都有哪些映射形式？ 答：</p>
+<p>第一种是使用&lt;resultMap&gt;标签，逐一定义列名和对象属性名之间的映射关系。</p>
+<p>第二种是使用sql 列的别名功能，将列别名书写为对象属性名，比如 T_NAME AS NAME，对象属性名一般是 name，小写，但是列名不区分大小写，Mybatis 会忽略列名大小写，智能找到与之对应对象属性名，你甚至可以写成 T_NAME AS NaMe，Mybatis 一样可以正常工作。</p>
+<p>有了列名与属性名的映射关系后，Mybatis 通过反射创建对象，同时使用反射给对象的属性逐一赋值并返回，那些找不到映射关系的属性，是无法完成赋值的。</p>
+<p>19、Xml 映射文件中，除了常见的 select|insert|updae|delete 标签之外，还有哪些标签？ 答：还有很多其他的标签，&lt;resultMap&gt;、&lt;parameterMap&gt;、&lt;sql&gt;、&lt;include&gt;、&lt;selectKey&gt;， 加上动态 sql 的 9 个标签，trim|where|set|foreach|if|choose|when|otherwise|bind 等，其中</p>
+<p>&lt;sql&gt;为 sql 片段标签，通过&lt;include&gt;标签引入 sql 片段，&lt;selectKey&gt;为不支持自增的主键生成策略标签。</p>
+<p>20、当实体类中的属性名和表中的字段名不一样，如果将查询的结果封装到指定 pojo？ 答：</p>
+<ol>
+<li>
+<p>通过在查询的sql 语句中定义字段名的别名。</p>
+</li>
+<li>
+<p>通过&lt;resultMap&gt;来映射字段名和实体类属性名的一一对应的关系。</p>
+</li>
+</ol>
+<p>21、模糊查询 like 语句该怎么写答：</p>
+<ol>
+<li>
+<p>在 java 中拼接通配符，通过#{}赋值</p>
+</li>
+<li>
+<p>在 Sql 语句中拼接通配符 （不安全 会引起 Sql 注入）</p>
+</li>
+</ol>
+<p>22、通常一个 Xml 映射文件，都会写一个 Dao 接口与之对应, Dao 的工作原理，是否可以重载？</p>
+<p>答：不能重载，因为通过 Dao 寻找Xml 对应的 sql 的时候全限名+方法名的保存和寻找策略。接口工作原理为 jdk 动态代理原理，运行时会为 dao 生成 proxy，代理对象会拦截接口方法， 去执行对应的sql 返回数据。</p>
+<p>23、Mybatis 映射文件中，如果A 标签通过 include 引用了B 标签的内容，请问，B 标签能否定义在 A 标签的后面，还是说必须定义在 A 标签的前面？</p>
+<p>答：虽然 Mybatis 解析 Xml 映射文件是按照顺序解析的，但是，被引用的 B 标签依然可以定义在任何地方，Mybatis 都可以正确识别。原理是，Mybatis 解析 A 标签，发现 A 标签引用了 B 标签，但是B 标签尚未解析到，尚不存在，此时，Mybatis 会将 A 标签标记为未解析状态，然后继续解析余下的标签，包含 B 标签，待所有标签解析完毕，Mybatis 会重新解析那些被标记为未解析的标签，此时再解析A 标签时，B 标签已经存在，A 标签也就可以正常解析完成了。</p>
+<p>24、Mybatis 的Xml 映射文件中，不同的Xml 映射文件，id 是否可以重复？</p>
+<p>答：不同的Xml 映射文件，如果配置了namespace，那么id 可以重复；如果没有配置namespace，那么 id 不能重复；毕竟 namespace 不是必须的，只是最佳实践而已。原因就是 namespace+id 是作为 Map&lt;String, MappedStatement&gt;的 key 使用的，如果没有 namespace，就剩下 id，那么，id 重复会导致数据互相覆盖。有了 namespace，自然 id 就可以重复，namespace 不同，</p>
+<p>namespace+id 自然也就不同。</p>
+<p>25、Mybatis 中如何执行批处理？</p>
+<p>答：使用 BatchExecutor 完成批处理。</p>
+<p>26、Mybatis 都有哪些 Executor 执行器？它们之间的区别是什么？</p>
+<p>答：Mybatis 有三种基本的 Executor 执行器，SimpleExecutor、ReuseExecutor、BatchExecutor。1）SimpleExecutor：每执行一次 update 或 select，就开启一个 Statement 对象，用完立刻关闭 Statement 对象。2）ReuseExecutor：执行 update 或 select，以 sql 作为 key 查找 Statement 对象，存在就使用，不存在就创建，用完后，不关闭 Statement 对象，而是放置于 Map3） BatchExecutor：完成批处理。</p>
+<p>27、Mybatis 中如何指定使用哪一种 Executor 执行器？</p>
+<p>答：在 Mybatis 配置文件中，可以指定默认的 ExecutorType 执行器类型，也可以手动给</p>
+<p>DefaultSqlSessionFactory 的创建 SqlSession 的方法传递 ExecutorType 类型参数。</p>
+<p>28、Mybatis 执行批量插入，能返回数据库主键列表吗？ 答：能，JDBC 都能，Mybatis 当然也能。</p>
+<p>29、Mybatis 是否可以映射 Enum 枚举类？</p>
+<p>答：Mybatis 可以映射枚举类，不单可以映射枚举类，Mybatis 可以映射任何对象到表的一列上。映射方式为自定义一个 TypeHandler，实现 TypeHandler 的 setParameter()和 getResult() 接口方法。TypeHandler 有两个作用，一是完成从 javaType 至 jdbcType 的转换，二是完成jdbcType 至 javaType 的转换，体现为 setParameter()和 getResult()两个方法，分别代表设置 sql 问号占位符参数和获取列查询结果。</p>
+<p>30、如何获取自动生成的(主)键值？</p>
+<p>答：配置文件设置 usegeneratedkeys 为 true 31、在mapper 中如何传递多个参数？</p>
+<p>答：</p>
+<ol>
+<li>
+<p>直接在方法中传递参数，xml 文件用#{0} #{1}来获取</p>
+</li>
+<li>
+<p>使用 @param 注解:这样可以直接在 xml 文件中通过#{name}来获取</p>
+</li>
+</ol>
+<p>32、resultType resultMap 的区别？ 答：</p>
+<ol>
+<li>
+<p>类的名字和数据库相同时，可以直接设置resultType 参数为 Pojo 类</p>
+</li>
+<li>
+<p>若不同，需要设置resultMap 将结果名字和 Pojo 名字进行转换</p>
+</li>
+</ol>
+<p>33、使用 MyBatis 的 mapper 接口调用时有哪些要求？ 答：</p>
+<ol>
+<li>
+<p>Mapper 接口方法名和mapper.xml 中定义的每个 sql 的 id 相同</p>
+</li>
+<li>
+<p>Mapper 接口方法的输入参数类型和 mapper.xml 中定义的每个sql 的 parameterType 的类型相同</p>
+</li>
+<li>
+<p>Mapper 接口方法的输出参数类型和 mapper.xml 中定义的每个 sql 的 resultType 的类型相同</p>
+</li>
+<li>
+<p>Mapper.xml 文件中的 namespace 即是 mapper 接口的类路径。</p>
+</li>
+</ol>
+<p>34、Mybatis 比 IBatis 比较大的几个改进是什么？ 答：</p>
+<ol>
+<li>
+<p>有接口绑定,包括注解绑定 sql 和 xml 绑定 Sql</p>
+</li>
+<li>
+<p>动态sql 由原来的节点配置变成OGNL 表达式3）在一对一,一对多的时候引进了association,</p>
+</li>
+</ol>
+<p>在一对多的时候引入了 collection 节点,不过都是在 resultMap 里面配置</p>
+<p>35、IBatis 和 MyBatis 在核心处理类分别叫什么？</p>
+<p>答：IBatis 里面的核心处理类交 SqlMapClient,MyBatis 里面的核心处理类叫做SqlSession。</p>
+<p>36、IBatis 和 MyBatis 在细节上的不同有哪些？ 答：</p>
+<ol>
+<li>
+<p>在 sql 里面变量命名有原来的#变量# 变成了#{变量}</p>
+</li>
+<li>
+<p>原来的$变量$变成了${变量}</p>
+</li>
+<li>
+<p>原来在sql 节点里面的class 都换名字交 type</p>
+</li>
+<li>
+<p>原来的 queryForObject queryForList 变成了 selectOne selectList5）原来的别名设置在映射文件里面放在了核心配置文件里。</p>
+</li>
+</ol>
+<p>更多请关注微信公众号：Java 技术栈，回复：面试</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

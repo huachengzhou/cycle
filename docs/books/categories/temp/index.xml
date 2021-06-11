@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Temp on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/categories/temp/</link>
+    <description>Recent content in Temp on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/categories/temp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DOS &gt; basic</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_basic/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_basic/</guid>
+      <description>DOS基本命令# wing+r ==&amp;gt; cmd 进入dos控制台   打开屏幕键盘  C:\Users\noatn&amp;gt;osk; dos各种操作查看参数用法 command params ==? command /?  C:\Users\noatn&amp;gt;cd /?显示当前目录名或改变当前目录。CHDIR [/D] [drive:][path]CHDIR [..]CD [/D] [drive:][path]CD [..].. 指定要改成父目录。键入 CD drive: 显示指定驱动器中的当前目录。不带参数只键入 CD，则显示当前驱动器和目录。使用 /D 开关，除了改变驱动器的当前目录之外，还可改变当前驱动器。如果命令扩展被启用，CHDIR 会如下改变:当前的目录字符串会被转换成使用磁盘名上的大小写。所以，如果磁盘上的大小写如此，CD C:\TEMP 会将当前目录设为C:\Temp。CHDIR 命令不把空格当作分隔符，因此有可能将目录名改为一个带有空格但不带有引号的子目录名。例如:cd \winnt\profiles\username\programs\start menu与下列相同:cd &amp;quot;\winnt\profiles\username\programs\start menu&amp;quot;在扩展停用的情况下，你必须键入以上命令。  显示文件夹列表 dir
+  改变目录 cd</description>
+    </item>
+    
+    <item>
+      <title>DOS &gt; file</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_file/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_file/</guid>
+      <description>DOS基本文件操作命令#  wing+r ==&amp;gt; cmd 进入dos控制台
+  D:
+  进入D盘 cd命令  CD命令是更改目录命令 如果要进入D盘不用这个命令直接输入 D: 回车 即可例如:C:\Users\HP&amp;gt;D:D:\&amp;gt;D:\&amp;gt;dir驱动器 D 中的卷是 新加卷卷的序列号是 DAB4-11FED:\ 的目录2019-10-10 14:15 &amp;lt;DIR&amp;gt; 360极速浏览器下载2020-01-13 13:47 &amp;lt;DIR&amp;gt; BaiduNetdiskDownload2020-01-20 13:59 &amp;lt;DIR&amp;gt; CS2019-12-13 16:53 &amp;lt;DIR&amp;gt; data2020-02-10 15:55 &amp;lt;DIR&amp;gt; IdeaProjects2019-12-06 15:01 &amp;lt;DIR&amp;gt; log2019-10-23 10:40 &amp;lt;DIR&amp;gt; MailMasterData2019-09-29 10:43 &amp;lt;DIR&amp;gt; output2020-01-13 13:40 &amp;lt;DIR&amp;gt; soft2020-02-04 17:43 &amp;lt;DIR&amp;gt; temp2020-01-15 18:05 &amp;lt;DIR&amp;gt; ultraeditWork2019-12-10 09:47 &amp;lt;DIR&amp;gt; workspace0 个文件 0 字节12 个目录 463,738,040,320 可用字节D:\&amp;gt;cd CSD:\CS&amp;gt; /*进入了CS目录**/ cd .</description>
+    </item>
+    
+    <item>
+      <title>DOS &gt; network</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_network/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_network/</guid>
+      <description>DOS网络操作命令# netstat -ano (列出所有端口的情况)  PS C:\Users\noatn&amp;gt; netstat -ano活动连接协议 本地地址 外部地址 状态 PIDTCP 0.0.0.0:135 0.0.0.0:0 LISTENING 1028TCP 0.0.0.0:445 0.0.0.0:0 LISTENING 4TCP 0.0.0.0:1024 0.0.0.0:0 LISTENING 852TCP 0.0.0.0:1025 0.0.0.0:0 LISTENING 2232TCP 0.0.0.0:3306 0.0.0.0:0 LISTENING 3672TCP 0.0.0.0:5040 0.0.0.0:0 LISTENING 5660TCP 0.0.0.0:7680 0.0.0.0:0 LISTENING 6628TCP 0.0.0.0:49664 0.0.0.0:0 LISTENING 868TCP 0.0.0.0:49665 0.0.0.0:0 LISTENING 784TCP 0.0.0.0:49666 0.0.0.0:0 LISTENING 1580TCP 0.0.0.0:49667 0.</description>
+    </item>
+    
+    <item>
+      <title>FTP</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_ftp/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_ftp/</guid>
+      <description>本地设置FTP服务器#步骤1：在计算机上打开“控制面板”，然后单击“程序和功能”。#步骤2：在“程序和功能”窗口中，单击“控制面板”窗口左侧的“打开或关闭Windows功能”。#第3步：现在等待一段时间并向下滚动以找出“Internet信息服务”。 只需展开它，打开“FTP服务器”，“Web管理工具”和“万维网服务”下的所有内容，与下面的屏幕截图相同。 完成所有服务后，单击“确定”#第4步：应用更改需要一些时间，完成后，单击“立即重新启动”以重新启动计算机并应用所做的更改#步骤5：重新启动计算机后，再次打开“控制面板”，然后单击“管理工具”将其打开#步骤7：在IIS管理器窗口的左侧，展开窗口左侧的计算机名称，除非您找到“站点”。 只需右键单击“站点”，然后单击“添加FTP站点&amp;hellip;”#第8步：这里给FTP站点命名。 我将&amp;rsquo;sampleftp&amp;rsquo;赋予FTP站点名称。 现在单击“&amp;hellip;”按钮以找到要通过FTP服务器访问的文件夹或驱动程序。 我为本教程选择了“C：FTP_Path”。 完成所有操作后，单击“下一步”#步骤9：在下一个窗口中，单击与“IP Address：”对应的下拉菜单，然后在本地网络上选择计算机的IP地址。# 将端口号保留为“21”，默认情况下是这样。  步骤10：选择“No SSL”并启用“自动启动FTP站点”，然后单击“下一步”。# *由于这是一个教程，我不允许使用SSL。 但是，如果您想通过FTP服务器访问敏感数据，我建议您使用SSL  步骤11：现在选择“基本”的身份验证方法，并向“所有用户”提供“授权”。 用户必须输入您的Windows用户名和密码才能使用此身份验证方法访问FTP服务器上的文件# 现在，根据您要如何设置FTP服务器，将权限设置为“读取”和“写入”或仅设置为“读取”。 之后，单击“完成”以完成站点设置并在Windows计算机上启动FTP服务器  配置防火墙# 您的FTP服务器已准备就绪并且正在运行 但是，您需要配置Windows防火墙以允许与您的计算机进行FTP通信的事务处理。  步骤12：打开“控制面板”并在Windows 10上单击“Windows Defender Firewall”或在Windows 7上单击“Windows防火墙”#步骤13：单击窗口左侧的“允许通过Windows Defender防火墙的应用程序或功能”#步骤14：在新窗口中，单击“更改设置”并标记“FTP服务器”的“公共”和“私人”对应的复选框，然后单击“确定”。#  现在，您可以使用适当的应用程序轻松地从本地网络中的任何其他计算机或移动设备访问FTP服务器，或者只需从浏览器访问即可。</description>
+    </item>
+    
+    <item>
+      <title>GitHubPages绑定来自阿里云的域名</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/</guid>
+      <description>原教程但是由于他使用的github的用户名做的域名映射器,这样不好的地方是有可能你使用自定义的方式建立github仓库名比如 English study,还有一个是他使用的阿里云的域名映射解析这些是老版本的
+  GitHub Pages 绑定来自阿里云的域名==原博客教程
+  我的使用#github url ==&amp;gt; https://github.com/noatnu/studyDoc , 买的域名 http://www.zhouchenghua.com/# 解析第一个设置   创建A记录，请将您的顶点域指向GitHub Pages的IP地址 https 解析ip,上面的192.30.252.153是http解析方式现在官方已经宣布过时了,选择下面任意一个都可以  185.199.108.153185.199.109.153185.199.110.153185.199.111.153 解析第二个设置    github 要做的事
+  创建 CNAME文件,写入www.zhouchenghua.com
+   这个是我设置github project 设置截图   ping 地址  C:\Users\noatn&amp;gt;ping www.github.com正在 Ping github.com [13.250.177.223] 具有 32 字节的数据:请求超时。请求超时。请求超时。请求超时。13.</description>
+    </item>
+    
+    <item>
+      <title>host映射</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_host%E6%98%A0%E5%B0%84/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_host%E6%98%A0%E5%B0%84/</guid>
+      <description>sudo vi hosts
+127.0.0.1	localhost 127.0.1.1	zhou-Lenovo-Z480
+The following lines are desirable for IPv6 capable hosts#::1 ip6-localhost ip6-loopback fe00::0 ip6-localnet ff00::0 ip6-mcastprefix ff02::1 ip6-allnodes ff02::2 ip6-allrouters
+#pmcc dev 127.0.0.1 dev.pmcc.com</description>
+    </item>
+    
+    <item>
+      <title>java &gt; bitOperation</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_java_java_bitoperation/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_java_java_bitoperation/</guid>
+      <description>位运算#  十进制转二进制
+  正整数十进制转二进制
+   正整数转成二进制。要点一定一定要记住哈：除二取余，然后倒序排列，高位补零。也就是说，将正的十进制数除以二，得到的商再除以二，依次类推直到商为零或一时为止，然后在旁边标出各步的余数，最后倒着写出来，高位补零就OK咧。
+  2 |93 1──────2 |46 0────── 2 |23 1──────2 |11 1────── 2|5 1────2|2 0────1 1011101不满足8位所以高位补0 计算机内部表示数的字节单位是定长的，如8位，16位，或32位。所以，位数不够时，高位补零01011101反推回去10111016543210 ==&amp;gt; 2(6)*1+2(5)*0+2(4)*1+2(3)*1+2(2)*1+2(1)*0+2(0)*1 ==》Math.pow(2,6) + Math.pow(2,4) + Math.pow(2,3) +Math.pow(2,2)+1=932 |100 0───────2 |50 0────── 2 |25 1──────2 |12 0────── 2|6 0────2|3 1────1 011001002 |73 1──────2 |36 0────── 2 |18 0──────2 |9 1────── 2|4 0────2|2 0────1 1001001 正小数转换二进制   乘二取整，直到小数为零为止，先整为高位，后整为低位 乘二取整，截取整数，如果还没到整数那么取0，截取后剩余的小数继续乘以2然后再截取整数，直到小数为0为止，这里要注意的是每乘以2后必须截取，然后才能往后继续算</description>
+    </item>
+    
+    <item>
+      <title>java &gt; java基础总结大全</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93%E5%A4%A7%E5%85%A8/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93%E5%A4%A7%E5%85%A8/</guid>
+      <description>﻿
+一、基础知识：#1、JVM、JRE和JDK的区别：# JVM(Java Virtual Machine):java虚拟机，用于保证java的跨平台的特性。 java语言是跨平台，jvm不是跨平台的。 JRE(Java Runtime Environment):java的运行环境,包括jvm+java的核心类库。	JDK(Java Development Kit):java的开发工具,包括jre+开发工具
+ 2、环境变量path和classpath的作用是什么？# (1)path是配置Windows可执行文件的搜索路径，即扩展名为.exe的程序文件所在的目录， 用于指定DOS窗口命令的路径。 (2)Classpath是配置class文件所在的目录，用于指定类搜索路径，JVM就是通过它来寻找该类的class类文件的。
+ 3、变量有什么用？为什么要定义变量？什么时候用？# 答：变量的作用：用来存储数据。 为什么要定义变量：用来不断的存放同一类型的常量，并可以重复使用
+ 4、&amp;amp;和&amp;amp;&amp;amp;的区别?# 答：（1）&amp;amp;&amp;amp;会出现短路，如果可以通过第一个表达式判断出整个表达式的结果，则不继续后面表达式的运算； 只能操作boolean类型数据； （2）&amp;amp;不会出现短路，将整个表达式都运算。既可以操作boolean数据还可以操作数。
+ 5、标示符命名规则：# 由数字(0-9)，大小写英文字母，以及_和$组成。 不能以数字开头。 不能使用关键字来自定义命名。
+ 6、数据类型：# (1)基本数据类型(4类8种)： 整数类型：byte、short、int、long 浮点数类型：float、double 字符类型：char 布尔类型：boolean(ture false) (2)引用数据类型： 类 接口 数组
+ 7、类型转换# 精度从高到低 double float long int short(char) byte (1)自动类型转换 将一个低精度&amp;mdash;高精度 (2)强制类型转换 将一个高精度&amp;mdash;低精度(精度会下降)</description>
+    </item>
+    
+    <item>
+      <title>java &gt; programStructure</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_programstructure/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_programstructure/</guid>
+      <description>Java的程序结构#public class HelloWorld {public static void main(String[] args) {System.out.println(&amp;quot;Hello World&amp;quot;);}} Java区分大小写 关键字public称为访问修饰符 (这些修饰符用于控制其它程序对这部分代码的访问级别) 关键字class表面Java程序的全部内容都包含在类中 关键字class后面紧跟类名   Java中定义类名的规则很宽松。名字必须以字母开头,后面可以跟字母和数字的任意组合。长度基本没有限制,但是不能使用Java保留字(例如class或public)作为类名
+  标准的命名规范为(FirstSample):类名是以大写字母开头的名词。如果由多个单词组成，每个单词的第一个字母都应该大写(驼峰命名法)
+  源代码的文件名必须与公共类的名字相同,并用.java作为扩展名  数据类型# String s = RandomStringUtils.random(22) ;byte[] bytes = s.getBytes();byte a1 = 35;System.out.println(a1);System.out.println(Arrays.toString(bytes));byte[] bytes1 = new byte[35] ;int[] ints = new int[35] ;for (int i = 0; i &amp;lt; 35; i++) {// bytes1[i] = (byte) RandomUtils.</description>
+    </item>
+    
+    <item>
+      <title>javaReadme</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_javareadme/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_javareadme/</guid>
+      <description>Java技术体系#消息队列,nosql,sql,dubbo,zookeeper,nginx,springcloud,springboot,spring,jpa,mybatisjava语法，java多线程与并发,jdbc,设计模式java基础总结大全#Java的程序结构#多线程#swing#jsp el 表达式#Java多线程编程#JVM体系#redis#apache-common工具包#Guava-common#IO#spring工具#spring常用的工具类#js_console.log用法#dom4j#Jsoup#</description>
+    </item>
+    
+    <item>
+      <title>Linux下设置和查看环境变量</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</guid>
+      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;||&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- Linux的变量种类 按变量的生存周期来划分，Linux变量可分为两类： 1 永久的：需要修改配置文件，变量永久生效。 2 临时的：使用export命令声明即可，变量在关闭shell时失效。
+设置变量的三种方法 1 在/etc/profile文件中添加变量【对所有用户生效(永久的)】 用VI在文件/etc/profile文件中增加变量，该变量将会对Linux下所有用户有效，并且是“永久的”。 例如：编辑/etc/profile文件，添加CLASSPATH变量
+vi /etc/profile#export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib
+注：修改文件后要想马上生效还要运行# source /etc/profile不然只能在下次重进此用户时生效。
+2 在用户目录下的.bash_profile文件中增加变量【对单一用户生效(永久的)】 用VI在用户目录下的.bash_profile文件中增加变量，改变量仅会对当前用户有效，并且是“永久的”。 例如：编辑guok用户目录(/home/guok)下的.bash_profile $ vi /home/guok/.bash.profile 添加如下内容： export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib 注：修改文件后要想马上生效还要运行$ source /home/guok/.bash_profile不然只能在下次重进此用户时生效。
+3 直接运行export命令定义变量【只对当前shell(BASH)有效(临时的)】 在shell的命令行下直接使用[export 变量名=变量值] 定义变量，
+该变量只在当前的shell(BASH)或其子shell(BASH)下是有效的，
+shell关闭了，变量也就失效了，再打开新shell时就没有这个变量，需要使用的话还需要重新定义。
+环境变量的查看 1 使用echo命令查看单个环境变量。例如： echo $PATH 2 使用env查看所有环境变量。例如： env 3 使用set查看所有本地定义的环境变量。
+使用unset删除指定的环境变量 set可以设置某个环境变量的值。清除环境变量的值用unset命令。如果未指定值，则该变量值将被设为NULL。示例如下： $ export TEST=&amp;ldquo;Test&amp;hellip;&amp;rdquo; #增加一个环境变量TEST $ env|grep TEST #此命令有输入，证明环境变量TEST已经存在了 TEST=Test&amp;hellip; unset TEST #删除环境变量TEST $ env|grep TEST #此命令没有输出，证明环境变量TEST已经删除
+常用的环境变量 PATH 决定了shell将到哪些目录中寻找命令或程序 HOME 当前用户主目录 HISTSIZE　历史记录数 LOGNAME 当前用户的登录名 HOSTNAME　指主机的名称 SHELL 当前用户Shell类型 LANGUGE 语言相关的环境变量，多语言可以修改此环境变量 MAIL　当前用户的邮件存放目录 PS1　基本提示符，对于root用户是#，对于普通用户是$</description>
+    </item>
+    
+    <item>
+      <title>linux命令</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E5%91%BD%E4%BB%A4/</guid>
+      <description>linux命令#文件管理#文件基本操作#  less命令 (Q退出less命令)([pagedown]： 向下翻动一页)([pageup]： 向上翻动一页) less ss.md
+  cat命令 (cat -n ss.md &amp;gt; sdfsd.txt)把 ss.md 的文档内容加上行号后输入 sdfsd.txt 这个文档里, 这要注意假如sdfsd.txt先有文档会被清空,另外(cat ss.md)可以把消息打印到输出流中,cat 软盘功能暂时不予以考虑
+  ls命令 (ls -a)显示所有文件及目录包括隐藏文件,相当于la命令,ll显示具体信息
+  touch命令 主要用作创建文件如touch ss.md,(touch -m miss,touch -a miss)可以改变文件的读取时间,另外touch miss也可以改变文件的读取时间, 当且仅当miss不存在的时候会创建miss空文件
+  mkdir命令 主要用作创建文件目录;(mkdir dd)创建一个dd目录,(mkdir -p dd/ffg)在当前目录下建立一个dd目录并且在dd下创建一个ffg目录,假如dd不存在会自动创建的
+  mv命令 (mv missA miss.txt)把missA修改为miss.txt (mv sskg /home/zhou/fontconfig/dgsd/sdfg)把sskg移到sdfg目录 (mv ss.md ~)
+  file命令 (file -c ss.</description>
+    </item>
+    
+    <item>
+      <title>nginx</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_nginx/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_nginx/</guid>
+      <description>nginx学习#基础操作# start ./sbin/nginx stop ./sbin/nginx -s stop quite ./sbin/nginx -s quit   启动成功标志
+ Welcome to nginx! 默认监听的端口是80 也就是说访问此端口就可以得到启动成功的标识符号
+  简单的负载均衡配置    http 模块中配置  #配置开始 author zhouupstream myproject{server 127.0.0.1:8000 weight=3;server 127.0.0.1:8080 weight=10;server 127.0.0.1:8090;}#配置结束 author zhou location模块配置  proxy_pass http://myproject;注意:这的myproject要和上面的name一致测试结果 (这的测试用到了session的唯一性)
+ http://localhost/nginx_test/ sessionId=8D9C4ACEE65EB24301B1C0D9E4CF3A6Ehttp://localhost:8080/nginx_test/ sessionId=8D9C4ACEE65EB24301B1C0D9E4CF3A6Ehttp://localhost:8090/nginx_test/ sessionId=7539B2C4AFD433ECEFAC8F2B2EBCC411 由于配置了权重 因此大部分是8080端口</description>
+    </item>
+    
+    <item>
+      <title>Notepad&#43;&#43;安装</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_notepad&#43;&#43;%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_notepad&#43;&#43;%E5%AE%89%E8%A3%85/</guid>
+      <description>Notepad++是一套非常有特色的自由软件的纯文字编辑器(许可证:GPL)。有完整的中文化接口及支持多国语言编写的功能(UTF8 技术)。 它的功能比 Windows 中的 Notepad(记事本)强大，除了可以用来制作一般的纯文字说明文件，也十分适合当作编写电脑程序的编辑器。 Notepad++ 不仅有语法高亮度显示，也有语法折叠功能，并且支持宏以及扩充基本功能的外挂模组。但是可惜的是Notepad++只能在Windows平台下使用。 工作中必须使用Windows时，Notepad++是众多程序员最喜爱的文本编辑器，在Ubuntu下是否能够使用到相同的软件呢？Notepadqq就是这样一款与Notepad++非常接近的编辑器，拥有几乎相同的功能。 如果您是一个Notepad++粉丝，我们推荐您尝试下Notepadqq。
+对于Ubuntu发行版本可以通过PPA安装，命令如下： sudo add-apt-repository ppa:notepadqq-team/notepadqq sudo apt-get update sudo apt-get install notepadqq 类似的，卸载命令如下：
+sudo apt-get remove notepadqq sudo add-apt-repository &amp;ndash;remove ppa:notepadqq-team/notepadqq</description>
+    </item>
+    
+    <item>
+      <title>script</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/</guid>
+      <description>脚本# dos,lua,sheel,python,js
+   dos 可以使用VisualBat编辑器编写以及调试
+  lua 可以运行在redis ,dos,Java,c++等里面另外还可以用来写触屏精灵 http://www.touchsprite.com/docs/5362 ==&amp;gt; https://www.zybuluo.com/miniknife/note/317045#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5
+  sheel脚本 运行在linux或者unix上相当于windows上的dos
+  python 胶水语言 可以直接在linux当成sheel使用,也是人工智能的一种使用工具
+  js 浏览器脚本
+  </description>
+    </item>
+    
+    <item>
+      <title>study.web</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/</guid>
+      <description>自己整理的日常开发参考网址#   在线工具 链接     web工具 web工具   在线超级转换工具 在线超级转换工具   程序员在线工具 在线超级转换工具       算法 链接     算法网址 leetcode 国内 算法网址 leetcode 国内   算法网址 牛课网 国内 算法网址 牛课网 国内   算法网址 codility 国外 算法网址 codility 国外       bootstrap 链接     bootstrap 重要参考例子 bootstrap 重要参考例子   bootstrap table api(csdn) bootstrap table api(csdn)   bootstrap table api(官方) bootstrap table api(官方)       图标 链接     阿里巴巴icon 阿里巴巴icon   easy icon easy icon        Java学习 链接     ibm java example ibm java example   Java并发参考 Java并发参考   csdn csdn   Java分享网 Java分享网   java fx api java fx api       教程 链接     www.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 16.04修改hosts</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/</guid>
+      <description>IntelliJ IDE运行Tomcat报错解决办法的相关资料,出现“Unable to ping server at localhost:1099”错误解决方法，需要的朋友可以参考下
+sudo gedit /etc/hosts</description>
+    </item>
+    
+    <item>
+      <title>ubuntu安装chmsee</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/</guid>
+      <description>垃圾的ubuntu 14.04 又一次去掉一些特别好用的软件, 官方给的解释是怕破坏他们系统. 只想说一句 我去年买了个本.
+14.04 之前的版本,如13.10, 12.04 继续能够使用 sudo apt-get install chmsee 来安装.
+14.04 需要下载安装包来安装:
+sudo apt-get install libc6 libchm1 libgcrypt11 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk2.0-0 libpango1.0-0 libwebkitgtk-1.0-0 libxml2 安装依赖包
+(64位) sudo dpkg -i chmsee_1.3.0-2ubuntu2_amd64.deb 安装软件包,下载地址: http://kr.archive.ubuntu.com/ubuntu/pool/universe/c/chmsee/chmsee_1.3.0-2ubuntu2_amd64.deb Ubuntu的官方软件库放心下载.
+(32位) sudo dpkg -i chmsee_1.3.0-2ubuntu2_i386.deb 安装软件包,下载地址: http://kr.archive.ubuntu.com/ubuntu/pool/universe/c/chmsee/chmsee_1.3.0-2ubuntu2_i386.deb Ubuntu的官方软件库放心下载.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu清理系统垃圾</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</guid>
+      <description>1，非常有用的清理命令： sudo apt-get autoclean &amp;ndash;清理旧版本的软件缓存 www.2cto.com
+sudo apt-get clean&amp;ndash;清理所有软件缓存
+sudo apt-get autoremove&amp;ndash;删除系统不再使用的孤立软件
+这三个命令主要清理升级缓存以及无用包的。
+2，清理opera firefox的缓存文件： ls ~/.opera/cache4 ls ~/.mozilla/firefox/*.default/Cache
+3，清理Linux下孤立的包： 图形界面下我们可以用：gtkorphan sudo apt-get install gtkorphan -y 终端命令下我们可以用：deborphan sudo apt-get install deborphan -y
+4，卸载：tracker 这个东西一般我只要安装Ubuntu就会第一删掉tracker 他不仅会产生大量的cache文件而且还会影响开机速度。所以在新得利里面删掉就行。 www.2cto.com
+5，删除多余的内核：一定不要删错哦，切记！！ 打开终端敲命令：dpkg &amp;ndash;get-selections|grep linux 有image的就是内核文件 删除老的内核文件： sudo apt-get remove 内核文件名（例如：linux-image-2.6.27-2-generic） 内核删除，释放空间了，应该能释放130－140M空间。
+最后不要忘了看看当前内核：uname -a 附录： 包管理的临时文件目录: 包在 /var/cache/apt/archives 没有下载完的在 /var/cache/apt/archives/partial</description>
+    </item>
+    
+    <item>
+      <title>ubuntu软件卸载</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</guid>
+      <description>ubuntu软件卸载
+安装Synaptic
+sudo apt-get install synaptic</description>
+    </item>
+    
+    <item>
+      <title>useMath</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_usemath/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_usemath/</guid>
+      <description>计算机用到的数学公式#二进制十进制如何互相转换#https://jingyan.baidu.com/article/ac6a9a5e2cb17b2b653eac98.html</description>
+    </item>
+    
+    <item>
+      <title>windows &gt; question</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_windows_question/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_windows_question/</guid>
+      <description> 磁盘变为了动态磁盘解决办法 最好是找软件解决 如DiskGenius 或者 傲梅分区助手 暴力解决办法  1、diskpart2、list disk3、select disk n4、convert basicSTEP 1：打开命令提示符窗口，在其中键入：“diskpart”命令并按下回车键。 STEP 2：在DISKPART命令提示符下，键入“list disk”命令并按下回车键后，能够查看到电脑中的磁盘情况。 STEP 3：在DISKPART命令提示符下，继续键入“select disk n”命令并按下回车键，其中n代表磁盘的序号。 STEP 4：在DISKPART命令提示符下，键入“convert dynamic”命令并按下回车键后，开始转换的工作。</description>
+    </item>
+    
+    <item>
+      <title>压缩算法</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_algorithm_%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_algorithm_%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/</guid>
+      <description>﻿## 压缩算法
+//https://baijiahao.baidu.com/s?id=1649449620464606133&amp;amp;wfr=spider&amp;amp;for=pc
+哈夫曼算法</description>
+    </item>
+    
+  </channel>
+</rss>

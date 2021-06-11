@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>信息咨询 on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/tags/%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2/</link>
+    <description>Recent content in 信息咨询 on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1ch</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_1ch/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_1ch/</guid>
+      <description>信息系统概述#信息#  什么是社会的标志
+  答:信息是当今社会的标志
+  一:信息的含义 (填空题，单选题，简答题)#  1:) 信息的存在不以主体(如人、生物或机器系统) 存在为转移,即使主体根本不存在，信息也可以存在，他在客观上反映某一客观事物的现实情况。
+  2:) 信息在主观上可以接受和利用，并指导人们的行动。
+  信息与数据是信息系统中最基本的术语 ;信息是数据加工的结果,是数据的含义，而数据是信息的载体;二:信息的性质 (简答题)# 一共分为6个方面
+  1:) 客观性 (信息的核心)  客观性也称事实性 2:) 时效性  信息的时效性是指从信息源发送信息，经过接收、加工、传递和利用所经历的时间间隔及其效率。 时间间隔越短，使用信息越及时，使用程度越高，则时效性越强。
+  3:) 等级性  信息系统是分等级的，对同一问题，处于不同管理层次，所要求的信息不同。分为:战略级、管理级、操作级 4:) 扩散性  信息的扩散是其本性，它总是力图冲破保密的非自然约束，通过各种渠道和手段向四面八方传播。信息的扩散存在两面性，一方面它有利于知识的传播，另一方面可能造成信息的贬值 5:) 可传递性  信息在扩散的过程中，可以通过多种传输渠道、采用多种传输方式进行传递。 6:) 价值性  信息是经过加工的、有意义的数据，是一种资源，因而是有价值的信息系统# 信息系统工作的好坏与整个组织的效益关系极大，可以说信息系统是整个系统的神经系统  一:系统的概念#  什么是系统</description>
+    </item>
+    
+    <item>
+      <title>2ch</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_2ch/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_2ch/</guid>
+      <description>信息系统开发方法论# 问信息系统开发方法有哪些  生命周期法、原型法、结构化方法、面向对象方法、构件法、面向服务方法、敏捷开发方法概述 1# 信息系统开发方法的研究内容:  1:在较高层次上分析和总结以往的经验，研究信息系统开发的一般规律，建立具有一般意义的系统开发指导思想的基本原则2:从系统工程的角度,为分析人员提供一个协调局部与整体利益的思维方法，以及具体的分析设计原则3:围绕已建立的各种开发方法、指导思想的原则，建立相应的实施步骤4:研制一整套与系统开发思想相对应的、适合于各实施步骤的描述和开发工具5:信息系统开发的组织、实施方法6:系统开发成功的关键因素、必要条件以及促使系统开发成功的组织运行机制等  生命周期法 强调结构化分析、结构化设计
+  原型法 快速构造系统雏形，然后对原型系统进行扩展
+  结构化方法 将开发过程分成多个阶段，每个阶段有其明确的任务和目标
+  面向对象方法 略
+  构件法 它是基于面向对象
+  面向服务方法 略
+  敏捷开发方法 略
+  生命周期法 2# 1 生命周期法:描述和定义  信息系统工程采用的“生命周期法”，就是从时间角度对信息系统开发和维护的复杂问题进行分解，把信息系统生存的漫长周期依次划分为若干个阶段，每个阶段有相对独立的任务，然后再逐步完成每个阶段的任务生命周期法就是按信息系统工程生命周期的各个阶段划分任务，按一定的规则和步骤，有效地进行信息系统开发的方法 2 生命周期划分   一个信息系统工程的生命周期可分为系统定义、系统设计、系统实施与维护 三个时期九个阶段
+   主要的阶段包括可行性研究、需求分析、系统设计、系统实施与维护等</description>
+    </item>
+    
+  </channel>
+</rss>

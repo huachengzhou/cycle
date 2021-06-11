@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>select2 on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/tags/select2/</link>
+    <description>Recent content in select2 on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/select2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CONTRIBUTING</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_select2_contributing/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_select2_contributing/</guid>
+      <description>Contributing to Select2#Looking to contribute something to Select2? Here&amp;rsquo;s how you can help.
+Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
+Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.</description>
+    </item>
+    
+  </channel>
+</rss>

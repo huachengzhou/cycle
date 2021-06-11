@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jsp on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/categories/jsp/</link>
+    <description>Recent content in jsp on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/categories/jsp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java &gt; 监听事件原理</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</guid>
+      <description>接口回调法#模拟输出监听事件#第一步先定义事件接口#public interface PrintListener {public void print();}第二步自定义输出类#public class Out {PrintListener listener=null;public Out() {}public Out(PrintListener listener) {this.listener=listener;}public void printlen(String s) {System.out.println(s);if(listener!=null) {listener.print();}}}第三步实现监听事件接口#public class PrintListenerDemo implements PrintListener {@Overridepublic void print() {System.out.println(&amp;quot;监听到输出事件&amp;quot;);}}测试#public class Test {public static void main(String[] args) {//新建一个默认输出类Out b=new Out();b.</description>
+    </item>
+    
+    <item>
+      <title>jsp &gt; EL基础教程</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid>
+      <description>EL基础教程#El标签语法# ${参数名}
+ EL标签的功能#  可以访问JSP中不同的域的对象    可以访问JavaBean中的属性    可以访问集合元素    支持简单的运算操作   访问JSP中不同的域的对象#&amp;lt;%pageContext.setAttribute(&amp;quot;name1&amp;quot;, &amp;quot;zhangsan&amp;quot;);request.setAttribute(&amp;quot;name2&amp;quot;, &amp;quot;lisi&amp;quot;);session.setAttribute(&amp;quot;name3&amp;quot;, &amp;quot;wangwu&amp;quot;);application.setAttribute(&amp;quot;name4&amp;quot;, &amp;quot;liuliu&amp;quot;);%&amp;gt;&amp;lt;!--范围.参数名 --&amp;gt;${pageScope.name1 } ${requestScope.name2 } ${sessionScope.name3 }${applicationScope.name4 }&amp;lt;br&amp;gt;&amp;lt;!-- 直接写参数名称 --&amp;gt;${name1 } ${name2 } ${name3 } ${name4 } 访问JavaBean中的属性#&amp;lt;%User user=new User(&amp;quot;zhangsan&amp;quot;,20,&amp;quot;北京&amp;quot;);request.</description>
+    </item>
+    
+    <item>
+      <title>jsp &gt; JSTL &gt; core标签库</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</guid>
+      <description>﻿# JSTL标签库
+JSTL主要有五大类标签库
+ core标签库(核心标签库),包括通用标签(输出标签),流程控制和循环控制标签 fmt标签库,包括格式化,国际格式化标签等 fn标签库,函数标签库 XML标签库,关于XML操作的标签库 SQL标签库,操作数据库标签  core标签库用法#使用core标签前必须添加taglie指令
+ %@ taglib prefix=&amp;ldquo;c&amp;rdquo; uri=&amp;ldquo;http://java.sun.com/jsp/jstl/core&amp;quot; %&amp;gt;
+  &amp;lt;c:set&amp;gt;在某个范围设定某个值   &amp;lt;c:set value=&amp;ldquo;表达式&amp;rdquo; var=&amp;ldquo;varname&amp;rdquo; [scope=&amp;ldquo;request|page|session|application&amp;rdquo;]&amp;gt;&amp;lt;/c:set&amp;gt;
+ &amp;lt;c:set value=&amp;quot;${1+2 }&amp;quot; var=&amp;quot;variable&amp;quot;&amp;gt;&amp;lt;/c:set&amp;gt;${variable } &amp;lt;c:out&amp;gt;把表达式的结构输出到页面中   &amp;lt;c:out value=&amp;ldquo;表达式&amp;rdquo; [escapeXml=&amp;ldquo;true|false&amp;rdquo;]&amp;gt;&amp;lt;/c:out&amp;gt;
+ &amp;lt;c:set value=&amp;quot;${1+2 }&amp;quot; var=&amp;quot;variable&amp;quot;&amp;gt;&amp;lt;/c:set&amp;gt;&amp;lt;c:out value=&amp;quot;${variable }&amp;quot;&amp;gt;&amp;lt;/c:out&amp;gt; &amp;lt;c:if&amp;gt;条件判断   &amp;lt;c:if test=&amp;ldquo;判断条件&amp;rdquo; [var=&amp;ldquo;varname&amp;rdquo;] [scope=&amp;ldquo;request|page|session|application&amp;rdquo;]&amp;gt; 条件为真执行的语句 &amp;lt;/c:if&amp;gt;
+ &amp;lt;c:if test=&amp;quot;${1&amp;lt;2 }&amp;quot; var=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;c:out value=&amp;quot;${result }&amp;quot;&amp;gt;&amp;lt;/c:out&amp;gt;&amp;lt;/c:if&amp;gt; &amp;lt;c:choose&amp;gt;,&amp;lt;c:when&amp;gt;,&amp;lt;c:otherwise&amp;gt;流程控制标签   &amp;lt;c:choose&amp;gt; &amp;lt;c:when test=&amp;ldquo;表达式&amp;rdquo;&amp;gt; 表达式为真执行的语句 &amp;lt;/c:when&amp;gt; [&amp;lt;c:otherwise&amp;gt; 表达式为假执行的语句 &amp;lt;/c:otherwise&amp;gt;] &amp;lt;/c:choose&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>jsp &gt; jstl &gt; Session</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/</guid>
+      <description>Session# HTTP是无状态协议，这意味着每次客户端检索网页时，都要单独打开一个服务器连接，因此服务器不会记录下先前客户端请求的任何信息#  会话,当用户打开一个浏览器连接到web应用或者打开某个页面,直到关闭浏览器这个过程叫做会话#  Session是保存在服务器上的数据结构，用于跟踪用户的状态。此数据可以保存在群集、数据库、文件中# Session常用方法#  public boolean isNew()
+返回是否为一个新的客户端，或者客户端是否拒绝加入session     public Enumeration getAttributeNames()
+返回session对象中所有的对象名称     public int getMaxInactiveInterval()
+返回最大时间间隔，以秒为单位，servlet 容器将会在这段时间内保持会话打开     public long getCreationTime()
+返回session对象被创建的时间， 以毫秒为单位，从1970年1月1号凌晨开始算起     public long getLastAccessedTime()
+返回客户端最后访问的时间，以毫秒为单位，从1970年1月1号凌晨开始算起     public Object getAttribute(String name)
+返回session对象中与指定名称绑定的对象，如果不存在则返回null     public Object getAttribute(String name)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/categories/web/</link>
+    <description>Recent content in web on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo &gt; tutorials1</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/</guid>
+      <description>教程1#快速开始# 步骤1：安装Hugo  brew install hugo# orport install hugo 要验证新安装  hugo version 步骤2：建立新网站  hugo new site quickstart# 上面的代码将在名为的文件夹中创建一个新的Hugo网站quickstart。 步骤3：添加主题  # 首先，从GitHub下载主题并将其添加到您站点的themes目录中：cd quickstartgit initgit submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题添加到站点配置中：  echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 步骤4：添加一些内容  hugo new posts/my-first-post.md 如果需要，请编辑新创建的内容文件，该文件将从以下内容开始：   ---title: &amp;quot;My First Post&amp;quot;date: 2019-03-26T08:47:11+01:00draft: true--- 步骤5：启动Hugo服务器  ▶ hugo server -D| EN+------------------+----+Pages | 10Paginator pages | 0Non-page files | 0Static files | 3Processed images | 0Aliases | 1Sitemaps | 1Cleaned | 0Total in 11 msWatching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes}Watching for config changes in /Users/bep/quickstart/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo &gt; tutorials2</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/</guid>
+      <description>教程2# 1、	创建blog  hugo new site myblog_pubcd myblog_pub/git submodule add https://github.com/chinanf-boy/gohugo-theme-yinwang.git themes/yinwang  2、	修改配置
+  vi config.toml
+  root@instance-x8rtph4n:/home/go/code/hugo_dir/myblog_pub/public# more ../config.toml baseURL = &amp;quot;http://ypbsyy.github.io/&amp;quot;languageCode = &amp;quot;en-us&amp;quot;title = &amp;quot;我是yaopeng&amp;quot;theme = &amp;quot;yinwang&amp;quot;#pygmentsCodeFences = true#pygmentsCodefencesGuessSyntax = false#pygmentsStyle = &amp;quot;dracula&amp;quot;#pygmentsOptions = [&#39;linenos&#39;]# 代码高亮/chroma，hugo默认自带[params]author = &amp;quot;yaopeng&amp;quot;github = &amp;quot;yaopeng&amp;quot;# gitlab = &amp;quot;yobrave&amp;quot;#googleAnalytics = &amp;quot;****&amp;quot;# 谷歌统计gtaghighlight = &amp;quot;dracula&amp;quot; # 默认样式 `github`langs = [&amp;quot;go&amp;quot;]# 默认加载 highlight.</description>
+    </item>
+    
+    <item>
+      <title>vue &gt; index</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/</guid>
+      <description>vue学习#vue学习#vue学习2#  vue 官网 https://cn.vuejs.org/
+  vue 是什么?
+  Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。 v-text 文本指令  &amp;lt;span v-text=&amp;quot;msg&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;!-- 和下面的一样 --&amp;gt;&amp;lt;span&amp;gt;{{msg}}&amp;lt;/span&amp;gt;var vm = new Vue({el: &amp;quot;#frmApp&amp;quot;,data: {nameTo: Math.random().toString(36).slice(-8) ,}});//获取绑定的实例 再次更新vm.$data.nameTo = Math.random().toString(36).slice(-8); v-html 网页指令  内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译 。如果试图使用 v-html 组合模板，可以重新考虑是否通过使用组件来替代。&amp;lt;div v-html=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p v-html=&amp;quot;htmlContent&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; v-model 这个指令用于在表单上创建双向数据绑定。   v-model会忽略所有表单元素的value、checked、selected特性的初始值。因为它选择Vue实例数据做为具体的值。</description>
+    </item>
+    
+  </channel>
+</rss>

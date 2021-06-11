@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jquery-cookie on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/tags/jquery-cookie/</link>
+    <description>Recent content in jquery-cookie on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/jquery-cookie/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CHANGELOG</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_changelog/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_changelog/</guid>
+      <description>HEAD#1.4.0#  Support for AMD.
+  Removed deprecated method $.cookie(&#39;name&#39;, null) for deleting a cookie, use $.removeCookie(&#39;name&#39;).
+  $.cookie(&#39;name&#39;) now returns undefined in case such cookie does not exist (was null). Because the return value is still falsy, testing for existence of a cookie like if ( $.cookie(&#39;foo&#39;) ) keeps working without change.
+  Renamed bower package definition (component.json -&amp;gt; bower.json) for usage with up-to-date bower.</description>
+    </item>
+    
+    <item>
+      <title>CONTRIBUTING</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_contributing/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_contributing/</guid>
+      <description>##Issues
+ Report issues or feature requests on GitHub Issues. If reporting a bug, please add a simplified example.  ##Pull requests
+ Create a new topic branch for every separate change you make. Create a test case if you are fixing a bug or implementing an important feature. Make sure the build runs successfully.  Development####Tools We use the following tools for development:
+ Qunit for tests.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,4 +1,4 @@
-package 接口回调;
+package 锟接口回碉拷;
 
 public interface PrintListener {
 	public void print();

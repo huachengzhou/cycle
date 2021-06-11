@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vue on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/tags/vue/</link>
+    <description>Recent content in vue on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vue &gt; index</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/</guid>
+      <description>vue学习#vue学习#vue学习2#  vue 官网 https://cn.vuejs.org/
+  vue 是什么?
+  Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。 v-text 文本指令  &amp;lt;span v-text=&amp;quot;msg&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;!-- 和下面的一样 --&amp;gt;&amp;lt;span&amp;gt;{{msg}}&amp;lt;/span&amp;gt;var vm = new Vue({el: &amp;quot;#frmApp&amp;quot;,data: {nameTo: Math.random().toString(36).slice(-8) ,}});//获取绑定的实例 再次更新vm.$data.nameTo = Math.random().toString(36).slice(-8); v-html 网页指令  内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译 。如果试图使用 v-html 组合模板，可以重新考虑是否通过使用组件来替代。&amp;lt;div v-html=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p v-html=&amp;quot;htmlContent&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; v-model 这个指令用于在表单上创建双向数据绑定。   v-model会忽略所有表单元素的value、checked、selected特性的初始值。因为它选择Vue实例数据做为具体的值。</description>
+    </item>
+    
+  </channel>
+</rss>

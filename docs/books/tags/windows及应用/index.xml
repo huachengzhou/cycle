@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows及应用 on Hugo Book</title>
+    <link>https://huachengzhou.github.io/cycle/books/tags/windows%E5%8F%8A%E5%BA%94%E7%94%A8/</link>
+    <description>Recent content in Windows及应用 on Hugo Book</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/windows%E5%8F%8A%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微型计算机系统</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</guid>
+      <description>微型计算机系统#微型计算机系统的基本组成#微型计算机系统的硬件组成#微型计算机的软件系统#微型计算机的分类与主要性能指标#1:微型计算机系统的基本组成#  CPU ==&amp;gt; 中央处理器
+  内存储器 {ROM,RAM}
+  存储器 = {内存储器和外存储器以及类型的cache,寄存器} 存取速度:寄存器 &amp;gt; Cache &amp;gt; 内存 &amp;gt; 硬盘 &amp;gt; 光盘 &amp;gt; 软盘
+  总线 ==&amp;gt; 通信导线
+  没有安装任何软件叫做裸机
+  	运算器(算术运算和逻辑运算)中央处理器(CPU)控制器(分析指令并执行)主机内存储器 【RAM,ROM】硬件	外存储器外设	输入设备【键盘，鼠标】输出设备【显示器】微计算机系统操作系统系统软件 服务软件编译与解释系统软件信息管理软件辅助设计软件应用软件文字处理软件图形软件各种程序包2:微型计算机系统的硬件组成#  内存储器(主存储器) ROM,RAM</description>
+    </item>
+    
+    <item>
+      <title>计算机中信息的表示</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/</guid>
+      <description>计算机中信息使用二进制表示#   易于实现   2)运算简单 3)逻辑性强   进位计数制的概念,就是按照进位方式计数的数制  记数制的基本概念#   基数    进计数制中使用不同基本符号的个数称为基数。如十进制中有十种符号(0-9),所以基数为10
+ 2)数码  进制中所使用的符号。如十进制中有10个数码，分别是:0,1,2,3,4,5,6,7,8,9
+ 3)位权  位权是个乘方值，底数为进位计数制的基数,而指数由个数字所在数中的位置决定。
+如:十进制数548.25可以表示为(548.25)⑩ = </description>
+    </item>
+    
+    <item>
+      <title>计算机操作系统</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <description>计算机操作系统#  操作系统的基本概念
+  行命令操作系统
+  汉字操作系统
+  windows操作系统
+  一:操作系统的基本概念# 操作系统主要模块（作用）     管理系统资源。包括对CPU、内存储器、输入输出设备、数据文件和其他软件资源的管理    为用户提供资源共享的条件和环境，并对资源的使用进行合理调度    提供输入输出的方便环境，简化用户的输入输出工作，提供良好的用户界面    规定用户的接口，发现、处理或报告计算机操作过程中发生的各种错误     操作系统的功能和任务     处理机管理:处理机(CPU)是整个计算机硬件的核心。处理机管理的主要任务是:充分发挥处理机的作用，提高它的使用效率。    存储器管理:计算机内存储器是计算机硬件系统中的重要资源，它的容量总是有效的。存储器管理的主要任务是:对有限的内存储器进行合理分配，以满足多个用户程序运行的需要    设备管理:有效地管理各种外部设备，使这些设备充分发挥效率；给用户提供简单而易于使用地接口，以便在用户不了解设备性能地情况下，也能很方便地使用它们。    文件管理:唯一地标识计算机系统地每一组信息，以便能够合理地访问和控制它们；有条理地组织这些信息，使用户能够方便且安全地使用它们。    作业管理:对所有的用户作业进行分类，并且根据某种原则，源源不断地选取一些作业交给计算机去处理    </description>
+    </item>
+    
+    <item>
+      <title>计算机的发展与应用</title>
+      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8/</guid>
+      <description>计算机的发展与应用# 一:计算机的主要特点     计算机具有自动进行各种操作的能力    计算机具有高速处理的能力    计算机具有超强的记忆能力    计算机具有很高的计算精度与可靠的判断能力     二:计算机的应用     科学计算    过程检测与控制    信息管理    计算机辅助系统    ①计算机辅助设计(CAD) ②计算机辅助制造(CAM) ③计算机辅助测试(CAT) ④计算机辅助教学(CAI)
+ 三:计算机的分类     巨型计算机    大型机    工作站    微型计算机    微控制器    服务器     四:计算机在三个方面得到了发展     小型化    速度    可购性      真正作为世界上第一台计算机的是电子管</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,57 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>problem on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/categories/problem/</link>
-    <description>Recent content in problem on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/categories/problem/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>git</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_git/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_git/</guid>
-      <description>Push master to origin/master was rejected by remote  有三种原因1:push的这个工程是其他人新建的，找她开通master权限后，再次push2:git 工程错误git pullgit pull origin mastergit pull origin master --allow-unrelated-histories3:github 设置原因勾选了Keep my email addresses private解决办法2种第一种 通知账户人员取消勾选第二种重新设置你的全局用户E-mailgit config --list 查看这个时候一定不对因此重新设置全局email重置上次提交的作者信息 git commit --amend --reset-authorgit config --global user.name &amp;quot;zch&amp;quot;git config --global user.email &amp;quot;sdhshd@163.com&amp;quot;ok对了你如果使用的不是idea而是git那么抛出的错误非常明显如果抛出git报错--&amp;gt;! [remote rejected] master -&amp;gt; master (push declined due to email privacy restrictions)那么一定是这个原因 git clone时报RPC failed; curl 18 transfer closed with outstanding read data remaining 错误  原因1：缓存区溢出git config http.</description>
-    </item>
-    
-    <item>
-      <title>idea</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_idea_idea/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_idea_idea/</guid>
-      <description> idea 解决working directory 设置到 target  test ng D:\IdeaProjects\java-se-studyrun config $MODULE_DIR$</description>
-    </item>
-    
-    <item>
-      <title>idea导入项目出现Unable &gt; to &gt; import &gt; maven &gt; project &gt; See &gt; logs &gt; for &gt; details提示</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/</guid>
-      <description>idea导入项目出现Unable to import maven project: See logs for details提示
- 第一种解决办法#  删除项目根目录下.idea文件夹
-  关闭idea工具，重新打开选择File-&amp;gt;New-&amp;gt;Project from the existing source ,选择刚才的项目根目，下一步：
-  一直点next，最后点击主工程的pom.xml 完成！
-  第二种#  打开idea 的日志文件如果发现【Error】com.google.inject.CreationException: Unable to create injector
-  那么自定义配置Maven3.6.2报错 或者更高版本maven
-  原因：Maven3.6.2的版本兼容问题。
-  解决方法：重新下载较低版本Maven3.6.1及以下版本可以顺利解决。
-  用maven无论是新建项目还是导入没有下载到本地仓库的jar。出现了Unable to import maven project
-  打开cmd，ping localhost，显示一般故障
-  在左边控制栏，关闭防火墙，再开启防火墙 再次ping localhost，成功
-  对了 假如出现文件权限问题 那么更改maven的本地仓库地址</description>
-    </item>
-    
-    <item>
-      <title>VisualStudioCode过滤文件不显示某些文件</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_visual_studio_code_visualstudiocode%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_visual_studio_code_visualstudiocode%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6/</guid>
-      <description>Visual Studio Code 过滤文件 不显示某些文件#效果# 过滤工程中显示的文件 不显示某些类型的文件或文件夹  菜单# File/Preferences/ 搜索file exclude 选中workspack页签 添加一个过滤规则 如图:   </description>
-    </item>
-    
-  </channel>
-</rss>

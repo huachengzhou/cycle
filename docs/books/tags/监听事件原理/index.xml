@@ -1,19 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>监听事件原理 on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/tags/%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</link>
-    <description>Recent content in 监听事件原理 on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>java &gt; 监听事件原理</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</guid>
-      <description>接口回调法#模拟输出监听事件#第一步先定义事件接口#public interface PrintListener {public void print();}第二步自定义输出类#public class Out {PrintListener listener=null;public Out() {}public Out(PrintListener listener) {this.listener=listener;}public void printlen(String s) {System.out.println(s);if(listener!=null) {listener.print();}}}第三步实现监听事件接口#public class PrintListenerDemo implements PrintListener {@Overridepublic void print() {System.out.println(&amp;quot;监听到输出事件&amp;quot;);}}测试#public class Test {public static void main(String[] args) {//新建一个默认输出类Out b=new Out();b.</description>
-    </item>
-    
-  </channel>
-</rss>

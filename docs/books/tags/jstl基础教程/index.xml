@@ -1,26 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>JSTL基础教程 on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/tags/jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
-    <description>Recent content in JSTL基础教程 on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>jsp &gt; JSTL &gt; core标签库</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</guid>
-      <description>﻿# JSTL标签库
-JSTL主要有五大类标签库
- core标签库(核心标签库),包括通用标签(输出标签),流程控制和循环控制标签 fmt标签库,包括格式化,国际格式化标签等 fn标签库,函数标签库 XML标签库,关于XML操作的标签库 SQL标签库,操作数据库标签  core标签库用法#使用core标签前必须添加taglie指令
- %@ taglib prefix=&amp;ldquo;c&amp;rdquo; uri=&amp;ldquo;http://java.sun.com/jsp/jstl/core&amp;quot; %&amp;gt;
-  &amp;lt;c:set&amp;gt;在某个范围设定某个值   &amp;lt;c:set value=&amp;ldquo;表达式&amp;rdquo; var=&amp;ldquo;varname&amp;rdquo; [scope=&amp;ldquo;request|page|session|application&amp;rdquo;]&amp;gt;&amp;lt;/c:set&amp;gt;
- &amp;lt;c:set value=&amp;quot;${1+2 }&amp;quot; var=&amp;quot;variable&amp;quot;&amp;gt;&amp;lt;/c:set&amp;gt;${variable } &amp;lt;c:out&amp;gt;把表达式的结构输出到页面中   &amp;lt;c:out value=&amp;ldquo;表达式&amp;rdquo; [escapeXml=&amp;ldquo;true|false&amp;rdquo;]&amp;gt;&amp;lt;/c:out&amp;gt;
- &amp;lt;c:set value=&amp;quot;${1+2 }&amp;quot; var=&amp;quot;variable&amp;quot;&amp;gt;&amp;lt;/c:set&amp;gt;&amp;lt;c:out value=&amp;quot;${variable }&amp;quot;&amp;gt;&amp;lt;/c:out&amp;gt; &amp;lt;c:if&amp;gt;条件判断   &amp;lt;c:if test=&amp;ldquo;判断条件&amp;rdquo; [var=&amp;ldquo;varname&amp;rdquo;] [scope=&amp;ldquo;request|page|session|application&amp;rdquo;]&amp;gt; 条件为真执行的语句 &amp;lt;/c:if&amp;gt;
- &amp;lt;c:if test=&amp;quot;${1&amp;lt;2 }&amp;quot; var=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;c:out value=&amp;quot;${result }&amp;quot;&amp;gt;&amp;lt;/c:out&amp;gt;&amp;lt;/c:if&amp;gt; &amp;lt;c:choose&amp;gt;,&amp;lt;c:when&amp;gt;,&amp;lt;c:otherwise&amp;gt;流程控制标签   &amp;lt;c:choose&amp;gt; &amp;lt;c:when test=&amp;ldquo;表达式&amp;rdquo;&amp;gt; 表达式为真执行的语句 &amp;lt;/c:when&amp;gt; [&amp;lt;c:otherwise&amp;gt; 表达式为假执行的语句 &amp;lt;/c:otherwise&amp;gt;] &amp;lt;/c:choose&amp;gt;</description>
-    </item>
-    
-  </channel>
-</rss>

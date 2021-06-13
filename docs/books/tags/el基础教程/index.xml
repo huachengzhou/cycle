@@ -1,20 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>EL基础教程 on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/tags/el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
-    <description>Recent content in EL基础教程 on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>jsp &gt; EL基础教程</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid>
-      <description>EL基础教程#El标签语法# ${参数名}
- EL标签的功能#  可以访问JSP中不同的域的对象    可以访问JavaBean中的属性    可以访问集合元素    支持简单的运算操作   访问JSP中不同的域的对象#&amp;lt;%pageContext.setAttribute(&amp;quot;name1&amp;quot;, &amp;quot;zhangsan&amp;quot;);request.setAttribute(&amp;quot;name2&amp;quot;, &amp;quot;lisi&amp;quot;);session.setAttribute(&amp;quot;name3&amp;quot;, &amp;quot;wangwu&amp;quot;);application.setAttribute(&amp;quot;name4&amp;quot;, &amp;quot;liuliu&amp;quot;);%&amp;gt;&amp;lt;!--范围.参数名 --&amp;gt;${pageScope.name1 } ${requestScope.name2 } ${sessionScope.name3 }${applicationScope.name4 }&amp;lt;br&amp;gt;&amp;lt;!-- 直接写参数名称 --&amp;gt;${name1 } ${name2 } ${name3 } ${name4 } 访问JavaBean中的属性#&amp;lt;%User user=new User(&amp;quot;zhangsan&amp;quot;,20,&amp;quot;北京&amp;quot;);request.</description>
-    </item>
-    
-  </channel>
-</rss>

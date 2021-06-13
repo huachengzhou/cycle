@@ -1,34 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>study on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/tags/study/</link>
-    <description>Recent content in study on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/study/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>script</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/</guid>
-      <description>脚本# dos,lua,sheel,python,js
-   dos 可以使用VisualBat编辑器编写以及调试
-  lua 可以运行在redis ,dos,Java,c++等里面另外还可以用来写触屏精灵 http://www.touchsprite.com/docs/5362 ==&amp;gt; https://www.zybuluo.com/miniknife/note/317045#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5
-  sheel脚本 运行在linux或者unix上相当于windows上的dos
-  python 胶水语言 可以直接在linux当成sheel使用,也是人工智能的一种使用工具
-  js 浏览器脚本
-  </description>
-    </item>
-    
-    <item>
-      <title>study.web</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/</guid>
-      <description>自己整理的日常开发参考网址#   在线工具 链接     web工具 web工具   在线超级转换工具 在线超级转换工具   程序员在线工具 在线超级转换工具       算法 链接     算法网址 leetcode 国内 算法网址 leetcode 国内   算法网址 牛课网 国内 算法网址 牛课网 国内   算法网址 codility 国外 算法网址 codility 国外       bootstrap 链接     bootstrap 重要参考例子 bootstrap 重要参考例子   bootstrap table api(csdn) bootstrap table api(csdn)   bootstrap table api(官方) bootstrap table api(官方)       图标 链接     阿里巴巴icon 阿里巴巴icon   easy icon easy icon        Java学习 链接     ibm java example ibm java example   Java并发参考 Java并发参考   csdn csdn   Java分享网 Java分享网   java fx api java fx api       教程 链接     www.</description>
-    </item>
-    
-  </channel>
-</rss>

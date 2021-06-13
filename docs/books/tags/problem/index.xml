@@ -1,23 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>problem on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/tags/problem/</link>
-    <description>Recent content in problem on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/problem/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GitHubPages绑定来自阿里云的域名</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/</guid>
-      <description>原教程但是由于他使用的github的用户名做的域名映射器,这样不好的地方是有可能你使用自定义的方式建立github仓库名比如 English study,还有一个是他使用的阿里云的域名映射解析这些是老版本的
-  GitHub Pages 绑定来自阿里云的域名==原博客教程
-  我的使用#github url ==&amp;gt; https://github.com/noatnu/studyDoc , 买的域名 http://www.zhouchenghua.com/# 解析第一个设置   创建A记录，请将您的顶点域指向GitHub Pages的IP地址 https 解析ip,上面的192.30.252.153是http解析方式现在官方已经宣布过时了,选择下面任意一个都可以  185.199.108.153185.199.109.153185.199.110.153185.199.111.153 解析第二个设置    github 要做的事
-  创建 CNAME文件,写入www.zhouchenghua.com
-   这个是我设置github project 设置截图   ping 地址  C:\Users\noatn&amp;gt;ping www.github.com正在 Ping github.com [13.250.177.223] 具有 32 字节的数据:请求超时。请求超时。请求超时。请求超时。13.</description>
-    </item>
-    
-  </channel>
-</rss>

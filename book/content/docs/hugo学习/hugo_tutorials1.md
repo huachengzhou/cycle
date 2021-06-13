@@ -2,6 +2,8 @@
 title: "hugo教程1"
 date: 2017-10-17T15:26:15Z
 draft: false
+bookToc: false
+bookFlatSection: true
 ---
 
 # 教程1

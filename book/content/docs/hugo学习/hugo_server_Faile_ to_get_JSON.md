@@ -2,6 +2,8 @@
 title: "hugo教程 hugo server Failed to get JSON"
 date: 2017-10-17T15:26:15Z
 draft: false
+bookToc: true
+bookFlatSection: true
 ---
 
 > 今天尝试了一下静态博客 hugo , hugo的官网本身也是使用 hugo 制作的网站。安装和运行非常简单。只有两个步骤安装和运行。运行的时候出现了一个小问题，就是由于网络的原因不能启动成功。

@@ -1,1808 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>index on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/categories/index/</link>
-    <description>Recent content in index on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/categories/index/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Jane 主题预览</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/jane%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/jane%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88/</guid>
-      <description>Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于hugo-theme-even，在它的基础上进行了重新改造。简约、可定制性强。主要特色：响应式设计多国语言支持支持多个 Shortcode单独设计的 标签页 和 分类页社交网站链接更好的分页、目录、注脚样式使用更快的 Chroma 代码高亮自定义 css，自定义 js，自定义 head子目录支持搜索优化
-作者：贤民
- gitee https://gitee.com/shaoxia1991/hugo-theme-jane.git github https://github.com/xianmin/hugo-theme-jane.git  </description>
-    </item>
-    
-    <item>
-      <title>10个Java经典的List面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84list%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84list%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1、你知道的 List 都有哪些？ ArrayList、LinkedList、Vector 等。 2、List 和 Vector 有什么区别？ Vector 是 List 接口下线程安全的集合。 3、List 是有序的吗？ List 是有序的。 4、ArrayList 和 LinkedList 的区别？分别用在什么场景？ ArrayList 和 LinkedList 数据结构不一样，前者用在查询较多的场合，后者适用于插入较多的 场合。 5、ArrayList 和 LinkedList 的底层数据结构是什么？ ArrayList 使用的是数组结构，LinkedList 使用的是链表结构。 6、ArrayList 默认大小是多少，是如何扩容的？ Jdk1.7 之前 ArrayList 默认大小是 10，JDK1.7 之后是 0，JDK 差异，每次约按 1.5 倍扩容。 7、List 是线程安全的吗？如果要线程安全要怎么做？ List 中 的 Vector 才 是 线 程 安 全 的 ， 其 他 要 实 现 线 程 安 全 使 用 工 具 类 Collections.</description>
-    </item>
-    
-    <item>
-      <title>10个Java经典的Main方法面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84main%E6%96%B9%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84main%E6%96%B9%E6%B3%95%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1.main方法是做什么用的？
-main方法是Java程序的入口方法，JVM在运行的时候会首先查找main方法。
-2.不用main方法如何运行一个类？
-不行，没有main方法我们不能运行Java类。 在Java 7之前，你可以通过使用静态初始化运行Java类。但是，从Java 7开始就行不通了。
-3.main方法如何传递参数？传递参数的类型是什么？能不能改变该参数类型？
-String数组，不能改变。
-4.main方法为什么是静态的？能不能改为非静态？
-main()方法一定是静态的，如果main()是非静态的那么在调用main方法时JVM就得实例化 它的类。
-不能改为非静态，main()方法必须声明为静态的，这样JVM才可以调用main()方法而无需实 例化它的类。 如果从main()方法去掉“static”这个声明，虽然编译依然可以成功，但在运行时会导致程序 失败。 在实例化时，还得调用类的构造函数。如果这个类的构造函数有参数，那么届时就会出现歧 义。
-5.main方法能被重载吗？
-可以，我们可以重载main()方法。一个Java类可以有任意数量的main()方法。
-6.main方法能被覆盖吗？
-在Java中静态方法在编译时会编译在一起，main方法是静态方法，所以你在Java中不能覆 盖静态方法。
-7.main方法的返回类型是什么？能不能改变？
-void，不能改变。
-8.main方法的作用域用什么修饰？能不能改变？
-public，不能改变。
-9.main方法可以同步吗？
-main方法可以在Java中同步，synchronized修饰符允许用于main方法的声明中，这样就可 以在Java中同步main方法了。
-10.main方法可以终结吗？
-可以在Java中终结main方法。
-更多关注Java大后端公众号</description>
-    </item>
-    
-    <item>
-      <title>10个Java经典的String面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84string%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84string%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1 、String是基本数据类型吗？
-String不是基本数据类型。
-2 、String是可变的话？
-String是final类型的，不可变。
-3 、怎么比较两个字符串的值一样，怎么比较两个字符串是否同一对象？
-比较字符串的值是否相同用equals,比较字符串对象是否同一个用==。
-4 、switch中可以使用String吗？
-jdk7+中的switch可以使用String类型。
-5 、String str = new String(&amp;ldquo;abc&amp;rdquo;);创建了几个对象，为什么？
-创建了两个，&amp;ldquo;abc&amp;quot;本身创建在常量池，通过new又创建在堆中。
-6 、String、StringBuffer、StringBuilder有什么区别？
-String、StringBuffer、StringBuilder最大的不同是String不可变，后者可变。StringBuffer是线 程安全的，StringBuilder线程不安全速度较快。
-7 、String.trim()方法去掉的是哪些字符？
-trim去掉字符串首尾的空白字符。
-8 、String可以被子类继承吗？
-既然String是final的，所以不能被继承。
-9 、可以自定义java.lang.String类并使用吗？
-可以自定义java.lang.String类并编译成功，但不能被加载使用，具体请学习类加载机制。
-10 、String与byte[]两者相互之间如何转换？
-String &amp;gt; byte[] 通过String类的getBytes方法；byte[] &amp;gt; String通过new String(byte[])构造器。</description>
-    </item>
-    
-    <item>
-      <title>10道Java面试必备的设计模式面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%9D%A2%E8%AF%95%E5%BF%85%E5%A4%87%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>**1.**请列举出在 JDK 中几个常用的设计模式？
-单例模式（Singleton pattern）用于 Runtime，Calendar 和其他的一些类中。工厂模式（Factory pattern）被用于各种不可变的类如 Boolean，像 Boolean.valueOf，观察者模式（Observer pattern）被用于 Swing 和很多的事件监听中。装饰器设计模式（Decorator design pattern）被用于多个 Java IO 类中。
-**2.**什么是设计模式？你是否在你的代码里面使用过任何设计模式？
-设计模式是世界上各种各样程序员用来解决特定设计问题的尝试和测试的方法。设计模式是代码可用性的延伸
-3.Java 中什么叫单例设计模式？请用 Java 写出线程安全的单例模式
-单例模式重点在于在整个系统上共享一些创建时较耗资源的对象。整个应用中只维护一个特定类实例，它被所有组件共同使用。Java.lang.Runtime 是单例模式的经典例子。从 Java 5 开始你可以使用枚举（enum）来实现线程安全的单例。
-**4.**在 Java 中，什么叫观察者设计模式（observer design pattern）？
-观察者模式是基于对象的状态变化和观察者的通讯，以便他们作出相应的操作。简单的例子就是一个天气系统，当天气变化时必须在展示给公众的视图中进行反映。这个视图对象是一个主体，而不同的视图是观察者。
-**5.**使用工厂模式最主要的好处是什么？在哪里使用？
-工厂模式的最大好处是增加了创建对象时的封装层次。如果你使用工厂来创建对象，之后你可以使用更高级和更高性能的实现来替换原始的产品实现或类，这不需要在调用层做任何修改。
-6.举一个用 Java 实现的装饰模式(decorator design pattern)？它是作用于对象层次还是类层次？
-装饰模式增加强了单个对象的能力。Java IO 到处都使用了装饰模式，典型例子就是 Buffered 系列类如 BufferedReader 和 BufferedWriter，它们增强了 Reader 和 Writer 对象，以实现提升性能的 Buffer 层次的读取和写入。
-**7.**在 Java 中，为什么不允许从静态方法中访问非静态变量？
-{width=&amp;ldquo;1.3041666666666667in&amp;rdquo; height=&amp;ldquo;1.336111111111111in&amp;rdquo;}
-更多关注 Java 大后端公众号
-Java 中不能从静态上下文访问非静态数据只是因为非静态变量是跟具体的对象实例关联的，而静态的却没有和任何实例关联。
-**8.**设计一个 ATM 机，请说出你的设计思路？
-比如设计金融系统来说，必须知道它们应该在任何情况下都能够正常工作。不管是断电还是</description>
-    </item>
-    
-    <item>
-      <title>10道Java高级必备的Netty面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%AB%98%E7%BA%A7%E5%BF%85%E5%A4%87%E7%9A%84netty%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_10%E9%81%93java%E9%AB%98%E7%BA%A7%E5%BF%85%E5%A4%87%E7%9A%84netty%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1.BIO、NIO和AIO的区别？#BIO：一个连接一个线程，客户端有连接请求时服务器端就需要启动一个线程进行处理。线#程开销大。#伪异步IO：将请求连接放入线程池，一对多，但线程还是很宝贵的资源。#NIO：一个请求一个线程，但客户端发送的连接请求都会注册到多路复用器上，多路复用器#轮询到连接有I/O请求时才启动一个线程进行处理。#AIO：一个有效请求一个线程，客户端的I/O请求都是由OS先完成了再通知服务器应用去启#动线程进行处理，#BIO是面向流的，NIO是面向缓冲区的；BIO的各种流是阻塞的。而NIO是非阻塞的；BIO的#Stream是单向的，而NIO的channel是双向的。
-NIO的特点：事件驱动模型、单线程处理多任务、非阻塞I/O，I/O读写不再阻塞，而是返回 0 、基于block的传输比基于流的传输更高效、更高级的IO函数zero-copy、IO多路复用大大 提高了Java网络应用的可伸缩性和实用性。基于Reactor线程模型。
-在Reactor模式中，事件分发器等待某个事件或者可应用或个操作的状态发生，事件分发器 就把这个事件传给事先注册的事件处理函数或者回调函数，由后者来做实际的读写操作。如 在Reactor中实现读：注册读就绪事件和相应的事件处理器、事件分发器等待事件、事件到 来，激活分发器，分发器调用事件对应的处理器、事件处理器完成实际的读操作，处理读到 的数据，注册新的事件，然后返还控制权。
-2.NIO的组成？ Buffer：与Channel进行交互，数据是从Channel读入缓冲区，从缓冲区写入Channel中的
-flip方法 ： 反转此缓冲区，将position给limit，然后将position置为 0 ，其实就是切换读写 模式 clear方法 ：清除此缓冲区，将position置为 0 ，把capacity的值给limit。 rewind方法 ： 重绕此缓冲区，将position置为 0 DirectByteBuffer可减少一次系统空间到用户空间的拷贝。但Buffer创建和销毁的成本更高， 不可控，通常会用内存池来提高性能。直接缓冲区主要分配给那些易受基础系统的本机I/O 操作影响的大型、持久的缓冲区。如果数据量比较小的中小应用情况下，可以考虑使用 heapBuffer，由JVM进行管理。
-Channel：表示 IO 源与目标打开的连接，是双向的，但不能直接访问数据，只能与Buffer 进 行交互。通过源码可知，FileChannel的read方法和write方法都导致数据复制了两次！
-Selector可使一个单独的线程管理多个Channel，open方法可创建Selector，register方法向
-多路复用器器注册通道，可以监听的事件类型：读、写、连接、accept。注册事件后会产生 一个SelectionKey：它表示SelectableChannel 和Selector 之间的注册关系，wakeup方法： 使尚未返回的第一个选择操作立即返回，唤醒的原因是：注册了新的 channel或者事件； channel关闭，取消注册；优先级更高的事件触发（如定时器事件），希望及时处理。</description>
-    </item>
-    
-    <item>
-      <title>15道经典的Tomcat面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84tomcat%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84tomcat%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1、Tomcat 的缺省端口是多少，怎么修改？ 1）找到 Tomcat 目录下的 conf 文件夹2）进入 conf 文件夹里面找到 server.xml 文件3）打开 server.xml 文件
- 4）在 server.xml 文件里面找到下列信息
-&amp;lt;Connector connectionTimeout=&amp;quot;20000&amp;quot; port=&amp;quot;8080&amp;quot; protocol=&amp;quot;HTTP/1.1&amp;quot; redirectPort=&amp;quot;8443&amp;quot; uriEncoding=&amp;quot;utf-8&amp;quot;/&amp;gt;
-port=&amp;quot;8080&amp;quot;改成你想要的端口
-2、tomcat 有哪几种 Connector 运行模式(优化)？#bio：传统的 Java I/O 操作，同步且阻塞 IO。
-maxThreads=&amp;ldquo;150&amp;rdquo;//Tomcat 使用线程来处理接收的每个请求。这个值表示Tomcat 可创建的最大的线程数。默认值 200。可以根据机器的时期性能和内存大小调整，一般可以在 400-500。最大可以在 800 左右。minSpareThreads=&amp;ldquo;25&amp;rdquo;&amp;mdash;Tomcat 初始化时创建的线程数。默认值 4。如果当前没有空闲线程，且没有超过 maxThreads，一次性创建的空闲线程数量。Tomcat初始化时创建的线程数量也由此值设置。
-maxSpareThreads=&amp;ldquo;75&amp;rdquo;&amp;ndash;一旦创建的线程超过这个值，Tomcat 就会关闭不再需要的 socket 线程。默认值 50。一旦创建的线程超过此数值，Tomcat 会关闭不再需要的线程。线程数可以大致上用 &amp;ldquo;同时在线人数每秒用户操作次数系统平均操作时间&amp;rdquo; 来计算。
-acceptCount=&amp;ldquo;100&amp;rdquo;&amp;mdash;-指定当所有可以使用的处理请求的线程数都被使用时， 可以放到处理队列中的请求数，超过这个数的请求将不予处理。默认值 10。如果当前可用线程数为 0，则将请求放入处理队列中。这个值限定了请求队列的大小，超过这个数值的请求将不予处理。
-connectionTimeout=&amp;ldquo;20000&amp;rdquo; &amp;ndash;网络连接超时，默认值 20000，单位：毫秒。设置为 0 表示永不超时，这样设置有隐患的。通常可设置为 30000 毫秒。
-nio：JDK1.4 开始支持，同步阻塞或同步非阻塞 IO。指定使用 NIO 模型来接受 HTTP 请求</description>
-    </item>
-    
-    <item>
-      <title>15道面试常问的Java多线程面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_15%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>现在有 T1、T2、T3 三个线程，你怎样保证 T2 在 T1 执行完后执行，T3 在 T2 执行完后执行？   这个线程问题通常会在第一轮或电话面试阶段被问到，目的是检测你对&amp;quot;join&amp;quot;方法是否熟悉。这个多线程问题比较简单，可以用 join 方法实现。
-  在 Java 中 Lock 接口比 synchronized 块的优势是什么？你需要实现一个高效的缓存，它允许多个用户读，但只允许一个用户写，以此来保持它的完整性，你会怎样去实现它？   lock 接口在多线程和并发编程中最大的优势是它们为读和写分别提供了锁，它能满足你写像ConcurrentHashMap 这样的高性能数据结构和有条件的阻塞。Java 线程面试的问题越来越会根据面试者的回答来提问。我强烈建议在你去参加多线程的面试之前认真读一下 Locks，因为当前其大量用于构建电子交易终统的客户端缓存和交易连接空间。
-  在 java 中 wait 和 sleep 方法的不同？   通常会在电话面试中经常被问到的 Java 线程面试问题。最大的不同是在等待时 wait 会释放锁，而 sleep 一直持有锁。Wait 通常被用于线程间交互，sleep 通常被用于暂停执行。
- 用 Java 实现阻塞队列。   这是一个相对艰难的多线程面试问题，它能达到很多的目的。第一，它可以检测侯选者是否能实际的用 Java 线程写程序；第二，可以检测侯选者对并发场景的理解，并且你可以根据这个问很多问题。如果他用wait()和notify()方法来实现阻塞队列，你可以要求他用最新的Java 5 中的并发类来再写一次。
- 用 Java 写代码来解决生产者&amp;mdash;&amp;mdash;消费者问题。   与上面的问题很类似，但这个问题更经典，有些时候面试都会问下面的问题。在 Java 中怎么解决生产者&amp;mdash;&amp;mdash;消费者问题，当然有很多解决方法，我已经分享了一种用阻塞队列实现的方法。有些时候他们甚至会问怎么实现哲学家进餐问题。</description>
-    </item>
-    
-    <item>
-      <title>17道消息队列Kafka面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_17%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97kafka%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_17%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97kafka%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>Kafka 的设计时什么样的呢？  Kafka 将消息以 topic 为单位进行归纳
-将向Kafka topic 发布消息的程序成为 producers.
-将预订 topics 并消费消息的程序成为 consumer.
-Kafka 以集群的方式运行，可以由一个或多个服务组成，每个服务叫做一个 broker. producers 通过网络将消息发送到Kafka 集群，集群向消费者提供消息
- 数据传输的事物定义有哪三种？  数据传输的事务定义通常有以下三种级别：
-  最多一次: 消息不会被重复发送，最多被传输一次，但也有可能一次不传输
-  最少一次: 消息不会被漏发送，最少被传输一次，但也有可能被重复传输.
-  精确的一次（Exactly once）: 不会漏传输也不会重复传输,每个消息都传输被一次而且仅仅被传输一次，这是大家所期望的
-   Kafka 判断一个节点是否还活着有那两个条件？    节点必须可以维护和 ZooKeeper 的连接，Zookeeper 通过心跳机制检查每个节点的连接
-  如果节点是个follower,他必须能及时的同步 leader 的写操作，延时不能太久
-   producer 是否直接将数据发送到 broker 的 leader(主节点)？  producer 直接将数据发送到 broker 的 leader(主节点)，不需要在多个节点进行分发，为了帮助 producer 做到这点，所有的 Kafka 节点都可以及时的告知:哪些节点是活动的，目标 topic 目标分区的leader 在哪。这样 producer 就可以直接将消息发送到目的地了</description>
-    </item>
-    
-    <item>
-      <title>18道非常牛逼的Nginx面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_18%E9%81%93%E9%9D%9E%E5%B8%B8%E7%89%9B%E9%80%BC%E7%9A%84nginx%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_18%E9%81%93%E9%9D%9E%E5%B8%B8%E7%89%9B%E9%80%BC%E7%9A%84nginx%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1、请解释一下什么是 Nginx?# Nginx 是一个 web 服务器和反向代理服务器，用于 HTTP、HTTPS、SMTP、POP3 和IMAP 协议。
-**2、请列举 Nginx 的一些特性。**Nginx 服务器的特性包括：
-反向代理/L7 负载均衡器嵌入式 Perl 解释器
-动态二进制升级
-可用于重新编写 URL，具有非常好的 PCRE 支持3、请列举 Nginx 和 Apache 之间的不同点
- 4、请解释 Nginx 如何处理 HTTP 请求。# Nginx 使用反应器模式。主事件循环等待操作系统发出准备事件的信号，这样数据就可以从套接字读取，在该实例中读取到缓冲区并进行处理。单个线程可以提供数万个并发连接。
-5、在 Nginx 中，如何使用未定义的服务器名称来阻止处理请求? 只需将请求删除的服务器就可以定义为：
-Server {listen 80;server_name &amp;quot; &amp;quot; ;return 444;
-}
-这里，服务器名被保留为一个空字符串，它将在没有&amp;quot;主机&amp;quot;头字段的情况下匹配请求，而一个特殊的 Nginx 的非标准代码 444 被返回，从而终止连接。
- 6、 使用&amp;quot;反向代理服务器&amp;quot;的优点是什么?# 反向代理服务器可以隐藏源服务器的存在和特征。它充当互联网云和 web 服务器之间的中间层。这对于安全方面来说是很好的，特别是当您使用 web 托管服务时。
- 7、请列举 Nginx 服务器的最佳用途。# Nginx 服务器的最佳用法是在网络上部署动态 HTTP 内容，使用 SCGI、WSGI 应用程序服务器、用于脚本的 FastCGI 处理程序。它还可以作为负载均衡器。</description>
-    </item>
-    
-    <item>
-      <title>1ch</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_1ch/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_1ch/</guid>
-      <description>信息系统概述#信息#  什么是社会的标志
-  答:信息是当今社会的标志
-  一:信息的含义 (填空题，单选题，简答题)#  1:) 信息的存在不以主体(如人、生物或机器系统) 存在为转移,即使主体根本不存在，信息也可以存在，他在客观上反映某一客观事物的现实情况。
-  2:) 信息在主观上可以接受和利用，并指导人们的行动。
-  信息与数据是信息系统中最基本的术语 ;信息是数据加工的结果,是数据的含义，而数据是信息的载体;二:信息的性质 (简答题)# 一共分为6个方面
-  1:) 客观性 (信息的核心)  客观性也称事实性 2:) 时效性  信息的时效性是指从信息源发送信息，经过接收、加工、传递和利用所经历的时间间隔及其效率。 时间间隔越短，使用信息越及时，使用程度越高，则时效性越强。
-  3:) 等级性  信息系统是分等级的，对同一问题，处于不同管理层次，所要求的信息不同。分为:战略级、管理级、操作级 4:) 扩散性  信息的扩散是其本性，它总是力图冲破保密的非自然约束，通过各种渠道和手段向四面八方传播。信息的扩散存在两面性，一方面它有利于知识的传播，另一方面可能造成信息的贬值 5:) 可传递性  信息在扩散的过程中，可以通过多种传输渠道、采用多种传输方式进行传递。 6:) 价值性  信息是经过加工的、有意义的数据，是一种资源，因而是有价值的信息系统# 信息系统工作的好坏与整个组织的效益关系极大，可以说信息系统是整个系统的神经系统  一:系统的概念#  什么是系统</description>
-    </item>
-    
-    <item>
-      <title>20道面试官常问的JVM面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%9D%A2%E8%AF%95%E5%AE%98%E5%B8%B8%E9%97%AE%E7%9A%84jvm%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%9D%A2%E8%AF%95%E5%AE%98%E5%B8%B8%E9%97%AE%E7%9A%84jvm%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>内存模型以及分区，需要详细到每个区放什么。
-  堆里面的分区：Eden，survival （from+ to），老年代，各自的特点。
-  对象创建方法，对象的内存分配，对象的访问定位。
-   new 一个对象
-   GC 的两种判定方法：
-  SafePoint 是什么
-  GC 的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在
-   什么地方，如果让你优化收集方法，有什么思路？
-   GC 收集器有哪些？CMS 收集器与 G1 收集器的特点。
-  Minor GC 与 Full GC 分别在什么时候发生？
-   新生代内存不够用时候发生 MGC 也叫 YGC，JVM 内存不够的时候发生 FGC
-   几种常用的内存调试工具：jmap、jstack、jconsole、jhat
-  类加载的几个过程：
-  JVM 内存分哪几个区，每个区的作用是什么?
-  如和判断一个对象是否存活?</description>
-    </item>
-    
-    <item>
-      <title>20道顶尖的Springoot面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84springoot%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_20%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84springoot%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>面试了一些人，简历上都说自己熟悉 Spring Boot, 或者说正在学习 Spring Boot，一问他们时，都只停留在简单的使用阶段，很多东西都不清楚，也让我对面试者大失所望。
-下面，我给大家总结下有哪些 Spring Boot 的面试题，这是我经常拿来问面试者的，希望对你有帮助。
- 1、什么是 Spring Boot？# Spring Boot 是 Spring 开源组织下的子项目，是 Spring 组件一站式解决方案，主要是简化了使用 Spring 的难度，简省了繁重的配置，提供了各种启动器，开发者能快速上手。
-更多 Spring Boot 详细介绍请看这篇文章《什么是 Spring Boot?》。
- 2、为什么要用 Spring Boot？# Spring Boot 优点非常多，如：
-   独立运行
-  简化配置
-  自动配置
-  无代码生成和 XML 配置
-  应用监控
-  上手容易
-  ...
-   Spring Boot 集这么多优点于一身，还有理由不使用它呢？</description>
-    </item>
-    
-    <item>
-      <title>22道面试常问的SpringMVC面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_22%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84springmvc%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_22%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84springmvc%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1、什么是SpringMvc？
-答：SpringMvc 是 spring 的一个模块，基于MVC 的一个框架，无需中间整合层来整合。
-2、Spring MVC 的优点： 答：
- 它是基于组件技术的.全部的应用对象,无论控制器和视图,还是业务对象之类的都是 java  组件.并且和 Spring 提供的其他基础结构紧密集成.
-  不依赖于Servlet API(目标虽是如此,但是在实现的时候确实是依赖于 Servlet 的)
-  可以任意使用各种视图技术,而不仅仅局限于JSP
-  支持各种请求资源的映射策略
-  它应是易于扩展的
-  3、SpringMVC 工作原理？ 答：
-  客户端发送请求到 DispatcherServlet
-  DispatcherServlet 查询 handlerMapping 找到处理请求的 Controller 3）Controller 调用业务逻辑后，返回 ModelAndView 4）DispatcherServlet 查询 ModelAndView，找到指定视图
-   5）视图将结果返回到客户端
- 4、SpringMVC 流程？ 答：
- 1）用户发送请求至前端控制器 DispatcherServlet。2）DispatcherServlet 收到请求调用 HandlerMapping 处理器映射器。
-  处理器映射器找到具体的处理器(可以根据 xml 配置、注解进行查找)，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet。</description>
-    </item>
-    
-    <item>
-      <title>24道消息队列RabbitMQ面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97rabbitmq%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97rabbitmq%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>问题一：RabbitMQ 中的 broker 是指什么？cluster 又是指什么？
-答：broker 是指一个或多个 erlang node 的逻辑分组，且 node 上运行着 RabbitMQ 应用程序。cluster 是在 broker 的基础之上，增加了 node 之间共享元数据的约束。
-问题二：什么是元数据？元数据分为哪些类型？包括哪些内容？与 cluster 相关的元数据有哪些？元数据是如何保存的？元数据在 cluster 中是如何分布的？
-答：在非 cluster 模式下，元数据主要分为 Queue 元数据（queue 名字和属性等）、Exchange 元数据（exchange 名字、类型和属性等）、Binding 元数据（存放路由关系的查找表）、Vhost 元数据（vhost 范围内针对前三者的名字空间约束和安全属性设置）。在 cluster 模式下，还包括 cluster 中 node 位置信息和 node 关系信息。元数据按照 erlang node 的类型确定是仅保存于 RAM 中，还是同时保存在 RAM 和 disk 上。元数据在 cluster 中是全 node 分布的。
-下图所示为 queue 的元数据在单 node 和 cluster 两种模式下的分布图。
-问题三：RAM node 和 disk node 的区别？
-答：RAM node 仅将 fabric（即 queue、exchange 和 binding 等 RabbitMQ 基础构件）相关元数据保存到内存中，但 disk node 会在内存和磁盘中均进行存储。RAM node 上唯一会存储到磁盘上的元数据是 cluster 中使用的 disk node 的地址。要求在 RabbitMQ cluster 中至少存在一个 disk node 。</description>
-    </item>
-    
-    <item>
-      <title>24道经典的英语面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84%E8%8B%B1%E8%AF%AD%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_24%E9%81%93%E7%BB%8F%E5%85%B8%E7%9A%84%E8%8B%B1%E8%AF%AD%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>Q： Can you sell yourself in two minutes？ Go for it. （你能在两分钟內自我推荐吗？大胆试试吧！）
-A： With my qualifications and experience, I feel I am hardworking, responsible and diligent in any project I undertake. Your organization could benefit from my analytical and interpersonal skills.(依我的资格和经验，我觉得我对所从事的每一个项目都很努力、负责、勤勉。我的分析能力和与人相处的技巧，对贵单位必有价值。)
-Q：Give me a summary of your current job description. (对你目前的工作， 能否做个概括的说明。)
-A：I have been working as a computer programmer for five years. To be specific, I do system analysis, trouble shooting and provide software support.</description>
-    </item>
-    
-    <item>
-      <title>27道顶尖的Java多线程锁、内存模型面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_27%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%94%81%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_27%E9%81%93%E9%A1%B6%E5%B0%96%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%94%81%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>Synchronized 相关问题#问题一： Synchronized 用过吗， 其原理是什么？
-这是一道 Java 面试中几乎百分百会问到的问题，因为没有任何写过并发程序的开发者会没听说或者没接触过 Synchronized。
-Synchronized 是由 JVM 实现的一种实现互斥同步的一种方式， 如果你查看被 Synchronized 修饰过的程序块编译后的字节码， 会发现， 被Synchronized 修 饰 过 的 程 序 块 ， 在 编 译 前 后 被 编 译 器 生 成了 monitorenter 和 monitorexit 两个字节码指令。
-这两个指令是什么意思呢？
-在虚拟机执行到 monitorenter 指令时， 首先要尝试获取对象的锁：
-如果这个对象没有锁定，或者当前线程已经拥有了这个对象的锁，把锁的计数器 +1 ；当执行 monitorexit 指令时将锁计数器 - 1 ；当计数器为 0 时， 锁就被释放了。
-如果获取对象失败了，那当前线程就要阻塞等待，直到对象锁被另外一个线程释放为止。
-Java 中 Synchronize 通过在对象头设置标记， 达到了获取锁和释放锁的目的。
-**问题二：**你刚才提到获取对象的锁，这个&amp;quot; 锁&amp;quot;到底是什么？ 如何确定对象的锁？
-&amp;quot; 锁&amp;quot; 的本质其实是 monitorenter 和 monitorexit 字节码指令的一个Reference 类型的参数， 即要锁定和解锁的对象。 我们知道， 使用</description>
-    </item>
-    
-    <item>
-      <title>29道常见的Spring面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_29%E9%81%93%E5%B8%B8%E8%A7%81%E7%9A%84spring%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_29%E9%81%93%E5%B8%B8%E8%A7%81%E7%9A%84spring%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>以下为 spring 常见面试问题：
-1、什么是 Spring 框架？Spring 框架有哪些主要模块？
-Spring 框架是一个为 Java 应用程序的开发提供了综合、广泛的基础性支持的 Java 平台。
-Spring 帮助开发者解决了开发中基础性的问题，使得开发人员可以专注于应用程序的开发。
-Spring 框架本身亦是按照[设计模式]{.underline}精心打造，这使得我们可以在开发环境中安心的集成 Spring 框架，不必担心 Spring 是如何在后台进行工作的。
-Spring 框架至今已集成了 20 多个模块。这些模块主要被分如下图所示的核心容器、数据访问/集成,、
-Web、AOP（面向切面编程）、工具、消息和测试模块。
-2、使用 Spring 框架能带来哪些好处？
-下面列举了一些使用 Spring 框架带来的主要好处：
-   [Dependency Injection(DI)]{.underline} 方法使得构造器和 JavaBean properties 文件中的依赖关系一目了然。
-  与 EJB 容器相比较，IoC 容器更加趋向于轻量级。这样一来 IoC 容器在有限的内存和 CPU 资源的情况下进行应用程序的开发和发布就变得十分有利。
-  Spring 并没有闭门造车，Spring 利用了已有的技术比如 ORM 框架、logging 框架、J2EE、Q uartz 和 JDK Timer，以及其他视图技术。
-  Spring 框架是按照模块的形式来组织的。由包和类的编号就可以看出其所属的模块，开发者仅仅需要选用他们需要的模块即可。
-  要[测试一项用 Spring 开发的应用程序]{.</description>
-    </item>
-    
-    <item>
-      <title>2ch</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_2ch/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2_2ch/</guid>
-      <description>信息系统开发方法论# 问信息系统开发方法有哪些  生命周期法、原型法、结构化方法、面向对象方法、构件法、面向服务方法、敏捷开发方法概述 1# 信息系统开发方法的研究内容:  1:在较高层次上分析和总结以往的经验，研究信息系统开发的一般规律，建立具有一般意义的系统开发指导思想的基本原则2:从系统工程的角度,为分析人员提供一个协调局部与整体利益的思维方法，以及具体的分析设计原则3:围绕已建立的各种开发方法、指导思想的原则，建立相应的实施步骤4:研制一整套与系统开发思想相对应的、适合于各实施步骤的描述和开发工具5:信息系统开发的组织、实施方法6:系统开发成功的关键因素、必要条件以及促使系统开发成功的组织运行机制等  生命周期法 强调结构化分析、结构化设计
-  原型法 快速构造系统雏形，然后对原型系统进行扩展
-  结构化方法 将开发过程分成多个阶段，每个阶段有其明确的任务和目标
-  面向对象方法 略
-  构件法 它是基于面向对象
-  面向服务方法 略
-  敏捷开发方法 略
-  生命周期法 2# 1 生命周期法:描述和定义  信息系统工程采用的“生命周期法”，就是从时间角度对信息系统开发和维护的复杂问题进行分解，把信息系统生存的漫长周期依次划分为若干个阶段，每个阶段有相对独立的任务，然后再逐步完成每个阶段的任务生命周期法就是按信息系统工程生命周期的各个阶段划分任务，按一定的规则和步骤，有效地进行信息系统开发的方法 2 生命周期划分   一个信息系统工程的生命周期可分为系统定义、系统设计、系统实施与维护 三个时期九个阶段
-   主要的阶段包括可行性研究、需求分析、系统设计、系统实施与维护等</description>
-    </item>
-    
-    <item>
-      <title>30个Java经典的集合面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_30%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84%E9%9B%86%E5%90%88%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_30%E4%B8%AAjava%E7%BB%8F%E5%85%B8%E7%9A%84%E9%9B%86%E5%90%88%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>Java 集合框架是什么？说出一些集合框架的优点？  每种编程语言中都有集合，最初的 Java 版本包含几种集合类：Vector、Stack、HashTable 和
-Array。
-随着集合的广泛使用，Java1.2 提出了囊括所有集合接口、实现和算法的集合框架。在保证线程安全的情况下使用泛型和并发集合类，Java 已经经历了很久。它还包括在 Java 并发包中，阻塞接口以及它们的实现。
-集合框架的部分优点如下：
-  使用核心集合类降低开发成本，而非实现我们自己的集合类。
-  随着使用经过严格测试的集合框架类，代码质量会得到提高。
-  通过使用 JDK 附带的集合类，可以降低代码维护成本。
-  复用性和可操作性。
-   集合框架中的泛型有什么优点？    Java1.5 引入了泛型，所有的集合接口和实现都大量地使用它。
-  泛型允许我们为集合提供一个可以容纳的对象类型，因此，如果你添加其它类型的任何元素，它会在编译时报错。
-  这避免了在运行时出现 ClassCastException，因为你将会在编译时得到报错信息。4.泛型也使得代码整洁，我们不需要使用显式转换和 instanceOf 操作符。
-  5.它也给运行时带来好处，因为不会产生类型检查的字节码指令。
-3.Java 集合框架的基础接口有哪些？
-Collection 为集合层级的根接口。一个集合代表一组对象，这些对象即为它的元素。Java 平台不提供这个接口任何直接的实现。
-Set 是一个不能包含重复元素的集合。这个接口对数学集合抽象进行建模，被用来代表集合， 就如一副牌。
-List 是一个有序集合，可以包含重复元素。你可以通过它的索引来访问任何元素。List 更像长度动态变换的数组。
-Map 是一个将 key 映射到 value 的对象.一个 Map 不能包含重复的 key：每个 key 最多只能映射一个 value。</description>
-    </item>
-    
-    <item>
-      <title>36道面试常问的MyBatis面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_36%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84mybatis%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_36%E9%81%93%E9%9D%A2%E8%AF%95%E5%B8%B8%E9%97%AE%E7%9A%84mybatis%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1、什么是MyBatis？
-答：MyBatis 是一个可以自定义 SQL、存储过程和高级映射的持久层框架。2、讲下 MyBatis 的缓存
-答：MyBatis 的缓存分为一级缓存和二级缓存,一级缓存放在 session 里面,默认就有,二级缓存放在它的命名空间里,默认是不打开的,使用二级缓存属性类需要实现Serializable 序列化接口 (可用来保存对象的状态),可在它的映射文件中配置&amp;lt;cache/&amp;gt;
-3、Mybatis 是如何进行分页的？分页插件的原理是什么？ 答：
- Mybatis 使用 RowBounds 对象进行分页，也可以直接编写 sql 实现分页，也可以使用 Mybatis  的分页插件。
- 分页插件的原理：实现 Mybatis 提供的接口，实现自定义插件，在插件的拦截方法内拦截待执行的sql，然后重写 sql。  举例：select * from student，拦截 sql 后重写为：select t.* from （select * from student）t limit 0，10
-4、简述 Mybatis 的插件运行原理，以及如何编写一个插件？ 答：
-  Mybatis 仅可以编写针对 ParameterHandler、ResultSetHandler、StatementHandler、Executor这 4 种接口的插件，Mybatis 通过动态代理，为需要拦截的接口生成代理对象以实现接口方法拦截功能，每当执行这 4 种接口对象的方法时， 就会进入拦截方法， 具体就是 InvocationHandler 的 invoke()方法，当然，只会拦截那些你指定需要拦截的方法。
-  实现 Mybatis 的 Interceptor 接口并复写 intercept()方法，然后在给插件编写注解，指定要拦截哪一个接口的哪些方法即可，记住，别忘了在配置文件中配置你编写的插件。</description>
-    </item>
-    
-    <item>
-      <title>40道常问的Java多线程面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_40%E9%81%93%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_40%E9%81%93%E5%B8%B8%E9%97%AE%E7%9A%84java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>这些多线程的问题，有些来源于各大网站、有些来源于自己的思考。可能有些问题网上有、可能有些问题对应的答案也有、也可能有些各位网友也都看过， 但是本文写作的重心就是所有的问题都会按照自己的理解回答一遍，不会去看网上的答案，因此可能有些问题讲的不对，能指正的希望大家不吝指教。
-1、多线程有什么用？#一个可能在很多人看来很扯淡的一个问题：我会用多线程就好了，还管它有什么用？在我看来，这个回答更扯淡。所谓&amp;quot;知其然知其所以然&amp;quot;，&amp;quot;会用&amp;quot;只是&amp;quot; 知其然&amp;quot;，&amp;quot;为什么用&amp;quot;才是&amp;quot;知其所以然&amp;quot;，只有达到&amp;quot;知其然知其所以然&amp;quot;的程度才可以说是把一个知识点运用自如。OK，下面说说我对这个问题的看法： 1）发挥多核 CPU 的优势
- 随着工业的进步，现在的笔记本、台式机乃至商用的应用服务器至少也都是双核的，4 核、8 核甚至 16 核的也都不少见，如果是单线程的程序，那么在双核 CPU 上就浪费了 50%，在 4 核 CPU 上就浪费了 75%。单核 CPU 上所谓的&amp;quot;多线程&amp;quot;那是假的多线程，同一时间处理器只会处理一段逻辑，只不过线程之间切换得比较快，看着像多个线程&amp;quot;同时&amp;quot;运行罢了。多核 CPU 上的多线程才是真正的多线程，它能让你的多段逻辑同时工作，多线程，可以真正发挥出多核 CPU 的优势来，达到充分利用 CPU 的目的。
- 防止阻塞#从程序运行效率的角度来看，单核 CPU 不但不会发挥出多线程的优势，反而会因为在单核 CPU 上运行多线程导致线程上下文的切换，而降低程序整体的效率。但是单核 CPU 我们还是要应用多线程，就是为了防止阻塞。试想，如果单核 CPU 使用单线程，那么只要这个线程阻塞了，比方说远程读取某个数据吧，对端迟迟未返回又没有设置超时时间，那么你的整个程序在数据返回回来之前就停止运行了。多线程可以防止这个问题，多条线程同时运行，哪怕一条线程的代码执行读取数据阻塞，也不会影响其它任务的执行。
-便于建模#这是另外一个没有这么明显的优点了。假设有一个大的任务 A，单线程编程， 那么就要考虑很多，建立整个程序模型比较麻烦。但是如果把这个大的任务 A 分解成几个小任务，任务 B、任务 C、任务 D，分别建立程序模型，并通过多线程分别运行这几个任务，那就简单很多了。
-2、创建线程的方式#比较常见的一个问题了，一般就是两种：
-  继承 Thread 类
-  实现 Runnable 接口</description>
-    </item>
-    
-    <item>
-      <title>55道BAT精选的Mysql面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_55%E9%81%93bat%E7%B2%BE%E9%80%89%E7%9A%84mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_55%E9%81%93bat%E7%B2%BE%E9%80%89%E7%9A%84mysql%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>{width=&amp;ldquo;6.857017716535433in&amp;rdquo; height=&amp;ldquo;1.6727821522309712in&amp;rdquo;}1、一张表，里面有 ID 自增主键，当 insert 了 17 条记录之后，删除了第 15,16,17 条记录， 再把 Mysql 重启，再 insert 一条记录，这条记录的 ID 是 18 还是 15 ？
-2、Mysql 的技术特点是什么？
- Mysql 数据库软件是一个客户端或服务器系统，其中包括：支持各种客户端程序和库的多线程 SQL 服务器、不同的后端、广泛的应用程序编程接口和管理工具。
- 3、Heap 表是什么？
- HEAP 表存在于内存中，用于临时高速存储。
-  BLOB 或 TEXT 字段是不允许的
-  只能使用比较运算符=，&amp;lt;，&amp;gt;，=&amp;gt;，= &amp;lt;
-  HEAP 表不支持 AUTO_INCREMENT
-  索引不可为 NULL
-   4、Mysql 服务器默认端口是什么？ Mysql 服务器的默认端口是 3306。
-5、与 Oracle 相比，Mysql 有什么优势？
-   Mysql 是开源软件，随时可用，无需付费。</description>
-    </item>
-    
-    <item>
-      <title>60道必备的Java核心技术面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_60%E9%81%93%E5%BF%85%E5%A4%87%E7%9A%84java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_60%E9%81%93%E5%BF%85%E5%A4%87%E7%9A%84java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1、作用域 public,private,protected,以及不写时的区别#+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | **答：**区别如下： | | +====================+==========+================+==========+================+ | 作用域 | &amp;gt; 当前类 | &amp;gt; 同一 package | &amp;gt; 子孙类 | &amp;gt; 其他 package | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | public | &amp;gt; √ | &amp;gt; √ | &amp;gt; √ | &amp;gt; √ | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | protected | &amp;gt; √ | &amp;gt; √ | &amp;gt; √ | &amp;gt; × | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | friendly | &amp;gt; √ | &amp;gt; √ | &amp;gt; × | &amp;gt; × | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+ | private | &amp;gt; √ | &amp;gt; × | × | &amp;gt; × | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;-+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-+</description>
-    </item>
-    
-    <item>
-      <title>7道消息队列ActiveMQ面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_7%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97activemq%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_7%E9%81%93%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97activemq%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>1.什么是 ActiveMQ? activeMQ 是一种开源的，实现了 JMS1.1 规范的，面向消息(MOM)的中间件，为应用程序提供高效的、 可扩展的、稳定的和安全的企业级消息通信 2. ActiveMQ 服务器宕机怎么办？ 这得从 ActiveMQ 的储存机制说起。在通常的情况下，非持久化消息是存储在内存中的，持久化消息是存 储在文件中的，它们的最大限制在配置文件的节点中配置。但是，在非持久化消息堆积 到一定程度，内存告急的时候，ActiveMQ 会将内存中的非持久化消息写入临时文件中，以腾出内存。虽 然都保存到了文件里，但它和持久化消息的区别是，重启后持久化消息会从文件中恢复，非持久化的临时 文件会直接删除。 那如果文件增大到达了配置中的最大限制的时候会发生什么？我做了以下实验： 设置 2G 左右的持久化文件限制，大量生产持久化消息直到文件达到最大限制，此时生产者阻塞，但消费 者可正常连接并消费消息，等消息消费掉一部分，文件删除又腾出空间之后，生产者又可继续发送消息， 服务自动恢复正常。 设置 2G 左右的临时文件限制，大量生产非持久化消息并写入临时文件，在达到最大限制时，生产者阻塞， 消费者可正常连接但不能消费消息，或者原本慢速消费的消费者，消费突然停止。整个系统可连接，但是 无法提供服务，就这样挂了。 具体原因不详，解决方案：尽量不要用非持久化消息，非要用的话，将临时文件限制尽可能的调大。 3. 丢消息怎么办？ 这得从 java 的 java.net.SocketException 异常说起。简单点说就是当网络发送方发送一堆数据，然后调 用 close 关闭连接之后。这些发送的数据都在接收者的缓存里，接收者如果调用 read 方法仍旧能从缓存中 读取这些数据，尽管对方已经关闭了连接。但是当接收者尝试发送数据时，由于此时连接已关闭，所以会 发生异常，这个很好理解。不过需要注意的是，当发生 SocketException 后，原本缓存区中数据也作废了， 此时接收者再次调用 read 方法去读取缓存中的数据，就会报 Software caused connection abort: recv failed 错误。 通过抓包得知，ActiveMQ 会每隔 10 秒发送一个心跳包，这个心跳包是服务器发送给客户端的，用来判 断客户端死没死。如果你看过上面第一条，就会知道非持久化消息堆积到一定程度会写到文件里，这个写 的过程会阻塞所有动作，而且会持续 20 到 30 秒，并且随着内存的增大而增大。当客户端发完消息调用 connection.close()时，会期待服务器对于关闭连接的回答，如果超过 15 秒没回答就直接调用 socket 层 的 close 关闭 tcp 连接了。这时客户端发出的消息其实还在服务器的缓存里等待处理，不过由于服务器心 跳包的设置，导致发生了 java.</description>
-    </item>
-    
-    <item>
-      <title>apache-common工具包</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_apache-common%E5%B7%A5%E5%85%B7%E5%8C%85/</guid>
-      <description>Apache Commons 工具类介绍及简单使用#   组件 功能介绍     BeanUtils Commons-BeanUtils 提供对 Java 反射和自省API的包装, 提供了对于JavaBean进行各种操作，克隆对象,属性等等.   Betwixt XML与Java对象之间相互转换.   Codec 处理常用的编码方法的工具类包 例如DES、SHA1、MD5、Base64等.   Collections java集合框架操作.   Compress java提供文件打包 压缩类库.   Configuration Commons-Configuration 工具对各种各式的配置和参考文件提供读取帮助,java应用程序的配置管理类库.   DBCP 提供数据库连接池服务.   DbUtils DbUtils 是一个 JDBC helper 类库，完成数据库任务的简单的资源清除代码,提供对jdbc 的操作封装来简化数据查询和记录读取操作   Email java发送邮件 对javamail的封装.   FileUpload 提供文件上传功能.   HttpClient 提供HTTP客户端与服务器的各种通讯操作. 现在已改成HttpComponents   Lang Java基本对象方法的工具类包 如：StringUtils,ArrayUtils等等.</description>
-    </item>
-    
-    <item>
-      <title>CHANGELOG</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_changelog/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_changelog/</guid>
-      <description>HEAD#1.4.0#  Support for AMD.
-  Removed deprecated method $.cookie(&#39;name&#39;, null) for deleting a cookie, use $.removeCookie(&#39;name&#39;).
-  $.cookie(&#39;name&#39;) now returns undefined in case such cookie does not exist (was null). Because the return value is still falsy, testing for existence of a cookie like if ( $.cookie(&#39;foo&#39;) ) keeps working without change.
-  Renamed bower package definition (component.json -&amp;gt; bower.json) for usage with up-to-date bower.</description>
-    </item>
-    
-    <item>
-      <title>CONTRIBUTING</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_bootstrap-switch_contributing/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_bootstrap-switch_contributing/</guid>
-      <description>If you want help us to fix bugs or add a extension please use our develop branch
-https://github.com/nostalgiaz/bootstrap-switch/tree/develop
-First step:
-Please merge your branch develop with nostalgiaz/bootstrap-switch/tree/develop
-second step:
-Work in the branch develop for fixes
-third step:
-regularly reviews the branch develop for updates and then merge this with your branch develop
-fourth step:
-When you&amp;rsquo;re done in your branch send us a PR to merge the two branches</description>
-    </item>
-    
-    <item>
-      <title>CONTRIBUTING</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_contributing/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jquery-cookie_contributing/</guid>
-      <description>##Issues
- Report issues or feature requests on GitHub Issues. If reporting a bug, please add a simplified example.  ##Pull requests
- Create a new topic branch for every separate change you make. Create a test case if you are fixing a bug or implementing an important feature. Make sure the build runs successfully.  Development####Tools We use the following tools for development:
- Qunit for tests.</description>
-    </item>
-    
-    <item>
-      <title>CONTRIBUTING</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_select2_contributing/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_select2_contributing/</guid>
-      <description>Contributing to Select2#Looking to contribute something to Select2? Here&amp;rsquo;s how you can help.
-Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
-Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.</description>
-    </item>
-    
-    <item>
-      <title>dom4j</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_dom4j/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_dom4j/</guid>
-      <description>dom4j# 选取节点
-   nodename 选取当前节点的所有子节点
-  / 从根节点选取
-  // 从匹配选择的当前节点选择文档中的节点，而不考虑它们的位置
-  . 选取当前节点
-  .. 选取当前节点的父节点
-  @ 选取属性
-   实例
-   路径表达式 结果
-  bookstore 选取 bookstore 元素的所有子节点
-  /bookstore 选取根元素 bookstore
-  bookstore/book 选取bookstore 下名字为 book的所有子元素。
-  //book 选取所有 book 子元素，而不管它们在文档中的位置。
-  bookstore//book 选取bookstore 下名字为 book的所有后代元素，而不管它们位于 bookstore 之下的什么位置。</description>
-    </item>
-    
-    <item>
-      <title>DOS &gt; basic</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_basic/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_basic/</guid>
-      <description>DOS基本命令# wing+r ==&amp;gt; cmd 进入dos控制台   打开屏幕键盘  C:\Users\noatn&amp;gt;osk; dos各种操作查看参数用法 command params ==? command /?  C:\Users\noatn&amp;gt;cd /?显示当前目录名或改变当前目录。CHDIR [/D] [drive:][path]CHDIR [..]CD [/D] [drive:][path]CD [..].. 指定要改成父目录。键入 CD drive: 显示指定驱动器中的当前目录。不带参数只键入 CD，则显示当前驱动器和目录。使用 /D 开关，除了改变驱动器的当前目录之外，还可改变当前驱动器。如果命令扩展被启用，CHDIR 会如下改变:当前的目录字符串会被转换成使用磁盘名上的大小写。所以，如果磁盘上的大小写如此，CD C:\TEMP 会将当前目录设为C:\Temp。CHDIR 命令不把空格当作分隔符，因此有可能将目录名改为一个带有空格但不带有引号的子目录名。例如:cd \winnt\profiles\username\programs\start menu与下列相同:cd &amp;quot;\winnt\profiles\username\programs\start menu&amp;quot;在扩展停用的情况下，你必须键入以上命令。  显示文件夹列表 dir
-  改变目录 cd</description>
-    </item>
-    
-    <item>
-      <title>DOS &gt; file</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_file/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_file/</guid>
-      <description>DOS基本文件操作命令#  wing+r ==&amp;gt; cmd 进入dos控制台
-  D:
-  进入D盘 cd命令  CD命令是更改目录命令 如果要进入D盘不用这个命令直接输入 D: 回车 即可例如:C:\Users\HP&amp;gt;D:D:\&amp;gt;D:\&amp;gt;dir驱动器 D 中的卷是 新加卷卷的序列号是 DAB4-11FED:\ 的目录2019-10-10 14:15 &amp;lt;DIR&amp;gt; 360极速浏览器下载2020-01-13 13:47 &amp;lt;DIR&amp;gt; BaiduNetdiskDownload2020-01-20 13:59 &amp;lt;DIR&amp;gt; CS2019-12-13 16:53 &amp;lt;DIR&amp;gt; data2020-02-10 15:55 &amp;lt;DIR&amp;gt; IdeaProjects2019-12-06 15:01 &amp;lt;DIR&amp;gt; log2019-10-23 10:40 &amp;lt;DIR&amp;gt; MailMasterData2019-09-29 10:43 &amp;lt;DIR&amp;gt; output2020-01-13 13:40 &amp;lt;DIR&amp;gt; soft2020-02-04 17:43 &amp;lt;DIR&amp;gt; temp2020-01-15 18:05 &amp;lt;DIR&amp;gt; ultraeditWork2019-12-10 09:47 &amp;lt;DIR&amp;gt; workspace0 个文件 0 字节12 个目录 463,738,040,320 可用字节D:\&amp;gt;cd CSD:\CS&amp;gt; /*进入了CS目录**/ cd .</description>
-    </item>
-    
-    <item>
-      <title>DOS &gt; network</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_network/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_dos_network/</guid>
-      <description>DOS网络操作命令# netstat -ano (列出所有端口的情况)  PS C:\Users\noatn&amp;gt; netstat -ano活动连接协议 本地地址 外部地址 状态 PIDTCP 0.0.0.0:135 0.0.0.0:0 LISTENING 1028TCP 0.0.0.0:445 0.0.0.0:0 LISTENING 4TCP 0.0.0.0:1024 0.0.0.0:0 LISTENING 852TCP 0.0.0.0:1025 0.0.0.0:0 LISTENING 2232TCP 0.0.0.0:3306 0.0.0.0:0 LISTENING 3672TCP 0.0.0.0:5040 0.0.0.0:0 LISTENING 5660TCP 0.0.0.0:7680 0.0.0.0:0 LISTENING 6628TCP 0.0.0.0:49664 0.0.0.0:0 LISTENING 868TCP 0.0.0.0:49665 0.0.0.0:0 LISTENING 784TCP 0.0.0.0:49666 0.0.0.0:0 LISTENING 1580TCP 0.0.0.0:49667 0.</description>
-    </item>
-    
-    <item>
-      <title>FTP</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_ftp/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_ftp/</guid>
-      <description>本地设置FTP服务器#步骤1：在计算机上打开“控制面板”，然后单击“程序和功能”。#步骤2：在“程序和功能”窗口中，单击“控制面板”窗口左侧的“打开或关闭Windows功能”。#第3步：现在等待一段时间并向下滚动以找出“Internet信息服务”。 只需展开它，打开“FTP服务器”，“Web管理工具”和“万维网服务”下的所有内容，与下面的屏幕截图相同。 完成所有服务后，单击“确定”#第4步：应用更改需要一些时间，完成后，单击“立即重新启动”以重新启动计算机并应用所做的更改#步骤5：重新启动计算机后，再次打开“控制面板”，然后单击“管理工具”将其打开#步骤7：在IIS管理器窗口的左侧，展开窗口左侧的计算机名称，除非您找到“站点”。 只需右键单击“站点”，然后单击“添加FTP站点&amp;hellip;”#第8步：这里给FTP站点命名。 我将&amp;rsquo;sampleftp&amp;rsquo;赋予FTP站点名称。 现在单击“&amp;hellip;”按钮以找到要通过FTP服务器访问的文件夹或驱动程序。 我为本教程选择了“C：FTP_Path”。 完成所有操作后，单击“下一步”#步骤9：在下一个窗口中，单击与“IP Address：”对应的下拉菜单，然后在本地网络上选择计算机的IP地址。# 将端口号保留为“21”，默认情况下是这样。  步骤10：选择“No SSL”并启用“自动启动FTP站点”，然后单击“下一步”。# *由于这是一个教程，我不允许使用SSL。 但是，如果您想通过FTP服务器访问敏感数据，我建议您使用SSL  步骤11：现在选择“基本”的身份验证方法，并向“所有用户”提供“授权”。 用户必须输入您的Windows用户名和密码才能使用此身份验证方法访问FTP服务器上的文件# 现在，根据您要如何设置FTP服务器，将权限设置为“读取”和“写入”或仅设置为“读取”。 之后，单击“完成”以完成站点设置并在Windows计算机上启动FTP服务器  配置防火墙# 您的FTP服务器已准备就绪并且正在运行 但是，您需要配置Windows防火墙以允许与您的计算机进行FTP通信的事务处理。  步骤12：打开“控制面板”并在Windows 10上单击“Windows Defender Firewall”或在Windows 7上单击“Windows防火墙”#步骤13：单击窗口左侧的“允许通过Windows Defender防火墙的应用程序或功能”#步骤14：在新窗口中，单击“更改设置”并标记“FTP服务器”的“公共”和“私人”对应的复选框，然后单击“确定”。#  现在，您可以使用适当的应用程序轻松地从本地网络中的任何其他计算机或移动设备访问FTP服务器，或者只需从浏览器访问即可。</description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_git/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_git/</guid>
-      <description>Push master to origin/master was rejected by remote  有三种原因1:push的这个工程是其他人新建的，找她开通master权限后，再次push2:git 工程错误git pullgit pull origin mastergit pull origin master --allow-unrelated-histories3:github 设置原因勾选了Keep my email addresses private解决办法2种第一种 通知账户人员取消勾选第二种重新设置你的全局用户E-mailgit config --list 查看这个时候一定不对因此重新设置全局email重置上次提交的作者信息 git commit --amend --reset-authorgit config --global user.name &amp;quot;zch&amp;quot;git config --global user.email &amp;quot;sdhshd@163.com&amp;quot;ok对了你如果使用的不是idea而是git那么抛出的错误非常明显如果抛出git报错--&amp;gt;! [remote rejected] master -&amp;gt; master (push declined due to email privacy restrictions)那么一定是这个原因 git clone时报RPC failed; curl 18 transfer closed with outstanding read data remaining 错误  原因1：缓存区溢出git config http.</description>
-    </item>
-    
-    <item>
-      <title>GitHubPages绑定来自阿里云的域名</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_problem_githubpages%E7%BB%91%E5%AE%9A%E6%9D%A5%E8%87%AA%E9%98%BF%E9%87%8C%E4%BA%91%E7%9A%84%E5%9F%9F%E5%90%8D/</guid>
-      <description>原教程但是由于他使用的github的用户名做的域名映射器,这样不好的地方是有可能你使用自定义的方式建立github仓库名比如 English study,还有一个是他使用的阿里云的域名映射解析这些是老版本的
-  GitHub Pages 绑定来自阿里云的域名==原博客教程
-  我的使用#github url ==&amp;gt; https://github.com/noatnu/studyDoc , 买的域名 http://www.zhouchenghua.com/# 解析第一个设置   创建A记录，请将您的顶点域指向GitHub Pages的IP地址 https 解析ip,上面的192.30.252.153是http解析方式现在官方已经宣布过时了,选择下面任意一个都可以  185.199.108.153185.199.109.153185.199.110.153185.199.111.153 解析第二个设置    github 要做的事
-  创建 CNAME文件,写入www.zhouchenghua.com
-   这个是我设置github project 设置截图   ping 地址  C:\Users\noatn&amp;gt;ping www.github.com正在 Ping github.com [13.250.177.223] 具有 32 字节的数据:请求超时。请求超时。请求超时。请求超时。13.</description>
-    </item>
-    
-    <item>
-      <title>gitIntroduction</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitintroduction/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitintroduction/</guid>
-      <description>git学习#git 区域概念# git分为工作区(我们自己的file)和版本库这其中版本库又包含暂存区(Stage)和分支区(master)    git add ********** 把文件添加到仓库
-  git reset README.md 取消提交到暂存区域
-  git commmit -m &amp;lsquo;xxxx&amp;rsquo; 提交到仓库
-  git diff 查看提交到仓库文件之后文件又被修改的变化
-  git status 查看状态
-  git rm -f gitS.md 强制删除
-  git log 显示从最近到最远的提交日志
-  git log &amp;ndash;pretty=oneline 只显示版本号
-  关于版本回退问题#  git reset &amp;ndash;hard HEAD^ 版本重置为上一个版本
-  git 关于版本处理进行了设置</description>
-    </item>
-    
-    <item>
-      <title>gitub配置</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitub%E9%85%8D%E7%BD%AE/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_git_gitub%E9%85%8D%E7%BD%AE/</guid>
-      <description>zhou@zhou-Lenovo-Z480:~$ git versiongit version 2.7.4zhou@zhou-Lenovo-Z480:~$ ssh -T git@github.comWarning: Permanently added the RSA host key for IP address &#39;192.30.255.112&#39; to the list of known hosts.Permission denied (publickey).zhou@zhou-Lenovo-Z480:~$ git config --global user.name &amp;quot;zhouchenhua&amp;quot;zhou@zhou-Lenovo-Z480:~$ git config --global user.email &amp;quot;noatnu@163.com&amp;quot;zhou@zhou-Lenovo-Z480:~$ git config --listuser.name=zhouchenhuauser.email=noatnu@163.comzhou@zhou-Lenovo-Z480:~$ ssh-keygen -C ‘noatnu@163.com’ -t rsaGenerating public/private rsa key pair.Enter file in which to save the key (/home/zhou/.ssh/id_rsa): america347191Enter passphrase (empty for no passphrase): Enter same passphrase again: Your identification has been saved in america347191.</description>
-    </item>
-    
-    <item>
-      <title>Guava-common</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_guava-common/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_guava-common/</guid>
-      <description>Guava 基于java1.6的类库集合的扩展项目# com.google.common.annotations：普通注解类型。 com.google.common.base：基本工具类库和接口。 com.google.common.cache：缓存工具包，非常简单易用且功能强大的JVM内缓存。 com.google.common.collect：带泛型的集合接口扩展和实现，以及工具类，这里你会发现很多好玩的集合。 com.google.common.eventbus：发布订阅风格的事件总线。 com.google.common.hash： 哈希工具包。 com.google.common.io：I/O工具包。 com.google.common.math：原始算术类型和超大数的运算工具包。 com.google.common.net：网络工具包。 com.google.common.primitives：八种原始类型和无符号类型的静态工具包。 com.google.common.reflect：反射工具包。 com.google.common.util.concurrent：多线程工具包。 常见Object方法   hashCode compare/compareTo 实现一个比较器[Comparator]，或者直接实现Comparable接口有时也伤不起
- public class ProjectInfo implements Serializable,Comparable&amp;lt;ProjectInfo&amp;gt; {private int id;private String name;public int getId() {return id;}public String getName() {return name;}public void setId(int id) {this.id = id;}public void setName(String name) {this.name = name;}@Overridepublic int compareTo(ProjectInfo o) {return ComparisonChain.</description>
-    </item>
-    
-    <item>
-      <title>host映射</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_host%E6%98%A0%E5%B0%84/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_host%E6%98%A0%E5%B0%84/</guid>
-      <description>sudo vi hosts
-127.0.0.1	localhost 127.0.1.1	zhou-Lenovo-Z480
-The following lines are desirable for IPv6 capable hosts#::1 ip6-localhost ip6-loopback fe00::0 ip6-localnet ff00::0 ip6-mcastprefix ff02::1 ip6-allnodes ff02::2 ip6-allrouters
-#pmcc dev 127.0.0.1 dev.pmcc.com</description>
-    </item>
-    
-    <item>
-      <title>hugo &gt; tutorials1</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/</guid>
-      <description>教程1#快速开始# 步骤1：安装Hugo  brew install hugo# orport install hugo 要验证新安装  hugo version 步骤2：建立新网站  hugo new site quickstart# 上面的代码将在名为的文件夹中创建一个新的Hugo网站quickstart。 步骤3：添加主题  # 首先，从GitHub下载主题并将其添加到您站点的themes目录中：cd quickstartgit initgit submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题添加到站点配置中：  echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 步骤4：添加一些内容  hugo new posts/my-first-post.md 如果需要，请编辑新创建的内容文件，该文件将从以下内容开始：   ---title: &amp;quot;My First Post&amp;quot;date: 2019-03-26T08:47:11+01:00draft: true--- 步骤5：启动Hugo服务器  ▶ hugo server -D| EN+------------------+----+Pages | 10Paginator pages | 0Non-page files | 0Static files | 3Processed images | 0Aliases | 1Sitemaps | 1Cleaned | 0Total in 11 msWatching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes}Watching for config changes in /Users/bep/quickstart/config.</description>
-    </item>
-    
-    <item>
-      <title>hugo &gt; tutorials2</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/</guid>
-      <description>教程2# 1、	创建blog  hugo new site myblog_pubcd myblog_pub/git submodule add https://github.com/chinanf-boy/gohugo-theme-yinwang.git themes/yinwang  2、	修改配置
-  vi config.toml
-  root@instance-x8rtph4n:/home/go/code/hugo_dir/myblog_pub/public# more ../config.toml baseURL = &amp;quot;http://ypbsyy.github.io/&amp;quot;languageCode = &amp;quot;en-us&amp;quot;title = &amp;quot;我是yaopeng&amp;quot;theme = &amp;quot;yinwang&amp;quot;#pygmentsCodeFences = true#pygmentsCodefencesGuessSyntax = false#pygmentsStyle = &amp;quot;dracula&amp;quot;#pygmentsOptions = [&#39;linenos&#39;]# 代码高亮/chroma，hugo默认自带[params]author = &amp;quot;yaopeng&amp;quot;github = &amp;quot;yaopeng&amp;quot;# gitlab = &amp;quot;yobrave&amp;quot;#googleAnalytics = &amp;quot;****&amp;quot;# 谷歌统计gtaghighlight = &amp;quot;dracula&amp;quot; # 默认样式 `github`langs = [&amp;quot;go&amp;quot;]# 默认加载 highlight.</description>
-    </item>
-    
-    <item>
-      <title>idea</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_idea_idea/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_idea_idea/</guid>
-      <description> idea 解决working directory 设置到 target  test ng D:\IdeaProjects\java-se-studyrun config $MODULE_DIR$</description>
-    </item>
-    
-    <item>
-      <title>idea导入项目出现Unable &gt; to &gt; import &gt; maven &gt; project &gt; See &gt; logs &gt; for &gt; details提示</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_maven_idea%E5%AF%BC%E5%85%A5%E9%A1%B9%E7%9B%AE%E5%87%BA%E7%8E%B0unable_to_import_maven_project_see_logs_for_details%E6%8F%90%E7%A4%BA/</guid>
-      <description>idea导入项目出现Unable to import maven project: See logs for details提示
- 第一种解决办法#  删除项目根目录下.idea文件夹
-  关闭idea工具，重新打开选择File-&amp;gt;New-&amp;gt;Project from the existing source ,选择刚才的项目根目，下一步：
-  一直点next，最后点击主工程的pom.xml 完成！
-  第二种#  打开idea 的日志文件如果发现【Error】com.google.inject.CreationException: Unable to create injector
-  那么自定义配置Maven3.6.2报错 或者更高版本maven
-  原因：Maven3.6.2的版本兼容问题。
-  解决方法：重新下载较低版本Maven3.6.1及以下版本可以顺利解决。
-  用maven无论是新建项目还是导入没有下载到本地仓库的jar。出现了Unable to import maven project
-  打开cmd，ping localhost，显示一般故障
-  在左边控制栏，关闭防火墙，再开启防火墙 再次ping localhost，成功
-  对了 假如出现文件权限问题 那么更改maven的本地仓库地址</description>
-    </item>
-    
-    <item>
-      <title>info</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_meditation_info/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_meditation_info/</guid>
-      <description>冥想#呼吸冥想法#  1:坐好，后背挺直，然后闭上眼睛
-  2:关注你自己呼吸时的感觉,吸气，吸气，选择一个感受突出的地方，通常是你的鼻子或者耳朵、腹部然后集中注意力，关注你自己呼吸时的感觉。吸气，吸气，用嘴呼吸（最好关注腹部，因为我们大部分人都是腹部呼吸法）
-  3:一旦你开始这样做了脑子会乱想,你需要关注你到什么时候走神的，那么走神后重新调整后重新开始集中注意力开始冥想。
-  </description>
-    </item>
-    
-    <item>
-      <title>IO</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_io/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_io/</guid>
-      <description>org.apache.commons.io.FilenameUtils 文件名称操作#  FilenameUtils.getExtension(fileName) 获取文件后缀 //text
-  FilenameUtils.getName(fileName) 获取文件完整名称 //c.text
-  FilenameUtils.getBaseName(fileName) 获取文件名称 //c
-  FilenameUtils.getFullPath(fileName) 获取文件的完整路径 //D:\data\
-  String path = &amp;quot;D:\\data\\假设开发法土地模板.docx&amp;quot; ;String fullPath = FilenameUtils.getFullPath(path);System.out.println(&amp;quot;fullPath:&amp;quot;+fullPath);//D:\data\String name = FilenameUtils.getName(path);System.out.println(&amp;quot;name:&amp;quot;+name); //假设开发法土地模板.docxString prefix = FilenameUtils.getPrefix(path);System.out.println(&amp;quot;prefix:&amp;quot;+prefix); //D:\int prefixLength = FilenameUtils.getPrefixLength(path);System.out.println(&amp;quot;prefixLength:&amp;quot;+prefixLength); //3String path1 = FilenameUtils.getPath(path);System.out.println(&amp;quot;path:&amp;quot;+path1); //data\String baseName = FilenameUtils.getBaseName(path);System.out.println(&amp;quot;baseName:&amp;quot;+baseName); //假设开发法土地模板String extension = FilenameUtils.getExtension(path);System.</description>
-    </item>
-    
-    <item>
-      <title>java &gt; bitOperation</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_java_java_bitoperation/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_java_java_bitoperation/</guid>
-      <description>位运算#  十进制转二进制
-  正整数十进制转二进制
-   正整数转成二进制。要点一定一定要记住哈：除二取余，然后倒序排列，高位补零。也就是说，将正的十进制数除以二，得到的商再除以二，依次类推直到商为零或一时为止，然后在旁边标出各步的余数，最后倒着写出来，高位补零就OK咧。
-  2 |93 1──────2 |46 0────── 2 |23 1──────2 |11 1────── 2|5 1────2|2 0────1 1011101不满足8位所以高位补0 计算机内部表示数的字节单位是定长的，如8位，16位，或32位。所以，位数不够时，高位补零01011101反推回去10111016543210 ==&amp;gt; 2(6)*1+2(5)*0+2(4)*1+2(3)*1+2(2)*1+2(1)*0+2(0)*1 ==》Math.pow(2,6) + Math.pow(2,4) + Math.pow(2,3) +Math.pow(2,2)+1=932 |100 0───────2 |50 0────── 2 |25 1──────2 |12 0────── 2|6 0────2|3 1────1 011001002 |73 1──────2 |36 0────── 2 |18 0──────2 |9 1────── 2|4 0────2|2 0────1 1001001 正小数转换二进制   乘二取整，直到小数为零为止，先整为高位，后整为低位 乘二取整，截取整数，如果还没到整数那么取0，截取后剩余的小数继续乘以2然后再截取整数，直到小数为0为止，这里要注意的是每乘以2后必须截取，然后才能往后继续算</description>
-    </item>
-    
-    <item>
-      <title>java &gt; java基础总结大全</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93%E5%A4%A7%E5%85%A8/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_java%E5%9F%BA%E7%A1%80%E6%80%BB%E7%BB%93%E5%A4%A7%E5%85%A8/</guid>
-      <description>﻿
-一、基础知识：#1、JVM、JRE和JDK的区别：# JVM(Java Virtual Machine):java虚拟机，用于保证java的跨平台的特性。 java语言是跨平台，jvm不是跨平台的。 JRE(Java Runtime Environment):java的运行环境,包括jvm+java的核心类库。	JDK(Java Development Kit):java的开发工具,包括jre+开发工具
- 2、环境变量path和classpath的作用是什么？# (1)path是配置Windows可执行文件的搜索路径，即扩展名为.exe的程序文件所在的目录， 用于指定DOS窗口命令的路径。 (2)Classpath是配置class文件所在的目录，用于指定类搜索路径，JVM就是通过它来寻找该类的class类文件的。
- 3、变量有什么用？为什么要定义变量？什么时候用？# 答：变量的作用：用来存储数据。 为什么要定义变量：用来不断的存放同一类型的常量，并可以重复使用
- 4、&amp;amp;和&amp;amp;&amp;amp;的区别?# 答：（1）&amp;amp;&amp;amp;会出现短路，如果可以通过第一个表达式判断出整个表达式的结果，则不继续后面表达式的运算； 只能操作boolean类型数据； （2）&amp;amp;不会出现短路，将整个表达式都运算。既可以操作boolean数据还可以操作数。
- 5、标示符命名规则：# 由数字(0-9)，大小写英文字母，以及_和$组成。 不能以数字开头。 不能使用关键字来自定义命名。
- 6、数据类型：# (1)基本数据类型(4类8种)： 整数类型：byte、short、int、long 浮点数类型：float、double 字符类型：char 布尔类型：boolean(ture false) (2)引用数据类型： 类 接口 数组
- 7、类型转换# 精度从高到低 double float long int short(char) byte (1)自动类型转换 将一个低精度&amp;mdash;高精度 (2)强制类型转换 将一个高精度&amp;mdash;低精度(精度会下降)</description>
-    </item>
-    
-    <item>
-      <title>java &gt; programStructure</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_programstructure/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_java_programstructure/</guid>
-      <description>Java的程序结构#public class HelloWorld {public static void main(String[] args) {System.out.println(&amp;quot;Hello World&amp;quot;);}} Java区分大小写 关键字public称为访问修饰符 (这些修饰符用于控制其它程序对这部分代码的访问级别) 关键字class表面Java程序的全部内容都包含在类中 关键字class后面紧跟类名   Java中定义类名的规则很宽松。名字必须以字母开头,后面可以跟字母和数字的任意组合。长度基本没有限制,但是不能使用Java保留字(例如class或public)作为类名
-  标准的命名规范为(FirstSample):类名是以大写字母开头的名词。如果由多个单词组成，每个单词的第一个字母都应该大写(驼峰命名法)
-  源代码的文件名必须与公共类的名字相同,并用.java作为扩展名  数据类型# String s = RandomStringUtils.random(22) ;byte[] bytes = s.getBytes();byte a1 = 35;System.out.println(a1);System.out.println(Arrays.toString(bytes));byte[] bytes1 = new byte[35] ;int[] ints = new int[35] ;for (int i = 0; i &amp;lt; 35; i++) {// bytes1[i] = (byte) RandomUtils.</description>
-    </item>
-    
-    <item>
-      <title>java &gt; thread &gt; Java多线程编程核心技术 &gt; 第一章</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_java_thread_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_%E7%AC%AC%E4%B8%80%E7%AB%A0/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_java_thread_java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF_%E7%AC%AC%E4%B8%80%E7%AB%A0/</guid>
-      <description>第一章关键技术点#  (1) 线程的启动
-  (2) 如何使线程暂停
-  (3) 如何使线程停止
-  (4) 线程的优先级
-  (5) 线程安全相关的问题
-  1 进程和多线程的概念及线程的优点
- 进程:进程是操作系统结构的基础；是一次程序的执行；是一个程序及其数据在处理机上顺序执行时所发生的活动；是程序在一个数据集合上运行的过程，它是系统进行资源分配和调度的一个独立单位。 进程理解1:正在操作系统中运行的exe程序 线程:线程可以理解成是在进程中独立运行的子任务。(使用多线程技术后，可以在同一时间内运行更多不同种类的任务)  2 使用多线程
- 继承Thread类、或者实现runnable接口,在调用thread对象的start方法,start方法的作用是通知 &amp;ldquo;线程规划器&amp;quot;此线程已经准备就绪，等待调用线程的run方法。这个过程其实就是让系统安排一个时间来调用thread中的run方法  3 实例变量与线程安全
- 自定义线程类中的实例变量针对其他线程可以有共享与不共享之分，这在多个线程之间进行交互时是很重要的一个技术点。 synchronized 可以在任意对象及方法上加锁，而加锁的这段代码称为互斥区或临界区 当一个线程想要执行同步方法里的代码时，线程首先尝试去拿这把锁，如果能拿到这把锁，那么这个线程就可以执行synchronize里面的代码。如果不能拿到这把锁，那么这个线程就会不断地尝试拿这把锁，直到能够拿到为止，而且是有多个线程同时去争抢这把锁。  4 Thread.currentThread()方法
- currentThread 返回代码段正在被哪个线程调用的信息  5 isAlive 判断线程是否处于存活状态
- 线程处于正在运行或准备开始运行的状态，就认为线程是 &amp;ldquo;存活&amp;rdquo; 的  6 sleep
- 方法sleep的作用是在指定的毫秒数内让当前 &amp;ldquo;正在执行的线程&amp;quot;休眠(暂停执行) &amp;ldquo;这个正在执行的线程&amp;quot;是指this.currentThread()返回的线程  7 停止线程
-   使用退出标志，使线程正常退出，也就是当run()方法完成后线程终止    使用stop方法强行终止线程,但是不推荐使用这个方法    使用interrupt方法中断线程    异常法    </description>
-    </item>
-    
-    <item>
-      <title>java &gt; thread &gt; 高并发和分布式中的幂等处理</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E7%9A%84%E5%B9%82%E7%AD%89%E5%A4%84%E7%90%86/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%AD%E7%9A%84%E5%B9%82%E7%AD%89%E5%A4%84%E7%90%86/</guid>
-      <description>高并发和分布式中的幂等处理#我们先来谈下幂等的概念#抽象概念#  幂等（idempotent、idempotence）是一个数学与计算机学概念，常见于抽象代数中。
-  在编程中，一个幂等操作的特点是其任意多次执行所产生的影响均与一次执行的影响相同。幂等函数，或幂等方法，是指可以使用相同参数重复执行，并能获得相同结果的函数。这些函数不会影响系统状态，也不用担心重复执行会对系统造成改变。例如，“getUsername()和setTrue()”函数就是一个幂等函数。
-  用通俗的话讲：就是针对一个操作，不管做多少次，产生效果或返回的结果都是一样的
-  举几个例子：
-  1.比如前端对同一表单数据的重复提交，后台应该只会产生一个结果。
-  2.比如我们发起一笔付款请求，应该只扣用户账户一次钱，当遇到网络重发或系统bug重发，也应该只扣一次钱。
-  3.比如发送消息，也应该只发一次，同样的短信如果多次发给用户，用户会崩溃。
-  4.比如创建业务订单，一次业务请求只能创建一个，不能出现创建多个订单。
-  还有很多诸如此类的，这些逻辑都需要幂等的特性来支持。
-  实现幂等性的技术方案
-  查询操作
-  查询一次和查询多次，在数据不变的情况下，查询结果是一样的，select是天然的幂等操作。
-  删除操作
-  删除操作也是幂等的，删除一次和多次删除都是把数据删除。(注意可能返回结果不一样，删除的数据不存在，返回0，删除的数据多条，返回结果多个)
-  唯一索引，防止新增脏数据
-  拿资金账户和用户账户来说，每个用户只能有一个资金账户，怎么防止给用户创建资金账户多个，那么给资金账户表中的用户ID加唯一索引，在新增的时候只有一个请求成功，剩下都会抛出唯一索引重复异常。比如org.springframework.dao.DuplicateKeyException，这时候再查询一次就可以了，数据存在，返回结果。
-  token机制，防止页面重复提交
-  要求：页面的数据只能被点击提交一次
-  发生原因：由于重复点击或者网络重发，或者nginx重发等情况会导致数据被重复提交
-  解决办法：
-  集群环境：采用token加redis</description>
-    </item>
-    
-    <item>
-      <title>java &gt; thread &gt; 高并发高可用的架构实践</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E9%AB%98%E5%8F%AF%E7%94%A8%E7%9A%84%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_thread_java_thread_%E9%AB%98%E5%B9%B6%E5%8F%91%E9%AB%98%E5%8F%AF%E7%94%A8%E7%9A%84%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5/</guid>
-      <description>高并发高可用的架构实践#一、 设计理念# 1.空间换时间   1)多级缓存，静态化 客户端页面缓存（http header中包含Expires/Cache of Control，last modified(304，server不返回body，客户端可以继续用cache，减少流量)，ETag） 反向代理缓存 应用端的缓存(memcache) 内存数据库 Buffer、cache机制（数据库，中间件等）
-  2)索引 哈希、B树、倒排、bitmap 哈希索引适合综合数组的寻址和链表的插入特性，可以实现数据的快速存取。 B树索引适合于查询为主导的场景，避免多次的IO，提高查询的效率。 倒排索引实现单词到文档映射关系的最佳实现方式和最有效的索引结构，广泛用在搜索领域。 Bitmap是一种非常简洁快速的数据结构，他能同时使存储空间和速度最优化（而不必空间换时间），适合于海量数据的的计算场景。
-  2.并行与分布式计算   1)任务切分、分而治之(MR) 在大规模的数据中，数据存在一定的局部性的特征，利用局部性的原理将海量数据计算的问题分而治之。 MR模型是无共享的架构，数据集分布至各个节点。处理时，每个节点就近读取本地存储的数据处理(map)，将处理后的数据进行合并(combine)、排序(shuffle and sort)后再分发(至reduce节点)，避免了大量数据的传输，提高了处理效率。
-  2)多进程、多线程并行执行(MPP) 并行计算（Parallel Computing）是指同时使用多种计算资源解决计算问题的过程，是提高计算机系统计算速度和处理能力的一种有效手段。它的基本思想是用多个处理器/进程/线程来协同求解同一问题，即将被求解的问题分解成若干个部分，各部分均由一个独立的处理机来并行计算。 和MR的区别在于，它是基于问题分解的，而不是基于数据分解。
-  3.多维度的可用   1)负载均衡、容灾、备份 随着平台并发量的增大，需要扩容节点进行集群，利用负载均衡设备进行请求的分发；负载均衡设备通常在提供负载均衡的同时，也提供失效检测功能；同时为了提高可用性，需要有容灾备份，以防止节点宕机失效带来的不可用问题；备份有在线的和离线备份，可以根据失效性要求的不同，进行选择不同的备份策略。
-  2)读写分离 读写分离是对数据库来讲的，随着系统并发量的增大，提高数据访问可用性的一个重要手段就是写数据和读数据进行分离；当然在读写分离的同时，需要关注数据的一致性问题；对于一致性的问题，在分布式的系统CAP定量中，更多的关注于可用性。
-  3)依赖关系 平台中各个模块之间的关系尽量是低耦合的，可以通过相关的消息组件进行交互，能异步则异步，分清楚数据流转的主流程和副流程，主副是异步的，比如记录日志可以是异步操作的，增加整个系统的可用性。 当然在异步处理中，为了确保数据得到接收或者处理，往往需要确认机制(confirm、ack)。 但是有些场景中，虽然请求已经得到处理，但是因其他原因(比如网络不稳定)，确认消息没有返回，那么这种情况下需要进行请求的重发，对请求的处理设计因重发因素需要考虑幂等性。
-  4)监控 监控也是提高整个平台可用性的一个重要手段，多平台进行多个维度的监控；模块在运行时候是透明的，以达到运行期白盒化。
-  4.伸缩   1)拆分 拆分包括对业务的拆分和对数据库的拆分。 系统的资源总是有限的，一段比较长的业务执行如果是一竿子执行的方式，在大量并发的操作下，这种阻塞的方式，无法有效的及时释放资源给其他进程执行，这样系统的吞吐量不高。 需要把业务进行逻辑的分段，采用异步非阻塞的方式，提高系统的吞吐量。 随着数据量和并发量的增加，读写分离不能满足系统并发性能的要求，需要对数据进行切分，包括对数据进行分库和分表。这种分库分表的方式，需要增加对数据的路由逻辑支持。</description>
-    </item>
-    
-    <item>
-      <title>java &gt; 多线程 &gt; 线程中断问题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E4%B8%AD%E6%96%AD%E9%97%AE%E9%A2%98/</guid>
-      <description>结束线程的方式# 1:Thread.stop() 不推荐使用了  thread.stop() 2:thread.setDaemon() 设置为守护线程,JVM退出自动终止   Thread thread = new Thread(() -&amp;gt; {},&amp;quot;T-1&amp;quot;) ;thread.setDaemon(true);thread.start(); 3:共享变量 通过一个推出表示开关  public class MyTask implements Runnable {private boolean shouldExit = false;public void setShouldExit(boolean newExit) {this.shouldExit = newExit;}@Overridepublic void run() {while (!shouldExit){//执行线程操作}}} 4:利用中断机制thread.interrupt()  A:void interrupt() 相某个线程发出中断信号,将会设置该线程的中断状态位，即设置为true，中断的结果线程是死亡、还是等待新的任务或是继续运行至下一步，就取决于这个程序本身。线程会不时地检测这个中断标示位，以判断线程是否应该被中断（中断标示值是否为true）。它并不像stop方法那样会中断一个正在运行的线程。B:boolean isInterrupted() 查询某个线程是否有获得中断信号C:static boolean interrupted() 查询当前线程是否获得中断信号,查询后会重置中断的信号的状态 也就是说如果你连续两次调用这个方法,那么第一次是true,第二次是false 5:较优雅的退出方式  Thread thread = new Thread(new Runnable() {@Overridepublic void run() {while (!</description>
-    </item>
-    
-    <item>
-      <title>java &gt; 多线程 &gt; 线程状态</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8B_%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81/</guid>
-      <description>线程状态#public enum State {/**尚未启动的线程的线程状态 ,这个时候还没有在堆栈中分配内存等数据*/NEW,/**线程可能等待也可能阻塞*/RUNNABLE,/**阻塞 等待锁的状态*/BLOCKED,/**线程等待状态*/WAITING,/**和WAITING类似但是有时间的等待*/TIMED_WAITING,/**线程终止*/TERMINATED;}</description>
-    </item>
-    
-    <item>
-      <title>java &gt; 多线程info</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Binfo/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Binfo/</guid>
-      <description>1、在 java 中守护线程和本地线程区别？
-java 中的线程分为两种：守护线程（Daemon）和用户线程（User）。
-任何线程都可以设置为守护线程和用户线程，通过方法 Thread.setDaemon(boolon)；true 则把该线程设置为守护线程，反之则为用户线程。Thread.setDaemon()必须在 Thread.start()之前调用，否则运行时会抛出异常。
-两者的区别：
-唯一的区别是判断虚拟机(JVM)何时离开，Daemon 是为其他线程提供服务，如果全部的 User Thread 已经撤离，Daemon 没有可服务的线程，JVM 撤离。也可以理解为守护线程是 JVM 自动创建的线程（但不一定），用户线程是程序创建的线程；比如 JVM 的垃圾回收线程是一个守护线程，当所有线程已经撤离，不再产生垃圾，守护线程自然就没事可干了，当垃圾回收线程是 Java 虚拟机上仅剩的线程时，Java 虚拟机会自动离开。
-扩展：Thread Dump 打印出来的线程信息，含有 daemon 字样的线程即为守护进程，可能会有：服务守护进程、编译守护进程、windows 下的监听 Ctrl+break的守护进程、Finalizer 守护进程、引用处理守护进程、GC 守护进程。
-2、线程与进程的区别？
-进程是操作系统分配资源的最小单元，线程是操作系统调度的最小单元。
-一个程序至少有一个进程,一个进程至少有一个线程。
-3、什么是多线程中的上下文切换？
-多线程会共同使用一组计算机上的 CPU，而线程数大于给程序分配的 CPU 数量时，为了让各个线程都有执行的机会，就需要轮转使用 CPU。不同的线程切换使用 CPU发生的切换数据等就是上下文切换。
-4、死锁与活锁的区别，死锁与饥饿的区别？
-死锁：是指两个或两个以上的进程（或线程）在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推进下去。
-产生死锁的必要条件：
-1、互斥条件：所谓互斥就是进程在某一时间内独占资源。
-2、请求与保持条件：一个进程因请求资源而阻塞时，对已获得的资源保持不放。
-3、不剥夺条件:进程已获得资源，在末使用完之前，不能强行剥夺。
-4、循环等待条件:若干进程之间形成一种头尾相接的循环等待资源关系。
-活锁：任务或者执行者没有被阻塞，由于某些条件没有满足，导致一直重复尝试，失败，尝试，失败。
-活锁和死锁的区别在于，处于活锁的实体是在不断的改变状态，所谓的“活”， 而处于死锁的实体表现为等待；活锁有可能自行解开，死锁则不能。
-饥饿：一个或者多个线程因为种种原因无法获得所需要的资源，导致一直无法执行的状态。
-Java 中导致饥饿的原因：
-1、高优先级线程吞噬所有的低优先级线程的 CPU 时间。
-2、线程被永久堵塞在一个等待进入同步块的状态，因为其他线程总是能在它之前持续地对该同步块进行访问。
-3、线程在等待一个本身也处于永久等待完成的对象(比如调用这个对象的 wait 方法)，因为其他线程总是被持续地获得唤醒。
-5、Java 中用到的线程调度算法是什么？
-采用时间片轮转的方式。可以设置线程的优先级，会映射到下层的系统上面的优先级上，如非特别需要，尽量不要用，防止线程饥饿。
-6、什么是线程组，为什么在 Java 中不推荐使用？
-ThreadGroup 类，可以把线程归属到某一个线程组中，线程组中可以有线程对象，也可以有线程组，组中还可以有线程，这样的组织结构有点类似于树的形式。</description>
-    </item>
-    
-    <item>
-      <title>java &gt; 多线程synchronized</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized/</guid>
-      <description>synchronized# synchronized可以保证方法或者代码块在运行时，同一时刻只有一个方法可以进入到临界区，同时它还可以保证共享变量的内存可见性
-  用法:  public synchronized void doSomething(){//这里的代码不会同时有几个线程执行}synchronized (this){//这里的代码也不会有几个代码同时执行 } synchronized监视器 synchronized(object) object是监视器 被synchronized修饰的方法 静态方法:监视器是所属类的class对象 非静态方法:监视器是this 同一个监视器内所以代码都是同步的,不论是否在同一函数、同一类内如:   监视器不要使用Long,Integer等基本类型对象做监视器这样不好  public synchronized void methodA(){}public synchronized void methodB(){}public void methodC(){synchronized (this){}}//如果有一个线程已经运行ABC三处中的任意一个代码块，那么其它线程都不能执行这三个代码块的任意一个地方 下面是一些监视器  public class Sync {public void doA(){synchronized (this){//A 监视器Sync.this}}public synchronized void doB1(){//B1 监视器Sync.</description>
-    </item>
-    
-    <item>
-      <title>java &gt; 多线程synchronized.answer</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized.answer/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java_%E5%A4%9A%E7%BA%BF%E7%A8%8Bsynchronized.answer/</guid>
-      <description>1342  首先t1线程最先执行所以输出1没问题
-  输出t1后执行了object.wait(),当前执行线程放弃了此监视器上的锁,并且被挂起(等待此监视器上的其它线程来唤醒) 这里最重要的是把此监视器上的锁给放弃了
-  t2线程去竞争object上的锁,由于目前只有它一个线程是属于非挂起状态因此t2就获得了object上的锁.因此输出了3没问题
-  接着t2线程又执行了object.notify(),这个方法是随机唤醒此监视器上被挂起的线程,并且刚好只有2个线程中的一个被挂起那么t1就被唤醒了,注意仅仅是唤醒而已,并没有使得t2放弃锁或者t1获得锁,因此t1还是不能执行
-  接着t2线程执行了sleep(500)这个方法,但是这个方法同样并没有使得t2线程放弃锁,仅仅是暂停了那么一会,这就像打战弱势的一方拿空间换时间做战略撤退，实际上并没有投降依然属于不投降状态
-  因此当t2线程执行完之后t1最好才能执行接着打印出2
-  </description>
-    </item>
-    
-    <item>
-      <title>java &gt; 监听事件原理</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86_java_%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6%E5%8E%9F%E7%90%86/</guid>
-      <description>接口回调法#模拟输出监听事件#第一步先定义事件接口#public interface PrintListener {public void print();}第二步自定义输出类#public class Out {PrintListener listener=null;public Out() {}public Out(PrintListener listener) {this.listener=listener;}public void printlen(String s) {System.out.println(s);if(listener!=null) {listener.print();}}}第三步实现监听事件接口#public class PrintListenerDemo implements PrintListener {@Overridepublic void print() {System.out.println(&amp;quot;监听到输出事件&amp;quot;);}}测试#public class Test {public static void main(String[] args) {//新建一个默认输出类Out b=new Out();b.</description>
-    </item>
-    
-    <item>
-      <title>javaReadme</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_javareadme/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_javareadme/</guid>
-      <description>Java技术体系#消息队列,nosql,sql,dubbo,zookeeper,nginx,springcloud,springboot,spring,jpa,mybatisjava语法，java多线程与并发,jdbc,设计模式java基础总结大全#Java的程序结构#多线程#swing#jsp el 表达式#Java多线程编程#JVM体系#redis#apache-common工具包#Guava-common#IO#spring工具#spring常用的工具类#js_console.log用法#dom4j#Jsoup#</description>
-    </item>
-    
-    <item>
-      <title>java内存模型</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E5%A4%9A%E7%BA%BF%E7%A8%8B_java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B/</guid>
-      <description>JMM(Java内存模型)# 主要有三个特性:可见性,有序性,原子性
- 可见性#  计算机内存模型   Java内存模型简易   </description>
-    </item>
-    
-    <item>
-      <title>Java试题经典7</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_java%E8%AF%95%E9%A2%98%E7%BB%8F%E5%85%B87/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_java%E8%AF%95%E9%A2%98%E7%BB%8F%E5%85%B87/</guid>
-      <description>{width=&amp;ldquo;5.848421916010499in&amp;rdquo; height=&amp;ldquo;9.791119860017497e-3in&amp;rdquo;}更多请关注微信公众号：Java技术栈
- 什么是 Java 虚拟机？为什么 Java 被称作是&amp;quot;平台无关的编程语言&amp;quot;？#参考答案#Java 虚拟机是一个可以执行 Java 字节码的虚拟机进程。Java 源文件被编译成能被 Java 虚拟机执行的字节码文件。
-Java 被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java 虚拟机让这个变为可能，因为它知道底层硬件平台的指令长度和 其他特性。
-JDK 和 JRE 的区别是什么？#参考答案#Java 运行时环境(JRE)是将要执行 Java 程序的 Java 虚拟机。它同时也包含了执行 applet 需要的浏览器插件。Java 开发工具包(JDK)是完整的 Java 软件开发包，包含了 JRE，编译器和其他的工具(比如：JavaDoc，Java 调试器)，可以让开发者开发、编译、执行 Java 应 用程序。
-&amp;ldquo;static&amp;quot;关键字是什么意思？Java 中是否可以覆盖(override)一个 private 或者是# static 的方法？
- 参考答案#&amp;ldquo;static&amp;quot;关键字表明一个成员变量或者是成员方法可以在没有所属的类的实例变量的情况下被访问。
-Java 中static 方法不能被覆盖，因为方法覆盖是基于运行时动态绑定的，而 static 方法是编译时静态绑定的。static 方法跟类的任何实例都不相关，所以概念上不适用。</description>
-    </item>
-    
-    <item>
-      <title>js &gt; console.log用法</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_js_console.log%E7%94%A8%E6%B3%95/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_js_console.log%E7%94%A8%E6%B3%95/</guid>
-      <description>Console 对象方法#  常用 Console 调试命令
-  console.log(&#39;hello&#39;);console.info(&#39;信息&#39;);console.error(&#39;错误&#39;);console.warn(&#39;警告&#39;);assert()# ssert方法接受两个参数，第一个参数是表达式，第二个参数是字符串。只有当第一个参数为false，才会输出第二个参数，否则不会有任何结果。  // 实例console.assert(true === false, &amp;quot;判断条件不成立&amp;quot;)// Assertion failed: 判断条件不成立clear()# 清除当前控制台的所有输出，将光标回置到第一行。  console.clear()count()# 用于计数，输出它被调用了多少次。  (function() {for (var i = 0; i &amp;lt; 5; i++) { console.count(&#39;count&#39;); }})()error()# 输出信息时，在最前面加一个红色的叉，表示出错，同时会显示错误发生的堆栈。  console.error(&amp;quot;Error: %s (%i)&amp;quot;, &amp;quot;Server is not responding&amp;quot;,500)group()# 用于将显示的信息分组，可以把信息进行折叠和展开。  console.</description>
-    </item>
-    
-    <item>
-      <title>jsoup</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_jsoup/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_jsoup/</guid>
-      <description>jsoup学习文档#简介# Jsoup是用于解析HTML，就类似XML解析器用于解析XML。 Jsoup它解析HTML成为真实世界的HTML。 它与jquery选择器的语法非常相似，并且非常灵活容易使用以获得所需的结果
- +jsoup api 6个包提供用于开发jsoup应用程序的类和接口。
-org.jsouporg.jsoup.examplesorg.jsoup.helperorg.jsoup.nodesorg.jsoup.parserorg.jsoup.safetyorg.jsoup.salect引入#//大多数情况使用jsouporg.jsoup.nodes.Document document = Jsoup.parse(html);Document doc = Jsoup.parse(new URL(&amp;quot;http://www.funi.com/&amp;quot;),7000);//少数情况使用httpUnitWebClient webClient = new WebClient() ;HtmlPage htmlPage = webClient.getPage(&amp;quot;http://www.89ip.cn/&amp;quot;);htmlPage.asXml()//html使用(maven)#&amp;lt;dependency&amp;gt;&amp;lt;!-- jsoup HTML parser library @ http://jsoup.org/ --&amp;gt;&amp;lt;groupId&amp;gt;org.jsoup&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;jsoup&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;1.10.2&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;&amp;lt;!-- httpclient --&amp;gt;&amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;org.apache.httpcomponents&amp;lt;/groupId&amp;gt;&amp;lt;artifactId&amp;gt;httpclient&amp;lt;/artifactId&amp;gt;&amp;lt;version&amp;gt;4.5.6&amp;lt;/version&amp;gt;&amp;lt;/dependency&amp;gt;&amp;lt;dependency&amp;gt;&amp;lt;groupId&amp;gt;net.</description>
-    </item>
-    
-    <item>
-      <title>jsp &gt; EL基础教程</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</guid>
-      <description>EL基础教程#El标签语法# ${参数名}
- EL标签的功能#  可以访问JSP中不同的域的对象    可以访问JavaBean中的属性    可以访问集合元素    支持简单的运算操作   访问JSP中不同的域的对象#&amp;lt;%pageContext.setAttribute(&amp;quot;name1&amp;quot;, &amp;quot;zhangsan&amp;quot;);request.setAttribute(&amp;quot;name2&amp;quot;, &amp;quot;lisi&amp;quot;);session.setAttribute(&amp;quot;name3&amp;quot;, &amp;quot;wangwu&amp;quot;);application.setAttribute(&amp;quot;name4&amp;quot;, &amp;quot;liuliu&amp;quot;);%&amp;gt;&amp;lt;!--范围.参数名 --&amp;gt;${pageScope.name1 } ${requestScope.name2 } ${sessionScope.name3 }${applicationScope.name4 }&amp;lt;br&amp;gt;&amp;lt;!-- 直接写参数名称 --&amp;gt;${name1 } ${name2 } ${name3 } ${name4 } 访问JavaBean中的属性#&amp;lt;%User user=new User(&amp;quot;zhangsan&amp;quot;,20,&amp;quot;北京&amp;quot;);request.</description>
-    </item>
-    
-    <item>
-      <title>jsp &gt; JSTL &gt; core标签库</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jstl%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B_jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</guid>
-      <description>﻿# JSTL标签库
-JSTL主要有五大类标签库
- core标签库(核心标签库),包括通用标签(输出标签),流程控制和循环控制标签 fmt标签库,包括格式化,国际格式化标签等 fn标签库,函数标签库 XML标签库,关于XML操作的标签库 SQL标签库,操作数据库标签  core标签库用法#使用core标签前必须添加taglie指令
- %@ taglib prefix=&amp;ldquo;c&amp;rdquo; uri=&amp;ldquo;http://java.sun.com/jsp/jstl/core&amp;quot; %&amp;gt;
-  &amp;lt;c:set&amp;gt;在某个范围设定某个值   &amp;lt;c:set value=&amp;ldquo;表达式&amp;rdquo; var=&amp;ldquo;varname&amp;rdquo; [scope=&amp;ldquo;request|page|session|application&amp;rdquo;]&amp;gt;&amp;lt;/c:set&amp;gt;
- &amp;lt;c:set value=&amp;quot;${1+2 }&amp;quot; var=&amp;quot;variable&amp;quot;&amp;gt;&amp;lt;/c:set&amp;gt;${variable } &amp;lt;c:out&amp;gt;把表达式的结构输出到页面中   &amp;lt;c:out value=&amp;ldquo;表达式&amp;rdquo; [escapeXml=&amp;ldquo;true|false&amp;rdquo;]&amp;gt;&amp;lt;/c:out&amp;gt;
- &amp;lt;c:set value=&amp;quot;${1+2 }&amp;quot; var=&amp;quot;variable&amp;quot;&amp;gt;&amp;lt;/c:set&amp;gt;&amp;lt;c:out value=&amp;quot;${variable }&amp;quot;&amp;gt;&amp;lt;/c:out&amp;gt; &amp;lt;c:if&amp;gt;条件判断   &amp;lt;c:if test=&amp;ldquo;判断条件&amp;rdquo; [var=&amp;ldquo;varname&amp;rdquo;] [scope=&amp;ldquo;request|page|session|application&amp;rdquo;]&amp;gt; 条件为真执行的语句 &amp;lt;/c:if&amp;gt;
- &amp;lt;c:if test=&amp;quot;${1&amp;lt;2 }&amp;quot; var=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;c:out value=&amp;quot;${result }&amp;quot;&amp;gt;&amp;lt;/c:out&amp;gt;&amp;lt;/c:if&amp;gt; &amp;lt;c:choose&amp;gt;,&amp;lt;c:when&amp;gt;,&amp;lt;c:otherwise&amp;gt;流程控制标签   &amp;lt;c:choose&amp;gt; &amp;lt;c:when test=&amp;ldquo;表达式&amp;rdquo;&amp;gt; 表达式为真执行的语句 &amp;lt;/c:when&amp;gt; [&amp;lt;c:otherwise&amp;gt; 表达式为假执行的语句 &amp;lt;/c:otherwise&amp;gt;] &amp;lt;/c:choose&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>jsp &gt; jstl &gt; Session</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_session_jsp_jstl_session/</guid>
-      <description>Session# HTTP是无状态协议，这意味着每次客户端检索网页时，都要单独打开一个服务器连接，因此服务器不会记录下先前客户端请求的任何信息#  会话,当用户打开一个浏览器连接到web应用或者打开某个页面,直到关闭浏览器这个过程叫做会话#  Session是保存在服务器上的数据结构，用于跟踪用户的状态。此数据可以保存在群集、数据库、文件中# Session常用方法#  public boolean isNew()
-返回是否为一个新的客户端，或者客户端是否拒绝加入session     public Enumeration getAttributeNames()
-返回session对象中所有的对象名称     public int getMaxInactiveInterval()
-返回最大时间间隔，以秒为单位，servlet 容器将会在这段时间内保持会话打开     public long getCreationTime()
-返回session对象被创建的时间， 以毫秒为单位，从1970年1月1号凌晨开始算起     public long getLastAccessedTime()
-返回客户端最后访问的时间，以毫秒为单位，从1970年1月1号凌晨开始算起     public Object getAttribute(String name)
-返回session对象中与指定名称绑定的对象，如果不存在则返回null     public Object getAttribute(String name)</description>
-    </item>
-    
-    <item>
-      <title>jsp &gt; 字符串el表达式</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jsp_jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_jsp_jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
-      <description>字符串el表达式#fn:contains 判断字符串是否包含另外一个字符串 &amp;lt;c:if test=&amp;quot;${fn:contains(name, searchString)}&amp;quot;&amp;gt;fn:containsIgnoreCase 判断字符串是否包含另外一个字符串(大小写无关) &amp;lt;c:if test=&amp;quot;${fn:containsIgnoreCase(name, searchString)}&amp;quot;&amp;gt;fn:endsWith 判断字符串是否以另外字符串结束 &amp;lt;c:if test=&amp;quot;${fn:endsWith(filename, &amp;quot;.txt&amp;quot;)}&amp;quot;&amp;gt;fn:escapeXml 把一些字符转成XML表示，例如 &amp;lt;字符应该转为&amp;lt; ${fn:escapeXml(param:info)}fn:indexOf 子字符串在母字符串中出现的位置 ${fn:indexOf(name, &amp;quot;-&amp;quot;)}fn:join 将数组中的数据联合成一个新字符串，并使用指定字符格开 ${fn:join(array, &amp;quot;;&amp;quot;)}fn:length 获取字符串的长度，或者数组的大小 ${fn:length(shoppingCart.products)}fn:replace 替换字符串中指定的字符 ${fn:replace(text, &amp;quot;-&amp;quot;, &amp;quot;?&amp;quot;)}fn:split 把字符串按照指定字符切分 ${fn:split(customerNames, &amp;quot;;&amp;quot;)}fn:startsWith 判断字符串是否以某个子串开始 &amp;lt;c:if test=&amp;quot;${fn:startsWith(product.id, &amp;quot;100-&amp;quot;)}&amp;quot;&amp;gt;fn:substring 获取子串 ${fn:substring(zip, 6, -1)}fn:substringAfter 获取从某个字符所在位置开始的子串 ${fn:substringAfter(zip, &amp;quot;-&amp;quot;)}fn:substringBefore 获取从开始到某个字符所在位置的子串 ${fn:substringBefore(zip, &amp;quot;-&amp;quot;)}fn:toLowerCase 转为小写 ${fn.toLowerCase(product.name)}fn:toUpperCase 转为大写字符 ${fn.UpperCase(product.name)}fn:trim 去除字符串前后的空格 ${fn.trim(name)}函数 描述fn:contains(string, substring)如果参数string中包含参数substring，返回truefn:containsIgnoreCase(string, substring)如果参数string中包含参数substring（忽略大小写），返回truefn:endsWith(string, suffix)如果参数 string 以参数suffix结尾，返回truefn:escapeXml(string)将有特殊意义的XML (和HTML)转换为对应的XML character entity code，并返回fn:indexOf(string, substring)返回参数substring在参数string中第一次出现的位置fn:join(array, separator)将一个给定的数组array用给定的间隔符separator串在一起，组成一个新的字符串并返回。fn:length(item)返回参数item中包含元素的数量。参数Item类型是数组、collection或者String。如果是String类型,返回值是String中的字符数。fn:replace(string, before, after)返回一个String对象。用参数after字符串替换参数string中所有出现参数before字符串的地方，并返回替换后的结果 fn:split(string, separator)返回一个数组，以参数separator 为分割符分割参数string，分割后的每一部分就是数组的一个元素fn:startsWith(string, prefix)如果参数string以参数prefix开头，返回truefn:substring(string, begin, end)返回参数string部分字符串, 从参数begin开始到参数end位置，包括end位置的字符fn:substringAfter(string, substring)返回参数substring在参数string中后面的那一部分字符串?</description>
-    </item>
-    
-    <item>
-      <title>link</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_assembly_link/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_assembly_link/</guid>
-      <description>bootstrap3整合#&amp;lt;%@include file=&amp;quot;/css/cssBootStrap.jsp&amp;quot; %&amp;gt;bootstrap4整合#&amp;lt;%@include file=&amp;quot;/css/bootstrap4.jsp&amp;quot; %&amp;gt;thymeleaf#&amp;lt;div th:include=&amp;quot;css/cssBootStrap :: html&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;图标## Alibaba国际站图标库${pageContext.request.contextPath}/components/images/Alibaba国际站图标库/all.pngFont Awesome####url http://fontawesome.dashgame.com/##引入方式&amp;lt;link href=&amp;quot;${pageContext.request.contextPath}/components/font-awesome-4.7.0/css/font-awesome.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; type=&amp;quot;text/css&amp;quot;&amp;gt;##基本写法&amp;lt;li class=&amp;quot;list-group-item&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-camera-retro&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;/li&amp;gt;##大图标&amp;lt;i class=&amp;quot;fa fa-camera-retro fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; fa-lg&amp;lt;i class=&amp;quot;fa fa-camera-retro fa-2x&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; fa-2x&amp;lt;i class=&amp;quot;fa fa-camera-retro fa-3x&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; fa-3x&amp;lt;i class=&amp;quot;fa fa-camera-retro fa-4x&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; fa-4x&amp;lt;i class=&amp;quot;fa fa-camera-retro fa-5x&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; fa-5x##固定宽度 使用 fa-fw 可以将图标设置为一个固定宽度。主要用于不同宽度图标无法对齐的情况。 尤其在列表或导航时起到重要作用&amp;lt;div class=&amp;quot;list-group&amp;quot;&amp;gt;&amp;lt;a class=&amp;quot;list-group-item&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-home fa-fw&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;amp;nbsp; Home&amp;lt;/a&amp;gt;&amp;lt;a class=&amp;quot;list-group-item&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-book fa-fw&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;amp;nbsp; Library&amp;lt;/a&amp;gt;&amp;lt;a class=&amp;quot;list-group-item&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-pencil fa-fw&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;amp;nbsp; Applications&amp;lt;/a&amp;gt;&amp;lt;a class=&amp;quot;list-group-item&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cog fa-fw&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;amp;nbsp; Settings&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;## 用于列表 使用 fa-ul 和 fa-li 便可以简单的将无序列表的默认符号替换掉&amp;lt;ul class=&amp;quot;fa-ul&amp;quot;&amp;gt;&amp;lt;li&amp;gt;&amp;lt;i class=&amp;quot;fa-li fa fa-check-square&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;List icons&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;i class=&amp;quot;fa-li fa fa-check-square&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;can be used&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;i class=&amp;quot;fa-li fa fa-spinner fa-spin&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;as bullets&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;lt;i class=&amp;quot;fa-li fa fa-square&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;in lists&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;## 动画 使用 fa-spin 类来使任意图标旋转，现在您还可以使用 fa-pulse 来使其进行8方位旋转。尤其适合 fa-spinner、fa-refresh 和 fa-cog 。&amp;lt;i class=&amp;quot;fa fa-spinner fa-spin&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;i class=&amp;quot;fa fa-circle-o-notch fa-spin&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;i class=&amp;quot;fa fa-refresh fa-spin&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cog fa-spin&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;&amp;lt;i class=&amp;quot;fa fa-spinner fa-pulse&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;## Bootstrap 3 示例Font Awesome 完全兼容 Bootstrap 的所有组件。&amp;lt;a class=&amp;quot;btn btn-danger&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-trash-o fa-lg&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Delete&amp;lt;/a&amp;gt;&amp;lt;a class=&amp;quot;btn btn-default btn-sm&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-cog&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Settings&amp;lt;/a&amp;gt;&amp;lt;a class=&amp;quot;btn btn-lg btn-success&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;&amp;lt;i class=&amp;quot;fa fa-flag fa-2x pull-left&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; Font Awesome&amp;lt;br&amp;gt;Version 4.</description>
-    </item>
-    
-    <item>
-      <title>Linux下设置和查看环境变量</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</guid>
-      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;||&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;- Linux的变量种类 按变量的生存周期来划分，Linux变量可分为两类： 1 永久的：需要修改配置文件，变量永久生效。 2 临时的：使用export命令声明即可，变量在关闭shell时失效。
-设置变量的三种方法 1 在/etc/profile文件中添加变量【对所有用户生效(永久的)】 用VI在文件/etc/profile文件中增加变量，该变量将会对Linux下所有用户有效，并且是“永久的”。 例如：编辑/etc/profile文件，添加CLASSPATH变量
-vi /etc/profile#export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib
-注：修改文件后要想马上生效还要运行# source /etc/profile不然只能在下次重进此用户时生效。
-2 在用户目录下的.bash_profile文件中增加变量【对单一用户生效(永久的)】 用VI在用户目录下的.bash_profile文件中增加变量，改变量仅会对当前用户有效，并且是“永久的”。 例如：编辑guok用户目录(/home/guok)下的.bash_profile $ vi /home/guok/.bash.profile 添加如下内容： export CLASSPATH=./JAVA_HOME/lib;$JAVA_HOME/jre/lib 注：修改文件后要想马上生效还要运行$ source /home/guok/.bash_profile不然只能在下次重进此用户时生效。
-3 直接运行export命令定义变量【只对当前shell(BASH)有效(临时的)】 在shell的命令行下直接使用[export 变量名=变量值] 定义变量，
-该变量只在当前的shell(BASH)或其子shell(BASH)下是有效的，
-shell关闭了，变量也就失效了，再打开新shell时就没有这个变量，需要使用的话还需要重新定义。
-环境变量的查看 1 使用echo命令查看单个环境变量。例如： echo $PATH 2 使用env查看所有环境变量。例如： env 3 使用set查看所有本地定义的环境变量。
-使用unset删除指定的环境变量 set可以设置某个环境变量的值。清除环境变量的值用unset命令。如果未指定值，则该变量值将被设为NULL。示例如下： $ export TEST=&amp;ldquo;Test&amp;hellip;&amp;rdquo; #增加一个环境变量TEST $ env|grep TEST #此命令有输入，证明环境变量TEST已经存在了 TEST=Test&amp;hellip; unset TEST #删除环境变量TEST $ env|grep TEST #此命令没有输出，证明环境变量TEST已经删除
-常用的环境变量 PATH 决定了shell将到哪些目录中寻找命令或程序 HOME 当前用户主目录 HISTSIZE　历史记录数 LOGNAME 当前用户的登录名 HOSTNAME　指主机的名称 SHELL 当前用户Shell类型 LANGUGE 语言相关的环境变量，多语言可以修改此环境变量 MAIL　当前用户的邮件存放目录 PS1　基本提示符，对于root用户是#，对于普通用户是$</description>
-    </item>
-    
-    <item>
-      <title>linux命令</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_linux%E5%91%BD%E4%BB%A4/</guid>
-      <description>linux命令#文件管理#文件基本操作#  less命令 (Q退出less命令)([pagedown]： 向下翻动一页)([pageup]： 向上翻动一页) less ss.md
-  cat命令 (cat -n ss.md &amp;gt; sdfsd.txt)把 ss.md 的文档内容加上行号后输入 sdfsd.txt 这个文档里, 这要注意假如sdfsd.txt先有文档会被清空,另外(cat ss.md)可以把消息打印到输出流中,cat 软盘功能暂时不予以考虑
-  ls命令 (ls -a)显示所有文件及目录包括隐藏文件,相当于la命令,ll显示具体信息
-  touch命令 主要用作创建文件如touch ss.md,(touch -m miss,touch -a miss)可以改变文件的读取时间,另外touch miss也可以改变文件的读取时间, 当且仅当miss不存在的时候会创建miss空文件
-  mkdir命令 主要用作创建文件目录;(mkdir dd)创建一个dd目录,(mkdir -p dd/ffg)在当前目录下建立一个dd目录并且在dd下创建一个ffg目录,假如dd不存在会自动创建的
-  mv命令 (mv missA miss.txt)把missA修改为miss.txt (mv sskg /home/zhou/fontconfig/dgsd/sdfg)把sskg移到sdfg目录 (mv ss.md ~)
-  file命令 (file -c ss.</description>
-    </item>
-    
-    <item>
-      <title>memory</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_memorypath_memory/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_memorypath_memory/</guid>
-      <description>记忆方法# 提高记忆的关键，在于想象和创意 编故事有助于提高记忆力  通过编故事，再加上逻辑或地点（后者更多一些）;编故事是加强了记忆桩之间的联系记忆和创造力# 记忆本身与创造力密不可分 ， 训练记忆力在很大程度上取决于你的创造力  要想记住毫不相关的信息和扑克牌，首先就要把它们变成图像。通过这种方式，那些零散的信息才可能会建立某种联系联想#利用事物间的联系通过联想进行记忆的方法。联想是由当前感知或思考的事物想起有关的另一事物，或者由头脑中想起的一件事物，又引起想到另一件事物。由于客观事物是相互联系的，各种知识也是相互联系的，因而在思维中，联想是一种基本的思维形式，是记忆的一种方法。联想，就是当人脑接受某一剌激时，浮现出与该刺激有关的事物形象的心理过程。一般来说，互相接近的事物、相反的事物、相似的事物之间容易产生联想。用联想来增强记忆是一种很常用的方法。记忆的一种主要机能就是在有关经验中建立联系，思维中的联想越活跃，经验的联系就越牢固。如能经常形成联想和运用联想，就可增强记忆的效果。联想是有规律可循的，联想的规律有接近律、类似律、对比律、因果律等，有接近联想、类似联想、对比联想、因果联想。  联想不仅快速，而且它还不是一个简单、一维的东西。首先，你在联想中会加入一些情感因素，甚至还没回想起一段经历，就已经产生了某种情绪。
-  一旦学会动用感情和感官，还有逻辑和创造力，来与不同事物间建立联系，你的记忆能力就会大大提高。除此之外，你还会慢慢习惯放松大脑，以最快的速度在不同事物之间建立联系。瞬间联想之所以对提高记忆力如此重要，是因为一个人在瞬间建立的联系往往是最牢靠的
-  如何在两个并无联系的单词之间建立联系&amp;ndash;记忆的关键，就在于将二者结合到一起。
-  如果没有过去的某些参照物作为参考，你就不能在两个概念( 包括单词、物体、活动等)之间建立联系。你的过去为你提供了某种经验，而正是这种经验可以帮助你由一个概念想到另一件概念。你的生活中发生的一切都像是积木中的模块，正是这一个个模块帮助你搭建了自己的人生大厦。要想在两个模块之间尽快建立联系，你需要用尽可能少的连接物来实现过渡。也就是说，要想从一件事情想到另外一件事情，最快的方式就是直接找到二者之间的联系
-   比如说我想记住两个单词：墙壁和小鸡。每个单词都能激发我丰富的联想，我必须找到某种连接物将两个单词连接起来。比如说：墙壁会让我想到一个相册，想找到我小时候放学后经常爬的墙等。随着联想越来越细致、快速，我突然想到了一个最明显的连接：一首叫&amp;lt;&amp;lt;小胖鸡&amp;gt;&amp;gt;的儿歌。好极了！小胖鸡坐着墙壁上，它是一个鸡蛋----而鸡蛋又是小鸡下的。这时我就会展开联想，想象一只小鸡坐在墙下下蛋。为了让这个联想更加生动，我想起了小时候我在唱歌时的样子，然后自然而然地想到了自己看着小鸡下蛋时吃吃发笑的情形。虽然我并不记得发生过这件事，但它却足以激发我的联想。这个过程听起来可能有些复杂、繁琐，但事实上，这在大脑中只是一瞬间发生的事情。链条法# 如何使用链条法记住5个单词 小提琴、武士、箱子、项链、雪球  首先想想你突然听到小提琴发出的悠扬乐声。然后看到一个武士在演奏小提琴，你甚至可以清楚地看到他把小提琴放到下巴下面--这武士满副盔甲，很是搞笑。然后你看到他脚边放了一个箱子，可能颜色很鲜艳，也可能已经很破旧了。你打开箱子，发现里面有一挂价值连城的钻石项链，钻石反射阳光，分外耀眼。最后你转过头去，突然一个雪球砸中你的脸颊，你甚至感觉到右脸有些发疼。记住，你越练习动用五官来加强想象，你的大脑就会越熟悉这种练习，你也就越容易记住自己想象的场景。  要要记住五个单词以及单词之间的顺序，需要在单词之间建立联系</description>
-    </item>
-    
-    <item>
-      <title>mysql &gt; basis</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_basis/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_basis/</guid>
-      <description>停止命令：net stop mysql
-  启动命令：net start mysql
-  登陆 mysql -u 用户名 -p
-  查看数据库版本: mysql &amp;ndash;version：用于在未登录情况下，查看本机mysql版本,select version();：登录情况下，查看链接的库版本
-  显示所有数据库：show databases;
-  进入指定的库：use 库名;
-  显示当前库中所有的表：show tables;
-  查看其他库中所有的表：show tables from 库名;
-  查看表的创建语句：show create table 表名;
-  查看表结构：desc 表名;
-  SQL的语言分类#DQL（Data Query Language）：数据查询语言select 相关语句DML（Data Manipulate Language）：数据操作语言insert 、update、delete 语句DDL（Data Define Languge）：数据定义语言create、drop、alter 语句TCL（Transaction Control Language）：事务控制语言set autocommit=0、start transaction、savepoint、commit、rollbackmysql语法规范#不区分大小写，但建议关键字大写，表名、列名小写每条命令最好用英文分号结尾每条命令根据需要，可以进行缩进或换行注释单行注释：#注释文字单行注释：-- 注释文字 ，注意， 这里需要加空格多行注释：/* 注释文字 */MySQL删除数据库中的所有表#SELECT CONCAT(&#39;drop table &#39;,table_name,&#39;;&#39;) FROM information_schema.</description>
-    </item>
-    
-    <item>
-      <title>mysql &gt; data</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_data/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_data/</guid>
-      <description>数据准备  数据准备
-drop datbase ch10;create database ch10;use ch10;CREATE TABLE fruits(f_id char(10) NOT NULL,s_id INT NOT NULL,f_name char(255) NOT NULL,f_price decimal(8,2) NOT NULL,PRIMARY KEY(f_id) );INSERT INTO fruits (f_id, s_id, f_name, f_price)VALUES(&#39;a1&#39;, 101,&#39;apple&#39;,5.2),(&#39;b1&#39;,101,&#39;blackberry&#39;, 10.2),(&#39;bs1&#39;,102,&#39;orange&#39;, 11.2),(&#39;bs2&#39;,105,&#39;melon&#39;,8.2),(&#39;t1&#39;,102,&#39;banana&#39;, 10.3),(&#39;t2&#39;,102,&#39;grape&#39;, 5.3),(&#39;o2&#39;,103,&#39;coconut&#39;, 9.2),(&#39;c0&#39;,101,&#39;cherry&#39;, 3.2),(&#39;a2&#39;,103, &#39;apricot&#39;,2.2),(&#39;l2&#39;,104,&#39;lemon&#39;, 6.4),(&#39;b2&#39;,104,&#39;berry&#39;, 7.6),(&#39;m1&#39;,106,&#39;mango&#39;, 15.6),(&#39;m2&#39;,105,&#39;xbabay&#39;, 2.6),(&#39;t4&#39;,107,&#39;xbababa&#39;, 3.6),(&#39;m3&#39;,105,&#39;xxtt&#39;, 11.</description>
-    </item>
-    
-    <item>
-      <title>mysql &gt; distinguish</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_distinguish/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_distinguish/</guid>
-      <description>前言#在互联网还未崛起的时代,我们的传统应用都有这样一个特点：访问量、数据量都比较小，单库单表都完全可以支撑整个业务。随着互联网的发展和用户规模的迅速扩大,对系统的要求也越来越高。因此传统的MySQL单库单表架构的性能问题就暴露出来了。而有下面几个因素会影响数据库性能: 数据量  MySQL单库数据量在5000万以内性能比较好,超过阈值后性能会随着数据量的增大而变弱。MySQL单表的数据量是500w-1000w之间性能比较好,超过1000w性能也会下降。 磁盘  因为单个服务的磁盘空间是有限制的,如果并发压力下,所有的请求都访问同一个节点,肯定会对磁盘IO造成非常大的影响。 数据库连接  数据库连接是非常稀少的资源,如果一个库里既有用户、商品、订单相关的数据,当海量用户同时操作时,数据库连接就很可能成为瓶颈。为了提升性能,所以我们必须要解决上述几个问题,那就有必要引进分库分表。垂直拆分 or 水平拆分？#当我们单个库太大时,我们先要看一下是因为表太多还是数据量太大，如果是表太多,则应该将部分表进行迁移(可以按业务区分),这就是所谓的垂直切分。如果是数据量太大,则需要将表拆成更多的小表,来减少单表的数据量,这就是所谓的水平拆分。垂直拆分# 垂直分库  垂直分库针对的是一个系统中的不同业务进行拆分,比如用户一个库,商品一个库,订单一个库。 一个购物网站对外提供服务时,会同时对用户、商品、订单表进行操作。没拆分之前, 全部都是落到单一的库上的,这会让数据库的单库处理能力成为瓶颈。如果垂直分库后还是将用户、商品、订单放到同一个服务器上,只是分到了不同的库,这样虽然会减少单库的压力,但是随着用户量增大,这会让整个数据库的处理能力成为瓶颈,还有单个服务器的磁盘空间、内存也会受非常大的影响。 所以我们要将其拆分到多个服务器上，这样上面的问题都解决了，以后也不会面对单机资源问题。 垂直分表  也就是“大表拆小表”，基于列字段进行的。一般是表中的字段较多，将不常用的， 数据较大，长度较长（比如text类型字段）的拆分到“扩展表“。一般是针对那种几百列的大表，也避免查询时，数据量太大造成的“跨页”问题。水平拆分# 水平分表  和垂直分表有一点类似,不过垂直分表是基于列的,而水平分表是基于全表的。水平拆分可以大大减少单表数据量,提升查询效率。 水平分库分表  将单张表的数据切分到多个服务器上去，每个服务器具有相应的库与表，只是表中数据集合不同。 水平分库分表能够有效的缓解单机和单库的性能瓶颈和压力，突破IO、连接数、硬件资源等的瓶颈。几种常用的分库分表的策略# HASH取模  假设有用户表user,将其分成3个表user0,user1,user2.路由规则是对3取模,当uid=1时,对应到的是user1,uid=2时,对应的是user2。 范围分片  从1-10000一个表,10001-20000一个表。 地理位置分片  华南区一个表,华北一个表。 时间分片  按月分片，按季度分片等等,可以做到冷热数据。分库分表后引入的问题# 分布式事务问题  如果我们做了垂直分库或者水平分库以后,就必然会涉及到跨库执行SQL的问题,这样就引发了互联网界的老大难问题-&amp;quot;分布式事务&amp;quot;。那要如何解决这个问题呢？1.</description>
-    </item>
-    
-    <item>
-      <title>mysql &gt; install</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install/</guid>
-      <description>mysql安装# 这里我们不再采用exe的安装的方式,我们使用压缩包的方式安装
-   地址 https://downloads.mysql.com/archives/community/
-  将页面拉到最下面选择选择操作系统后，选择要下载的版本点击 Downloads
-  我选择安装的版本为8.0.13。如果不想要最新的版本也可以进Archives页面选择其他版本
-  选择压缩包的版本哦
-  一:配置环境变量#  因为下载的mysql数据库包的格式是zip的，下载完成后直接解压就可以用，但解压后需要进行配置。
-  首先进行环境变量的配置：右击计算机-&amp;gt;属性-&amp;gt;高级系统设置-&amp;gt;环境变量，选择双击Path，在最后面添加你的mysql bin文件夹的路径
-  我的目录是：D:\databases\mysql-8.0.13-winx64
-   必须设置这个才行,因为后面我们要在控制台运行命令,假如你不设置这个环境变量那么在控制台根本识别不了,exe安装会自动在环境中设置,而压缩包没有设置  二:在 D:\databases\mysql-8.0.13-winx64 目录下新建一个my.ini的文件#[mysqld]# skip-grant-tables 暂时注释了 容易引起 mysql服务启动后立马关闭 这个错误# 设置3306端口port=3306# 自定义设置mysql的安装目录，即解压mysql压缩包的目录# 切记此处一定要用双斜杠\\，单斜杠这里会出错。basedir=D:\\databases\\mysql-8.0.13-winx64# 自定义设置mysql数据库的数据存放目录datadir=D:\\databases\\mysql-8.0.13-winx64\\data# 允许最大连接数max_connections=200# 允许连接失败的次数，这是为了防止有人从该主机试图攻击数据库系统max_connect_errors=10# 服务端使用的字符集默认为UTF8character-set-server=utf8mb4# 创建新表时将使用的默认存储引擎default-storage-engine=INNODB# 默认使用“mysql_native_password”插件认证default_authentication_plugin=mysql_native_password[mysql]# 设置mysql客户端默认字符集default-character-set=utf8mb4[client]# 设置mysql客户端连接服务端时默认使用的端口和默认字符集port=3306default-character-set=utf8mb4三:windows下运行控制台程序# 进入 C:\Windows\System32 中搜索   右键用管理员权限执行  四:初始化mysql# mysqld &amp;ndash;initialize &amp;ndash;console，等待一会出现几行代码，root@localhost：后面的是随机生成的数据库初始密码，将初始密码记下来后面会用到。 没记住初始密码的话，删掉初始化的 data目录，再执行一遍初始化命令又会重新生成  D:\databases\mysql-8.</description>
-    </item>
-    
-    <item>
-      <title>mysql &gt; install &gt; problem</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install_problem/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_install_problem/</guid>
-      <description>windows下 Mysql安装的一些问题解决方法#1: The service already exists#  在mysql安装的时候要执行 mysqld &amp;ndash;install 这个命令,假如你已经安装完之后觉得不对，但是mysql服务已经生成(windows注册服务已经有mysql了),你不删除此服务为报一个错误
-  The service already exists
-  决绝方法就是 删除mysql相关的服务
-  首先查询下是否存在mysql服务
-  sc query mysqlSERVICE_NAME: mysqlTYPE : 10 WIN32_OWN_PROCESSSTATE : 4 RUNNING(STOPPABLE, PAUSABLE, ACCEPTS_SHUTDOWN)WIN32_EXIT_CODE : 0 (0x0)SERVICE_EXIT_CODE : 0 (0x0)CHECKPOINT : 0x0WAIT_HINT : 0x0# 这种情况就是mysql 没有删除干净 删除该mysql  sc delete mysql Please consider using UTF8MB4 in order to be unambiguous.</description>
-    </item>
-    
-    <item>
-      <title>mysql &gt; 开发规范</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</guid>
-      <description>数据库设计的规范# 数据库表和字段都大写 表都要加业务后缀，例如_C客户表 _B基础表 _P权限表 必须有主键，主键是表名去掉业务后缀，加_ID，大多表的主键使用UUID 字段多个单词时，全大写，用下划线隔开 类型INT/LONG/DOUBLE/TIMESTAMP/CHAR/VARCHAR2 尽量化在这几个类型中，这样数据库设计相当简单 排序号定死名称ORDER_NO 权限两个字段CREATE_BY创建人，CREATE_DEPT创建部门 记录创建时间CREATE_TIME  </description>
-    </item>
-    
-    <item>
-      <title>mysql &gt; 数据库设计三范式</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%89%E8%8C%83%E5%BC%8F/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%89%E8%8C%83%E5%BC%8F/</guid>
-      <description>设计关系数据库时，遵从不同的规范要求，设计出合理的关系型数据库，这些不同的规范要求被称为不同的范式，各种范式呈递次规范，越高的范式数据库冗余越小。
-  目前关系数据库有六种范式：第一范式（1NF）、第二范式（2NF）、第三范式（3NF）、巴斯-科德范式（BCNF）、第四范式(4NF）和第五范式（5NF，又称完美范式）。
- 数据库三范式#第一范式（1NF）# 所谓第一范式（1NF）是指在关系模型中，对域添加的一个规范要求，所有的域都应该是原子性的，即数据库表的每一列都是不可分割的原子数据项，而不能是集合，数组，记录等非原子数据项。即实体中的某个属性有多个值时，必须拆分为不同的属性。在符合第一范式（1NF）表中的每个域值只能是实体的一个属性或一个属性的一部分。简而言之，第一范式就是无重复的域。 说明：在任何一个关系数据库中，第一范式（1NF）是对关系模式的设计基本要求，一般设计中都必须满足第一范式（1NF）。不过有些关系模型中突破了1NF的限制，这种称为非1NF的关系模型。换句话说，是否必须满足1NF的最低要求，主要依赖于所使用的关系模型。  第二范式（2NF）# 在1NF的基础上，非码属性必须完全依赖于候选码（在1NF基础上消除非主属性对主码的部分函数依赖） 第二范式（2NF）是在第一范式（1NF）的基础上建立起来的，即满足第二范式（2NF）必须先满足第一范式（1NF）。第二范式（2NF）要求数据库表中的每个实例或记录必须可以被唯一地区分。选取一个能区分每个实体的属性或属性组，作为实体的唯一标识。例如在员工表中的身份证号码即可实现每个一员工的区分，该身份证号码即为候选键，任何一个候选键都可以被选作主键。在找不到候选键时，可额外增加属性以实现区分，如果在员工关系中，没有对其身份证号进行存储，而姓名可能会在数据库运行的某个时间重复，无法区分出实体时，设计辟如ID等不重复的编号以实现区分，被添加的编号或ID选作主键。（该主键的添加是在ER设计时添加，不是建库时随意添加） 第二范式（2NF）要求实体的属性完全依赖于主关键字。所谓完全依赖是指不能存在仅依赖主关键字一部分的属性，如果存在，那么这个属性和主关键字的这一部分应该分离出来形成一个新的实体，新实体与原实体之间是一对多的关系。为实现区分通常需要为表加上一个列，以存储各个实例的唯一标识。简而言之，第二范式就是在第一范式的基础上属性完全依赖于主键。  第三范式（3NF）# 在2NF基础上，任何非主属性不依赖于其它非主属性（在2NF基础上消除传递依赖） 第三范式（3NF）是第二范式（2NF）的一个子集，即满足第三范式（3NF）必须满足第二范式（2NF）。简而言之，第三范式（3NF）要求一个关系中不包含已在其它关系已包含的非主关键字信息。例如，存在一个部门信息表，其中每个部门有部门编号（dept_id）、部门名称、部门简介等信息。那么在员工信息表中列出部门编号后就不能再将部门名称、部门简介等与部门有关的信息再加入员工信息表中。如果不存在部门信息表，则根据第三范式（3NF）也应该构建它，否则就会有大量的数据冗余。简而言之，第三范式就是属性不依赖于其它非主属性，也就是在满足2NF的基础上，任何非主属性不得传递依赖于主属性。  巴斯-科德范式（BCNF）# Boyce-Codd Normal Form（巴斯-科德范式）
-  在3NF基础上，任何非主属性不能对主键子集依赖（在3NF基础上消除对主码子集的依赖） 巴斯-科德范式（BCNF）是第三范式（3NF）的一个子集，即满足巴斯-科德范式（BCNF）必须满足第三范式（3NF）。通常情况下，巴斯-科德范式被认为没有新的设计规范加入，只是对第二范式与第三范式中设计规范要求更强，因而被认为是修正第三范式，也就是说，它事实上是对第三范式的修正，使数据库冗余度更小。这也是BCNF不被称为第四范式的原因。某些书上，根据范式要求的递增性将其称之为第四范式是不规范，也是更让人不容易理解的地方。而真正的第四范式，则是在设计规范中添加了对多值及依赖的要求。 定义：关系模式R&amp;lt;U,F&amp;gt;∈1FNF,若X→Y且Y不是X的子集时X必含有码，则R&amp;lt;U,F&amp;gt;∈BCNF。也就是说，关系模式R&amp;lt;U,F&amp;gt;中，若每一个决定因素都包含码，则R&amp;lt;U,F&amp;gt;∈BCNF。   由BCNF的定义可以得到结论，一个满足BCNF的关系模式有：
-  -所有非主属性对每一个码都是完全函数依赖。 -所有主属性对每一个不包含它的码也是完全函数依赖。 -没有任何属性完全函数依赖于非码的任何一组属性。 若R∈BCNF，按定义排除了任何属性对码的传递依赖与部分依赖，所以R∈3NF。[1] 一般关系型数据库设计中，达到BCNF就可以了！  #【数据库五大约束】
- 1.primary KEY:设置主键约束； 2.UNIQUE：设置唯一性约束，不能有重复值； 3.DEFAULT 默认值约束，height DOUBLE(3,2)DEFAULT 1.2 height不输入是默认为1,2 4.NOT NULL：设置非空约束，该字段不能为空； 5.FOREIGN key :设置外键约束。  【主键】# 1.</description>
-    </item>
-    
-    <item>
-      <title>mysql事务</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E4%BA%8B%E5%8A%A1/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E4%BA%8B%E5%8A%A1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mysql函数</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%87%BD%E6%95%B0/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%87%BD%E6%95%B0/</guid>
-      <description>日期函数#  返回当前日期，只包含年月日 select curdate()
-  返回当前时间，只包含时分秒 select curtime()
-  返回当前的日期和时间，年月日时分秒全都包含 select now()
-  提取具体日期类型# year() yearweek() ,hour(),month()等等   select year(now()) as &amp;lsquo;年&amp;rsquo;,yearweek(now()) as &amp;lsquo;年,周&amp;rsquo;,hour(now()) as &amp;lsquo;周&amp;rsquo;,minute(now()) as &amp;lsquo;小时&amp;rsquo;,month(now()) &amp;lsquo;月&amp;rsquo;,monthname(now()) &amp;lsquo;月名字&amp;rsquo;,dayofmonth(now()) as &amp;lsquo;当月多少日&amp;rsquo;   EXTRACT() 函数用于返回日期/时间的单独部分，比如年、月、日、小时、分钟等等。   (select extract(year from now()),extract(month from now()),extract(day from now()),extract(hour from now()),extract(minute from now()))  日期格式# DATE_FORMAT(date,fmt)函数：按字符串 fmt 格式化日期 date 值 (select date_format(now(),&#39;%Y-%m-%d&#39;))  日期运算#  date_add(date,interval number dateType) example (select date_add(now(),interval 2 year) as &amp;lsquo;add 2 year date&amp;rsquo;) (select date_add(now(),interval -2 hour) as &amp;lsquo;add 2&amp;rsquo;)也可以传入负数即回到过去某个时间</description>
-    </item>
-    
-    <item>
-      <title>mysql存储引擎</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</guid>
-      <description>MySQL 存储引擎概述# MySQL 5.0 支持的存储引擎包括 MyISAM、 InnoDB、 BDB、 MEMORY、 MERGE、 EXAMPLE、 NDB Cluster、ARCHIVE、CSV、BLACKHOLE、FEDERATED 等，其中 InnoDB 和 BDB 提供事务安 全表，其他存储引擎都是非事务安全表。
-  查看当前引擎 show ENGINES  MyISAM存储引擎# 不支持事务、也不支持外键，优势是访问速度快，对事务完整性没有 要求或者以select，insert为主的应用基本上可以用这个引擎来创建表
-  支持3种不同的存储格式，分别是：静态表；动态表；压缩表   静态表：表中的字段都是非变长字段，这样每个记录都是固定长度的，优点存储非常迅速，容易缓存，出现故障容易恢复；缺点是占用的空间通常比动态表多（因为存储时会按照列的宽度定义补足空格）ps：在取数据的时候，默认会把字段后面的空格去掉，如果不注意会把数据本身带的空格也会忽略。 动态表：记录不是固定长度的，这样存储的优点是占用的空间相对较少；缺点：频繁的更新、删除数据容易产生碎片，需要定期执行OPTIMIZE TABLE或者myisamchk-r命令来改善性能 压缩表：因为每个记录是被单独压缩的，所以只有非常小的访问开支
-  动态表：记录不是固定长度的，这样存储的优点是占用的空间相对较少；缺点：频繁的更新、删除数据容易产生碎片，需要定期执行OPTIMIZE TABLE或者myisamchk-r命令来改善性能
-  压缩表：因为每个记录是被单独压缩的，所以只有非常小的访问开支
- InnoDB存储引擎# nnoDB 存储表和索引有两种方式
-  使用共享表空间存储，这种方式创建的表的表结构保存在.frm 文件中，数据和索引 保存在 innodb_data_home_dir 和 innodb_data_file_path 定义的表空间中，可以是 多个文件。 使用多表空间存储，这种方式创建的表的表结构仍然保存在.frm 文件中，但是每个 表的数据和索引单独保存在.ibd 中。如果是个分区表，则每个分区对应单独的.</description>
-    </item>
-    
-    <item>
-      <title>mysql查询</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E6%9F%A5%E8%AF%A2/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E6%9F%A5%E8%AF%A2/</guid>
-      <description>mysql学习(下面所有都是针对mysql而言)#sql排序语句# 升序   (select f.* from fruits f WHERE s_id IN (101,102) order by f_name)==(select f.* from fruits f WHERE s_id IN (101,102) order by f_name asc)   对于sql的升序而言,当使用了order by之后如果不添加desc那么默认是升序 order by f_name 和 order by f_name ASC 效果一致 降序   (select f.* from fruits f WHERE s_id not IN (101,102) order by f_name DESC )   order by之后加上DESC结果集就是降序   上面结合了 关键字in可以看到 in (101,102)和not in (101,102)</description>
-    </item>
-    
-    <item>
-      <title>mysql用户与权限</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</guid>
-      <description>mysql.version=5.7 (必须注意版本)
- 创建用户# ( CREATE USER &amp;lsquo;bob&amp;rsquo;@&#39;%&#39; IDENTIFIED BY &amp;lsquo;07fa533360d9&amp;rsquo;; ) 创建bob用户 密码:07fa533360d9 ( CREATE USER &amp;ldquo;test&amp;rdquo;@&amp;ldquo;localhost&amp;rdquo; IDENTIFIED BY &amp;lsquo;123456&amp;rsquo; )创建test用户　密码123456 ( CREATE USER &amp;ldquo;test&amp;rdquo;@&amp;ldquo;192.168.87.26&amp;rdquo; IDENTIFIED BY &amp;lsquo;123456&amp;rsquo; )创建test用户　密码123456   参数说明:&#39;%&amp;lsquo;表示所有情况都能访问;&amp;lsquo;localhost&amp;rsquo;表示本机才能访问;&amp;lsquo;192.168.87.26&amp;rsquo; 某个具体 ip 才能访问
- 授权命令 (GRANT privileges ON databasename.tablename TO &amp;lsquo;username&amp;rsquo;@&amp;lsquo;host&amp;rsquo; )#GRANT SELECT,INSERT privileges on spring.* to &amp;lsquo;alice&amp;rsquo;@&amp;lsquo;localhost&amp;rsquo; identified by &amp;lsquo;123456&amp;rsquo;
- 参数说明:databasename表示数据库名字;tablename数据库表的名字;username用户名;host表示链接地址如本机localhost,远程任意%,具体ip192.168.87.26
- 授权test用户拥有testDB数据库的所有权限#create database testDB;grant all privileges on testDB.</description>
-    </item>
-    
-    <item>
-      <title>mysql索引</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%B4%A2%E5%BC%95/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_mysql_mysql%E7%B4%A2%E5%BC%95/</guid>
-      <description>索引# 所有 MySQL 列类型都可以被索引，对相关列使用索引是提高 SELECT 操作性能的最佳途 径.根据存储引擎可以定义每个表的最大索引数和最大索引长度， 每种存储引擎 （如 MyISAM、 InnoDB、BDB、MEMORY 等）对每个表至少支持 16 个索引，总索引长度至少为 256 字节。 大多数存储引擎有更高的限制。
-  MyISAM 和 InnoDB 存储引擎的表默认创建的都是 BTREE 索引。MySQL 目前还不支持函 数索引，但是支持前缀索引，即对索引字段的前 N 个字符创建索引。前缀索引的长度跟存 储引擎相关，对于 MyISAM 存储引擎的表，索引的前缀长度可以达到 1000 字节长，而对于 InnoDB 存储引擎的表，索引的前缀长度最长是 767 字节。请注意前缀的限制应以字节为单 位进行测量，而 CREATE TABLE 语句中的前缀长度解释为字符数。
-  MySQL 中还支持全文本（FULLTEXT）索引，该索引可以用于全文搜索。但是当前最新版 本中（5.0）只有 MyISAM 存储引擎支持 FULLTEXT 索引，并且只限于 CHAR、 VARCHAR 和 TEXT 列。索引总是对整个列进行的，不支持局部（前缀）索引
-  默认情况下，MEMORY 存储引擎使用 HASH 索引，但也支持 BTREE 索引
- </description>
-    </item>
-    
-    <item>
-      <title>nginx</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_nginx/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_nginx/</guid>
-      <description>nginx学习#基础操作# start ./sbin/nginx stop ./sbin/nginx -s stop quite ./sbin/nginx -s quit   启动成功标志
- Welcome to nginx! 默认监听的端口是80 也就是说访问此端口就可以得到启动成功的标识符号
-  简单的负载均衡配置    http 模块中配置  #配置开始 author zhouupstream myproject{server 127.0.0.1:8000 weight=3;server 127.0.0.1:8080 weight=10;server 127.0.0.1:8090;}#配置结束 author zhou location模块配置  proxy_pass http://myproject;注意:这的myproject要和上面的name一致测试结果 (这的测试用到了session的唯一性)
- http://localhost/nginx_test/ sessionId=8D9C4ACEE65EB24301B1C0D9E4CF3A6Ehttp://localhost:8080/nginx_test/ sessionId=8D9C4ACEE65EB24301B1C0D9E4CF3A6Ehttp://localhost:8090/nginx_test/ sessionId=7539B2C4AFD433ECEFAC8F2B2EBCC411 由于配置了权重 因此大部分是8080端口</description>
-    </item>
-    
-    <item>
-      <title>Notepad&#43;&#43;安装</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_notepad&#43;&#43;%E5%AE%89%E8%A3%85/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_linux_notepad&#43;&#43;%E5%AE%89%E8%A3%85/</guid>
-      <description>Notepad++是一套非常有特色的自由软件的纯文字编辑器(许可证:GPL)。有完整的中文化接口及支持多国语言编写的功能(UTF8 技术)。 它的功能比 Windows 中的 Notepad(记事本)强大，除了可以用来制作一般的纯文字说明文件，也十分适合当作编写电脑程序的编辑器。 Notepad++ 不仅有语法高亮度显示，也有语法折叠功能，并且支持宏以及扩充基本功能的外挂模组。但是可惜的是Notepad++只能在Windows平台下使用。 工作中必须使用Windows时，Notepad++是众多程序员最喜爱的文本编辑器，在Ubuntu下是否能够使用到相同的软件呢？Notepadqq就是这样一款与Notepad++非常接近的编辑器，拥有几乎相同的功能。 如果您是一个Notepad++粉丝，我们推荐您尝试下Notepadqq。
-对于Ubuntu发行版本可以通过PPA安装，命令如下： sudo add-apt-repository ppa:notepadqq-team/notepadqq sudo apt-get update sudo apt-get install notepadqq 类似的，卸载命令如下：
-sudo apt-get remove notepadqq sudo add-apt-repository &amp;ndash;remove ppa:notepadqq-team/notepadqq</description>
-    </item>
-    
-    <item>
-      <title>number</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_selfeducation_number/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_selfeducation_number/</guid>
-      <description>① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳
-㉑ ㉒ ㉓ ㉔ ㉕ ㉖ ㉗ ㉘ ㉙ ㉚ ㉛ ㉜ ㉝ ㉞ ㉟ ㊱ ㊲ ㊳ ㊴ ㊵ ㊶ ㊷ ㊸ ㊹ ㊺ ㊻ ㊼ ㊽ ㊾ ㊿</description>
-    </item>
-    
-    <item>
-      <title>postgresql &gt; create用户与权限</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_postgresql_postgresql_create%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_postgresql_postgresql_create%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</guid>
-      <description>权限# 系统权限 role和user都是用户,只不过role属性不能登录当然也可以指定 超级权限 不做权限检查(实际中是很危险的)
- Pg权限分为两部分，一部分是“系统权限”或者数据库用户的属性，可以授予role或user（两者区别在于login权限）；一部分为数据库对象上的操作权限。对超级用户不做权限检查，其它走acl。对于数据库对象，开始只有所有者和超级用户可以做任何操作，其它走acl。在pg里，对acl模型做了简化，组和角色都是role，用户和角色的区别是角色没有login权限。超级权限# 创建超级用户(create user alice with superuser password &amp;lsquo;123456&amp;rsquo;;)系统不会做权限操作校验,仅仅是不能够创建用户与删除用户  系统权限#  (create role blake password &amp;lsquo;123456&amp;rsquo;;)(create user bob password &amp;lsquo;123456&amp;rsquo;;)(create database testdb;)
-  (grant all on database testdb to bob;grant all on database testdb to blake;)
-  测试如下 用户bob可以登录而blake不能登录直接抛出了FATL:role blake is not &amp;lsquo;permitted to log in&amp;rsquo;
-  ( drop database testdb;drop role blake;drop user bob;)</description>
-    </item>
-    
-    <item>
-      <title>redis</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_redis_redis/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_redis_redis/</guid>
-      <description>一.Redis介绍#1.1引言# 1:由于用户量大，请求了随之增大，数据压力过大。 2:多台服务器之间数据不同步 3:多台服务器之间的锁已经不存在互斥性了
- #1.2 NOSQL# redis就是nosql
-  非关系数据库 &amp;gt; not only sql
- 1:key-value redis 2:文档型 solr,Mongodb,ElasticSearch 3:面向列 Hbase(一般大数据) 4:图形化 Neo4j
-  1.3 redis介绍# Redis（Remote Dictionary Server )，即远程字典服务，是一个开源的使用ANSI C语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。 Redis是一款基于Key-Value的NOSQL，而且Redis是基于内存存储数据的,Redis还提供了多种持久化机制，Redis还提供了主从、哨兵以及集群的搭建方式，可以更方便的横向扩展以及垂直扩展
-  操作都是原子的
- 所有 Redis 的操作都是原子的，从而确保当两个客户同时访问 Redis 服务器时，得到的是更新后的值（最新值）。在需要高并发的场合可以考虑使用 Redis 的事务，处理一些需要锁的业务。
-  二.Redis安装#三.Redis命令# keys * 获取所有的keyclear 清除屏幕quit ,exit 退出set name blake 设置值setex ip 5 192.</description>
-    </item>
-    
-    <item>
-      <title>script</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_script/</guid>
-      <description>脚本# dos,lua,sheel,python,js
-   dos 可以使用VisualBat编辑器编写以及调试
-  lua 可以运行在redis ,dos,Java,c++等里面另外还可以用来写触屏精灵 http://www.touchsprite.com/docs/5362 ==&amp;gt; https://www.zybuluo.com/miniknife/note/317045#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5
-  sheel脚本 运行在linux或者unix上相当于windows上的dos
-  python 胶水语言 可以直接在linux当成sheel使用,也是人工智能的一种使用工具
-  js 浏览器脚本
-  </description>
-    </item>
-    
-    <item>
-      <title>SpringBoot学习笔记完整教程</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_springboot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_springboot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B/</guid>
-      <description>Spring boot 教 程#目录#  Spring boot helloworld# 介绍     自从structs2 出现上次的漏洞以后，对spring 的关注度开始越来越浓。
-以前 spring 开发需要配置一大堆的 xml,后台 spring 加入了 annotaion，使得 xml 配置简化了很多，当然还是有些配置需要使用xml,比如申明component scan 等。
-Spring 开了一个新的model spring boot,主要思想是降低spring 的入门，使得新手可以以最快的速度让程序在spring 框架下跑起来。
-那么如何写Hello world 呢？ Hello 之步骤:
- (1) 新建一个Maven Java 工程
-(2) 在pom.xml 文件中添加Spring Boot Maven 依赖(3)编写启动类
- (4)运行程序
-  Hello 之New   这个步骤很简单，相比大家都会，小编在此为了文档的完整性，稍作简单说明：
-首先使用 IDE（Eclipse,MyEclipse）工具新建一个 Maven 工程，可以是 Maven Java Project,也可以是 Maven Web Project,随便取一个工程名称。我使用的是STS，工程名是spring-boot-hello1。</description>
-    </item>
-    
-    <item>
-      <title>spring工具</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B7%A5%E5%85%B7/</guid>
-      <description>spring工具类# Spring-core中提供了大量的工具类，常用的有StringUtils、ObjectUtils、NumberUtils、Base64Utils等，Spring工具类在spring-core.jar中的org.springframework.util包下。
-  1:StringUtils  方法名	返回值类型	作用	备注isEmpty(Object str)	boolean	判断字符串是否为Null或者空字符串	null和&#39;&#39;都为truehasLength(CharSequence str)	boolean	判断字符串长度是否大于1	null和&#39;&#39;都为falsehasText(CharSequence str)	boolean	判断字符串中是否有字符	null和空字白符都为falsecontainsWhitespace(CharSequence str)	boolean	字符串中是否含有空白字符	trimWhitespace(CharSequence str)	String	去掉字符串中首尾的空白字符	trimAllWhitespace(String str)	String	去 掉字符串中所有的空白字符	trimLeadingWhitespace(String str)	String	去掉字符串左边的空白字符	trimTrailingWhitespace(String str)	String	去掉字符串右边边的空白字符	startsWithIgnoreCase(String str, String prefix)	String	判断字符串是否以xx开头，并且忽略大小写	getFilename(String path)	String	获取文件名	“mypath/myfile.txt” -&amp;gt; “myfile.txt”getFilenameExtension(String path)	String	获取文件扩展名	“mypath/myfile.txt” -&amp;gt; “txt”stripFilenameExtension(String path)	String	去掉文件扩展名	“mypath/myfile.</description>
-    </item>
-    
-    <item>
-      <title>spring常用的工具类</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_tool_spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</guid>
-      <description>spring常用的工具类#内置的resouce类型#UrlResourceClassPathResourceFileSystemResourceServletContextResourceInputStreamResourceByteArrayResourceEncodedResource 也就是Resource加上encoding, 可以认为是有编码的资源VfsResource(在jboss里经常用到, 相应还有 工具类 VfsUtils)org.springframework.util.xml.ResourceUtils 用于处理表达资源字符串前缀描述资源的工具. 如: &amp;amp;quot;classpath:&amp;amp;quot;. 有 getURL, getFile, isFileURL, isJarURL, extractJarFileURL 工具类#org.springframework.core.annotation.AnnotationUtils 处理注解org.springframework.core.io.support.PathMatchingResourcePatternResolver 用 于处理 ant 匹配风格(com/*.jsp, com/**/*.jsp),找出所有的资源, 结合上面的resource的概念一起使用,对于遍历文件很有用. 具体请详细查看javadocorg.springframework.core.io.support.PropertiesLoaderUtils 加载Properties资源工具类,和Resource结合org.springframework.core.BridgeMethodResolver 桥接方法分析器. 关于桥接方法请参考: http://java.sun.com/docs/books/jls/third_edition/html/expressions.html#15.12.4.5org.springframework.core.GenericTypeResolver 范型分析器, 在用于对范型方法, 参数分析.org.springframework.core.NestedExceptionUtilsxml工具#org.springframework.util.xml.AbstractStaxContentHandlerorg.springframework.util.xml.AbstractStaxXMLReaderorg.springframework.util.xml.AbstractXMLReaderorg.springframework.util.xml.AbstractXMLStreamReaderorg.springframework.util.xml.DomUtilsorg.springframework.util.xml.SimpleNamespaceContextorg.springframework.util.xml.SimpleSaxErrorHandlerorg.springframework.util.xml.SimpleTransformErrorListenerorg.springframework.util.xml.StaxUtilsorg.springframework.util.xml.TransformerUtils其它工具集#org.springframework.util.xml.AntPathMatcherant风格的处理org.</description>
-    </item>
-    
-    <item>
-      <title>study.web</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_study_study.web/</guid>
-      <description>自己整理的日常开发参考网址#   在线工具 链接     web工具 web工具   在线超级转换工具 在线超级转换工具   程序员在线工具 在线超级转换工具       算法 链接     算法网址 leetcode 国内 算法网址 leetcode 国内   算法网址 牛课网 国内 算法网址 牛课网 国内   算法网址 codility 国外 算法网址 codility 国外       bootstrap 链接     bootstrap 重要参考例子 bootstrap 重要参考例子   bootstrap table api(csdn) bootstrap table api(csdn)   bootstrap table api(官方) bootstrap table api(官方)       图标 链接     阿里巴巴icon 阿里巴巴icon   easy icon easy icon        Java学习 链接     ibm java example ibm java example   Java并发参考 Java并发参考   csdn csdn   Java分享网 Java分享网   java fx api java fx api       教程 链接     www.</description>
-    </item>
-    
-    <item>
-      <title>studyInfo</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_method_studyinfo/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_method_studyinfo/</guid>
-      <description>学习方法#</description>
-    </item>
-    
-    <item>
-      <title>swing &gt; Introduction</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_swing_swing_introduction/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_swing_swing_introduction/</guid>
-      <description>Swing 类库结构#Swing 是新一代的图形界面工具。使用 Swing 来开发图形界面比 AWT 更加优秀，因为 Swing 是一种轻量级组件，它采用纯 Java 实现，不再依赖于本地平台的图形界面，所以可以在所有平台上保持相同的运行效果，对跨平台支持比较出色。除此之外，Swing 提供了比 AWT 更多的图形界面组件，因此可以开发出美观的图形界面程序。  Swing 组件都采用 MVC（Model-View-Controller，即模型-视图-控制器）的设计，实现 GUI 组件的显示逻辑和数据逻辑的分离，从而允许程序员自定义 Render 来改变 GUI 组件的显示外观，以提供更多的灵活性。
-  Swing 围绕 JComponent 组件构建，JComponent 则由 AWT 的容器类扩展而来。Swing 组织结构如图 1 所示。
-  Swing包#  从图 1 可以看出，Swing 组件除了 AbstmctButton 类之外都以 J 开头。Swing 容器组件直接继承 AWT 类库中的容器组件类，其他大部分组件都是继承 JComponet 组件。组件可以划分为容器组件和非容器组件，容器组件包括 JFmme 和 JDialog。其中 JComponent 定义了非容器类的轻量级组件（JBntton、JPanel、JMenu 等）。
-  表1 Swing常用包</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu 16.04修改hosts</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu-16.04%E4%BF%AE%E6%94%B9hosts/</guid>
-      <description>IntelliJ IDE运行Tomcat报错解决办法的相关资料,出现“Unable to ping server at localhost:1099”错误解决方法，需要的朋友可以参考下
-sudo gedit /etc/hosts</description>
-    </item>
-    
-    <item>
-      <title>ubuntu安装chmsee</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E5%AE%89%E8%A3%85chmsee/</guid>
-      <description>垃圾的ubuntu 14.04 又一次去掉一些特别好用的软件, 官方给的解释是怕破坏他们系统. 只想说一句 我去年买了个本.
-14.04 之前的版本,如13.10, 12.04 继续能够使用 sudo apt-get install chmsee 来安装.
-14.04 需要下载安装包来安装:
-sudo apt-get install libc6 libchm1 libgcrypt11 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk2.0-0 libpango1.0-0 libwebkitgtk-1.0-0 libxml2 安装依赖包
-(64位) sudo dpkg -i chmsee_1.3.0-2ubuntu2_amd64.deb 安装软件包,下载地址: http://kr.archive.ubuntu.com/ubuntu/pool/universe/c/chmsee/chmsee_1.3.0-2ubuntu2_amd64.deb Ubuntu的官方软件库放心下载.
-(32位) sudo dpkg -i chmsee_1.3.0-2ubuntu2_i386.deb 安装软件包,下载地址: http://kr.archive.ubuntu.com/ubuntu/pool/universe/c/chmsee/chmsee_1.3.0-2ubuntu2_i386.deb Ubuntu的官方软件库放心下载.</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu清理系统垃圾</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</guid>
-      <description>1，非常有用的清理命令： sudo apt-get autoclean &amp;ndash;清理旧版本的软件缓存 www.2cto.com
-sudo apt-get clean&amp;ndash;清理所有软件缓存
-sudo apt-get autoremove&amp;ndash;删除系统不再使用的孤立软件
-这三个命令主要清理升级缓存以及无用包的。
-2，清理opera firefox的缓存文件： ls ~/.opera/cache4 ls ~/.mozilla/firefox/*.default/Cache
-3，清理Linux下孤立的包： 图形界面下我们可以用：gtkorphan sudo apt-get install gtkorphan -y 终端命令下我们可以用：deborphan sudo apt-get install deborphan -y
-4，卸载：tracker 这个东西一般我只要安装Ubuntu就会第一删掉tracker 他不仅会产生大量的cache文件而且还会影响开机速度。所以在新得利里面删掉就行。 www.2cto.com
-5，删除多余的内核：一定不要删错哦，切记！！ 打开终端敲命令：dpkg &amp;ndash;get-selections|grep linux 有image的就是内核文件 删除老的内核文件： sudo apt-get remove 内核文件名（例如：linux-image-2.6.27-2-generic） 内核删除，释放空间了，应该能释放130－140M空间。
-最后不要忘了看看当前内核：uname -a 附录： 包管理的临时文件目录: 包在 /var/cache/apt/archives 没有下载完的在 /var/cache/apt/archives/partial</description>
-    </item>
-    
-    <item>
-      <title>ubuntu软件卸载</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/uuid_t_linux_ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</guid>
-      <description>ubuntu软件卸载
-安装Synaptic
-sudo apt-get install synaptic</description>
-    </item>
-    
-    <item>
-      <title>useMath</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_usemath/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_java_usemath/</guid>
-      <description>计算机用到的数学公式#二进制十进制如何互相转换#https://jingyan.baidu.com/article/ac6a9a5e2cb17b2b653eac98.html</description>
-    </item>
-    
-    <item>
-      <title>VisualStudioCode过滤文件不显示某些文件</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_visual_studio_code_visualstudiocode%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_visual_studio_code_visualstudiocode%E8%BF%87%E6%BB%A4%E6%96%87%E4%BB%B6%E4%B8%8D%E6%98%BE%E7%A4%BA%E6%9F%90%E4%BA%9B%E6%96%87%E4%BB%B6/</guid>
-      <description>Visual Studio Code 过滤文件 不显示某些文件#效果# 过滤工程中显示的文件 不显示某些类型的文件或文件夹  菜单# File/Preferences/ 搜索file exclude 选中workspack页签 添加一个过滤规则 如图:   </description>
-    </item>
-    
-    <item>
-      <title>vue &gt; index</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_vue_vue_index/</guid>
-      <description>vue学习#vue学习#vue学习2#  vue 官网 https://cn.vuejs.org/
-  vue 是什么?
-  Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。 v-text 文本指令  &amp;lt;span v-text=&amp;quot;msg&amp;quot;&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;!-- 和下面的一样 --&amp;gt;&amp;lt;span&amp;gt;{{msg}}&amp;lt;/span&amp;gt;var vm = new Vue({el: &amp;quot;#frmApp&amp;quot;,data: {nameTo: Math.random().toString(36).slice(-8) ,}});//获取绑定的实例 再次更新vm.$data.nameTo = Math.random().toString(36).slice(-8); v-html 网页指令  内容按普通 HTML 插入 - 不会作为 Vue 模板进行编译 。如果试图使用 v-html 组合模板，可以重新考虑是否通过使用组件来替代。&amp;lt;div v-html=&amp;quot;html&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;p v-html=&amp;quot;htmlContent&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; v-model 这个指令用于在表单上创建双向数据绑定。   v-model会忽略所有表单元素的value、checked、selected特性的初始值。因为它选择Vue实例数据做为具体的值。</description>
-    </item>
-    
-    <item>
-      <title>windows &gt; question</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_windows_question/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows_windows_question/</guid>
-      <description> 磁盘变为了动态磁盘解决办法 最好是找软件解决 如DiskGenius 或者 傲梅分区助手 暴力解决办法  1、diskpart2、list disk3、select disk n4、convert basicSTEP 1：打开命令提示符窗口，在其中键入：“diskpart”命令并按下回车键。 STEP 2：在DISKPART命令提示符下，键入“list disk”命令并按下回车键后，能够查看到电脑中的磁盘情况。 STEP 3：在DISKPART命令提示符下，继续键入“select disk n”命令并按下回车键，其中n代表磁盘的序号。 STEP 4：在DISKPART命令提示符下，键入“convert dynamic”命令并按下回车键后，开始转换的工作。</description>
-    </item>
-    
-    <item>
-      <title>分布式缓存edisMemcached典面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98edismemcached%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98edismemcached%E5%85%B8%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>{width=&amp;ldquo;6.461388888888889in&amp;rdquo; height=&amp;ldquo;0.5419991251093613in&amp;rdquo;}
-(1) memcached 所有的值均是简单的字符串，redis 作为其替代者，支持更为丰富的数据类型
-(2) redis 的速度比 memcached 快很多
-(3) redis 可以持久化其数据
-{width=&amp;ldquo;6.461388888888889in&amp;rdquo; height=&amp;ldquo;0.5419991251093613in&amp;rdquo;}
- String、List、Set、Sorted Set、hashes
- {width=&amp;ldquo;6.461388888888889in&amp;rdquo; height=&amp;ldquo;0.5416655730533684in&amp;rdquo;}
- 1.twemproxy，大概概念是，它类似于一个代理方式，使用方法和普通 redis 无任何区别，设置好它下属的多个 redis 实例后，使用时在本需要连接 redis 的地方改为连接 twemproxy，它会以一个代理的身份接收请求并使用一致性 hash 算法，将请求转接到具体 redis，将结果再返回 twemproxy。使用方式简便(相对 redis只需修改连接端口)，对旧项目扩展的首选。 问题：twemproxy 自身单端口实例的压力，使用一致性 hash 后，对 redis 节点数量改变时候的计算值的改变，数据无法自动移动到新的节点。
- {width=&amp;ldquo;6.461388888888889in&amp;rdquo; height=&amp;ldquo;0.5416666666666666in&amp;rdquo;}
- LRU 算法
- {width=&amp;ldquo;6.461388888888889in&amp;rdquo; height=&amp;ldquo;0.5403324584426946in&amp;rdquo;}
- 分区可以让 Redis 管理更大的内存，Redis 将可以使用所有机器的内存。如果没有分区，你最多只能使用一台机器的内存。分区使 Redis 的计算能力通过简单地增加计算机得到成倍提升,Redis 的网络带宽也会随着计算机和网卡的增加而成倍增长。
- {width=&amp;ldquo;6.461388888888889in&amp;rdquo; height=&amp;ldquo;0.5416666666666666in&amp;rdquo;}
- 给你举个例子： 100 万个键值对（键是 0 到 999999 值是字符串&amp;quot;hello world&amp;quot;）在我的 32 位的 Mac 笔记本上 用了 100MB。同样的数据放到一个 key 里只需要 16MB， 这是因为键值有一个很大的开销。 在 Memcached 上执行也是类似的结果，但是相对 Redis 的开销要小一点点，因为 Redis 会记录类型信息引用计数等等。</description>
-    </item>
-    
-    <item>
-      <title>压缩算法</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_algorithm_%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v2/uuid_t_algorithm_%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95/</guid>
-      <description>﻿## 压缩算法
-//https://baijiahao.baidu.com/s?id=1649449620464606133&amp;amp;wfr=spider&amp;amp;for=pc
-哈夫曼算法</description>
-    </item>
-    
-    <item>
-      <title>史上最全40道Dubbo面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A840%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A840%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>想往高处走，怎么能不懂 Dubbo？
-Dubbo 是国内最出名的分布式服务框架，也是 Java 程序员必备的必会的框架之一。Dubbo 更是中高级面试过程中经常会问的技术，无论你是否用过，你都必须熟悉。
-下面我为大家准备了一些 Dubbo 常见的的面试题，一些是我经常问别人的，一些是我过去面试遇到的一些问题，总结给大家，希望对大家能有所帮助。
- {width=&amp;ldquo;5.768055555555556in&amp;rdquo; height=&amp;ldquo;4.1666666666666664e-2in&amp;rdquo;}
-1、Dubbo 是什么？# Dubbo 是阿里巴巴开源的基于 Java 的高性能 RPC 分布式服务框架，现已成为 Apache 基金会孵化项目。
-面试官问你如果这个都不清楚，那下面的就没必要问了。
-官网：http://dubbo.apache.org
- 2、为什么要用Dubbo？# 因为是阿里开源项目，国内很多互联网公司都在用，已经经过很多线上考验。内部使用了Netty、Zookeeper，保证了高性能高可用性。
-使用 Dubbo 可以将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，可用于提高业务复用灵活扩展，使前端应用能更快速的响应多变的市场需求。
-{width=&amp;ldquo;7.018332239720035in&amp;rdquo; height=&amp;ldquo;2.165978783902012in&amp;rdquo;}下面这张图可以很清楚的诠释，最重要的一点是，分布式架构可以承受更大规模的并发流量。
-{width=&amp;ldquo;7.018332239720035in&amp;rdquo; height=&amp;ldquo;4.163888888888889in&amp;rdquo;}下面是 Dubbo 的服务治理图。
-3、Dubbo 和 Spring Cloud 有什么区别？ 两个没关联，如果硬要说区别，有以下几点。1）通信方式不同
-Dubbo 使用的是 RPC 通信，而 Spring Cloud 使用的是 HTTP RESTFul 方式。
- 组成部分不同  +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ | &amp;gt; 组件 | &amp;gt; Dubbo | &amp;gt; Spring Cloud | +==============+=================+================================+ | 服务注册中心 | &amp;gt; Zookeeper | &amp;gt; Spring Cloud Netflix Eureka | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ | 服务监控 | &amp;gt; Dubbo-monitor | &amp;gt; Spring Boot Admin | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ | 断路器 | &amp;gt; 不完善 | &amp;gt; Spring Cloud Netflix Hystrix | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ | 服务网关 | &amp;gt; 无 | &amp;gt; Spring Cloud Netflix Gateway | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ | 分布式配置 | &amp;gt; 无 | &amp;gt; Spring Cloud Config | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+ | 服务跟踪 | &amp;gt; 无 | &amp;gt; Spring Cloud Sleuth | +&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;ndash;+</description>
-    </item>
-    
-    <item>
-      <title>史上最全50道Redis面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A850%E9%81%93redis%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A850%E9%81%93redis%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>{width=&amp;ldquo;5.773611111111111in&amp;rdquo; height=&amp;ldquo;9.990972222222222in&amp;rdquo;}
- 更多关注 Java 大后端公众号
-{width=&amp;ldquo;2.3333333333333335in&amp;rdquo; height=&amp;ldquo;2.3645833333333335in&amp;rdquo;}
-关注公众号，获取更多面试题及答案。
-1、什么是Redis？
-Redis 本质上是一个 Key-Value 类型的内存数据库，很像 memcached，整个数据库统统加载在内存当中进行操作，定期通过异步操作把数据库数据 flush 到硬盘上进行保存。因为是纯内存操作，Redis 的性能非常出色，每秒可以处理超过 10 万次读写操作，是已知性能最快的 Key-Value DB。 Redis 的出色之处不仅仅是性能，Redis 最大的魅力是支持保存多种数据结构，此外单个 value 的最大限制是 1GB，不像 memcached 只能保存 1MB 的数据，因此 Redis 可以用来实现很多有用的功能，比方说用他的 List 来做 FIFO 双向链表，实现一个轻量级的高性 能消息队列服务，用他的 Set 可以做高性能的 tag 系统等等。另外 Redis 也可以对存入的Key-Value 设置expire 时间，因此也可以被当作一 个功能加强版的memcached 来用。Redis 的主要缺点是数据库容量受到物理内存的限制，不能用作海量数据的高性能读写，因此 Redis 适合的场景主要局限在较小数据量的高性能操作和运算上。
-2、Redis 相比 memcached 有哪些优势？
- (1) memcached 所有的值均是简单的字符串，redis 作为其替代者，支持更为丰富的数据类型
-(2) redis 的速度比 memcached 快很多
-(3) redis 可以持久化其数据
- 3、Redis 支持哪几种数据类型？ String、List、Set、Sorted Set、hashes 4、Redis 主要消耗什么物理资源？ 内存。</description>
-    </item>
-    
-    <item>
-      <title>史上最全70道Spring面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A870%E9%81%93spring%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%85%A870%E9%81%93spring%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>70 道 Spring 面试题# **什么是 spring? **   Spring 是个 java 企业级应用的开源开发框架。Spring 主要用来开发 Java 应用，但是有些扩展是针对构建 J2EE 平台的 web 应用。Spring 框架目标是简化 Java 企业级应用开发，并通过 POJO 为基础的编程模型促进良好的编程习惯。
- 使用 Spring 框架的好处是什么？#  **轻量：**Spring 是轻量的，基本的版本大约 2MB。
-  **控制反转：**Spring 通过控制反转实现了松散耦合，对象们给出它们的依赖，而不是创建或查找依赖的对象们。
-  **面向切面的编程(AOP)：**Spring 支持面向切面的编程，并且把应用业务逻辑和系统服务分开。
-  **容器：**Spring 包含并管理应用中对象的生命周期和配置。
-  MVC 框架：Spring 的 WEB 框架是个精心设计的框架，是 Web 框架的一个很好的替代品。
-  **事务管理：**Spring 提供一个持续的事务管理接口，可以扩展到上至本地事务下至全局事务（JTA）。
-  **异常处理：**Spring 提供方便的 API 把具体技术相关的异常（比如由 JDBC，HibernateorJDO抛出的）转化为一致的 unchecked 异常。</description>
-    </item>
-    
-    <item>
-      <title>微型计算机系统</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E5%BE%AE%E5%9E%8B%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/</guid>
-      <description>微型计算机系统#微型计算机系统的基本组成#微型计算机系统的硬件组成#微型计算机的软件系统#微型计算机的分类与主要性能指标#1:微型计算机系统的基本组成#  CPU ==&amp;gt; 中央处理器
-  内存储器 {ROM,RAM}
-  存储器 = {内存储器和外存储器以及类型的cache,寄存器} 存取速度:寄存器 &amp;gt; Cache &amp;gt; 内存 &amp;gt; 硬盘 &amp;gt; 光盘 &amp;gt; 软盘
-  总线 ==&amp;gt; 通信导线
-  没有安装任何软件叫做裸机
-  	运算器(算术运算和逻辑运算)中央处理器(CPU)控制器(分析指令并执行)主机内存储器 【RAM,ROM】硬件	外存储器外设	输入设备【键盘，鼠标】输出设备【显示器】微计算机系统操作系统系统软件 服务软件编译与解释系统软件信息管理软件辅助设计软件应用软件文字处理软件图形软件各种程序包2:微型计算机系统的硬件组成#  内存储器(主存储器) ROM,RAM</description>
-    </item>
-    
-    <item>
-      <title>搞定R试的0必备问题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E6%90%9E%E5%AE%9Ar%E8%AF%95%E7%9A%840%E5%BF%85%E5%A4%87%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E6%90%9E%E5%AE%9Ar%E8%AF%95%E7%9A%840%E5%BF%85%E5%A4%87%E9%97%AE%E9%A2%98/</guid>
-      <description>1、请你自我介绍一下你自己？#**回答提示：**一般人回答这个问题过于平常，只说姓名、年龄、爱好、工作经验，这些在简历上都有。其实，企业最希望知道的是求职者能否胜任工作，包括：最强的技能、最深入研究的知识领域、个性中最积极的部分、做过的最成功的事，主要的成就等，这些都可以和学习无关，也可以和学习有关，但要突出积极的个性和做事的能力，说得合情合理企业才会相信。企业很重视一个人的礼貌，求职者要尊重考官，在回答每个问题之后都说一句&amp;quot;谢谢&amp;quot;，企业喜欢有礼貌的求职者。
-2、你觉得你个性上最大的优点是什么？#**回答提示：**沉着冷静、条理清楚、立场坚定、顽强向上、乐于助人和关心他人、适应能力和幽默感、乐观和友爱。
-3、说说你最大的缺点？#**回答提示：**这个问题企业问的概率很大，通常不希望听到直接回答的缺点是什么等，如果求职者说自己小心眼、爱忌妒人、非常懒、脾气大、工作效率低，企业肯定不会录用你。绝对不要自作聪明地回答&amp;quot;我最大的缺点是过于追求完美&amp;quot;，有的人以为这样回答会显得自己比较出色，但事实上，他已经岌岌可危了。业喜欢求职者从自己的优点说起，中间加一些小缺点，最后再把问题转回到优点上，突出优点的部分，企业喜欢聪明的求职者。
-4、你对加班的看法？#**回答提示：**实际上好多公司问这个问题，并不证明一定要加班，只是想测试你是否愿意为公司奉献。
-**回答样本：**如果是工作需要我会义不容辞加班，我现在单身，没有任何家庭负担，可以全身心的投入工作。但同时，我也会提高工作效率，减少不必要的加班。
-5、你对薪资的要求？#**回答提示：**如果你对薪酬的要求太低，那显然贬低自己的能力；如果你对薪酬的要求太高， 那又会显得你分量过重，公司受用不起。一些雇主通常都事先对求聘的职位定下开支预算， 因而他们第一次提出的价钱往往是他们所能给予的最高价钱，他们问你只不过想证实一下这笔钱是否足以引起你对该工作的兴趣。如果你自己必须说出具体数目，请不要说一个宽泛的范围，那样你将只能得到最低限度的数字。最好给出一个具体的数字，这样表明你已经对当今的人才市场作了调查，知道像自己这样学历的雇员有什么样的价值。
-**回答样本一：**我对工资没有硬性要求，我相信贵公司在处理我的问题上会友善合理。我注重的是找对工作机会，所以只要条件公平，我则不会计较太多。
-**回答样本二：**我受过系统的软件编程的训练，不需要进行大量的培训，而且我本人也对编程特别感兴趣。因此，我希望公司能根据我的情况和市场标准的水平，给我合理的薪水。
-6、你的职业规划？#**回答提示：**这是每一个应聘者都不希望被问到的问题，但是几乎每个人都会被问到，比较多的答案是&amp;quot;管理者&amp;quot;。但是近几年来，许多公司都已经建立了专门的技术途径。这些工作地位往往被称作&amp;quot;顾问&amp;quot;、&amp;ldquo;参议技师&amp;quot;或&amp;quot;高级软件工程师&amp;quot;等等。当然，说出其他一些你感兴趣的职位也是可以的，比如产品销售部经理，生产部经理等一些与你的专业有相关背景的工作。要知道，考官总是喜欢有进取心的应聘者，此时如果说&amp;quot;不知道&amp;rdquo;，或许就会使你丧失一个好机会。最普通的回答应该是&amp;quot;我准备在技术领域有所作为&amp;quot;或&amp;quot;我希望能按照公司的管理思路发展&amp;quot;。
-7、你还有什么问题要问吗？#**回答提示：**企业的这个问题看上去可有可无，其实很关键，企业不喜欢说&amp;quot;没问题&amp;quot;的人， 因为其很注重员工的个性和创新能力。企业不喜欢求职者问个人福利之类的问题，如果有人这样问：贵公司对新入公司的员工有没有什么培训项目，我可以参加吗？或者说贵公司的晋升机制是什么样的？企业将很欢迎，因为体现出你对学习的热情和对公司的忠诚度以及你的上进心。
-8、如果通过这次面试我们单位录用了你，但工作一段时间却发现你根本不适合这个职位， 你怎么办？#**回答提示：**一段时间发现工作不适合我，有两种情况：①如果你确实热爱这个职业，那你就要不断学习，虚心向领导和同事学习业务知识和处事经验，了解这个职业的精神内涵和职业要求，力争减少差距；②你觉得这个职业可有可无，那还是趁早换个职业，去发现适合你的， 你热爱的职业，那样你的发展前途也会大点，对单位和个人都有好处。
-9、在完成某项工作时，你认为领导要求的方式不是最好的，自己还有更好的方法，你应该怎么做？#**回答提示：**①.原则上我会尊重和服从领导的工作安排，同时私底下找机会以请教的口吻， 婉转地表达自己的想法，看看领导是否能改变想法。②如果领导没有采纳我的建议，我也同样会按领导的要求认真地去完成这项工作。③.还有一种情况，假如领导要求的方式违背原则，我会坚决提出反对意见，如领导仍固执己见，我会毫不犹豫地再向上级领导反映。
-10、如果你的工作出现失误，给本公司造成经济损失，你认为该怎么办？#**回答提示：**①我本意是为公司努力工作，如果造成经济损失，我认为首要的问题是想方设法去弥补或挽回经济损失。如果我无能力负责，希望单位帮助解决。②分清责任，各负其责， 如果是我的责任，我甘愿受罚；如果是一个我负责的团队中别人的失误，也不能幸灾乐祸， 作为一个团队，需要互相提携共同完成工作，安慰同事并且帮助同事查找原因总结经验。
-③总结经验教训，一个人的一生不可能不犯错误，重要的是能从自己的或者是别人的错误中吸取经验教训，并在今后的工作中避免发生同类的错误。检讨自己的工作方法、分析问题的深度和力度是否不够，以致出现了本可以避免的错误。
-11、谈谈你对跳槽的看法？#**回答提示：**①正常的&amp;quot;跳槽&amp;quot;能促进人才合理流动，应该支持。②频繁的跳槽对单位和个人双方都不利，应该反对。
-12、工作中你难以和同事、上司相处，你该怎么办？#**回答提示：**①我会服从领导的指挥，配合同事的工作。②我会从自身找原因，仔细分析是不是自己工作做得不好让领导不满意，同事看不惯。还要看看是不是为人处世方面做得不好， 如果是这样的话 我会努力改正。③如果我找不到原因，我会找机会跟他们沟通，请他们指出我的不足，有问题就及时改正。④作为优秀的员工，应该时刻以大局为重，即使在一段时间内，领导和同事对我不理解，我也会做好本职工作，虚心向他们学习，我相信，他们会看见我在努力，总有一天会对我微笑的。
-13、你对于我们公司了解多少？#**回答提示：**在去公司面试前上网查一下该公司主营业务。如回答：贵公司有意改变策略，加强与国外大厂的OEM 合作，自有品牌的部分则透过海外经销商。
-14、请说出你选择这份工作的动机？#**回答提示：**这是想知道面试者对这份工作的热忱及理解度，并筛选因一时兴起而来应试的人， 如果是无经验者，可以强调&amp;quot;就算职种不同，也希望有机会发挥之前的经验&amp;quot;。</description>
-    </item>
-    
-    <item>
-      <title>精选17道海量数量处理面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%8917%E9%81%93%E6%B5%B7%E9%87%8F%E6%95%B0%E9%87%8F%E5%A4%84%E7%90%86%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%8917%E9%81%93%E6%B5%B7%E9%87%8F%E6%95%B0%E9%87%8F%E5%A4%84%E7%90%86%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>给定 a、b 两个文件，各存放 50 亿个 url，每个 url 各占 64 字节，内存限制是 4G，让你找出 a、b 文件共同的 url？   方案 1：可以估计每个文件安的大小为 50G×64=320G，远远大于内存限制的4G。所以不可能将其完全加载到内存中处理。考虑采取分而治之的方法。
-{width=&amp;ldquo;1.0729166666666667in&amp;rdquo; height=&amp;ldquo;0.1358464566929134in&amp;rdquo;}{width=&amp;ldquo;0.8659722222222223in&amp;rdquo; height=&amp;ldquo;0.10449693788276465in&amp;rdquo;}s 遍历文件 a，对每个 url 求取 ，然后根据所取得的值将 url 分别存储到 1000 个小文件（记为 ）中。这样每个小文件的大约为300M。
-s 遍历文件 b，采取和 a 相同的方式将 url 分别存储到 1000 各小文件（记为
-{width=&amp;ldquo;0.8416655730533683in&amp;rdquo; height=&amp;ldquo;0.1358464566929134in&amp;rdquo;}）。这样处理后，所有可能相同的 url 都在对应的小文件
-{width=&amp;ldquo;1.8659722222222221in&amp;rdquo; height=&amp;ldquo;0.1358464566929134in&amp;rdquo;}（ ）中，不对应的小文件不可能有相同的 url。然后我们只要求出 1000 对小文件中相同的 url 即可。
-s 求每对小文件中相同的 url 时，可以把其中一个小文件的 url 存储到hash_set 中。然后遍历另一个小文件的每个 url，看其是否在刚才构建的hash_set 中，如果是，那么就是共同的 url，存到文件里面就可以了。
-方案 2：如果允许有一定的错误率，可以使用 Bloom filter，4G 内存大概可以表示 340 亿 bit。将其中一个文件中的 url 使用 Bloom filter 映射为这 340 亿</description>
-    </item>
-    
-    <item>
-      <title>精选7道Elasticearch面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%897%E9%81%93elasticearch%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%897%E9%81%93elasticearch%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>为什么要使用 ES？  虽然 lucene 是性能最先进的、功能完善的搜索引擎，但是它只能有一个库，而且使用它需要集成到 java 项目才能使用，配置还特别复杂,而 ES 语法简单、是基于Resultful api 风格的, 它在 lucene 所有功能基础上还能集成多台服务器进行搜索，也就是集群;
- ES 和 lucene 的区别是什么？  lucene 是现存功能最强大、最先进搜索库，直接基于 lucene 开发，api 非常复杂大量的 java
-代码、需要深入了解原理对比处:
-只有一个索引库、 传统的遍历搜索方式采用B+树索引;
-Es 是基于 lucene 的，隐藏了 lucene 复杂部分的一个分布式全文检索框架对比处:
-一个es 的集群包含多个索引库、分布式搜索
-Es 是采用倒排式索引
-es 没有事物概念,删除不能恢复
-es 开源免费
-正排索引：id ---&amp;gt; value
-倒排索引：value ---&amp;gt; id
- 你还了解哪些全文检索工具？ Lucene，Solr，HadoopContrib，Katta 4.Bulk 一次最大处理多少数据量？  bulk 会把将要处理的数据载入内存中，所以数据量是有限制的
-最佳的数据量不是一个确定的数值，它取决于你的硬件，你的文档大小以及复杂性，你的索
-引以及搜索的负载。
-一般建议是 1000-5000 个文档，如果你的文档很大，可以适当减少队列,大小建议是 5-15MB， 默认不能超过 100M，可以在 es 的配置文件中修改这个值 http.max_content_length: 100mb</description>
-    </item>
-    
-    <item>
-      <title>精选8道Dubbo面试题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%898%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_%E9%9D%A2%E8%AF%95_%E7%B2%BE%E9%80%898%E9%81%93dubbo%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
-      <description>Dubbo 是阿里巴巴 SOA 服务化治理方案的核心框架，每天为 2,000+个服务提供 3,000,000,000+次访问量支持，并被广泛应用于阿里巴巴集团的各成员站点。
-Dubbo[]是一个分布式服务框架，致力于提供高性能和透明化的 RPC 远程服务调用方案，以及 SOA 服务治理方案。它最大的特点是按照分层的方式来架构，使用这种方式可以使各个层之间解耦合（或者最大限度地松耦合）。从服务模型的角度来看，Dubbo 采用的是一种非常简单的模型，要么是提供方提供服务，要么是消费方消费服务，所以基于这
-一点可以抽象出服务提供方（Provider）和服务消费方（Consumer）两个角色。关于注册中心、协议支持、服务监控
-等内容。
-  Dubbo 中 zookeeper 做注册中心，如果注册中心集群都挂掉，发布者和订阅者之间还能通信么？   可以通信的，启动 dubbo 时，消费者会从 zk 拉取注册的生产者的地址接口等数据，缓存在本地。每次调用时，按照本地存储的地址进行调用；
-注册中心对等集群，任意一台宕机后，将会切换到另一台；注册中心全部宕机后，服务的提供者和消费者仍能通过本地缓存通讯。服务提供者无状态，任一台 宕机后，不影响使用；服务提供者全部宕机，服务消费者会无法使用，并无限次重连等待服务者恢复；
-挂掉是不要紧的，但前提是你没有增加新的服务，如果你要调用新的服务，则是不能办到的。
-{width=&amp;ldquo;7.018332239720035in&amp;rdquo; height=&amp;ldquo;1.75in&amp;rdquo;}附文档截图：
-  dubbo 服务负载均衡策略？   l Random LoadBalance
-随机，按权重设置随机概率。在一个截面上碰撞的概率高，但调用量越大分布越均匀，而且按概率使用权重后也比较均匀，有利于动态调整提供者权重。(权重可以在 dubbo 管控台配置)
-l RoundRobin LoadBalance
-轮循，按公约后的权重设置轮循比率。存在慢的提供者累积请求问题，比如：第二台机器很慢，但没挂，当请求调到第二台时就卡在那，久而久之，所有请求都卡在调到第二台上。
-l LeastActive LoadBalance
-最少活跃调用数，相同活跃数的随机，活跃数指调用前后计数差。使慢的提供者收到更少请求，因为越慢的提供者的调用前后计数差会越大。
-l ConsistentHash LoadBalance
-一致性Hash，相同参数的请求总是发到同一提供者。当某一台提供者挂时，原本发往该提供者的请求，基于虚拟节点， 平摊到其它提供者，不会引起剧烈变动。缺省只对第一个参数Hash，如果要修改，请配置
-[AppleScript] 纯文本查看 复制代码
- +&amp;mdash;+&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;+ | 1 | &amp;lt;dubbo:parameter | | | | | | key=&amp;quot;hash.</description>
-    </item>
-    
-    <item>
-      <title>网易云课堂MySQL &gt; chapter1</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/</guid>
-      <description>MySQL数据库基础#1.1-认识MySQL#什么是数据库# 计算机处理和存储的一切信息都是数据。 计算机系统中一种用于存取数据的程序。 一种：  计算机系统中有很多种能够存取数据的程序 它们各有特征和长处，有自己的适用范围。   存取：  能够保存数据避免丢失。 能够按照需求找到符合条件的数据。    为什么要使用数据库#数据库帮助我们解决一下数据存取难题：
- 较大数据量 网络控制 并发访问 高性能要求 事务控制 持久化和数据安全 查询数据需求逻辑复杂  数据库分类#  关系型数据库
- MySQL Oracle SQL Server PostgreSQL    非关系型数据库
- hadoop：存放大数据 mongoDB： 文档型数据库 redis：键值型数据库 Cassandra：分布式数据库    最显著的区别：是否使用结构化查询语句（SQL）
-为什么学习MySQL#MySQL：The world&amp;rsquo;s most popular open source database</description>
-    </item>
-    
-    <item>
-      <title>网易云课堂MySQL &gt; chapter2</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/</guid>
-      <description>MySQL数据库对象与应用#2.1-MySQL数据类型#Number不止一种# 整形 浮点型  整形# INT SMALLINT MEDIUMINT BIGINT     type Storage Minumun Value Maximum Value      (Bytes) (Signed/Unsigned) (Signed/Unsigned)   TINYINT 1 -128 127     0 255   SMALLINT 2 -32768 32767     0 65535   MEDIUMINT 3 -8388608 8388607     0 16777215   INT 4 -2147483648 2147483647     0 4294967295   BIGINT 8 -9223372036854775808 9223372036854775807     0 18446744073709551615    老生常谈的问题#int(11) VS int(21) 存储空间，还是存储范围有区别？</description>
-    </item>
-    
-    <item>
-      <title>网易云课堂MySQL &gt; chapter3</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</guid>
-      <description>MySQL事务与存储引擎#3.1-数据库事务#什么是事务# 一系列有序的数据库操作：  要么全部成功 要么全部回退到操作前的状态 中间状态对其他连接不可见   事务的基本操作：    基本操作 说明     start transaction 开始事务   commit 提交(全部完成)   rollback 回滚(回到初始状态)      -- 开启一个事务 start transaction; -- 或者使用(非标准sql) begin; insert into t values (1, 1, 1); -- 事务结束，插入成功 commit; begin; insert into t values (2, 1, 1); insert into t values (3, 1, 1); insert into t values (4, 1, 1); -- 事务结束，没有插入数据 rollback; begin; insert into t values (1, 1, 1); savepoint a1; insert into t values (2, 1, 1); -- 回滚到指定的保存点 rollback to a1; commit; 自动提交# autocommit可以在session级别设置 每个DML操作都自动提交 DDL永远都是自动提交，无法通过rollback回滚  事务的四个基本属性(ACID)# 原子性(Atomicity) 一致性(Consistency) 隔离性(Isolation) 持久性(Durability)  事务的原子性# 包含在事务中的操作要么全部被执行，要么都不执行 中途数据库或应用发生异常，未提交的事务都应该被回滚  事务的一致性# 数据的正确性，合理性，完整性 数据一致性应该符合应用需要规则：  余额不能是负数 交易对象必须先有账号 用户账号不能重复   事务的结果需要满足数据的一致性约束  事物的持久性# 提交完成的事务对数据库的影响必须是永久性的  数据库异常不会丢失事务更新 通常认为成功写入磁盘的数据即为持久化成功    事务的持久化的实现# 数据文件持久化  随机同步刷新(慢)   事务日志持久化与实例恢复  顺序同步刷新(快) -&amp;gt; 事务日志 随机异步刷新 -&amp;gt; 磁盘 事务日志 -&amp;gt; 磁盘(实例恢复)    事务的隔离性# 数据库事务在提交完成前，中间的任何数据变化对其他的事务都是不可见的。  数据库隔离现象#   隔离现象 描述     脏读(Dirty Read) 事务B读到事务A尚未提交的数据变更   不可重复读(NonRepeatable Read) 事务B读取前后两次读取一条记录之间该记录被事务A修改并提交，于是事务B读到了不一样的结果   幻读(Phantom Read) 事务B按条件匹配到了若干行记录并修改。但是由于修改过程中事务A新插入了符合条件记录，导致B更新完成后发现仍有符合条件却未被更新的记录。    数据库隔离等级#   隔离等级 脏读 不可重复读 幻读     未提交读 可能 可能 可能   已提交读 不可能 可能 可能   可重复读 不可能 不可能 可能   可串行化读 不可能 不可能 不可能    MySQL的事务隔离级别# InnoDB默认标记为可重复读 InnoDB并不是标准定义上的课重复读 InnoDB默认在可重复读的基础上避免幻读  MySQL事务隔离级别设置# 可在global/session/下个事务，级别分别进行设置 建议使用Read committed(同Oracle) 或者建议使用默认的Repeatable read  set tx_isolation = &amp;#39;&amp;#39; -- 设置隔离级别 事务与并发写# 某个正在更新的记录再提交或回滚前不能被其他事务同时更新  事务回滚的实现# 回滚段(rollback segment)与数据前像  3.</description>
-    </item>
-    
-    <item>
-      <title>网易云课堂MySQL &gt; chapter4</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</guid>
-      <description>MySQL应用优化#4.1-MySQL索引优化与设计#什么是索引# 索引的意义 —— 快速定位要查找的数据  数据库索引查找# 全表扫描 VS 索引查找  如何根据首字母找到所在行# 二分查找 B+tree  InnoDB表聚簇索引#索引中只放着排序字段和ID
-创建索引# 单列索引  create index idx_test1 on tb_student (name);  联合索引  create index idx_test2 on tb_student (name, age);  索引中先根据name排序，name相同的情况下，根据age排序  索引维护# 索引维护由数据库自动完成 插入/修改/删除每一个索引行都会变成一个内部封装的事务 索引越多，事务越长，代价越高 索引越多对表的插入和索引字段修改就越慢 控制表上索引的数量，切忌胡乱添加无用索引  如何使用索引# 依据WHERE查询条件建立索引  select a, b from tab_a where c=?</description>
-    </item>
-    
-    <item>
-      <title>网易云课堂MySQL &gt; chapter5</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter5/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter5/</guid>
-      <description>MySQL运维实践#5.1-MySQL日志系统#什么是日志# 日志(log)是一种顺序记录事件流水的文件 记录计算机程序运行过程中发生了什么 多种多样的用途  帮助分析程序问题 分析服务请求的特征、流量等 判断工作是否成功执行 等等……    MySQL日志的分类# 服务器日志  记录进程启动运行过程中的特殊事件，帮助分析MySQL服务遇到的问题 根据需求抓取特定的SQL语句，追踪性能可能存在的问题的业务SQL   事务日志  记录应用程序对数据的所有更改 可用于数据恢复 可用于实例间数据同步       分类 日志名称     服务器日志 服务错误日志   服务器日志 慢查询日志   服务器日志 综合查询日志   事务日志 存储引擎事务日志   事务日志 二进制日志    服务错误日志# 记录实例启动运行过程中重要消息 配置参数  log_error = /data/mysql_data/node-1/mysql.</description>
-    </item>
-    
-    <item>
-      <title>网易云课堂MySQL微专业学习笔记</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql%E5%BE%AE%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/uuid_t_mysql_163%E8%AF%BE%E5%A0%82_%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql%E5%BE%AE%E4%B8%93%E4%B8%9A%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>NTES_MySQL_notes#网易云课堂MySQL微专业学习笔记
-但愿可以不弃坑。
-目录# 数据库基础  1.1-认识MySQL 1.2-轻松安装MySQL 1.3-MySQL数据库连接 1.4-SQL语言入门 1.5-认识DBA   MySQL数据库对象与应用  2.1-MySQL数据类型 2.2-MySQL数据对象 2.3-MySQL权限管理 2.4-SQL语言进阶 2.5-内置函数 2.6-触发器与存储过程 2.7-MySQL字符集 2.8程序连接MySQL 2.9-DAO框架的使用   MySQL事务与存储引擎  3.1-数据库事务 3.2-存储引擎概述 3.3-InnoDB存储引擎 3.4-InnoDB事务锁   MySQL应用优化  4.1-MySQL索引优化与设计 4.2-MySQL数据库设计 4.3-MySQL容量评估 4.4-MySQL性能测试   MySQL运维实践   5.1-MySQL日志系统
-  5.2-MySQL数据备份
-  5.3-MySQL数据恢复
-  5.4-MySQL线上部署
-  5.5-MySQL主从复制
-  5.6-MySQL日常运维
-  5.7-MySQL参数调优
-  5.</description>
-    </item>
-    
-    <item>
-      <title>计算机中信息的表示</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%B8%AD%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA/</guid>
-      <description>计算机中信息使用二进制表示#   易于实现   2)运算简单 3)逻辑性强   进位计数制的概念,就是按照进位方式计数的数制  记数制的基本概念#   基数    进计数制中使用不同基本符号的个数称为基数。如十进制中有十种符号(0-9),所以基数为10
- 2)数码  进制中所使用的符号。如十进制中有10个数码，分别是:0,1,2,3,4,5,6,7,8,9
- 3)位权  位权是个乘方值，底数为进位计数制的基数,而指数由个数字所在数中的位置决定。
-如:十进制数548.25可以表示为(548.25)⑩ = </description>
-    </item>
-    
-    <item>
-      <title>计算机操作系统</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
-      <description>计算机操作系统#  操作系统的基本概念
-  行命令操作系统
-  汉字操作系统
-  windows操作系统
-  一:操作系统的基本概念# 操作系统主要模块（作用）     管理系统资源。包括对CPU、内存储器、输入输出设备、数据文件和其他软件资源的管理    为用户提供资源共享的条件和环境，并对资源的使用进行合理调度    提供输入输出的方便环境，简化用户的输入输出工作，提供良好的用户界面    规定用户的接口，发现、处理或报告计算机操作过程中发生的各种错误     操作系统的功能和任务     处理机管理:处理机(CPU)是整个计算机硬件的核心。处理机管理的主要任务是:充分发挥处理机的作用，提高它的使用效率。    存储器管理:计算机内存储器是计算机硬件系统中的重要资源，它的容量总是有效的。存储器管理的主要任务是:对有限的内存储器进行合理分配，以满足多个用户程序运行的需要    设备管理:有效地管理各种外部设备，使这些设备充分发挥效率；给用户提供简单而易于使用地接口，以便在用户不了解设备性能地情况下，也能很方便地使用它们。    文件管理:唯一地标识计算机系统地每一组信息，以便能够合理地访问和控制它们；有条理地组织这些信息，使用户能够方便且安全地使用它们。    作业管理:对所有的用户作业进行分类，并且根据某种原则，源源不断地选取一些作业交给计算机去处理    </description>
-    </item>
-    
-    <item>
-      <title>计算机的发展与应用</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/uuid_t_windows%E5%8F%8A%E5%BA%94%E7%94%A8_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E5%8F%91%E5%B1%95%E4%B8%8E%E5%BA%94%E7%94%A8/</guid>
-      <description>计算机的发展与应用# 一:计算机的主要特点     计算机具有自动进行各种操作的能力    计算机具有高速处理的能力    计算机具有超强的记忆能力    计算机具有很高的计算精度与可靠的判断能力     二:计算机的应用     科学计算    过程检测与控制    信息管理    计算机辅助系统    ①计算机辅助设计(CAD) ②计算机辅助制造(CAM) ③计算机辅助测试(CAT) ④计算机辅助教学(CAI)
- 三:计算机的分类     巨型计算机    大型机    工作站    微型计算机    微控制器    服务器     四:计算机在三个方面得到了发展     小型化    速度    可购性      真正作为世界上第一台计算机的是电子管</description>
-    </item>
-    
-    <item>
-      <title>这是一个很长的标题</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v4/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BE%88%E9%95%BF%E7%9A%84%E6%A0%87%E9%A2%98/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v4/%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BE%88%E9%95%BF%E7%9A%84%E6%A0%87%E9%A2%98/</guid>
-      <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go 模板引用</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/hugo%E6%A8%A1%E6%9D%BF%E5%BC%95%E7%94%A8/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/hugo%E6%A8%A1%E6%9D%BF%E5%BC%95%E7%94%A8/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v3/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v3/migrate-from-jekyll/</guid>
-      <description>Move static content to static#Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
-▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-  </channel>
-</rss>

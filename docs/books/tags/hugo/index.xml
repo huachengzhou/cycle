@@ -1,43 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>hugo on Hugo Book</title>
-    <link>https://huachengzhou.github.io/cycle/books/tags/hugo/</link>
-    <description>Recent content in hugo on Hugo Book</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/books/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>hugo &gt; tutorials1</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials1/</guid>
-      <description>教程1#快速开始# 步骤1：安装Hugo  brew install hugo# orport install hugo 要验证新安装  hugo version 步骤2：建立新网站  hugo new site quickstart# 上面的代码将在名为的文件夹中创建一个新的Hugo网站quickstart。 步骤3：添加主题  # 首先，从GitHub下载主题并将其添加到您站点的themes目录中：cd quickstartgit initgit submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke 然后，将主题添加到站点配置中：  echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml 步骤4：添加一些内容  hugo new posts/my-first-post.md 如果需要，请编辑新创建的内容文件，该文件将从以下内容开始：   ---title: &amp;quot;My First Post&amp;quot;date: 2019-03-26T08:47:11+01:00draft: true--- 步骤5：启动Hugo服务器  ▶ hugo server -D| EN+------------------+----+Pages | 10Paginator pages | 0Non-page files | 0Static files | 3Processed images | 0Aliases | 1Sitemaps | 1Cleaned | 0Total in 11 msWatching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes}Watching for config changes in /Users/bep/quickstart/config.</description>
-    </item>
-    
-    <item>
-      <title>hugo &gt; tutorials2</title>
-      <link>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/docs/java/v1/uuid_t_hugo_hugo_tutorials2/</guid>
-      <description>教程2# 1、	创建blog  hugo new site myblog_pubcd myblog_pub/git submodule add https://github.com/chinanf-boy/gohugo-theme-yinwang.git themes/yinwang  2、	修改配置
-  vi config.toml
-  root@instance-x8rtph4n:/home/go/code/hugo_dir/myblog_pub/public# more ../config.toml baseURL = &amp;quot;http://ypbsyy.github.io/&amp;quot;languageCode = &amp;quot;en-us&amp;quot;title = &amp;quot;我是yaopeng&amp;quot;theme = &amp;quot;yinwang&amp;quot;#pygmentsCodeFences = true#pygmentsCodefencesGuessSyntax = false#pygmentsStyle = &amp;quot;dracula&amp;quot;#pygmentsOptions = [&#39;linenos&#39;]# 代码高亮/chroma，hugo默认自带[params]author = &amp;quot;yaopeng&amp;quot;github = &amp;quot;yaopeng&amp;quot;# gitlab = &amp;quot;yobrave&amp;quot;#googleAnalytics = &amp;quot;****&amp;quot;# 谷歌统计gtaghighlight = &amp;quot;dracula&amp;quot; # 默认样式 `github`langs = [&amp;quot;go&amp;quot;]# 默认加载 highlight.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://huachengzhou.github.io/cycle/books/posts/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/books/posts/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo#Go to Hugo releases and download the appropriate version for your OS and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at Install Hugo
-Step 2. Build the Docs#Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:</description>
-    </item>
-    
-  </channel>
-</rss>

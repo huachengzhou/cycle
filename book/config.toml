@@ -2,8 +2,14 @@
 
 # baseURL = "https://example.com"
 
-baseURL = "http://localhost:1314/"
-#baseURL = "https://huachengzhou.github.io/cycle/books"
+baseURL = "https://huachengzhou.github.io/cycle/books"
 title = 'Hugo Book'
 theme = 'hugo-book'
+
+
+[params]
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme = "light"
+
 

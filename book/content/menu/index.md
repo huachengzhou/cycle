@@ -2,21 +2,10 @@
 headless: true
 ---
 
-- [**Example Site**]({{< relref "/docs/example" >}})
-- [Table of Contents]({{< relref "/docs/example/table-of-contents" >}})
-  - [With ToC]({{< relref "/docs/example/table-of-contents/with-toc" >}})
-  - [Without ToC]({{< relref "/docs/example/table-of-contents/without-toc" >}})
-- [Collapsed]({{< relref "/docs/example/collapsed" >}})
-  - [3rd]({{< relref "/docs/example/collapsed/3rd-level" >}})
-    - [4th]({{< relref "/docs/example/collapsed/3rd-level/4th-level" >}})
-<br />
 
-- **Shortcodes**
-- [Buttons]({{< relref "/docs/shortcodes/buttons" >}})
-- [Columns]({{< relref "/docs/shortcodes/columns" >}})
-- [Expand]({{< relref "/docs/shortcodes/expand" >}})
-- [Hints]({{< relref "/docs/shortcodes/hints" >}})
-- [Katex]({{< relref "/docs/shortcodes/katex" >}})
-- [Mermaid]({{< relref "/docs/shortcodes/mermaid" >}})
-- [Tabs]({{< relref "/docs/shortcodes/tabs" >}})
+- **hugo学习**
+- [hugo学习]({{< relref "/docs/hugo学习" >}})
+  - [hugo教程 hugo server Failed to get JSON]({{< relref "/docs/hugo学习/hugo_server_Faile_ to_get_JSON" >}})
+  - [hugo教程1]({{< relref "/docs/hugo学习/hugo_tutorials1" >}})
+  - [hugo教程2]({{< relref "/docs/hugo学习/hugo_tutorials2" >}})
 <br />

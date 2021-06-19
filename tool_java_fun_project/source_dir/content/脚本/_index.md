@@ -19,4 +19,5 @@ weight: 100
 
 + python 胶水语言 可以直接在linux当成sheel使用,也是人工智能的一种使用工具
 
-+ js 浏览器脚本
+
+* [js 浏览器脚本](javascript)

@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/</loc>
+    <lastmod>2021-06-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -143,6 +146,9 @@
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/</loc>
+    <lastmod>2021-06-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/groovy/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>

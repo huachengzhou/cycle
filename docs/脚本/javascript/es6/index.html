@@ -3,11 +3,11 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>groovy 基本概念  - 禅与摩托车维修艺术</title>
+<title>ECMAScript 6 - 禅与摩托车维修艺术</title>
 <meta name="description" content="简单的事情重复做,重复的事情用心做,用心的事情坚持做">
 <meta name="generator" content="Hugo 0.83.1" />
 <link href="https://huachengzhou.github.io/cycle//index.xml" rel="alternate" type="application/rss+xml">
-<link rel="canonical" href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
+<link rel="canonical" href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/">
 <link rel="stylesheet" href="https://huachengzhou.github.io/cycle/css/theme.min.css">
 <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link rel="stylesheet" href="https://huachengzhou.github.io/cycle/css/chroma.min.css">
@@ -17,22 +17,22 @@
 <script src="https://huachengzhou.github.io/cycle/js/bundle.js"></script><style>
 :root {--custom-font-color: white;--custom-background-color: black;}
 </style>
-<meta property="og:title" content="groovy 基本概念 " />
-<meta property="og:description" content="groovy 基本概念 1、基本概念 Groovy是一种面向对象的动态类型语言，跟Java一样运行在JVM上。 （注：给Java静态世界带来动态能力的语言） 与" />
+<meta property="og:title" content="ECMAScript 6" />
+<meta property="og:description" content="ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" /><meta property="og:image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/><meta property="article:section" content="javadir" />
-<meta property="article:published_time" content="2021-04-15T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2021-04-15T00:00:00&#43;00:00" /><meta property="og:site_name" content="向卓越致敬" />
+<meta property="og:url" content="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/" /><meta property="og:image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/><meta property="article:section" content="脚本" />
+<meta property="article:published_time" content="2021-06-17T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-17T00:00:00&#43;00:00" /><meta property="og:site_name" content="向卓越致敬" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
 
-<meta name="twitter:title" content="groovy 基本概念 "/>
-<meta name="twitter:description" content="groovy 基本概念 1、基本概念 Groovy是一种面向对象的动态类型语言，跟Java一样运行在JVM上。 （注：给Java静态世界带来动态能力的语言） 与"/>
-<meta itemprop="name" content="groovy 基本概念 ">
-<meta itemprop="description" content="groovy 基本概念 1、基本概念 Groovy是一种面向对象的动态类型语言，跟Java一样运行在JVM上。 （注：给Java静态世界带来动态能力的语言） 与"><meta itemprop="datePublished" content="2021-04-15T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2021-04-15T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="239"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
+<meta name="twitter:title" content="ECMAScript 6"/>
+<meta name="twitter:description" content="ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企"/>
+<meta itemprop="name" content="ECMAScript 6">
+<meta itemprop="description" content="ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企"><meta itemprop="datePublished" content="2021-06-17T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-06-17T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2352"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
 <meta itemprop="keywords" content="" /></head>
 <body><div class="container"><header>
 <h1>禅与摩托车维修艺术</h1>
@@ -52,69 +52,160 @@
 </nav>
 </div>
 <div class="content-container">
-<main><h1>groovy 基本概念 </h1>
-<h1 id="groovy-基本概念">groovy 基本概念</h1>
-<h3 id="1基本概念">1、基本概念</h3>
-<blockquote>
-<p>Groovy是一种面向对象的动态类型语言，跟Java一样运行在JVM上。</p>
-<p>（注：给Java静态世界带来动态能力的语言）</p>
-</blockquote>
+<main><h1>ECMAScript 6</h1>
+<ul>
+<li>ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企业级开发语言。</li>
+</ul>
+<h2 id="module-的语法">Module 的语法</h2>
+<h3 id="概述">概述</h3>
+<p>历史上，JavaScript 一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如 Ruby 的require、Python 的import，甚至就连 CSS 都有@import，但是 JavaScript 任何这方面的支持都没有，这对开发大型的、复杂的项目形成了巨大障碍。</p>
+<p>在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。</p>
+<p>ES6 模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东西。比如，CommonJS 模块就是对象，输入时必须查找对象属性。</p>
+<pre><code>// CommonJS模块
+let { stat, exists, readFile } = require('fs');
+
+// 等同于
+let _fs = require('fs');
+let stat = _fs.stat;
+let exists = _fs.exists;
+let readfile = _fs.readfile;
+</code></pre><p>上面代码的实质是整体加载fs模块（即加载fs的所有方法），生成一个对象（_fs），然后再从这个对象上面读取3个方法。这种加载称为“运行时加载”，因为只有运行时才能得到这个对象，导致完全没办法在编译时做“静态优化”。</p>
+<p>ES6 模块不是对象，而是通过export命令显式指定输出的代码，再通过import命令输入。</p>
+<pre><code>// ES6模块
+import { stat, exists, readFile } from 'fs';
+</code></pre><ul>
+<li>严格模式</li>
+</ul>
+<p>ES6 的模块自动采用严格模式，不管你有没有在模块头部加上&quot;use strict&quot;;。</p>
+<ul>
+<li>export 命令</li>
+</ul>
+<p>模块功能主要由两个命令构成：export和import。export命令用于规定模块的对外接口，import命令用于输入其他模块提供的功能。</p>
+<p>一个模块就是一个独立的文件。该文件内部的所有变量，外部无法获取。如果你希望外部能够读取模块内部的某个变量，就必须使用export关键字输出该变量。下面是一个 JS 文件，里面使用export命令输出变量。</p>
+<pre><code>// profile.js
+export var firstName = 'Michael';
+export var lastName = 'Jackson';
+export var year = 1958;
+</code></pre><p>上面代码是profile.js文件，保存了用户信息。ES6 将其视为一个模块，里面用export命令对外部输出了三个变量。</p>
+<p>export的写法，除了像上面这样，还有另外一种。</p>
+<pre><code>/ profile.js
+var firstName = 'Michael';
+var lastName = 'Jackson';
+var year = 1958;
+
+export {firstName, lastName, year}; //优秀导出写法
+</code></pre><p>上面代码在export命令后面，使用大括号指定所要输出的一组变量。它与前一种写法（直接放置在var语句前）是等价的，但是应该优先考虑使用这种写法。因为这样就可以在脚本尾部，一眼看清楚输出了哪些变量。</p>
+<p>export命令除了输出变量，还可以输出函数或类（class）。</p>
+<pre><code>export function multiply(x, y) {
+  return x * y;
+};
+</code></pre><p>上面代码对外输出一个函数multiply。</p>
+<p>通常情况下，export输出的变量就是本来的名字，但是可以使用as关键字重命名。</p>
+<pre><code>function v1() { ... }
+function v2() { ... }
+
+export {
+  v1 as streamV1,
+  v2 as streamV2,
+  v2 as streamLatestVersion
+};
+</code></pre><p>需要特别注意的是，export命令规定的是对外的接口，必须与模块内部的变量建立一一对应关系。</p>
+<pre><code>// 报错
+export 1;
+
+// 报错
+var m = 1;
+export m;
+</code></pre><p>上面两种写法都会报错，因为没有提供对外的接口。第一种写法直接输出1，第二种写法通过变量m，还是直接输出1。1只是一个值，不是接口。正确的写法是下面这样。</p>
+<pre><code>// 写法一
+export var m = 1;
+
+// 写法二
+var m = 1;
+export {m};
+
+// 写法三
+var n = 1;
+export {n as m};
+</code></pre><p>上面三种写法都是正确的，规定了对外的接口m。其他脚本可以通过这个接口，取到值1。它们的实质是，在接口名与模块内部变量之间，建立了一一对应的关系。</p>
+<p>同样的，function和class的输出，也必须遵守这样的写法。</p>
+<pre><code>// 报错
+function f() {}
+export f;
+
+// 正确
+export function f() {};
+
+// 正确
+function f() {}
+export {f};
+</code></pre><p>上面代码输出变量foo，值为bar，500毫秒之后变成baz。</p>
+<p>这一点与 CommonJS 规范完全不同。CommonJS 模块输出的是值的缓存，不存在动态更新，详见下文《ES6模块加载的实质》一节。</p>
+<p>最后，export命令可以出现在模块的任何位置，只要处于模块顶层就可以。如果处于块级作用域内，就会报错，下一节的import命令也是如此。这是因为处于条件代码块之中，就没法做静态优化了，违背了ES6模块的设计初衷。</p>
 <ul>
 <li>
-<p>与Java不同的语言特性：</p>
+<p>总结 export 导出的是接口 ,并且必须是模块顶层 不能是块级作用域</p>
 </li>
 <li>
-<p>a) 函数字面值</p>
-</li>
-<li>
-<p>b) 对集合的一等支持</p>
-</li>
-<li>
-<p>c) 对正则表达式的一等支持</p>
-</li>
-<li>
-<p>d) 对XML处理的一等支持</p>
-</li>
-<li>
-<p>（注：所谓“一等”指的是内置到语言的语法中，不需要调用类库。）</p>
+<p>import 命令</p>
 </li>
 </ul>
-<h3 id="2groovy能解决包括">2:Groovy能解决包括：</h3>
-<ul>
-<li>
-<p>快速Web开发</p>
-</li>
-<li>
-<p>原型设计</p>
-</li>
-<li>
-<p>脚本处理</p>
-</li>
-<li>
-<p>等问题，这些使用Java不是解决动态层问题的理想语言。</p>
-</li>
-</ul>
-<p>例如:</p>
-<pre><code>System.out.println(&quot;It's a Groovy baby, yeah!&quot;);
-
-def writer = new StringWriter();
-def xml = new groovy.xml.MarkupBuilder(writer);
-
-xml.person(id:2){
-name  'kobicc'
-age  1
+<p>使用export命令定义了模块的对外接口以后，其他 JS 文件就可以通过import命令加载这个模块。</p>
+<pre><code>// main.js
+import {firstName, lastName, year} from './profile';
+//使用
+function setName(element) {
+  element.textContent = firstName + ' ' + lastName;
 }
+</code></pre><p>如果想为输入的变量重新取一个名字，import命令要使用as关键字，将输入的变量重命名。</p>
+<p><code>import { lastName as surname } from './profile';</code></p>
+<p>import后面的from指定模块文件的位置，可以是相对路径，也可以是绝对路径，.js路径可以省略。如果只是模块名，不带有路径，那么必须有配置文件，告诉 JavaScript 引擎该模块的位置。</p>
+<p><code>import {myMethod} from 'util';</code></p>
+<p>上面代码中，util是模块文件名，由于不带有路径，必须通过配置，告诉引擎怎么取到这个模块。</p>
+<p>注意，import命令具有提升效果，会提升到整个模块的头部，首先执行。</p>
+<p>如果多次重复执行同一句import语句，那么只会执行一次，而不会执行多次。</p>
+<pre><code>import 'lodash';
+import 'lodash';
+</code></pre><pre><code>import { foo } from 'my_module';
+import { bar } from 'my_module';
 
-println  writer.toString();
-</code></pre><h2 id="回到上一级"><a href="../">回到上一级</a></h2>
-<div class="edit-meta">
-Last updated on 15 Apr 2021
+// 等同于
+import { foo, bar } from 'my_module';
+</code></pre><p>整体加载一个js中所有模块</p>
+<pre><code>import * as circle from './circle';
+
+console.log('圆面积：' + circle.area(4));
+console.log('圆周长：' + circle.circumference(14));
+
+需要注意的是 circle.method 调用导入模块
+</code></pre><ul>
+<li>export default 命令</li>
+</ul>
+<blockquote>
+<p>export default命令用于指定模块的默认输出。显然，一个模块只能有一个默认输出，因此export default命令只能使用一次。所以，import命令后面才不用加大括号，因为只可能唯一对应export default命令</p>
+</blockquote>
+<pre><code>// modules.js
+function add(x, y) {
+  return x * y;
+}
+export {add as default};
+// 等同于
+// export default add;
+
+// app.js
+import { default as foo } from 'modules';
+// 等同于
+// import foo from 'modules';
+
+//上面import foo from 'modules'; 只有 export default add; 才能这样
+</code></pre><div class="edit-meta">
+Last updated on 17 Jun 2021
 
 
 <br>
-Published on 15 Apr 2021
-<br></div><nav class="pagination"><a class="nav nav-prev" href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%AD%A6%E4%B9%A0/" title=" Groovy 概述 "><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev -  Groovy 概述 </a>
-<a class="nav nav-next" href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="groovy 数据类型 ">Next - groovy 数据类型  <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+Published on 17 Jun 2021
+<br></div><nav class="pagination"><a class="nav nav-prev" href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/" title="javascript "><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - javascript </a>
+<a class="nav nav-next" href="https://huachengzhou.github.io/cycle/javadir/" title=" Java技术栈">Next -  Java技术栈 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">
 
  <ul>
@@ -177,14 +268,14 @@ Published on 15 Apr 2021
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/">脚本<span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/">脚本<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
 
-<li class=" has-sub-menu"><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/">javascript <span class="mark closed">+</span></a>
+<li class="parent has-sub-menu"><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/">javascript <span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/">ECMAScript 6</a></li>
+<li class="active"><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/">ECMAScript 6</a></li>
 </ul>
   
 </li>
@@ -192,7 +283,7 @@ Published on 15 Apr 2021
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://huachengzhou.github.io/cycle/javadir/"> Java技术栈<span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://huachengzhou.github.io/cycle/javadir/"> Java技术栈<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 
@@ -215,11 +306,11 @@ Published on 15 Apr 2021
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://huachengzhou.github.io/cycle/javadir/groovy/">groovy 学习与使用 <span class="mark opened">-</span></a>
+<li class=" has-sub-menu"><a href="https://huachengzhou.github.io/cycle/javadir/groovy/">groovy 学习与使用 <span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%AD%A6%E4%B9%A0/"> Groovy 概述 </a></li>
-<li class="active"><a href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">groovy 基本概念 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">groovy 基本概念 </a></li>
 <li class=""><a href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">groovy 数据类型 </a></li>
 <li class=""><a href="https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%8F%98%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8A%A0%E5%BC%BA/"> groovy变量和数据类型 </a></li>
 <li class=""><a href="https://huachengzhou.github.io/cycle/javadir/groovy/%E5%A6%82%E4%BD%95%E5%9C%A8groovy%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E7%9A%84%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/"> groovy变量值获取 </a></li>

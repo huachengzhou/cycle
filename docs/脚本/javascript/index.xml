@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript  on 禅与摩托车维修艺术</title>
+    <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/</link>
+    <description>Recent content in javascript  on 禅与摩托车维修艺术</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECMAScript 6</title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/</guid>
+      <description>ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企</description>
+    </item>
+    
+  </channel>
+</rss>

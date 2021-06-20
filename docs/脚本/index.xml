@@ -7,5 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>uniapp基础知识 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/uniapp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/uniapp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>uni-app的基本使用 课程介绍： 基础部分： 环境搭建 页面外观配置 数据绑定 uni-app的生命周期 组件的使用 uni-app中样式学习 在uni-</description>
+    </item>
+    
+    <item>
+      <title>webpack </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack/</guid>
+      <description>（十五）webpack 15.1 webpack起步 15.1.1 什么是webpack webpack是一个JavaScript应用的静态模块打包工具。 从这句话中有</description>
+    </item>
+    
   </channel>
 </rss>

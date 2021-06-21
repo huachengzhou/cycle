@@ -2,7 +2,7 @@
 title: "MySQL事务与存储引擎"
 date: 2020-01-17T15:26:15Z
 draft: false
-weight: 20
+weight: 23
 ---
 # MySQL事务与存储引擎
 

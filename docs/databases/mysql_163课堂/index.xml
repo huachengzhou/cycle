@@ -8,24 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 17 Jan 2021 15:26:15 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MySQL事务与存储引擎</title>
-      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</link>
-      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</guid>
-      <description>MySQL事务与存储引擎 3.1-数据库事务 什么是事务 一系列有序的数据库操作： 要么全部成功 要么全部回退到操作前的状态 中间状态对其他连接不可见 事</description>
-    </item>
-    
-    <item>
-      <title>MySQL应用优化</title>
-      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</link>
-      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</guid>
-      <description>MySQL应用优化 4.1-MySQL索引优化与设计 什么是索引 索引的意义 —— 快速定位要查找的数据 数据库索引查找 全表扫描 VS 索引查找 如何根据首字母</description>
-    </item>
-    
-    <item>
       <title>MySQL数据库基础</title>
       <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
@@ -41,6 +23,24 @@
       
       <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/</guid>
       <description>MySQL数据库对象与应用 2.1-MySQL数据类型 Number不止一种 整形 浮点型 整形 INT SMALLINT MEDIUMINT BIGINT type Storage Minumun Value Maximum Value (Bytes) (Signed/Unsigned) (Signed/Unsigned) TINYINT 1 -128 127 0 255 SMALLINT 2 -32768 32767 0 65535 MEDIUMINT 3</description>
+    </item>
+    
+    <item>
+      <title>MySQL事务与存储引擎</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</guid>
+      <description>MySQL事务与存储引擎 3.1-数据库事务 什么是事务 一系列有序的数据库操作： 要么全部成功 要么全部回退到操作前的状态 中间状态对其他连接不可见 事</description>
+    </item>
+    
+    <item>
+      <title>MySQL应用优化</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</guid>
+      <description>MySQL应用优化 4.1-MySQL索引优化与设计 什么是索引 索引的意义 —— 快速定位要查找的数据 数据库索引查找 全表扫描 VS 索引查找 如何根据首字母</description>
     </item>
     
     <item>

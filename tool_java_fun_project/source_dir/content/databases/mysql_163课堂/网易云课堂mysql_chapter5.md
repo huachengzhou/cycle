@@ -2,7 +2,7 @@
 title: "MySQL运维实践"
 date: 2020-01-17T15:26:15Z
 draft: false
-weight: 20
+weight: 25
 ---
 # MySQL运维实践
 

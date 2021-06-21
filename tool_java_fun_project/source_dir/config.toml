@@ -81,6 +81,10 @@ enableMissingTranslationPlaceholders = false
         name = "life"
         url = "https://huachengzhou.github.io/life/"
         weight = 1
+    [[menu.main]]
+        name = "数据信息"
+        url = "https://huachengzhou.github.io/cycle/webc/studyIndex.html"
+        weight = 2
 
 # Markup configure section
 # See https://gohugo.io/getting-started/configuration-markup/

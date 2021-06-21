@@ -90,19 +90,19 @@
     
     <item>
       <title>git学习</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/git_introduction/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/git_introduction/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/git_introduction/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/git_introduction/</guid>
       <description>git学习 git 区域概念 git分为工作区(我们自己的file)和版本库这其中版本库又包含暂存区(Stage)和分支区(master) git add ********** 把文件</description>
     </item>
     
     <item>
       <title>git配置</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/gitub_config/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/gitub_config/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/gitub_config/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/gitub_config/</guid>
       <description>zhou@zhou-Lenovo-Z480:~$ git version git version 2.7.4 zhou@zhou-Lenovo-Z480:~$ ssh -T git@github.com Warning: Permanently added the RSA host key for IP address &#39;192.30.255.112&#39; to the list of known hosts. Permission denied (publickey). zhou@zhou-Lenovo-Z480:~$ git config --global user.name &amp;quot;zhouchenhua&amp;quot; zhou@zhou-Lenovo-Z480:~$ git config --global user.email &amp;quot;noatnu@163.com&amp;quot; zhou@zhou-Lenovo-Z480:~$ git config --list user.name=zhouchenhua user.email=noatnu@163.com zhou@zhou-Lenovo-Z480:~$ ssh-keygen -C ‘noatnu@163.com’ -t rsa Generating</description>
     </item>
     
@@ -117,10 +117,10 @@
     
     <item>
       <title>host映射</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/host%E6%98%A0%E5%B0%84/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/host%E6%98%A0%E5%B0%84/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/host%E6%98%A0%E5%B0%84/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/host%E6%98%A0%E5%B0%84/</guid>
       <description>sudo vi hosts 127.0.0.1 localhost 127.0.1.1 zhou-Lenovo-Z480 The following lines are desirable for IPv6 capable hosts ::1 ip6-localhost ip6-loopback fe00::0 ip6-localnet ff00::0 ip6-mcastprefix ff02::1 ip6-allnodes ff02::2 ip6-allrouters #pmcc dev 127.0.0.1 dev.pmcc.com 回到上一级</description>
     </item>
     
@@ -135,37 +135,37 @@
     
     <item>
       <title>Linux下设置和查看环境变量</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</guid>
       <description>Linux的变量种类 按变量的生存周期来划分，Linux变量可分为两类： 1 永久的：需要修改配置文件，变量永久生效。 2 临时的：使用export命</description>
     </item>
     
     <item>
       <title>linux命令</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/linux%E5%91%BD%E4%BB%A4/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/linux%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/linux%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/linux%E5%91%BD%E4%BB%A4/</guid>
       <description>linux命令 文件管理 文件基本操作 less命令 (Q退出less命令)([pagedown]： 向下翻动一页)([pageup]： 向上翻动一页)</description>
     </item>
     
     <item>
       <title>nginx学习</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/nginx/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/nginx/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/nginx/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/nginx/</guid>
       <description>nginx学习 基础操作 start ./sbin/nginx stop ./sbin/nginx -s stop quite ./sbin/nginx -s quit 启动成功标志 Welcome to nginx! 默认监听的端口是80 也就是说访问此端口就可以得到启动成功的标识符号 简单的负载均衡</description>
     </item>
     
     <item>
       <title>Notepad&#43;&#43; 学习与使用</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/notepad&#43;&#43;%E5%AE%89%E8%A3%85/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/notepad&#43;&#43;%E5%AE%89%E8%A3%85/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/notepad&#43;&#43;%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/notepad&#43;&#43;%E5%AE%89%E8%A3%85/</guid>
       <description>Notepad++是一套非常有特色的自由软件的纯文字编辑器(许可证:GPL)。有完整的中文化接口及支持多国语言编写的功能(UTF8 技术)。 它</description>
     </item>
     
@@ -198,37 +198,37 @@
     
     <item>
       <title>Ubuntu 16.04修改hosts</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/</guid>
       <description>IntelliJ IDE运行Tomcat报错解决办法的相关资料,出现“Unable to ping server at localhost:1099”错误解决方法，需要的朋友可以参考下 sudo</description>
     </item>
     
     <item>
       <title>ubuntu安装chmsee</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/</guid>
       <description>垃圾的ubuntu 14.04 又一次去掉一些特别好用的软件, 官方给的解释是怕破坏他们系统. 只想说一句 我去年买了个本. 14.04 之前的版本,如13.10, 12.04 继续</description>
     </item>
     
     <item>
       <title>Ubuntu清理系统垃圾</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</guid>
       <description>1，非常有用的清理命令： sudo apt-get autoclean &amp;ndash;清理旧版本的软件缓存 www.2cto.com sudo apt-get clean&amp;ndash;清理所有软件缓存 sudo apt-get autoremove&amp;nd</description>
     </item>
     
     <item>
       <title>ubuntu软件卸载</title>
-      <link>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</link>
+      <link>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</guid>
+      <guid>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</guid>
       <description>ubuntu软件卸载 安装Synaptic sudo apt-get install synaptic 回到上一级</description>
     </item>
     
@@ -239,6 +239,15 @@
       
       <guid>https://huachengzhou.github.io/cycle/javadir/tooldoc/js_console%E7%94%A8%E6%B3%95/</guid>
       <description>Console 对象方法 常用 Console 调试命令 console.log(&#39;hello&#39;); console.info(&#39;信息&#39;); console.error(&#39;错误&#39;); console.warn(&#39;警告&#39;)</description>
+    </item>
+    
+    <item>
+      <title>权限</title>
+      <link>https://huachengzhou.github.io/cycle/databases/postgresql/postgresql_create%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/postgresql/postgresql_create%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</guid>
+      <description>权限 系统权限 role和user都是用户,只不过role属性不能登录当然也可以指定 超级权限 不做权限检查(实际中是很危险的) Pg权限分为两部分，</description>
     </item>
     
     <item>
@@ -269,6 +278,15 @@
     </item>
     
     <item>
+      <title>DOS基本命令 </title>
+      <link>https://huachengzhou.github.io/cycle/operating_system/windows/dos_basic/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/operating_system/windows/dos_basic/</guid>
+      <description>DOS基本命令 wing+r ==&amp;gt; cmd 进入dos控制台 打开屏幕键盘 C:\Users\noatn&amp;gt;osk; dos各种操作查看参数用法 command params ==? command /? C:\Users\noatn&amp;gt;cd /? 显示当前目录名或改变当前目录。 CHDIR [/D] [drive:][path] CHDIR [..] CD [/D] [drive:][path] CD [..]</description>
+    </item>
+    
+    <item>
       <title>EL基础教程 </title>
       <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
@@ -296,6 +314,15 @@
     </item>
     
     <item>
+      <title>DOS基本文件操作命令 </title>
+      <link>https://huachengzhou.github.io/cycle/operating_system/windows/dos_file/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/operating_system/windows/dos_file/</guid>
+      <description>DOS基本文件操作命令 wing+r ==&amp;gt; cmd 进入dos控制台 D: 进入D盘 cd命令 CD命令是更改目录命令 如果要进入D盘不用这个命令直接输入 D: 回车 即可 例如: C:\Users\HP&amp;gt;D: D:\&amp;gt; D:\&amp;gt;dir</description>
+    </item>
+    
+    <item>
       <title>jsp jstl core 标签库 </title>
       <link>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
@@ -305,12 +332,30 @@
     </item>
     
     <item>
+      <title>基本命令</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql_basis/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql_basis/</guid>
+      <description>停止命令：net stop mysql 启动命令：net start mysql 登陆 mysql -u 用户名 -p 查看数据库版本: mysql &amp;ndash;version：用于在未登录情况下，查看本机mysq</description>
+    </item>
+    
+    <item>
       <title>速率</title>
       <link>https://huachengzhou.github.io/cycle/computer_network/network_architecture/1.1.3%E9%80%9F%E7%8E%87%E7%9B%B8%E5%85%B3%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://huachengzhou.github.io/cycle/computer_network/network_architecture/1.1.3%E9%80%9F%E7%8E%87%E7%9B%B8%E5%85%B3%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/</guid>
       <description>速率 速率即数据率或称数据传输率或比特率 速率即数据率或称数据传输率或比特率 比特 1/0 位 连接在计算机网络上的主机在数字信道上传输数据位数的速率 单位是</description>
+    </item>
+    
+    <item>
+      <title> DOS网络操作命令 </title>
+      <link>https://huachengzhou.github.io/cycle/operating_system/windows/dos_network/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/operating_system/windows/dos_network/</guid>
+      <description>DOS网络操作命令 netstat -ano (列出所有端口的情况) PS C:\Users\noatn&amp;gt; netstat -ano 活动连接 协议 本地地址 外部地址 状态 PID TCP 0.0.0.0:135 0.0.0.0:0 LISTENING 1028 TCP 0.0.0.0:445 0.0.0.0:0 LISTENING 4 TCP 0.0.0.0:1024 0.0.0.0:0 LISTENING 852 TCP 0.0.0.0:1025 0.0.0.0:0 LISTENING 2232 TCP 0.0.0.0:3306 0.0.0.0:0 LISTENING 3672 TCP 0.0.0.0:5040</description>
     </item>
     
     <item>
@@ -332,12 +377,30 @@
     </item>
     
     <item>
+      <title>数据准备</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql_data/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql_data/</guid>
+      <description>数据准备 数据准备 drop datbase ch10; create database ch10; use ch10; CREATE TABLE fruits ( f_id char(10) NOT NULL, s_id INT NOT NULL, f_name char(255) NOT NULL, f_price decimal(8,2) NOT NULL, PRIMARY KEY(f_id) ); INSERT INTO fruits (f_id, s_id, f_name, f_price) VALUES(&#39;a1&#39;, 101,&#39;apple&#39;,5.2), (&#39;b1&#39;,101,&#39;blackberry&#39;, 10.2), (&#39;bs1&#39;,102,&#39;orange&#39;, 11.2), (&#39;bs2&#39;,105,&#39;melon&#39;,8.2), (&#39;t1&#39;,102,&#39;banana&#39;, 10.3), (&#39;t2&#39;,102,&#39;grape&#39;, 5.3), (&#39;o2&#39;,103,&#39;coconut&#39;, 9.2), (&#39;c0&#39;,101,&#39;cherry&#39;, 3.2), (&#39;a2&#39;,103, &#39;apricot&#39;,2.2), (&#39;l2&#39;,104,&#39;lemon&#39;, 6.4), (&#39;b2&#39;,104,&#39;berry&#39;, 7.6), (&#39;m1&#39;,106,&#39;mango&#39;, 15.6), (&#39;m2&#39;,105,&#39;xbabay&#39;,</description>
+    </item>
+    
+    <item>
       <title>分层结构</title>
       <link>https://huachengzhou.github.io/cycle/computer_network/network_architecture/%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://huachengzhou.github.io/cycle/computer_network/network_architecture/%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84/</guid>
       <description>为什么要分层，分层要做什么 （1）发起通信的计算机必须将数据通信的通路进行激活。 （2）要告诉网络如何识别目的主机。 （3）发起通信的计算机要查明</description>
+    </item>
+    
+    <item>
+      <title> FTP </title>
+      <link>https://huachengzhou.github.io/cycle/operating_system/windows/ftp/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/operating_system/windows/ftp/</guid>
+      <description>本地设置FTP服务器 步骤1：在计算机上打开“控制面板”，然后单击“程序和功能”。 步骤2：在“程序和功能”窗口中，单击“控制面板”窗口左侧的“</description>
     </item>
     
     <item>
@@ -359,6 +422,15 @@
     </item>
     
     <item>
+      <title>MySQL分库分表原理</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql_distinguish/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql_distinguish/</guid>
+      <description>前言 在互联网还未崛起的时代,我们的传统应用都有这样一个特点：访问量、数据量都比较小，单库单表都完全可以支撑整个业务。 随着互联网的发展和用户规</description>
+    </item>
+    
+    <item>
       <title>分层参考模型</title>
       <link>https://huachengzhou.github.io/cycle/computer_network/network_architecture/%E5%88%86%E5%B1%82%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -374,6 +446,24 @@
       
       <guid>https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E4%B8%AD%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%AF%94%E8%BE%83%E4%BB%A5%E5%8F%8A%E9%9D%9E%E7%A9%BA%E5%88%A4%E6%96%AD/</guid>
       <description>groovy 对象比较以及空判断 目前测试得知 groovy的比较貌似很多直接可以使用==来比较 groovy对象的比较 1.字符串比较 def str1 = &amp;quot;Hello World1&amp;quot; if (&amp;quot;Hello World&amp;quot; == str1) { println</description>
+    </item>
+    
+    <item>
+      <title> windows 问题 </title>
+      <link>https://huachengzhou.github.io/cycle/operating_system/windows/windows_question/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/operating_system/windows/windows_question/</guid>
+      <description>磁盘变为了动态磁盘解决办法 最好是找软件解决 如DiskGenius 或者 傲梅分区助手 暴力解决办法 1、diskpart 2、list disk 3、selec</description>
+    </item>
+    
+    <item>
+      <title>mysql安装</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql_install/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql_install/</guid>
+      <description>mysql安装 这里我们不再采用exe的安装的方式,我们使用压缩包的方式安装 地址 https://downloads.mysql.com/archives/community/ 将页面拉到最下面选择选择操作系统后，选择要下载的版本点击 Downloads 我</description>
     </item>
     
     <item>
@@ -395,21 +485,84 @@
     </item>
     
     <item>
-      <title>MySQL事务与存储引擎</title>
-      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</link>
+      <title>windows下 Mysql安装的一些问题解决方法</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql_install_problem/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</guid>
-      <description>MySQL事务与存储引擎 3.1-数据库事务 什么是事务 一系列有序的数据库操作： 要么全部成功 要么全部回退到操作前的状态 中间状态对其他连接不可见 事</description>
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql_install_problem/</guid>
+      <description>windows下 Mysql安装的一些问题解决方法 1: The service already exists 在mysql安装的时候要执行 mysqld &amp;ndash;install 这个命令,假如你已经安装完之后觉得不对，但是mys</description>
     </item>
     
     <item>
-      <title>MySQL应用优化</title>
-      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</link>
+      <title>数据库设计的规范</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql_%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</guid>
-      <description>MySQL应用优化 4.1-MySQL索引优化与设计 什么是索引 索引的意义 —— 快速定位要查找的数据 数据库索引查找 全表扫描 VS 索引查找 如何根据首字母</description>
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql_%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</guid>
+      <description>数据库设计的规范 数据库表和字段都大写 表都要加业务后缀，例如_C客户表 _B基础表 _P权限表 必须有主键，主键是表名去掉业务后缀，加_ID，大多表</description>
+    </item>
+    
+    <item>
+      <title>mysql_数据库设计三范式</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%89%E8%8C%83%E5%BC%8F/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%89%E8%8C%83%E5%BC%8F/</guid>
+      <description>设计关系数据库时，遵从不同的规范要求，设计出合理的关系型数据库，这些不同的规范要求被称为不同的范式，各种范式呈递次规范，越高的范式数据库冗余</description>
+    </item>
+    
+    <item>
+      <title>mysql事务</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E4%BA%8B%E5%8A%A1/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E4%BA%8B%E5%8A%A1/</guid>
+      <description>回到上一级</description>
+    </item>
+    
+    <item>
+      <title>mysql函数</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E5%87%BD%E6%95%B0/</guid>
+      <description>日期函数 返回当前日期，只包含年月日 select curdate() 返回当前时间，只包含时分秒 select curtime() 返回当前的日期和时间，年月日时分秒全都包含 select now() 提取具体日期类型 year() yearweek() ,ho</description>
+    </item>
+    
+    <item>
+      <title>mysql存储引擎</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</guid>
+      <description>MySQL 存储引擎概述 MySQL 5.0 支持的存储引擎包括 MyISAM、 InnoDB、 BDB、 MEMORY、 MERGE、 EXAMPLE、 NDB Cluster、ARCH</description>
+    </item>
+    
+    <item>
+      <title>mysql查询</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E6%9F%A5%E8%AF%A2/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E6%9F%A5%E8%AF%A2/</guid>
+      <description>mysql学习(下面所有都是针对mysql而言) sql排序语句 升序 (select f.* from fruits f WHERE s_id IN (101,102) order by f_name)==(select f.* from fruits f WHERE s_id IN (101,102) order by f_name asc) 对于sql的升序而言,当使</description>
+    </item>
+    
+    <item>
+      <title>mysql用户与权限</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</guid>
+      <description>mysql.version=5.7 (必须注意版本) 创建用户 ( CREATE USER &amp;lsquo;bob&amp;rsquo;@&#39;%&#39; IDENTIFIED BY &amp;lsquo;07fa533360d9&amp;rsquo;; ) 创建bob用户 密码:07fa533360d9 ( CREATE USER &amp;ldquo;test&amp;rdquo;@&amp;ldquo;localhost&amp;rdquo; IDENTIFIED BY &amp;lsquo;123456&amp;rsquo; )创建test用户 密码123456 ( CREATE USER</description>
+    </item>
+    
+    <item>
+      <title>mysql索引</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E7%B4%A2%E5%BC%95/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E7%B4%A2%E5%BC%95/</guid>
+      <description>索引 所有 MySQL 列类型都可以被索引，对相关列使用索引是提高 SELECT 操作性能的最佳途 径.根据存储引擎可以定义每个表的最大索引数和最大索引长度， 每种存储引擎</description>
     </item>
     
     <item>
@@ -428,6 +581,24 @@
       
       <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/</guid>
       <description>MySQL数据库对象与应用 2.1-MySQL数据类型 Number不止一种 整形 浮点型 整形 INT SMALLINT MEDIUMINT BIGINT type Storage Minumun Value Maximum Value (Bytes) (Signed/Unsigned) (Signed/Unsigned) TINYINT 1 -128 127 0 255 SMALLINT 2 -32768 32767 0 65535 MEDIUMINT 3</description>
+    </item>
+    
+    <item>
+      <title>MySQL事务与存储引擎</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</guid>
+      <description>MySQL事务与存储引擎 3.1-数据库事务 什么是事务 一系列有序的数据库操作： 要么全部成功 要么全部回退到操作前的状态 中间状态对其他连接不可见 事</description>
+    </item>
+    
+    <item>
+      <title>MySQL应用优化</title>
+      <link>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</link>
+      <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</guid>
+      <description>MySQL应用优化 4.1-MySQL索引优化与设计 什么是索引 索引的意义 —— 快速定位要查找的数据 数据库索引查找 全表扫描 VS 索引查找 如何根据首字母</description>
     </item>
     
     <item>

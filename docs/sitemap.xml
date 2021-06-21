@@ -26,6 +26,12 @@
     <loc>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/windows/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_architecture/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,31 +44,31 @@
     <loc>https://huachengzhou.github.io/cycle/javadir/tooldoc/dom4j/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/git_introduction/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/git_introduction/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/gitub_config/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/gitub_config/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/tooldoc/guava-common/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/host%E6%98%A0%E5%B0%84/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/host%E6%98%A0%E5%B0%84/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/tooldoc/jsoup/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/linux%E4%B8%8B%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%9F%A5%E7%9C%8B%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/linux%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/linux%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/nginx/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/nginx/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/notepad&#43;&#43;%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/notepad&#43;&#43;%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/middleware/redis/</loc>
@@ -74,19 +80,22 @@
     <loc>https://huachengzhou.github.io/cycle/javadir/tooldoc/spring%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7%E7%B1%BB/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu16.04%E4%BF%AE%E6%94%B9hosts/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E5%AE%89%E8%A3%85chmsee/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F%E5%9E%83%E5%9C%BE/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</loc>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/linux/ubuntu%E8%BD%AF%E4%BB%B6%E5%8D%B8%E8%BD%BD/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/tooldoc/js_console%E7%94%A8%E6%B3%95/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/postgresql/postgresql_create%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/physical_layer/%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
@@ -94,6 +103,9 @@
     <loc>https://huachengzhou.github.io/cycle/computer_network/physical_layer/%E7%89%A9%E7%90%86%E5%B1%82%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_architecture/1.1.1%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%A6%82%E5%BF%B5-%E7%BB%84%E6%88%90-%E5%8A%9F%E8%83%BD-%E5%88%86%E7%B1%BB/</loc>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/windows/dos_basic/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_el%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
@@ -107,10 +119,19 @@
     <loc>https://huachengzhou.github.io/cycle/computer_network/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/</loc>
+    <lastmod>2021-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/postgresql/</loc>
+    <lastmod>2021-01-17T15:26:15+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/</loc>
     <lastmod>2021-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_architecture/1.1.2%E6%A0%87%E5%87%86%E5%8C%96%E5%B7%A5%E4%BD%9C%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%BB%84%E7%BB%87/</loc>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/windows/dos_file/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_jstl_core%E6%A0%87%E7%AD%BE%E5%BA%93/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
@@ -118,7 +139,13 @@
     <loc>https://huachengzhou.github.io/cycle/computer_network/data_link_layer/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql_basis/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_architecture/1.1.3%E9%80%9F%E7%8E%87%E7%9B%B8%E5%85%B3%E7%9A%84%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87/</loc>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/windows/dos_network/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E5%8F%98%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8A%A0%E5%BC%BA/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
@@ -129,7 +156,13 @@
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_layer/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql_data/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_architecture/%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84/</loc>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/windows/ftp/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/groovy/%E5%A6%82%E4%BD%95%E5%9C%A8groovy%E4%B8%AD%E8%8E%B7%E5%8F%96%E4%BB%A5%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F%E5%91%BD%E5%90%8D%E7%9A%84%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
@@ -140,18 +173,54 @@
     <loc>https://huachengzhou.github.io/cycle/javadir/basedir/jsp_dir/jsp_%E5%AD%97%E7%AC%A6%E4%B8%B2el%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql_distinguish/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_architecture/%E5%88%86%E5%B1%82%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/</loc>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E4%B8%AD%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%AF%94%E8%BE%83%E4%BB%A5%E5%8F%8A%E9%9D%9E%E7%A9%BA%E5%88%A4%E6%96%AD/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/windows/windows_question/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/application_layer/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql_install/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/computer_network/network_architecture/%E6%A8%A1%E5%9E%8B%E5%B1%82%E6%AC%A1%E8%AF%A6%E8%A7%A3/</loc>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql_install_problem/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql_%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql_%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E4%B8%89%E8%8C%83%E5%BC%8F/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E4%BA%8B%E5%8A%A1/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E5%87%BD%E6%95%B0/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E6%9F%A5%E8%AF%A2/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9D%83%E9%99%90/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E7%B4%A2%E5%BC%95/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/</loc>
     <lastmod>2021-06-15T00:00:00+00:00</lastmod>
@@ -162,17 +231,8 @@
     <loc>https://huachengzhou.github.io/cycle/javadir/tooldoc/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://huachengzhou.github.io/cycle/javadir/linux/</loc>
-    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/middleware/</loc>
     <lastmod>2021-04-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</loc>
-    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
-  </url><url>
-    <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</loc>
-    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter1/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
@@ -180,11 +240,20 @@
     <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter2/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter3/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter4/</loc>
+    <lastmod>2020-01-17T15:26:15+00:00</lastmod>
+  </url><url>
     <loc>https://huachengzhou.github.io/cycle/databases/mysql_163%E8%AF%BE%E5%A0%82/%E7%BD%91%E6%98%93%E4%BA%91%E8%AF%BE%E5%A0%82mysql_chapter5/</loc>
     <lastmod>2020-01-17T15:26:15+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2017-10-17T15:26:15+00:00</lastmod>
+  </url><url>
+    <loc>https://huachengzhou.github.io/cycle/operating_system/</loc>
+    <lastmod>2021-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://huachengzhou.github.io/cycle/javadir/</loc>
     <lastmod>2019-04-02T00:00:00+00:00</lastmod>

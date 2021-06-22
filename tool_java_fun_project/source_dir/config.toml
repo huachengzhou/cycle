@@ -82,7 +82,7 @@ enableMissingTranslationPlaceholders = false
         url = "https://huachengzhou.github.io/life/"
         weight = 1
     [[menu.main]]
-        name = "数据信息"
+        name = "自定义工具"
         url = "https://huachengzhou.github.io/cycle/webc/studyIndex.html"
         weight = 2
 

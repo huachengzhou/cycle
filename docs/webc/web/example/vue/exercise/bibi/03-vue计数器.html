@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>vue 计数器</title>
+    <title>vue 计数器 和 watch</title>
     <script src="resources.js"></script>
 </head>
 <body>
@@ -110,6 +110,15 @@
             movies: [getRandomNumber(), getRandomNumber(), getRandomNumber(), getRandomNumber()],
 
             counter: 0
+        },
+        computed:{
+
+        } ,
+        watch:{
+            counter:function (newValue,OldValue) {
+                console.log("new value",newValue) ;
+                console.log("old value",OldValue) ;
+            }
         },
         //可以写很多方法
         methods: {

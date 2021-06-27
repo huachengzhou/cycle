@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Oct 2017 15:26:15 +0000</lastBuildDate><atom:link href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>node js </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/nodejs/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/nodejs/</guid>
+      <description>node js Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时 Linux 上安装 Node.js 直接使用已编译好的包 Node 官网已经把 linux 下载版本更改为已编译好的版本了，我们可以直接下载解压后使用： #</description>
+    </item>
+    
+    <item>
+      <title>node js - npm </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85%E6%9C%BA%E5%88%B6%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85%E6%9C%BA%E5%88%B6%E7%AE%80%E4%BB%8B/</guid>
+      <description>npm 是 Node 的模块管理器，功能极其强大。它是 Node 获得成功的重要原因之一 假如是nodejs 高版本 那么不需要再安装npm了因为node js已经包含了np</description>
+    </item>
+    
+    <item>
       <title>uniapp基础知识 </title>
       <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/uniapp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
       <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
@@ -23,6 +41,24 @@
       
       <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack/</guid>
       <description>（十五）webpack 15.1 webpack起步 15.1.1 什么是webpack webpack是一个JavaScript应用的静态模块打包工具。 从这句话中有</description>
+    </item>
+    
+    <item>
+      <title>webpack simple</title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/simple-webpack/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/simple-webpack/</guid>
+      <description>webpack 一:卸载 全局卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&amp;gt;npm uninstall webpack webpack-cli -g removed 73 packages in 0.726s 本地卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&amp;gt;npm uninstall webpack webpack-cli -D npm WARN saveError ENOENT: no such file or directory, open &amp;#39;D:\IdeaProjects\package.json&amp;#39; npm WARN enoent ENOENT: no such file or directory, open &amp;#39;D:\IdeaProjects\package.json&amp;#39; npm WARN IdeaProjects No description npm WARN IdeaProjects No repository field. npm WARN IdeaProjects No README data npm WARN IdeaProjects</description>
+    </item>
+    
+    <item>
+      <title>webpack和nodejs关系 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack%E5%92%8Cnodejs%E5%85%B3%E7%B3%BB/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack%E5%92%8Cnodejs%E5%85%B3%E7%B3%BB/</guid>
+      <description>webpack和nodejs关系 webpack可以将 .vue 文件转换为 .js 文件，而这个转换需要借助打包器vue-loader，这个打包器的下载是在n</description>
     </item>
     
   </channel>

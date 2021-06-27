@@ -17,21 +17,12 @@
     </item>
     
     <item>
-      <title>uniapp基础知识 </title>
-      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/uniapp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <title>node js </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/nodejs/</link>
       <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/uniapp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
-      <description>uni-app的基本使用 课程介绍： 基础部分： 环境搭建 页面外观配置 数据绑定 uni-app的生命周期 组件的使用 uni-app中样式学习 在uni-</description>
-    </item>
-    
-    <item>
-      <title>webpack </title>
-      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack/</link>
-      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack/</guid>
-      <description>（十五）webpack 15.1 webpack起步 15.1.1 什么是webpack webpack是一个JavaScript应用的静态模块打包工具。 从这句话中有</description>
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/nodejs/</guid>
+      <description>node js Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时 Linux 上安装 Node.js 直接使用已编译好的包 Node 官网已经把 linux 下载版本更改为已编译好的版本了，我们可以直接下载解压后使用： #</description>
     </item>
     
     <item>
@@ -278,6 +269,15 @@
     </item>
     
     <item>
+      <title>node js - npm </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85%E6%9C%BA%E5%88%B6%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E6%A8%A1%E5%9D%97%E5%AE%89%E8%A3%85%E6%9C%BA%E5%88%B6%E7%AE%80%E4%BB%8B/</guid>
+      <description>npm 是 Node 的模块管理器，功能极其强大。它是 Node 获得成功的重要原因之一 假如是nodejs 高版本 那么不需要再安装npm了因为node js已经包含了np</description>
+    </item>
+    
+    <item>
       <title>DOS基本命令 </title>
       <link>https://huachengzhou.github.io/cycle/operating_system/windows/dos_basic/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
@@ -395,6 +395,15 @@
     </item>
     
     <item>
+      <title>uniapp基础知识 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/uniapp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/uniapp%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</guid>
+      <description>uni-app的基本使用 课程介绍： 基础部分： 环境搭建 页面外观配置 数据绑定 uni-app的生命周期 组件的使用 uni-app中样式学习 在uni-</description>
+    </item>
+    
+    <item>
       <title> FTP </title>
       <link>https://huachengzhou.github.io/cycle/operating_system/windows/ftp/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
@@ -440,6 +449,24 @@
     </item>
     
     <item>
+      <title>webpack </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack/</guid>
+      <description>（十五）webpack 15.1 webpack起步 15.1.1 什么是webpack webpack是一个JavaScript应用的静态模块打包工具。 从这句话中有</description>
+    </item>
+    
+    <item>
+      <title>webpack simple</title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/simple-webpack/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/simple-webpack/</guid>
+      <description>webpack 一:卸载 全局卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&amp;gt;npm uninstall webpack webpack-cli -g removed 73 packages in 0.726s 本地卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&amp;gt;npm uninstall webpack webpack-cli -D npm WARN saveError ENOENT: no such file or directory, open &amp;#39;D:\IdeaProjects\package.json&amp;#39; npm WARN enoent ENOENT: no such file or directory, open &amp;#39;D:\IdeaProjects\package.json&amp;#39; npm WARN IdeaProjects No description npm WARN IdeaProjects No repository field. npm WARN IdeaProjects No README data npm WARN IdeaProjects</description>
+    </item>
+    
+    <item>
       <title> groovy对象比较以及空判断 </title>
       <link>https://huachengzhou.github.io/cycle/javadir/groovy/groovy%E4%B8%AD%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%AF%94%E8%BE%83%E4%BB%A5%E5%8F%8A%E9%9D%9E%E7%A9%BA%E5%88%A4%E6%96%AD/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
@@ -473,6 +500,15 @@
       
       <guid>https://huachengzhou.github.io/cycle/computer_network/network_architecture/%E6%A8%A1%E5%9E%8B%E5%B1%82%E6%AC%A1%E8%AF%A6%E8%A7%A3/</guid>
       <description>计算机网络分成结构 7层OSI参考模型 4层TCP/IP参考模型 5层体系结构 ISO/OSI模型怎么来的 ISO/OSI参考模型 ISO/OSI参考模</description>
+    </item>
+    
+    <item>
+      <title>webpack和nodejs关系 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack%E5%92%8Cnodejs%E5%85%B3%E7%B3%BB/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack%E5%92%8Cnodejs%E5%85%B3%E7%B3%BB/</guid>
+      <description>webpack和nodejs关系 webpack可以将 .vue 文件转换为 .js 文件，而这个转换需要借助打包器vue-loader，这个打包器的下载是在n</description>
     </item>
     
     <item>

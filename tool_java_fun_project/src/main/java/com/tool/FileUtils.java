@@ -2,7 +2,6 @@ package com.tool;
 
 import org.apache.commons.collections.CollectionUtils;
 
-import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.testng.annotations.Test;
 import sun.misc.BASE64Decoder;
@@ -24,26 +23,49 @@ import java.util.zip.ZipOutputStream;
  */
 public class FileUtils {
 
+    @Test
+    public void printFileDir() {
+        String path = "D:\\IdeaProjects\\cycle\\study\\webpack\\demo01";
+//        String path = "D:\\IdeaProjects\\lifeDoc\\book\\public";
+        File file = new File(path);
+        print(file, 0, file.getParent());
+    }
+
+    private void print(File file, int index, final String parent) {
+        StringBuilder stringBuilder = new StringBuilder();
+        String str = "▸";
+        if (file.isFile()) {
+            stringBuilder.append(str).append(StringUtils.repeat(" ", index)).append(StringUtils.remove(file.getPath(), parent));
+            System.out.println(stringBuilder.toString());
+        } else {
+            stringBuilder.append(str).append(StringUtils.repeat(" ", index)).append(StringUtils.remove(file.getPath(),parent));
+            System.out.println(stringBuilder.toString());
+            for (File f : file.listFiles()) {
+                int newIndex = index + 2;
+                print(f, newIndex, parent);
+            }
+        }
+    }
 
 
     @Test
-    public void firstCompress()throws Exception{
-        String source_dir = "source_dir" ;
-        String dir = "D:\\IdeaProjects\\cycle\\tool_java_fun_project\\" ;
-        String path = dir+source_dir+".zip" ;
+    public void firstCompress() throws Exception {
+        String source_dir = "source_dir";
+        String dir = "D:\\IdeaProjects\\cycle\\tool_java_fun_project\\";
+        String path = dir + source_dir + ".zip";
         File file = new File(path);
-        ZipUtil.unZip(file.getPath()) ;
-        String dir1 = dir+source_dir+"\\"+source_dir;
-        String dir2 = dir+source_dir+"\\";
+        ZipUtil.unZip(file.getPath());
+        String dir1 = dir + source_dir + "\\" + source_dir;
+        String dir2 = dir + source_dir + "\\";
         System.out.println(dir1);
         System.out.println(dir2);
 
-        org.apache.commons.io.FileUtils.copyDirectory(new File(dir1),new File(dir2));
+        org.apache.commons.io.FileUtils.copyDirectory(new File(dir1), new File(dir2));
         org.apache.commons.io.FileUtils.deleteDirectory(new File(dir1));
     }
 
     @Test
-    public void threeCompress(){
+    public void threeCompress() {
         File file = new File("D:\\IdeaProjects\\cycle\\tool_java_fun_project\\source_dir\\public");
         String oldText = "https://huachengzhou.github.io/cycle/";
         String newText = "/";
@@ -52,18 +74,18 @@ public class FileUtils {
 
 
     @Test
-    public void fourCompress()throws Exception{
+    public void fourCompress() throws Exception {
         File file = new File("D:\\IdeaProjects\\cycle\\tool_java_fun_project\\source_dir\\public");
         File file2 = new File("D:\\IdeaProjects\\cycle");
-        org.apache.commons.io.FileUtils.copyDirectory(file ,file2);
+        org.apache.commons.io.FileUtils.copyDirectory(file, file2);
         org.apache.commons.io.FileUtils.deleteDirectory(file);
     }
 
     @Test
-    public  void lastCompress() {
+    public void lastCompress() {
         File file = new File("D:\\IdeaProjects\\cycle\\tool_java_fun_project\\source_dir");
         try {
-            ZipCompressUtils.zipCompress(file,true) ;
+            ZipCompressUtils.zipCompress(file, true);
         } catch (Exception e) {
             e.printStackTrace();
         }

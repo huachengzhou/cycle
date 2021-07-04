@@ -32,7 +32,7 @@
 <meta itemprop="name" content="webpack simple">
 <meta itemprop="description" content="webpack 一:卸载 全局卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&gt;npm uninstall webpack webpack-cli -g removed 73 packages in 0.726s 本地卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&gt;npm uninstall webpack webpack-cli -D npm WARN saveError ENOENT: no such file or directory, open &#39;D:\IdeaProjects\package.json&#39; npm WARN enoent ENOENT: no such file or directory, open &#39;D:\IdeaProjects\package.json&#39; npm WARN IdeaProjects No description npm WARN IdeaProjects No repository field. npm WARN IdeaProjects No README data npm WARN IdeaProjects"><meta itemprop="datePublished" content="2021-06-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-06-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="294"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
+<meta itemprop="wordCount" content="1774"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
 <meta itemprop="keywords" content="" /></head>
 <body><div class="container"><header>
 <h1>禅与摩托车维修艺术</h1>
@@ -98,6 +98,254 @@ npm install webpack@3.6.0 -g
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install webpack webpack-cli -g
 //或指定版本，类似这样：
 npm install webpack@4.16.5  webpack-cli -g
+</code></pre></div><ul>
+<li>3:本地安装 ?</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">npm install webpack webpack-cli --save-dev
+//或者
+npm install webpack webpack-cli -D
+//或者指定版本
+npm install webpack@4.16.5 webpack-cli -D
+</code></pre></div><h3 id="三使用">三:使用</h3>
+<ul>
+<li>
+<p>1:简单使用</p>
+</li>
+<li>
+<p>1、初始化</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\d</span>ocs<span style="color:#ae81ff">\w</span>ebc<span style="color:#ae81ff">\w</span>eb<span style="color:#ae81ff">\w</span>ebpack-study<span style="color:#ae81ff">\o</span>ne&gt;npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+See <span style="color:#e6db74">`</span>npm help init<span style="color:#e6db74">`</span> <span style="color:#66d9ef">for</span> definitive documentation on these fields
+and exactly what they <span style="color:#66d9ef">do</span>.
+Use <span style="color:#e6db74">`</span>npm install &lt;pkg&gt;<span style="color:#e6db74">`</span> afterwards to install a package and
+save it as a dependency in the package.json file.
+Press ^C at any time to quit.
+package name: <span style="color:#f92672">(</span>one<span style="color:#f92672">)</span>
+version: <span style="color:#f92672">(</span>1.0.0<span style="color:#f92672">)</span>
+description:
+entry point: <span style="color:#f92672">(</span>index.js<span style="color:#f92672">)</span>
+test command:
+git repository:
+keywords:
+author:
+license: <span style="color:#f92672">(</span>ISC<span style="color:#f92672">)</span>
+About to write to D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\d</span>ocs<span style="color:#ae81ff">\w</span>ebc<span style="color:#ae81ff">\w</span>eb<span style="color:#ae81ff">\w</span>ebpack-study<span style="color:#ae81ff">\o</span>ne<span style="color:#ae81ff">\p</span>ackage.json:
+<span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;one&#34;</span>,
+  <span style="color:#e6db74">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
+  <span style="color:#e6db74">&#34;scripts&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>
+  <span style="color:#f92672">}</span>,
+  <span style="color:#e6db74">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>
+<span style="color:#f92672">}</span>
+Is this OK? <span style="color:#f92672">(</span>yes<span style="color:#f92672">)</span> yes
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\d</span>ocs<span style="color:#ae81ff">\w</span>ebc<span style="color:#ae81ff">\w</span>eb<span style="color:#ae81ff">\w</span>ebpack-study<span style="color:#ae81ff">\o</span>ne&gt;
+
+包初始化之后 就会生成package.json
+</code></pre></div><h4 id="dependencies和devdependencies的区别">dependencies和devDependencies的区别</h4>
+<ul>
+<li>devDependencies：开发环境使用</li>
+<li>dependencies：生产环境使用</li>
+</ul>
+<blockquote>
+<p>举例说明</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">webpack，gulp等打包工具，这些都是我们开发阶段使用的，代码提交线上时，不需要这些工具，所以我们将它放入devDependencies即可，但是像jquery这类插件库，是我们生产环境所使用的，所以如要放入dependencies，如果未将jquery安装到dependencies，那么项目就可能报错，无法运行，所以类似这种项目必须依赖的插件库，我们则必须打入dependencies中，这下子都明白了吧。
+</code></pre></div><h4 id="最简单版本-webpack使用高版本5420">最简单版本 (webpack使用高版本5.42.0)</h4>
+<ul>
+<li>生成必要的文件</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Microsoft Windows <span style="color:#f92672">[</span>版本 10.0.19043.1052<span style="color:#f92672">]</span>
+<span style="color:#f92672">(</span>c<span style="color:#f92672">)</span> Microsoft Corporation。保留所有权利。
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack&gt;mkdir demo01  创建文件夹
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack&gt;cd demo01 进入文件夹
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;npm install -g webpack webpack-cli 安装全局webpack
+D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\w</span>ebpack -&gt; D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\b</span>in<span style="color:#ae81ff">\w</span>ebpack.js
+D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\w</span>ebpack-cli -&gt; D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack-cli<span style="color:#ae81ff">\b</span>in<span style="color:#ae81ff">\c</span>li.js
++ webpack@5.42.0
++ webpack-cli@4.7.2
+updated <span style="color:#ae81ff">2</span> packages in 4.11s
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;echo index.js   windows错误创建文件  必须 echo &gt; file.suffix
+index.js
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;echo &gt; index.js  windows正确创建方法
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;webpack index.js   webpack打包编译<span style="color:#f92672">(</span>实际上这是低版本至少是低于4.0.0的目前我安装的是非常高的版本<span style="color:#f92672">)</span>
+assets by status <span style="color:#ae81ff">0</span> bytes <span style="color:#f92672">[</span>cached<span style="color:#f92672">]</span> <span style="color:#ae81ff">1</span> asset
+
+WARNING in configuration
+The <span style="color:#e6db74">&#39;mode&#39;</span> option has not been set, webpack will fallback to <span style="color:#e6db74">&#39;production&#39;</span> <span style="color:#66d9ef">for</span> this value.
+Set <span style="color:#e6db74">&#39;mode&#39;</span> option to <span style="color:#e6db74">&#39;development&#39;</span> or <span style="color:#e6db74">&#39;production&#39;</span> to enable defaults <span style="color:#66d9ef">for</span> each environment.
+You can also set it to <span style="color:#e6db74">&#39;none&#39;</span> to disable any default behavior. Learn more: https://webpack.js.org/configuration/mode/
+
+ERROR in main
+Module not found: Error: Can<span style="color:#e6db74">&#39;t resolve &#39;</span>index.js<span style="color:#e6db74">&#39; in &#39;</span>D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01<span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">Did you mean &#39;</span>./index.js<span style="color:#e6db74">&#39;?
+</span><span style="color:#e6db74">Requests that should resolve in the current directory need to start with &#39;</span>./<span style="color:#e6db74">&#39;.
+</span><span style="color:#e6db74">Requests that start with a name are treated as module requests and resolve within module directories (node_modules).
+</span><span style="color:#e6db74">If changing the source code is not an option there is also a resolve options called &#39;</span>preferRelative<span style="color:#e6db74">&#39; which tries to resolve these kind of requests in the current directory too.
+</span><span style="color:#e6db74">resolve &#39;</span>index.js<span style="color:#e6db74">&#39; in &#39;</span>D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01<span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">  Parsed request is a module
+</span><span style="color:#e6db74">  No description file found in D:\IdeaProjects\cycle\study\webpack\demo01 or above
+</span><span style="color:#e6db74">  resolve as module
+</span><span style="color:#e6db74">    D:\IdeaProjects\cycle\study\webpack\demo01\node_modules doesn&#39;</span>t exist or is not a directory
+    D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\n</span>ode_modules doesn<span style="color:#e6db74">&#39;t exist or is not a directory
+</span><span style="color:#e6db74">    D:\IdeaProjects\cycle\study\node_modules doesn&#39;</span>t exist or is not a directory
+    D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\n</span>ode_modules doesn<span style="color:#e6db74">&#39;t exist or is not a directory
+</span><span style="color:#e6db74">    D:\IdeaProjects\node_modules doesn&#39;</span>t exist or is not a directory
+    D:<span style="color:#ae81ff">\n</span>ode_modules doesn<span style="color:#960050;background-color:#1e0010">&#39;</span>t exist or is not a directory
+
+webpack 5.42.0 compiled with <span style="color:#ae81ff">1</span> error and <span style="color:#ae81ff">1</span> warning in <span style="color:#ae81ff">147</span> ms
+</code></pre></div><ul>
+<li>
+<p>高版本采用低版本显然的报错了</p>
+</li>
+<li>
+<p>找解决办法 网上找到解决方案是必须要配置开发模式还是生产模式,要求指定</p>
+</li>
+<li>
+<p>生成 package.json 并设置相应内容 这里 package.json 不要手动设置  直接node js 的包初始化命令即可生成 npm init</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See <span style="color:#e6db74">`</span>npm help init<span style="color:#e6db74">`</span> <span style="color:#66d9ef">for</span> definitive documentation on these fields
+and exactly what they <span style="color:#66d9ef">do</span>.
+
+Use <span style="color:#e6db74">`</span>npm install &lt;pkg&gt;<span style="color:#e6db74">`</span> afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: <span style="color:#f92672">(</span>demo01<span style="color:#f92672">)</span>
+version: <span style="color:#f92672">(</span>1.0.0<span style="color:#f92672">)</span>
+description:
+entry point: <span style="color:#f92672">(</span>index.js<span style="color:#f92672">)</span>
+test command:
+git repository:
+keywords:
+author:
+license: <span style="color:#f92672">(</span>ISC<span style="color:#f92672">)</span>
+About to write to D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\p</span>ackage.json:
+
+<span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo01&#34;</span>,
+  <span style="color:#e6db74">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
+  <span style="color:#e6db74">&#34;scripts&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>
+  <span style="color:#f92672">}</span>,
+  <span style="color:#e6db74">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>
+<span style="color:#f92672">}</span>
+
+
+Is this OK? <span style="color:#f92672">(</span>yes<span style="color:#f92672">)</span>
+// end   设置内容
+<span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo01&#34;</span>,
+  <span style="color:#e6db74">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;main.js&#34;</span>,
+  <span style="color:#e6db74">&#34;scripts&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span> ,
+    <span style="color:#e6db74">&#34;dev&#34;</span>: <span style="color:#e6db74">&#34;webpack --mode development&#34;</span>,
+    <span style="color:#e6db74">&#34;build&#34;</span>: <span style="color:#e6db74">&#34;webpack --mode production&#34;</span>
+  <span style="color:#f92672">}</span>,
+  <span style="color:#e6db74">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><ul>
+<li>完毕再次执行 webpack index.js  不要意思又报错了</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;webpack index.js
+<span style="color:#f92672">[</span>Browserslist<span style="color:#f92672">]</span> Could not parse D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\p</span>ackage.json. Ignoring it.
+<span style="color:#f92672">[</span>webpack-cli<span style="color:#f92672">]</span> SyntaxError: Unexpected token / in JSON at position <span style="color:#ae81ff">204</span>
+<span style="color:#66d9ef">while</span> determining default <span style="color:#e6db74">&#39;output.uniqueName&#39;</span> from <span style="color:#e6db74">&#39;name&#39;</span> in D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\p</span>ackage.json
+    at JSON.parse <span style="color:#f92672">(</span>&lt;anonymous&gt;<span style="color:#f92672">)</span>
+    at D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\d</span>efaults.js:599:29
+    at F <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\d</span>efaults.js:71:15<span style="color:#f92672">)</span>
+    at applyOutputDefaults <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\d</span>efaults.js:594:2<span style="color:#f92672">)</span>
+    at applyWebpackOptionsDefaults <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\d</span>efaults.js:182:2<span style="color:#f92672">)</span>
+    at createCompiler <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\w</span>ebpack.js:78:2<span style="color:#f92672">)</span>
+    at create <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\w</span>ebpack.js:127:16<span style="color:#f92672">)</span>
+    at webpack <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\w</span>ebpack.js:135:47<span style="color:#f92672">)</span>
+    at WebpackCLI.f <span style="color:#f92672">[</span>as webpack<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\i</span>ndex.js:55:16<span style="color:#f92672">)</span>
+    at WebpackCLI.createCompiler <span style="color:#f92672">(</span>D:<span style="color:#ae81ff">\C</span>S<span style="color:#ae81ff">\n</span>ode<span style="color:#ae81ff">\n</span>ode-v14.17.2-win-x64<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\w</span>ebpack-cli<span style="color:#ae81ff">\l</span>ib<span style="color:#ae81ff">\w</span>ebpack-cli.js:2053:29<span style="color:#f92672">)</span>
+</code></pre></div><ul>
+<li>
+<p>实际上是高版本的情况下是必须要配置webpack.config.js</p>
+</li>
+<li>
+<p>因此我们来配置webpack.config.js</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;echo &gt; webpack.config.js
+webconfig.js 内容
+const path <span style="color:#f92672">=</span> require<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;path&#39;</span><span style="color:#f92672">)</span>
+module.exports <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+    entry: <span style="color:#e6db74">&#39;./main.js&#39;</span>,
+    output: <span style="color:#f92672">{</span>
+        path: path.resolve<span style="color:#f92672">(</span>__dirname, <span style="color:#e6db74">&#39;dist&#39;</span><span style="color:#f92672">)</span>,
+        filename: <span style="color:#e6db74">&#39;my-first-webpack.bundle.js&#39;</span>
+    <span style="color:#f92672">}</span>,
+    mode: <span style="color:#e6db74">&#39;development&#39;</span> // 设置mode
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>执行打包编译  这里需要注意的是高版本不允许 webpack index.js 的方式了  直接是webpack 执行后自动找此命令下的配置然后输出编译文件</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo01&gt;webpack
+asset my-first-webpack.bundle.js 1.19 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./main.js <span style="color:#ae81ff">40</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.0 compiled successfully in <span style="color:#ae81ff">69</span> ms
+</code></pre></div><ul>
+<li>Java生成目录结构</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"> <span style="color:#a6e22e">@Test</span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">printFileDir</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        String path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;D:\\IdeaProjects\\cycle\\study\\webpack\\demo01&#34;</span><span style="color:#f92672">;</span>
+<span style="color:#75715e">//        String path = &#34;D:\\IdeaProjects\\lifeDoc\\book\\public&#34;;
+</span><span style="color:#75715e"></span>        File file <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>path<span style="color:#f92672">);</span>
+        print<span style="color:#f92672">(</span>file<span style="color:#f92672">,</span> 0<span style="color:#f92672">,</span> file<span style="color:#f92672">.</span><span style="color:#a6e22e">getParent</span><span style="color:#f92672">());</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>File file<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> index<span style="color:#f92672">,</span> <span style="color:#66d9ef">final</span> String parent<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        StringBuilder stringBuilder <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> StringBuilder<span style="color:#f92672">();</span>
+        String str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;▸&#34;</span><span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>file<span style="color:#f92672">.</span><span style="color:#a6e22e">isFile</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+            stringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>str<span style="color:#f92672">).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">repeat</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">,</span> index<span style="color:#f92672">)).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>file<span style="color:#f92672">.</span><span style="color:#a6e22e">getPath</span><span style="color:#f92672">(),</span> parent<span style="color:#f92672">));</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>stringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+        <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+            stringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>str<span style="color:#f92672">).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">repeat</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; &#34;</span><span style="color:#f92672">,</span> index<span style="color:#f92672">)).</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span>StringUtils<span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span>file<span style="color:#f92672">.</span><span style="color:#a6e22e">getPath</span><span style="color:#f92672">(),</span>parent<span style="color:#f92672">));</span>
+            System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>stringBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span>
+            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>File f <span style="color:#f92672">:</span> file<span style="color:#f92672">.</span><span style="color:#a6e22e">listFiles</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">int</span> newIndex <span style="color:#f92672">=</span> index <span style="color:#f92672">+</span> 2<span style="color:#f92672">;</span>
+                print<span style="color:#f92672">(</span>f<span style="color:#f92672">,</span> newIndex<span style="color:#f92672">,</span> parent<span style="color:#f92672">);</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>文件结构</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">▸<span style="color:#ae81ff">\d</span>emo01
+▸  <span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\d</span>ist
+▸    <span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\d</span>ist<span style="color:#ae81ff">\m</span>y-first-webpack.bundle.js
+▸  <span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\i</span>ndex.js
+▸  <span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\p</span>ackage.json
+▸  <span style="color:#ae81ff">\d</span>emo01<span style="color:#ae81ff">\w</span>ebpack.config.js
 </code></pre></div><div class="edit-meta">
 Last updated on 17 Jun 2021
 

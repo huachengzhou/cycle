@@ -1,1 +1,1 @@
-// document.writeln("hello webpack") ;
+document.writeln("hello webpack") ;

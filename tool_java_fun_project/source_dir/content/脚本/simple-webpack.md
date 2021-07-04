@@ -122,8 +122,7 @@ D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one>
 webpack，gulp等打包工具，这些都是我们开发阶段使用的，代码提交线上时，不需要这些工具，所以我们将它放入devDependencies即可，但是像jquery这类插件库，是我们生产环境所使用的，所以如要放入dependencies，如果未将jquery安装到dependencies，那么项目就可能报错，无法运行，所以类似这种项目必须依赖的插件库，我们则必须打入dependencies中，这下子都明白了吧。
 ```
 
-
-#### 最简单版本 (webpack使用高版本5.42.0)
+#### 简单版本 (webpack使用高版本5.42.0)
 
 + 生成必要的文件
 
@@ -283,7 +282,7 @@ webpack 5.42.0 compiled successfully in 69 ms
 
 + Java生成目录结构
 
-```Java
+```shell
  @Test
     public void printFileDir() {
         String path = "D:\\IdeaProjects\\cycle\\study\\webpack\\demo01";
@@ -320,6 +319,435 @@ webpack 5.42.0 compiled successfully in 69 ms
 ▸  \demo01\webpack.config.js
 ```
 
+#### 简单版本局部情况 (webpack使用高版本5.42.0)
+
++ 生成必要的文件
+
+> npm init -y 初始化的时候不会提示输入yes
+
+```shell
+Microsoft Windows [版本 10.0.19043.1052]
+
+D:\IdeaProjects\cycle\study\webpack>mkdir demo02
+
+D:\IdeaProjects\cycle\study\webpack>cd demo02
+
+D:\IdeaProjects\cycle\study\webpack\demo02>echo document.writeln('hello blake') > index.js
+
+D:\IdeaProjects\cycle\study\webpack\demo02>npm init -y
+Wrote to D:\IdeaProjects\cycle\study\webpack\demo02\package.json:
+
+{
+  "name": "demo02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
 
 
 
+D:\IdeaProjects\cycle\study\webpack\demo02>echo > webpack.config.js
+```
+
++ 局部安装说明
+
+> 局部安装必须在package.json中 scripts > "build": "webpack"
+
++ 命令 npm add -D webpack webpack-cli
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo02>npm -D webpack webpack-cli
+Usage: npm <command>
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    clean-install, clean-install-test, completion, config,
+    create, ddp, dedupe, deprecate, dist-tag, docs, doctor,
+    edit, explore, fund, get, help, help-search, hook, i, init,
+    install, install-ci-test, install-test, it, link, list, ln,
+    login, logout, ls, org, outdated, owner, pack, ping, prefix,
+    profile, prune, publish, rb, rebuild, repo, restart, root,
+    run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+    
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\dell\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.14.13 D:\CS\node\node-v14.17.2-win-x64\node_modules\npm
+
+Did you mean this?
+    pack
+
+D:\IdeaProjects\cycle\study\webpack\demo02>npm add -D webpack webpack-cli
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN demo02@1.0.0 No description
+npm WARN demo02@1.0.0 No repository field.
+
++ webpack-cli@4.7.2
++ webpack@5.42.0
+added 121 packages from 155 contributors in 7.307s
+
+16 packages are looking for funding
+  run `npm fund` for details
+```
+
++ 编译打包 
+
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo02>webpack
+asset bundle.js 1.19 KiB [emitted] (name: main)
+./index.js 34 bytes [built] [code generated]
+webpack 5.42.0 compiled successfully in 69 ms
+D:\IdeaProjects\cycle\study\webpack\demo02>
+```
+
++ 文件目录
+
+```shell
+[TestNG] Running:
+  C:\Users\dell\.IntelliJIdea2018.3\system\temp-testng-customsuite.xml
+▸\demo02
+▸  \demo02\dist
+▸    \demo02\dist\bundle.js
+▸  \demo02\index.html
+▸  \demo02\index.js
+▸  \demo02\node_modules
+▸    \demo02\node_modules\.bin
+▸      \demo02\node_modules\.bin\acorn
+▸      \demo02\node_modules\.bin\acorn.cmd
+▸      \demo02\node_modules\.bin\acorn.ps1
+▸      \demo02\node_modules\.bin\browserslist
+▸      \demo02\node_modules\.bin\browserslist.cmd
+▸      \demo02\node_modules\.bin\browserslist.ps1
+▸      \demo02\node_modules\.bin\envinfo
+▸      \demo02\node_modules\.bin\envinfo.cmd
+▸      \demo02\node_modules\.bin\envinfo.ps1
+▸      \demo02\node_modules\.bin\  ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+        目录太多我删掉了差不多就是这样
+▸      \demo02\node_modules\yocto-queue\index.d.ts ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+▸      \demo02\node_modules\yocto-queue\index.d.ts
+▸      \demo02\node_modules\yocto-queue\index.js
+▸      \demo02\node_modules\yocto-queue\license
+▸      \demo02\node_modules\yocto-queue\package.json
+▸      \demo02\node_modules\yocto-queue\readme.md
+▸  \demo02\package-lock.json
+▸  \demo02\package.json
+▸  \demo02\webpack.config.js
+===============================================
+Default Suite
+Total tests run: 1, Failures: 0, Skips: 0
+===============================================
+Process finished with exit code 0
+```
+
+#### 自定义版本(局部) (webpack使用高版本5.42.0)
+
++ 生成必要的文件
+
+```shell
+Microsoft Windows [版本 10.0.19043.1052]
+(c) Microsoft Corporation。保留所有权利。
+D:\IdeaProjects\cycle\study\webpack>mkdir demo03
+D:\IdeaProjects\cycle\study\webpack>cd demo03
+D:\IdeaProjects\cycle\study\webpack\demo03>npm init -y
+Wrote to D:\IdeaProjects\cycle\study\webpack\demo03\package.json:
+
+{
+  "name": "demo03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+D:\IdeaProjects\cycle\study\webpack\demo03>echo > index.html
+D:\IdeaProjects\cycle\study\webpack\demo03>echo > main.js
+D:\IdeaProjects\cycle\study\webpack\demo03>echo webpack.config.js
+webpack.config.js
+D:\IdeaProjects\cycle\study\webpack\demo03>echo > webpack.config.js
+```
+
++ 安装之前查询版本webpack和webpack-cli版本不一致的否则会报错
+
++ 版本查询 [webpack版本地址](https://github.com/webpack/webpack/tags) [webpack-cli版本地址](https://www.npmjs.com/package/webpack-cli)
+
++ 安装命令 npm add  -D webpack@5.32.0 webpack-cli@4.0.0-alpha-5
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo03>npm add  -D webpack@5.32.0 webpack-cli@5.32.0
+npm ERR! code ETARGET
+npm ERR! notarget No matching version found for webpack-cli@5.32.0.
+npm ERR! notarget In most cases you or one of your dependencies are requesting
+npm ERR! notarget a package version that doesn't exist.
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\dell\AppData\Roaming\npm-cache\_logs\2021-07-04T04_40_27_844Z-debug.log
+D:\IdeaProjects\cycle\study\webpack\demo03>npm add  -D webpack@5.32.0 webpack-cli@4.0.0-alpha-5
+> ejs@2.7.4 postinstall D:\IdeaProjects\cycle\study\webpack\demo03\node_modules\ejs
+> node ./postinstall.js
+Thank you for installing EJS: built with the Jake JavaScript build tool (https://jakejs.com/)
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN webpack-cli@4.0.0-alpha-5 requires a peer of webpack@4.x.x but none is installed. You must install peer dependencies yourself.
+npm WARN demo03@1.0.0 No description
+npm WARN demo03@1.0.0 No repository field.
+
++ webpack@5.32.0
++ webpack-cli@4.0.0-alpha-5
+added 365 packages from 245 contributors in 23.014s
+
+19 packages are looking for funding
+  run `npm fund` for details
+```
+
++ 安装完成之后到package.json 中查看 devDependencies 即可查询到版本
+
+```shell
+{
+  "name": "demo03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.32.0",
+    "webpack-cli": "^4.0.0-alpha-5"
+  }
+}
+```
+
++ 打包编译
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo03>webpack
+asset bundle.js 1.2 KiB [emitted] (name: main)
+./main.js 44 bytes [built] [code generated]
+webpack 5.42.0 compiled successfully in 72 ms
+D:\IdeaProjects\cycle\study\webpack\demo03>
+```
+
++ 文件目录
+
+```shell
+▸\demo03
+▸  \demo03\dist
+▸    \demo03\dist\bundle.js
+▸  \demo03\index.html
+▸  \demo03\main.js
+▸  \demo03\node_modules
+▸    \demo03\node_modules\.bin
+▸      \demo03\node_modules\.bin\acorn
+▸      \demo03\node_modules\.bin\acorn.cmd
+▸      \demo03\node_modules\.bin\acorn.ps1
+▸      \demo03\node_modules\.bin\browserslist
+▸      \demo03\node_modules\.bin\browserslist.cmd
+▸      \demo03\node_modules\.bin\browserslist.ps1
+▸      \demo03\node_modules\.bin\errno
+▸      \demo03\node_modules\.bin\errno.cmd
+▸      \demo03\node_modules\.bin\errno.ps1
+▸      \demo03\node_modules\.bin\is-ci
+..................省略node model dir index
+▸    \demo03\node_modules\yocto-queue
+▸      \demo03\node_modules\yocto-queue\index.d.ts
+▸      \demo03\node_modules\yocto-queue\index.js
+▸      \demo03\node_modules\yocto-queue\license
+▸      \demo03\node_modules\yocto-queue\package.json
+▸      \demo03\node_modules\yocto-queue\readme.md
+▸  \demo03\package-lock.json
+▸  \demo03\package.json
+▸  \demo03\webpack.config.js
+```
+
+#### 使用html插件
+
++ 生成必要的文件
+
+```shell
+Microsoft Windows [版本 10.0.19043.1052]
+(c) Microsoft Corporation。保留所有权利。
+D:\IdeaProjects\cycle>cd study
+D:\IdeaProjects\cycle\study>mkdir demo04
+D:\IdeaProjects\cycle\study\webpack>cd demo04
+D:\IdeaProjects\cycle\study\webpack\demo04>npm init -y
+Wrote to D:\IdeaProjects\cycle\study\webpack\demo04\package.json:
+{
+  "name": "demo04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+D:\IdeaProjects\cycle\study\webpack\demo04>echo > webpack.config.js
+D:\IdeaProjects\cycle\study\webpack\demo04>md src
+
+D:\IdeaProjects\cycle\study\webpack\demo04>cd src
+
+D:\IdeaProjects\cycle\study\webpack\demo04\src>echo > index.js
+D:\IdeaProjects\cycle\study\webpack\demo04\src>cd D:\IdeaProjects\cycle\study\webpack\demo04
+```
+
++ 找到html-webpack-load
+
++ [html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/#root)
+
++ HtmlWebpackPlugin
+
+
++ 如果您有多个webpack入口点，它们都将包含在生成的HTML中的<script>标记中
+  
+
++ 插件命令
+
+```
+npm install --save-dev html-webpack-plugin
+局部 npm install -D --save-dev html-webpack-plugin
+```
+
++ 配置
+
+```shell
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
+module.exports = {
+  entry: 'index.js',
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: 'index_bundle.js',
+  },
+  plugins: [new HtmlWebpackPlugin()],
+};
+```
+
++ 生成包含以下内容的文件dist/index.html
+
+```shell
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>webpack App</title>
+  </head>
+  <body>
+    <script src="index_bundle.js"></script>
+  </body>
+</html>
+```
+
++ 安装命令 
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo04>npm add -D webpack webpack-cli
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN demo04@1.0.0 No description
+npm WARN demo04@1.0.0 No repository field.
+
++ webpack-cli@4.7.2
++ webpack@5.42.0
+added 121 packages from 155 contributors in 13.022s
+
+16 packages are looking for funding
+  run `npm fund` for details
+  
+D:\IdeaProjects\cycle\study\webpack\demo04>npm install -D --save-dev html-webpack-plugin
+npm WARN demo04@1.0.0 No description
+npm WARN demo04@1.0.0 No repository field.
+
++ html-webpack-plugin@5.3.2
+added 19 packages from 8 contributors in 4.707s
+
+27 packages are looking for funding
+  run `npm fund` for details
+```
+
++ webpack.config.js 配置
+
+```shell
+const path = require('path');
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+    entry: "./src/index.js",
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle2.js'
+    },
+    plugins: [
+        new HtmlWebpackPlugin({}),
+    ],
+    mode: 'development' // 设置mode
+}
+```
+
++ 打包编译 npm run build(实际相当于执行了webpack命令)
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo04>npm run build
+
+> demo04@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo04
+> webpack
+
+asset bundle2.js 1.4 KiB [compared for emit] (name: main)
+asset index.html 234 bytes [compared for emit]
+./src/index.js 207 bytes [built] [code generated]
+webpack 5.42.0 compiled successfully in 122 ms
+```
+
++ 文件目录
+
+```
+▸\demo04
+▸  \demo04\dist
+▸    \demo04\dist\bundle2.js
+▸    \demo04\dist\index.html
+▸  \demo04\node_modules
+▸    \demo04\node_modules\.bin
+▸      \demo04\node_modules\.bin\acorn
+▸      \demo04\node_modules\.bin\acorn.cmd
+▸      \demo04\node_modules\.bin\acorn.ps1
+▸      \demo04\node_modules\.bin\browserslist
+▸    \demo04\node_modules\yocto-queue
+||省略
+▸      \demo04\node_modules\yocto-queue\index.d.ts
+▸      \demo04\node_modules\yocto-queue\index.js
+▸      \demo04\node_modules\yocto-queue\license
+▸      \demo04\node_modules\yocto-queue\package.json
+▸      \demo04\node_modules\yocto-queue\readme.md
+▸  \demo04\package-lock.json
+▸  \demo04\package.json
+▸  \demo04\src
+▸    \demo04\src\index.js
+▸  \demo04\webpack.config.js
+
+```

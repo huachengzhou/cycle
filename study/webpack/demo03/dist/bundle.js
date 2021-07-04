@@ -15,7 +15,7 @@
   \*****************/
 /***/ (() => {
 
-eval("document.writeln(\"hello webpack\") ;\r\n\n\n//# sourceURL=webpack://demo01/./main.js?");
+eval("\r\n\r\ndocument.writeln(\"局部环境安装\") ;\n\n//# sourceURL=webpack://demo03/./main.js?");
 
 /***/ })
 

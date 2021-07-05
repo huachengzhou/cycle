@@ -623,7 +623,7 @@ D:\IdeaProjects\cycle\study\webpack\demo04\src>cd D:\IdeaProjects\cycle\study\we
 + HtmlWebpackPlugin
 
 
-+ 如果您有多个webpack入口点，它们都将包含在生成的HTML中的<script>标记中
++ 如果您有多个webpack入口点，它们都将包含在生成的HTML中的&lt;script&gt;标记中
   
 
 + 插件命令
@@ -651,7 +651,7 @@ module.exports = {
 
 + 生成包含以下内容的文件dist/index.html
 
-```shell
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -726,7 +726,7 @@ webpack 5.42.0 compiled successfully in 122 ms
 
 + 文件目录
 
-```
+```shell
 ▸\demo04
 ▸  \demo04\dist
 ▸    \demo04\dist\bundle2.js
@@ -750,4 +750,171 @@ webpack 5.42.0 compiled successfully in 122 ms
 ▸    \demo04\src\index.js
 ▸  \demo04\webpack.config.js
 
+```
+
+#### 多入口
+
++ 生成必要的文件
+
+```shell
+Microsoft Windows [版本 10.0.19043.1052]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\IdeaProjects\cycle>cd study
+
+D:\IdeaProjects\cycle\study>cd webpack
+
+D:\IdeaProjects\cycle\study\webpack>mkdir demo05
+
+D:\IdeaProjects\cycle\study\webpack>cd demo05
+
+D:\IdeaProjects\cycle\study\webpack\demo05>mkdir src
+
+D:\IdeaProjects\cycle\study\webpack\demo05>cd src
+
+D:\IdeaProjects\cycle\study\webpack\demo05\src>echo -> main.js
+
+D:\IdeaProjects\cycle\study\webpack\demo05\src>echo -> home.js
+
+D:\IdeaProjects\cycle\study\webpack\demo05\src>echo -> register.js
+
+D:\IdeaProjects\cycle\study\webpack\demo05\src>cd ..
+
+D:\IdeaProjects\cycle\study\webpack\demo05>echo '' > webpack.config.js
+
+D:\IdeaProjects\cycle\study\webpack\demo05>npm init -y
+Wrote to D:\IdeaProjects\cycle\study\webpack\demo05\package.json:
+
+{
+  "name": "demo05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+D:\IdeaProjects\cycle\study\webpack\demo05> npm add -D webpack webpack-cli
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN demo05@1.0.0 No description
+npm WARN demo05@1.0.0 No repository field.
++ webpack-cli@4.7.2
++ webpack@5.42.1
+added 121 packages from 155 contributors in 9.549s
+16 packages are looking for funding
+  run `npm fund` for details
+```
+
++ webpack.config.js 配置
+
+```js
+const path = require('path');
+module.exports  = {
+    entry: {
+        home : "./src/home.js" ,
+        main : "./src/main.js" ,
+        register : "./src/register.js" ,
+    },
+    output :{
+        path: path.resolve(__dirname, 'dist'),
+    },
+    mode: 'development' // 设置mode
+} ;
+```
+
++ package.json 配置
+
+```json
+{
+  "name": "demo05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.42.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
+
+```
+
++ 执行以及校验js (这里使用nodejs直接在命令行执行js)
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo05>npm run build
+> demo05@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo05
+> webpack --mode production
+
+asset register.js 54 bytes [emitted] [minimized] (name: register)
+asset home.js 50 bytes [emitted] [minimized] (name: home)
+asset main.js 50 bytes [emitted] [minimized] (name: main)
+./src/home.js 50 bytes [built] [code generated]
+./src/main.js 50 bytes [built] [code generated]
+./src/register.js 54 bytes [built] [code generated]
+webpack 5.42.1 compiled successfully in 207 ms
+
+D:\IdeaProjects\cycle\study\webpack\demo05>node dist/main.js
+main 15
+
+D:\IdeaProjects\cycle\study\webpack\demo05>node dist/home.js
+home 20
+
+D:\IdeaProjects\cycle\study\webpack\demo05>node dist/register.js
+register 63
+```
+
++ 附 main.js内容
+
+```js
+console.log("main",Math.round(Math.random()*100));
+```
+
++ 文件目录
+
+```dos
+▸\demo05
+▸  \demo05\dist
+▸    \demo05\dist\home.js
+▸    \demo05\dist\main.js
+▸    \demo05\dist\register.js
+▸  \demo05\node_modules
+▸    \demo05\node_modules\.bin
+▸      \demo05\node_modules\.bin\acorn
+▸      \demo05\node_modules\.bin\acorn.cmd
+▸      \demo05\node_modules\.bin\acorn.ps1
+▸      \demo05\node_modules\.bin\browserslist
+▸      \demo05\node_modules\.bin\browserslist.cmd
+        ||省略
+▸      \demo05\node_modules\wildcard\README.md
+▸      \demo05\node_modules\wildcard\test
+▸        \demo05\node_modules\wildcard\test\all.js
+▸        \demo05\node_modules\wildcard\test\arrays.js
+▸        \demo05\node_modules\wildcard\test\objects.js
+▸        \demo05\node_modules\wildcard\test\strings.js
+▸      \demo05\node_modules\wildcard\yarn.lock
+▸    \demo05\node_modules\yocto-queue
+▸      \demo05\node_modules\yocto-queue\index.d.ts
+▸      \demo05\node_modules\yocto-queue\index.js
+▸      \demo05\node_modules\yocto-queue\license
+▸      \demo05\node_modules\yocto-queue\package.json
+▸      \demo05\node_modules\yocto-queue\readme.md
+▸  \demo05\package-lock.json
+▸  \demo05\package.json
+▸  \demo05\src
+▸    \demo05\src\home.js
+▸    \demo05\src\main.js
+▸    \demo05\src\register.js
+▸  \demo05\webpack.config.js
 ```

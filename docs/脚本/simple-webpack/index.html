@@ -32,7 +32,7 @@
 <meta itemprop="name" content="webpack simple">
 <meta itemprop="description" content="webpack 一:卸载 全局卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&gt;npm uninstall webpack webpack-cli -g removed 73 packages in 0.726s 本地卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&gt;npm uninstall webpack webpack-cli -D npm WARN saveError ENOENT: no such file or directory, open &#39;D:\IdeaProjects\package.json&#39; npm WARN enoent ENOENT: no such file or directory, open &#39;D:\IdeaProjects\package.json&#39; npm WARN IdeaProjects No description npm WARN IdeaProjects No repository field. npm WARN IdeaProjects No README data npm WARN IdeaProjects"><meta itemprop="datePublished" content="2021-06-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-06-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3319"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
+<meta itemprop="wordCount" content="3762"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
 <meta itemprop="keywords" content="" /></head>
 <body><div class="container"><header>
 <h1>禅与摩托车维修艺术</h1>
@@ -637,7 +637,7 @@ D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c
 <p>HtmlWebpackPlugin</p>
 </li>
 <li>
-<p>如果您有多个webpack入口点，它们都将包含在生成的HTML中的<script>标记中</p>
+<p>如果您有多个webpack入口点，它们都将包含在生成的HTML中的&lt;script&gt;标记中</p>
 </li>
 <li>
 <p>插件命令</p>
@@ -662,16 +662,16 @@ module.exports <span style="color:#f92672">=</span> <span style="color:#f92672">
 </code></pre></div><ul>
 <li>生成包含以下内容的文件dist/index.html</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
-    &lt;title&gt;webpack App&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;script src<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;index_bundle.js&#34;</span>&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+&lt;<span style="color:#f92672">html</span>&gt;
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;webpack App&lt;/<span style="color:#f92672">title</span>&gt;
+  &lt;/<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">body</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;index_bundle.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+  &lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
 </code></pre></div><ul>
 <li>安装命令</li>
 </ul>
@@ -729,29 +729,183 @@ webpack 5.42.0 compiled successfully in <span style="color:#ae81ff">122</span> m
 </code></pre></div><ul>
 <li>文件目录</li>
 </ul>
-<pre><code>▸\demo04
-▸  \demo04\dist
-▸    \demo04\dist\bundle2.js
-▸    \demo04\dist\index.html
-▸  \demo04\node_modules
-▸    \demo04\node_modules\.bin
-▸      \demo04\node_modules\.bin\acorn
-▸      \demo04\node_modules\.bin\acorn.cmd
-▸      \demo04\node_modules\.bin\acorn.ps1
-▸      \demo04\node_modules\.bin\browserslist
-▸    \demo04\node_modules\yocto-queue
-||省略
-▸      \demo04\node_modules\yocto-queue\index.d.ts
-▸      \demo04\node_modules\yocto-queue\index.js
-▸      \demo04\node_modules\yocto-queue\license
-▸      \demo04\node_modules\yocto-queue\package.json
-▸      \demo04\node_modules\yocto-queue\readme.md
-▸  \demo04\package-lock.json
-▸  \demo04\package.json
-▸  \demo04\src
-▸    \demo04\src\index.js
-▸  \demo04\webpack.config.js
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">▸<span style="color:#ae81ff">\d</span>emo04
+▸  <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\d</span>ist
+▸    <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\d</span>ist<span style="color:#ae81ff">\b</span>undle2.js
+▸    <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\d</span>ist<span style="color:#ae81ff">\i</span>ndex.html
+▸  <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules
+▸    <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\.</span>bin
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\.</span>bin<span style="color:#ae81ff">\a</span>corn
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\.</span>bin<span style="color:#ae81ff">\a</span>corn.cmd
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\.</span>bin<span style="color:#ae81ff">\a</span>corn.ps1
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\.</span>bin<span style="color:#ae81ff">\b</span>rowserslist
+▸    <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue
+<span style="color:#f92672">||</span>省略
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\i</span>ndex.d.ts
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\i</span>ndex.js
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\l</span>icense
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\p</span>ackage.json
+▸      <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\r</span>eadme.md
+▸  <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\p</span>ackage-lock.json
+▸  <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\p</span>ackage.json
+▸  <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\s</span>rc
+▸    <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\s</span>rc<span style="color:#ae81ff">\i</span>ndex.js
+▸  <span style="color:#ae81ff">\d</span>emo04<span style="color:#ae81ff">\w</span>ebpack.config.js
 
+</code></pre></div><h4 id="多入口">多入口</h4>
+<ul>
+<li>生成必要的文件</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Microsoft Windows <span style="color:#f92672">[</span>版本 10.0.19043.1052<span style="color:#f92672">]</span>
+<span style="color:#f92672">(</span>c<span style="color:#f92672">)</span> Microsoft Corporation。保留所有权利。
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle&gt;cd study
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy&gt;cd webpack
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack&gt;mkdir demo05
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack&gt;cd demo05
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;mkdir src
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;cd src
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05<span style="color:#ae81ff">\s</span>rc&gt;echo -&gt; main.js
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05<span style="color:#ae81ff">\s</span>rc&gt;echo -&gt; home.js
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05<span style="color:#ae81ff">\s</span>rc&gt;echo -&gt; register.js
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05<span style="color:#ae81ff">\s</span>rc&gt;cd ..
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;echo <span style="color:#e6db74">&#39;&#39;</span> &gt; webpack.config.js
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;npm init -y
+Wrote to D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05<span style="color:#ae81ff">\p</span>ackage.json:
+
+<span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo05&#34;</span>,
+  <span style="color:#e6db74">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;webpack.config.js&#34;</span>,
+  <span style="color:#e6db74">&#34;scripts&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>
+  <span style="color:#f92672">}</span>,
+  <span style="color:#e6db74">&#34;keywords&#34;</span>: <span style="color:#f92672">[]</span>,
+  <span style="color:#e6db74">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>
+<span style="color:#f92672">}</span>
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt; npm add -D webpack webpack-cli
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN demo05@1.0.0 No description
+npm WARN demo05@1.0.0 No repository field.
++ webpack-cli@4.7.2
++ webpack@5.42.1
+added <span style="color:#ae81ff">121</span> packages from <span style="color:#ae81ff">155</span> contributors in 9.549s
+<span style="color:#ae81ff">16</span> packages are looking <span style="color:#66d9ef">for</span> funding
+  run <span style="color:#e6db74">`</span>npm fund<span style="color:#e6db74">`</span> <span style="color:#66d9ef">for</span> details
+</code></pre></div><ul>
+<li>webpack.config.js 配置</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;path&#39;</span>);
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span>  <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">entry</span><span style="color:#f92672">:</span> {
+        <span style="color:#a6e22e">home</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;./src/home.js&#34;</span> ,
+        <span style="color:#a6e22e">main</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;./src/main.js&#34;</span> ,
+        <span style="color:#a6e22e">register</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;./src/register.js&#34;</span> ,
+    },
+    <span style="color:#a6e22e">output</span> <span style="color:#f92672">:</span>{
+        <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">resolve</span>(<span style="color:#ae81ff">__</span><span style="color:#a6e22e">dirname</span>, <span style="color:#e6db74">&#39;dist&#39;</span>),
+    },
+    <span style="color:#a6e22e">mode</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;development&#39;</span> <span style="color:#75715e">// 设置mode
+</span><span style="color:#75715e"></span>} ;
+</code></pre></div><ul>
+<li>package.json 配置</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo05&#34;</span>,
+  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;webpack.config.js&#34;</span>,
+  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+    <span style="color:#f92672">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>,
+    <span style="color:#f92672">&#34;dev&#34;</span>: <span style="color:#e6db74">&#34;webpack --mode development&#34;</span>,
+    <span style="color:#f92672">&#34;build&#34;</span>: <span style="color:#e6db74">&#34;webpack --mode production&#34;</span>
+  },
+  <span style="color:#f92672">&#34;keywords&#34;</span>: [],
+  <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>,
+  <span style="color:#f92672">&#34;devDependencies&#34;</span>: {
+    <span style="color:#f92672">&#34;webpack&#34;</span>: <span style="color:#e6db74">&#34;^5.42.1&#34;</span>,
+    <span style="color:#f92672">&#34;webpack-cli&#34;</span>: <span style="color:#e6db74">&#34;^4.7.2&#34;</span>
+  }
+}
+
+</code></pre></div><ul>
+<li>执行以及校验js (这里使用nodejs直接在命令行执行js)</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;npm run build
+&gt; demo05@1.0.0 build D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05
+&gt; webpack --mode production
+
+asset register.js <span style="color:#ae81ff">54</span> bytes <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>minimized<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: register<span style="color:#f92672">)</span>
+asset home.js <span style="color:#ae81ff">50</span> bytes <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>minimized<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: home<span style="color:#f92672">)</span>
+asset main.js <span style="color:#ae81ff">50</span> bytes <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>minimized<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./src/home.js <span style="color:#ae81ff">50</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/main.js <span style="color:#ae81ff">50</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/register.js <span style="color:#ae81ff">54</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.1 compiled successfully in <span style="color:#ae81ff">207</span> ms
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;node dist/main.js
+main <span style="color:#ae81ff">15</span>
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;node dist/home.js
+home <span style="color:#ae81ff">20</span>
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo05&gt;node dist/register.js
+register <span style="color:#ae81ff">63</span>
+</code></pre></div><ul>
+<li>附 main.js内容</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;main&#34;</span>,Math.<span style="color:#a6e22e">round</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">100</span>));
+</code></pre></div><ul>
+<li>文件目录</li>
+</ul>
+<pre><code class="language-dos" data-lang="dos">▸\demo05
+▸  \demo05\dist
+▸    \demo05\dist\home.js
+▸    \demo05\dist\main.js
+▸    \demo05\dist\register.js
+▸  \demo05\node_modules
+▸    \demo05\node_modules\.bin
+▸      \demo05\node_modules\.bin\acorn
+▸      \demo05\node_modules\.bin\acorn.cmd
+▸      \demo05\node_modules\.bin\acorn.ps1
+▸      \demo05\node_modules\.bin\browserslist
+▸      \demo05\node_modules\.bin\browserslist.cmd
+        ||省略
+▸      \demo05\node_modules\wildcard\README.md
+▸      \demo05\node_modules\wildcard\test
+▸        \demo05\node_modules\wildcard\test\all.js
+▸        \demo05\node_modules\wildcard\test\arrays.js
+▸        \demo05\node_modules\wildcard\test\objects.js
+▸        \demo05\node_modules\wildcard\test\strings.js
+▸      \demo05\node_modules\wildcard\yarn.lock
+▸    \demo05\node_modules\yocto-queue
+▸      \demo05\node_modules\yocto-queue\index.d.ts
+▸      \demo05\node_modules\yocto-queue\index.js
+▸      \demo05\node_modules\yocto-queue\license
+▸      \demo05\node_modules\yocto-queue\package.json
+▸      \demo05\node_modules\yocto-queue\readme.md
+▸  \demo05\package-lock.json
+▸  \demo05\package.json
+▸  \demo05\src
+▸    \demo05\src\home.js
+▸    \demo05\src\main.js
+▸    \demo05\src\register.js
+▸  \demo05\webpack.config.js
 </code></pre><div class="edit-meta">
 Last updated on 17 Jun 2021
 
@@ -835,7 +989,11 @@ Published on 17 Jun 2021
 <li class=" has-sub-menu"><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/">javascript <span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/">ECMAScript 6</a></li>
+<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/dos_basic/">DOS基本命令 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/dos_file/">DOS基本文件操作命令 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/dos_network/"> DOS网络操作命令 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/ftp/"> FTP </a></li>
+<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/windows_question/"> windows 问题 </a></li>
 </ul>
   
 </li>

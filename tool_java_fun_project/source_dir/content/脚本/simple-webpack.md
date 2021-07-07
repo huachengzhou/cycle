@@ -918,3 +918,233 @@ console.log("main",Math.round(Math.random()*100));
 ▸    \demo05\src\register.js
 ▸  \demo05\webpack.config.js
 ```
+
+#### 多出口
+
++ 生成必要的文件
+
+```shell
+Microsoft Windows [版本 10.0.19043.1052]
+(c) Microsoft Corporation。保留所有权利。
+D:\IdeaProjects\cycle\study\webpack>mkdir demo06
+D:\IdeaProjects\cycle\study\webpack>cd demo06
+D:\IdeaProjects\cycle\study\webpack\demo06>mkdir src
+D:\IdeaProjects\cycle\study\webpack\demo06>cd src
+D:\IdeaProjects\cycle\study\webpack\demo06\src>echo console.log('index'); > index.js
+D:\IdeaProjects\cycle\study\webpack\demo06\src>echo console.log('main'); > main.js
+D:\IdeaProjects\cycle\study\webpack\demo06\src>cd ..
+D:\IdeaProjects\cycle\study\webpack\demo06>cd >  webpack.config.js
+
+D:\IdeaProjects\cycle\study\webpack\demo06>npm init -y
+Wrote to D:\IdeaProjects\cycle\study\webpack\demo06\package.json:
+
+{
+  "name": "demo06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
++ 安装
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo06>npm add -D webpack webpack-cli
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN demo06@1.0.0 No description
+npm WARN demo06@1.0.0 No repository field.
+
++ webpack@5.42.1
++ webpack-cli@4.7.2
+added 121 packages from 155 contributors in 10.332s
+
+16 packages are looking for funding
+  run `npm fund` for details
+  报错了
+  执行npm install时出现npm notice created a lockfile as package-lock.json. You should commit this file
+  在package.json中增加private字段；
+  将项目声明为私有项目："private": true,
+  再重新运行，notice就没有了
+```
+
++ 增加如下
+
+```shell
+{
+  "name": "demo06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+```
+
++ 重新安装
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo06>npm add -D webpack webpack-cli
++ webpack@5.42.1
++ webpack-cli@4.7.2
+updated 2 packages in 4.494s
+1 package is looking for funding
+  run `npm fund` for details
+```
+
++ 关于 webpack.config.js 配置
+
+> 我是从下面一次注释运行的
+
+```js
+const path = require("path") ;
+module.exports = {
+    entry :{
+        index :"./src/index.js" , //这样写  可以不要output
+        main :"./src/main.js" ,
+    },
+    mode :"development" ,
+    output :{
+        // path:path.join(__dirname,"release")
+        // path:path.join(__dirname,"output1"),
+        path:path.join(__dirname,"output"),
+        // filename:"[name].js"//如index.js
+        // filename:"[name]_.js" //如index_.js
+        // filename:"[name]_[hash].js" //如 index_42e300f860ec901c7866.js
+        filename:"[name]_[hash:4].js" //如 index_42e3.js
+    }
+}
+```
+
++ 执行命令
+
+```shell
+D:\IdeaProjects\cycle\study\webpack\demo06>npm run build
+
+> demo06@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo06
+> webpack
+
+asset index.js 1.2 KiB [emitted] (name: index)
+asset main.js 1.2 KiB [emitted] (name: main)
+./src/index.js 24 bytes [built] [code generated]
+./src/main.js 23 bytes [built] [code generated]
+webpack 5.42.1 compiled successfully in 75 ms
+
+D:\IdeaProjects\cycle\study\webpack\demo06>node src/index.js
+index
+
+D:\IdeaProjects\cycle\study\webpack\demo06>node src/main.js
+main
+
+D:\IdeaProjects\cycle\study\webpack\demo06>npm run build
+
+> demo06@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo06
+> webpack
+
+asset index.js 1.2 KiB [emitted] (name: index)
+asset main.js 1.2 KiB [emitted] (name: main)
+./src/index.js 24 bytes [built] [code generated]
+./src/main.js 23 bytes [built] [code generated]
+webpack 5.42.1 compiled successfully in 77 ms
+
+D:\IdeaProjects\cycle\study\webpack\demo06>npm run build
+
+> demo06@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo06
+> webpack
+
+asset index.js 1.2 KiB [emitted] (name: index)
+asset main.js 1.2 KiB [emitted] (name: main)
+./src/index.js 24 bytes [built] [code generated]
+./src/main.js 23 bytes [built] [code generated]
+webpack 5.42.1 compiled successfully in 77 ms
+
+D:\IdeaProjects\cycle\study\webpack\demo06>npm run build
+
+> demo06@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo06
+> webpack
+
+asset index_.js 1.2 KiB [emitted] (name: index)
+asset main_.js 1.2 KiB [emitted] (name: main)
+./src/index.js 24 bytes [built] [code generated]
+./src/main.js 23 bytes [built] [code generated]
+webpack 5.42.1 compiled successfully in 80 ms
+
+D:\IdeaProjects\cycle\study\webpack\demo06>npm run build
+
+> demo06@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo06
+> webpack
+
+(node:8048) [DEP_WEBPACK_TEMPLATE_PATH_PLUGIN_REPLACE_PATH_VARIABLES_HASH] DeprecationWarning: [hash] is now [fullhash] (also consider using [chunkhash] or [contenthash], see documenta
+tion for details)
+(Use `node --trace-deprecation ...` to show where the warning was created)
+asset index_42e300f860ec901c7866.js 1.2 KiB [emitted] [immutable] (name: index)
+asset main_42e300f860ec901c7866.js 1.2 KiB [emitted] [immutable] (name: main)
+./src/index.js 24 bytes [built] [code generated]
+./src/main.js 23 bytes [built] [code generated]
+webpack 5.42.1 compiled successfully in 81 ms
+
+D:\IdeaProjects\cycle\study\webpack\demo06>npm run build
+
+> demo06@1.0.0 build D:\IdeaProjects\cycle\study\webpack\demo06
+> webpack
+
+(node:15188) [DEP_WEBPACK_TEMPLATE_PATH_PLUGIN_REPLACE_PATH_VARIABLES_HASH] DeprecationWarning: [hash] is now [fullhash] (also consider using [chunkhash] or [contenthash], see document
+ation for details)
+(Use `node --trace-deprecation ...` to show where the warning was created)
+asset index_42e3.js 1.2 KiB [emitted] [immutable] (name: index)
+asset main_42e3.js 1.2 KiB [emitted] [immutable] (name: main)
+./src/index.js 24 bytes [built] [code generated]
+./src/main.js 23 bytes [built] [code generated]
+webpack 5.42.1 compiled successfully in 76 ms
+
+D:\IdeaProjects\cycle\study\webpack\demo06>
+```
+
++ 文件结构
+
+```shell
+▸\demo06
+▸  \demo06\dist
+▸    \demo06\dist\index.js
+▸    \demo06\dist\main.js
+▸  \demo06\node_modules
+▸    \demo06\node_modules\yocto-queue
+//省略
+▸      \demo06\node_modules\yocto-queue\index.d.ts
+▸      \demo06\node_modules\yocto-queue\index.js
+▸      \demo06\node_modules\yocto-queue\license
+▸      \demo06\node_modules\yocto-queue\package.json
+▸      \demo06\node_modules\yocto-queue\readme.md
+▸  \demo06\output
+▸    \demo06\output\index_42e3.js
+▸    \demo06\output\index_42e300f860ec901c7866.js
+▸    \demo06\output\main_42e3.js
+▸    \demo06\output\main_42e300f860ec901c7866.js
+▸  \demo06\output1
+▸    \demo06\output1\index.js
+▸    \demo06\output1\index_.js
+▸    \demo06\output1\main.js
+▸    \demo06\output1\main_.js
+▸  \demo06\package-lock.json
+▸  \demo06\package.json
+▸  \demo06\readme.md
+▸  \demo06\release
+▸    \demo06\release\index.js
+▸    \demo06\release\main.js
+▸  \demo06\src
+▸    \demo06\src\index.js
+▸    \demo06\src\main.js
+▸  \demo06\webpack.config.js
+```
+

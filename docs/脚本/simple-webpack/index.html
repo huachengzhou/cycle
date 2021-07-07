@@ -32,7 +32,7 @@
 <meta itemprop="name" content="webpack simple">
 <meta itemprop="description" content="webpack 一:卸载 全局卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&gt;npm uninstall webpack webpack-cli -g removed 73 packages in 0.726s 本地卸载 D:\IdeaProjects\cycle\docs\webc\web\webpack-study\one&gt;npm uninstall webpack webpack-cli -D npm WARN saveError ENOENT: no such file or directory, open &#39;D:\IdeaProjects\package.json&#39; npm WARN enoent ENOENT: no such file or directory, open &#39;D:\IdeaProjects\package.json&#39; npm WARN IdeaProjects No description npm WARN IdeaProjects No repository field. npm WARN IdeaProjects No README data npm WARN IdeaProjects"><meta itemprop="datePublished" content="2021-06-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2021-06-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3762"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
+<meta itemprop="wordCount" content="4603"><meta itemprop="image" content="https://huachengzhou.github.io/cycle/images/og-image.png"/>
 <meta itemprop="keywords" content="" /></head>
 <body><div class="container"><header>
 <h1>禅与摩托车维修艺术</h1>
@@ -906,7 +906,222 @@ register <span style="color:#ae81ff">63</span>
 ▸    \demo05\src\main.js
 ▸    \demo05\src\register.js
 ▸  \demo05\webpack.config.js
-</code></pre><div class="edit-meta">
+</code></pre><h4 id="多出口">多出口</h4>
+<ul>
+<li>生成必要的文件</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">Microsoft Windows <span style="color:#f92672">[</span>版本 10.0.19043.1052<span style="color:#f92672">]</span>
+<span style="color:#f92672">(</span>c<span style="color:#f92672">)</span> Microsoft Corporation。保留所有权利。
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack&gt;mkdir demo06
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack&gt;cd demo06
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;mkdir src
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;cd src
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\s</span>rc&gt;echo console.log<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;index&#39;</span><span style="color:#f92672">)</span>; &gt; index.js
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\s</span>rc&gt;echo console.log<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;main&#39;</span><span style="color:#f92672">)</span>; &gt; main.js
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\s</span>rc&gt;cd ..
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;cd &gt;  webpack.config.js
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm init -y
+Wrote to D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\p</span>ackage.json:
+
+<span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo06&#34;</span>,
+  <span style="color:#e6db74">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;webpack.config.js&#34;</span>,
+  <span style="color:#e6db74">&#34;scripts&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>
+  <span style="color:#f92672">}</span>,
+  <span style="color:#e6db74">&#34;keywords&#34;</span>: <span style="color:#f92672">[]</span>,
+  <span style="color:#e6db74">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>安装</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm add -D webpack webpack-cli
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN demo06@1.0.0 No description
+npm WARN demo06@1.0.0 No repository field.
+
++ webpack@5.42.1
++ webpack-cli@4.7.2
+added <span style="color:#ae81ff">121</span> packages from <span style="color:#ae81ff">155</span> contributors in 10.332s
+
+<span style="color:#ae81ff">16</span> packages are looking <span style="color:#66d9ef">for</span> funding
+  run <span style="color:#e6db74">`</span>npm fund<span style="color:#e6db74">`</span> <span style="color:#66d9ef">for</span> details
+  报错了
+  执行npm install时出现npm notice created a lockfile as package-lock.json. You should commit this file
+  在package.json中增加private字段；
+  将项目声明为私有项目：<span style="color:#e6db74">&#34;private&#34;</span>: true,
+  再重新运行，notice就没有了
+</code></pre></div><ul>
+<li>增加如下</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;demo06&#34;</span>,
+  <span style="color:#e6db74">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#e6db74">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;webpack.config.js&#34;</span>,
+  <span style="color:#e6db74">&#34;scripts&#34;</span>: <span style="color:#f92672">{</span>
+    <span style="color:#e6db74">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>,
+    <span style="color:#e6db74">&#34;build&#34;</span>: <span style="color:#e6db74">&#34;webpack&#34;</span>
+  <span style="color:#f92672">}</span>,
+  <span style="color:#e6db74">&#34;private&#34;</span>: true,
+  <span style="color:#e6db74">&#34;keywords&#34;</span>: <span style="color:#f92672">[]</span>,
+  <span style="color:#e6db74">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#e6db74">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><ul>
+<li>重新安装</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm add -D webpack webpack-cli
++ webpack@5.42.1
++ webpack-cli@4.7.2
+updated <span style="color:#ae81ff">2</span> packages in 4.494s
+<span style="color:#ae81ff">1</span> package is looking <span style="color:#66d9ef">for</span> funding
+  run <span style="color:#e6db74">`</span>npm fund<span style="color:#e6db74">`</span> <span style="color:#66d9ef">for</span> details
+</code></pre></div><ul>
+<li>关于 webpack.config.js 配置</li>
+</ul>
+<blockquote>
+<p>我是从下面一次注释运行的</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;path&#34;</span>) ;
+<span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+    <span style="color:#a6e22e">entry</span> <span style="color:#f92672">:</span>{
+        <span style="color:#a6e22e">index</span> <span style="color:#f92672">:</span><span style="color:#e6db74">&#34;./src/index.js&#34;</span> , <span style="color:#75715e">//这样写  可以不要output
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">main</span> <span style="color:#f92672">:</span><span style="color:#e6db74">&#34;./src/main.js&#34;</span> ,
+    },
+    <span style="color:#a6e22e">mode</span> <span style="color:#f92672">:</span><span style="color:#e6db74">&#34;development&#34;</span> ,
+    <span style="color:#a6e22e">output</span> <span style="color:#f92672">:</span>{
+        <span style="color:#75715e">// path:path.join(__dirname,&#34;release&#34;)
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// path:path.join(__dirname,&#34;output1&#34;),
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">path</span><span style="color:#f92672">:</span><span style="color:#a6e22e">path</span>.<span style="color:#a6e22e">join</span>(<span style="color:#ae81ff">__</span><span style="color:#a6e22e">dirname</span>,<span style="color:#e6db74">&#34;output&#34;</span>),
+        <span style="color:#75715e">// filename:&#34;[name].js&#34;//如index.js
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// filename:&#34;[name]_.js&#34; //如index_.js
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// filename:&#34;[name]_[hash].js&#34; //如 index_42e300f860ec901c7866.js
+</span><span style="color:#75715e"></span>        <span style="color:#a6e22e">filename</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;[name]_[hash:4].js&#34;</span> <span style="color:#75715e">//如 index_42e3.js
+</span><span style="color:#75715e"></span>    }
+}
+</code></pre></div><ul>
+<li>执行命令</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm run build
+
+&gt; demo06@1.0.0 build D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06
+&gt; webpack
+
+asset index.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: index<span style="color:#f92672">)</span>
+asset main.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./src/index.js <span style="color:#ae81ff">24</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/main.js <span style="color:#ae81ff">23</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.1 compiled successfully in <span style="color:#ae81ff">75</span> ms
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;node src/index.js
+index
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;node src/main.js
+main
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm run build
+
+&gt; demo06@1.0.0 build D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06
+&gt; webpack
+
+asset index.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: index<span style="color:#f92672">)</span>
+asset main.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./src/index.js <span style="color:#ae81ff">24</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/main.js <span style="color:#ae81ff">23</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.1 compiled successfully in <span style="color:#ae81ff">77</span> ms
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm run build
+
+&gt; demo06@1.0.0 build D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06
+&gt; webpack
+
+asset index.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: index<span style="color:#f92672">)</span>
+asset main.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./src/index.js <span style="color:#ae81ff">24</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/main.js <span style="color:#ae81ff">23</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.1 compiled successfully in <span style="color:#ae81ff">77</span> ms
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm run build
+
+&gt; demo06@1.0.0 build D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06
+&gt; webpack
+
+asset index_.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: index<span style="color:#f92672">)</span>
+asset main_.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./src/index.js <span style="color:#ae81ff">24</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/main.js <span style="color:#ae81ff">23</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.1 compiled successfully in <span style="color:#ae81ff">80</span> ms
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm run build
+
+&gt; demo06@1.0.0 build D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06
+&gt; webpack
+
+<span style="color:#f92672">(</span>node:8048<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>DEP_WEBPACK_TEMPLATE_PATH_PLUGIN_REPLACE_PATH_VARIABLES_HASH<span style="color:#f92672">]</span> DeprecationWarning: <span style="color:#f92672">[</span>hash<span style="color:#f92672">]</span> is now <span style="color:#f92672">[</span>fullhash<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>also consider using <span style="color:#f92672">[</span>chunkhash<span style="color:#f92672">]</span> or <span style="color:#f92672">[</span>contenthash<span style="color:#f92672">]</span>, see documenta
+tion <span style="color:#66d9ef">for</span> details<span style="color:#f92672">)</span>
+<span style="color:#f92672">(</span>Use <span style="color:#e6db74">`</span>node --trace-deprecation ...<span style="color:#e6db74">`</span> to show where the warning was created<span style="color:#f92672">)</span>
+asset index_42e300f860ec901c7866.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>immutable<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: index<span style="color:#f92672">)</span>
+asset main_42e300f860ec901c7866.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>immutable<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./src/index.js <span style="color:#ae81ff">24</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/main.js <span style="color:#ae81ff">23</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.1 compiled successfully in <span style="color:#ae81ff">81</span> ms
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;npm run build
+
+&gt; demo06@1.0.0 build D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06
+&gt; webpack
+
+<span style="color:#f92672">(</span>node:15188<span style="color:#f92672">)</span> <span style="color:#f92672">[</span>DEP_WEBPACK_TEMPLATE_PATH_PLUGIN_REPLACE_PATH_VARIABLES_HASH<span style="color:#f92672">]</span> DeprecationWarning: <span style="color:#f92672">[</span>hash<span style="color:#f92672">]</span> is now <span style="color:#f92672">[</span>fullhash<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>also consider using <span style="color:#f92672">[</span>chunkhash<span style="color:#f92672">]</span> or <span style="color:#f92672">[</span>contenthash<span style="color:#f92672">]</span>, see document
+ation <span style="color:#66d9ef">for</span> details<span style="color:#f92672">)</span>
+<span style="color:#f92672">(</span>Use <span style="color:#e6db74">`</span>node --trace-deprecation ...<span style="color:#e6db74">`</span> to show where the warning was created<span style="color:#f92672">)</span>
+asset index_42e3.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>immutable<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: index<span style="color:#f92672">)</span>
+asset main_42e3.js 1.2 KiB <span style="color:#f92672">[</span>emitted<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>immutable<span style="color:#f92672">]</span> <span style="color:#f92672">(</span>name: main<span style="color:#f92672">)</span>
+./src/index.js <span style="color:#ae81ff">24</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+./src/main.js <span style="color:#ae81ff">23</span> bytes <span style="color:#f92672">[</span>built<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>code generated<span style="color:#f92672">]</span>
+webpack 5.42.1 compiled successfully in <span style="color:#ae81ff">76</span> ms
+
+D:<span style="color:#ae81ff">\I</span>deaProjects<span style="color:#ae81ff">\c</span>ycle<span style="color:#ae81ff">\s</span>tudy<span style="color:#ae81ff">\w</span>ebpack<span style="color:#ae81ff">\d</span>emo06&gt;
+</code></pre></div><ul>
+<li>文件结构</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">▸<span style="color:#ae81ff">\d</span>emo06
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\d</span>ist
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\d</span>ist<span style="color:#ae81ff">\i</span>ndex.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\d</span>ist<span style="color:#ae81ff">\m</span>ain.js
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\n</span>ode_modules
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue
+//省略
+▸      <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\i</span>ndex.d.ts
+▸      <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\i</span>ndex.js
+▸      <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\l</span>icense
+▸      <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\p</span>ackage.json
+▸      <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\n</span>ode_modules<span style="color:#ae81ff">\y</span>octo-queue<span style="color:#ae81ff">\r</span>eadme.md
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput<span style="color:#ae81ff">\i</span>ndex_42e3.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput<span style="color:#ae81ff">\i</span>ndex_42e300f860ec901c7866.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput<span style="color:#ae81ff">\m</span>ain_42e3.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput<span style="color:#ae81ff">\m</span>ain_42e300f860ec901c7866.js
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput1
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput1<span style="color:#ae81ff">\i</span>ndex.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput1<span style="color:#ae81ff">\i</span>ndex_.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput1<span style="color:#ae81ff">\m</span>ain.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\o</span>utput1<span style="color:#ae81ff">\m</span>ain_.js
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\p</span>ackage-lock.json
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\p</span>ackage.json
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\r</span>eadme.md
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\r</span>elease
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\r</span>elease<span style="color:#ae81ff">\i</span>ndex.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\r</span>elease<span style="color:#ae81ff">\m</span>ain.js
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\s</span>rc
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\s</span>rc<span style="color:#ae81ff">\i</span>ndex.js
+▸    <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\s</span>rc<span style="color:#ae81ff">\m</span>ain.js
+▸  <span style="color:#ae81ff">\d</span>emo06<span style="color:#ae81ff">\w</span>ebpack.config.js
+</code></pre></div><div class="edit-meta">
 Last updated on 17 Jun 2021
 
 
@@ -989,11 +1204,7 @@ Published on 17 Jun 2021
 <li class=" has-sub-menu"><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/">javascript <span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/dos_basic/">DOS基本命令 </a></li>
-<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/dos_file/">DOS基本文件操作命令 </a></li>
-<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/dos_network/"> DOS网络操作命令 </a></li>
-<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/ftp/"> FTP </a></li>
-<li class=""><a href="https://huachengzhou.github.io/cycle/operating_system/windows/windows_question/"> windows 问题 </a></li>
+<li class=""><a href="https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/javascript/es6/">ECMAScript 6</a></li>
 </ul>
   
 </li>

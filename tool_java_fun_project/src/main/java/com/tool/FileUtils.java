@@ -25,7 +25,7 @@ public class FileUtils {
 
     @Test
     public void printFileDir() {
-        String path = "D:\\IdeaProjects\\cycle\\study\\webpack\\demo06";
+        String path = "D:\\IdeaProjects\\cycle\\study\\webpack\\demo07\\t6";
 //        String path = "D:\\IdeaProjects\\lifeDoc\\book\\public";
         File file = new File(path);
         print(file, 0, file.getParent());

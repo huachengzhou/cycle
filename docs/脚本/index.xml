@@ -61,5 +61,32 @@
       <description>webpack和nodejs关系 webpack可以将 .vue 文件转换为 .js 文件，而这个转换需要借助打包器vue-loader，这个打包器的下载是在n</description>
     </item>
     
+    <item>
+      <title>webpack loader</title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack_loader/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack_loader/</guid>
+      <description>first css-loader 文件目录 ▸\t1 ▸ \t1\dist ▸ \t1\dist\index.js ▸ \t1\node_modules ▸ \t1\node_modules\.bin //省略 ▸ \t1\node_modules\yocto-queue\readme.md ▸ \t1\package-lock.json ▸ \t1\package.json ▸ \t1\src ▸ \t1\src\index.css ▸ \t1\src\index.js ▸ \t1\webpack.config.js webpack.config.js content module.exports = { entry: { index :&amp;#34;./src/index.js&amp;#34; }, mode :&amp;#39;development&amp;#39; , module :{ rules:[ {test :/.css$/ ,use : &amp;#34;css-loader&amp;#34;} ] } } package.json content { &amp;#34;name&amp;#34;: &amp;#34;t1&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;main&amp;#34;:</description>
+    </item>
+    
+    <item>
+      <title>node js - npm 重要命令 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E9%87%8D%E8%A6%81%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E9%87%8D%E8%A6%81%E5%91%BD%E4%BB%A4/</guid>
+      <description>npm 包管理器查询网址 https://www.npmjs.com/ (和java的maven仓库差不多一个意思) 全局安装 npm install less-loader@4.1.0 npm install less-loader@4.1.0 &amp;ndash;save 本地安装命令 npm install less-loader@3.0.0 &amp;ndash;save-dev npm add -D less-loader@3.0.0 上面两条等价 升级到最高版本</description>
+    </item>
+    
+    <item>
+      <title>npm部分插件安装问题 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E9%83%A8%E5%88%86%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/npm%E9%83%A8%E5%88%86%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E9%97%AE%E9%A2%98/</guid>
+      <description>less版本过高的解决办法 解决方法： 卸载安装的高版本的less-loader ， 【npm uninstall less-loader】， 安装指定低版本的less-</description>
+    </item>
+    
   </channel>
 </rss>

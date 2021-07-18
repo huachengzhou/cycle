@@ -602,6 +602,15 @@
     </item>
     
     <item>
+      <title>webpack 热更新 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack%E7%83%AD%E6%9B%B4%E6%96%B0/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/webpack%E7%83%AD%E6%9B%B4%E6%96%B0/</guid>
+      <description>package.json { &amp;#34;name&amp;#34;: &amp;#34;demo09&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;main&amp;#34;: &amp;#34;index.js&amp;#34;, &amp;#34;scripts&amp;#34;: { &amp;#34;test&amp;#34;: &amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;, &amp;#34;build&amp;#34;: &amp;#34;webpack&amp;#34;, &amp;#34;dev&amp;#34;: &amp;#34;webpack-dev-server&amp;#34; }, &amp;#34;keywords&amp;#34;: [], &amp;#34;author&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;license&amp;#34;: &amp;#34;ISC&amp;#34;, &amp;#34;devDependencies&amp;#34;: { &amp;#34;html-webpack-plugin&amp;#34;: &amp;#34;^5.3.2&amp;#34;, &amp;#34;webpack&amp;#34;: &amp;#34;^5.45.1&amp;#34;, &amp;#34;webpack-cli&amp;#34;: &amp;#34;^3.3.12&amp;#34;, &amp;#34;webpack-dev-server&amp;#34;: &amp;#34;^3.11.2&amp;#34; } } webpack.config.js const path = require(&amp;#34;path&amp;#34;); const webpack = require(&amp;#34;webpack&amp;#34;); const HtmlWebpackPlugin = require(&amp;#39;html-webpack-plugin&amp;#39;); module.exports = { entry: { &amp;#34;index&amp;#34;: &amp;#34;./src/index.js&amp;#34; }, mode: &amp;#34;development&amp;#34;, output: { path:</description>
+    </item>
+    
+    <item>
       <title>mysql存储引擎</title>
       <link>https://huachengzhou.github.io/cycle/databases/mysql/mysql%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/</link>
       <pubDate>Fri, 17 Jan 2020 15:26:15 +0000</pubDate>

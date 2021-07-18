@@ -88,5 +88,14 @@
       <description>less版本过高的解决办法 解决方法： 卸载安装的高版本的less-loader ， 【npm uninstall less-loader】， 安装指定低版本的less-</description>
     </item>
     
+    <item>
+      <title>webpack 应用自己插件 </title>
+      <link>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/my-plugins/</link>
+      <pubDate>Thu, 17 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://huachengzhou.github.io/cycle/%E8%84%9A%E6%9C%AC/my-plugins/</guid>
+      <description>webpack.config.js const ConsoleLogOnBuildWebpackPlugin = require(&amp;#34;./src/console_log_on_build_webpack_plugin.js&amp;#34;); module.exports = { entry: { index: &amp;#34;./src/index.js&amp;#34; }, mode: &amp;#39;development&amp;#39;, plugins: [ new ConsoleLogOnBuildWebpackPlugin() ] }; package.json { &amp;#34;name&amp;#34;: &amp;#34;demo08&amp;#34;, &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, &amp;#34;description&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;main&amp;#34;: &amp;#34;webpack.config.js&amp;#34;, &amp;#34;scripts&amp;#34;: { &amp;#34;test&amp;#34;: &amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;, &amp;#34;build&amp;#34; : &amp;#34;webpack&amp;#34; }, &amp;#34;keywords&amp;#34;: [], &amp;#34;author&amp;#34;: &amp;#34;&amp;#34;, &amp;#34;license&amp;#34;: &amp;#34;ISC&amp;#34;, &amp;#34;devDependencies&amp;#34;: { &amp;#34;webpack&amp;#34;: &amp;#34;^5.44.0&amp;#34;, &amp;#34;webpack-cli&amp;#34;: &amp;#34;^4.7.2&amp;#34; } } src console_log_on_build_webpack_plugin.js index.js // console_log_on_build_webpack_plugin.js const pluginName = &amp;#39;ConsoleLogOnBuildWebpackPlugin&amp;#39;; class</description>
+    </item>
+    
   </channel>
 </rss>

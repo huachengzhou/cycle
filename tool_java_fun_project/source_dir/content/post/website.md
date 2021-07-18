@@ -912,3 +912,5 @@ Java为什么难精？就是这个原因。除非你水平特别高，否则五�
 [android 底层到应用层](http://gityuan.com/)
 
 [python 人工智能 csdn1000多篇博客 ](https://blog.csdn.net/LaoYuanPython)
+
+[资源下载](https://msdn.itellyou.cn/)

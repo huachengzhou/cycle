@@ -79,7 +79,7 @@ enableMissingTranslationPlaceholders = false
 
     [[menu.main]]
         name = "life"
-        url = "https://huachengzhou.github.io/life/"
+        url = "https://huachengzhou.github.io/lifeDoc/"
         weight = 1
     [[menu.main]]
         name = "自定义工具"
